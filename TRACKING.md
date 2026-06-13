@@ -11,23 +11,28 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate.**
 
-**Latest step:** `work/1781388988-EXPLORE.md` — action **Apply**: opened **Cluster 1 /
-A12, the cohomological cancellation engine**, transporting the 𝔽_q[t] twin-prime proof
-(Sawin–Shusterman arXiv:1808.04001) to ℤ. Dissected the actual mechanism input-by-input —
-(a) Frobenius + Grothendieck–Lefschetz trace, (b) Deligne purity / Weil II = √-cancellation,
-(c) big geometric monodromy (Katz / function-field Fouvry–Michel) forcing main-term vanishing,
-(d) six-functor formalism + Verdier duality = functional equation — and stated the transport
-lemma **L-COH** at full strength for DISTILL. **STATUS: NOT at a terminal state; C5 is being
-actively ESCALATED via cross-domain (cohomological) structure.** C1–C6 intact; C5 stays OPEN,
-re-flagged "checkpoint under active attack." **L-COH is a pre-distill candidate (NOT a legal
-foundation) and is ready for DISTILL.**
+**Latest step:** `work/1781389622-DISTILL.md` — **DISTILL attack on L-COH** (Cluster 1 / A12, the
+cohomological transport lemma). Mounted five attacks (P1 prove-vs-relocate, P2 concrete purity-only
+falsifier, P3 fabrication audit of clauses (1)+(3), P4 new-sibling-vs-C5-in-disguise + ∞). **Verdict:
+L-COH does NOT prove C5 — it RELOCATES it.** Its proof-reading is **FALSIFIED-as-stated** (its
+antecedents — a Weil-cohomology/Lefschetz formalism over ℤ — are the explicitly OPEN central goal of
+Connes/Connes–Consani, so it cannot be a proof). The naive **PURITY-ONLY** pattern "(1)+(2)⟹C5" is
+**FALSIFIED** by a concrete object: in 𝔽_q[t] purity = Weil II is a THEOREM yet does NOT give twin primes
+— Sawin–Shusterman need a SEPARATE big-monodromy/Burgess/Fouvry–Michel input on top of purity — plus a
+rerunnable numerical witness that the C5 uniform-in-d quantity behaves entirely differently from global
+√-cancellation. Surviving content = relocation **L-COH'** to three sharply-stated OPEN nodes: **C7**
+(NEW, broader than TPC), **C-COH-MON** (= cohomological C5, C5 in disguise), **C∞** (distinct archimedean
+input). **No terminal state; no NEEDS-REVIEW manufactured; no citation invented.** Awaiting EXPLORE's
+labels.
 
 **The crux in one sentence.** The entire difficulty of TPC, reached through every
 unconditional route surveyed, concentrates on a single open statement — **C5**: \(\sum_{n\le x,\
 n\equiv a\,(d)} \lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all** \(d\le x^{1-\varepsilon}\)
 and residues \(a\) — the unaveraged two-point Chowla/Liouville correlation at shift 2 in
-arithmetic progressions (only the log-averaged form is a theorem, Tao 2015). This step does NOT
-resolve C5; it imports the function-field cancellation engine to attack it.
+arithmetic progressions (only the log-averaged form is a theorem, Tao 2015). The L-COH escalation
+disperses C5's content into {C7 (broader cohomological-existence conjecture), C-COH-MON (= C5 in
+sheaf clothing), C∞ (archimedean)} — none easier than C5; this links the TPC wall to the
+Deninger/Connes–Consani RH-geometry programs but is NOT a proof.
 
 ```
 APPROACHES ATTEMPTED:
@@ -57,8 +62,9 @@ APPROACHES ATTEMPTED:
   (b) additive-combinatorial / Green-Tao -> long APs, not a fixed gap; DEAD END for TPC.
   (c) function field Sawin-Shusterman -> TPC PROVED over F_q[t] via Frobenius/etale-cohomology
       + Deligne purity + big monodromy (function-field Fouvry-Michel), level beyond 1/2. Genuine
-      escape over F_q[t]; no Z-theorem. MECHANISM now dissected in A12; its missing Z-input is
-      the cohomological package L-COH (which may itself reduce to the shift-2 correlation = C5).
+      escape over F_q[t]; no Z-theorem. MECHANISM dissected in A12; DISTILL confirmed purity is
+      NECESSARY-NOT-SUFFICIENT even there (big monodromy is a SEPARATE input). Missing Z-input =
+      the cohomological package now split into C7/C-COH-MON/C-inf.
   (d) pair-correlation / spectral (Montgomery; Bogomolny-Keating) -> HL twin-prime ~ two-point
       correlation of zeta zeros; zero-side formula itself conjectural; input >= full HL > C5.
       Governed by / implies C5. (Attack K.)
@@ -67,85 +73,99 @@ APPROACHES ATTEMPTED:
       opposite polarity). => node C6 (ESTABLISHED-IN-LITERATURE). Not a sibling.
   Friedlander-Iwaniec (a^2+b^4) & Heath-Brown (x^3+2y^3) = Type-II escapes for dimension-1 /
   thin sequences; no n(n+2) analogue = Claim C3.
-- [A12] CATEGORICAL / COHOMOLOGICAL TRANSPORT (Cluster 1 — the cancellation engine) | ACTIVE |
-  TRANSPORT the F_q[t] twin-prime proof to Z via the number-field<->function-field analogy.
-  Mechanism dissected (Part 1): (a) Frobenius + Grothendieck-Lefschetz turns the correlation
-  into a trace of Frobenius on etale cohomology (SGA; S-S) -- ABSENT over Z (no base field /
-  absolute Frobenius); (b) Deligne purity / Weil II = sqrt-cancellation = the weight (Deligne
-  IHES 52 (1980)) -- Z-analogue is RH-type, OPEN, and provably INSUFFICIENT alone (Chowla => RH
-  but RH =/=> Chowla); (c) big geometric monodromy (Katz GKM; function-field Fouvry-Michel)
-  forces main-term vanishing -- ABSENT/CONJECTURAL over Z; (d) six-functor formalism +
-  Verdier/Poincare duality = functional equation (Deligne) -- CONJECTURAL over Z (the central
-  OPEN goal of Deninger and Connes-Consani). 0 of 4 inputs is a Z-theorem. Candidate lemma
-  L-COH (below) sent to DISTILL.
+- [A12] CATEGORICAL / COHOMOLOGICAL TRANSPORT (Cluster 1 — the cancellation engine) | ACTIVE,
+  DISTILLED THIS PASS | TRANSPORT the F_q[t] twin-prime proof to Z. Mechanism (Part 1 of the
+  EXPLORE step): (a) Frobenius + Grothendieck-Lefschetz = trace; (b) Deligne purity / Weil II =
+  sqrt-cancellation; (c) big geometric monodromy (Katz / function-field Fouvry-Michel) forces
+  main-term vanishing; (d) six functors + Verdier duality = functional equation. 0 of 4 is a
+  Z-theorem. DISTILL (work/1781389622) FINDING: L-COH RELOCATES C5, does NOT prove it (clause (1)
+  formalism = the explicitly OPEN Connes/Connes-Consani goal). Purity-only (1)+(2)=>C5 is FALSE
+  (concrete: F_q[t] has purity as Weil II yet still needs S-S big monodromy => S-S is NOT a
+  corollary of Weil II; + numerical worst-bucket witness). Clause (3) over Z = cohomological C5
+  (C5 in disguise). Splits into C7 (broader) + C-COH-MON (=C5) + C-inf (archimedean).
 
 CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [L-COH] (TRANSPORT LEMMA, full strength) There exists a Weil-type cohomology H^* with a six-
-  functor formalism + Poincare-Verdier duality over Spec Z (equiv.: Connes-Consani arithmetic
-  site, or a working F_1-geometry with an absolute Frobenius F), and a constructible 'Liouville'
-  coefficient L (trace-of-Frobenius function = lambda), such that: (1) sum_{n<=x} lambda(n)
-  lambda(n+2) = sum_i (-1)^i Tr(F^? | H^i_c(S, L (x) sh_2^* L)) + O(1); (2) the cohomology is
-  PURE of expected weight (|alpha_i| <= x^{w_i/2}, w_i<=1 on surviving degrees); (3) the
-  geometric monodromy on L (x) sh_2^* L is BIG enough to kill the top-weight invariants; and
-  (1)+(2)+(3) => the uniform bound C5.
-  ALREADY CHECKED: F_q[t] side is exactly this shape & is a theorem (S-S arXiv:1808.04001,
-  abstract verified); Connes-Consani site exists with a Frobenius-like R_{>0}^x action BUT its
-  Weil cohomology/Lefschetz formula is explicitly THE open problem (Connes-Consani arXiv:
-  1405.4527; Connes arXiv:1509.05576 -- "main open question is the definition of a suitable Weil
-  cohomology ... as a Lefschetz formula"); the archimedean place infty is the known structural
-  obstruction and is NOT handled (OPEN); Deligne-purity's Z-analogue is RH-type & open; AND
-  purity is provably INSUFFICIENT alone since two-point lambda-correlation is Chowla-strength and
-  Chowla =/<= RH/GRH (verified: Chowla => RH, but even GRH gives only log-averaged/short-interval
-  two-point, not the unaveraged fixed-shift correlation).
-  WANT STRESS-TESTED: (1) does it PROVE C5 or merely RELOCATE it to "the right cohomology+purity+
-  monodromy over Z exists"? (2) PURITY-OVERCLAIM counterexample: a naive (1)+(2)-only version
-  claiming C5 from purity alone is FALSE (purity = RH-strength; RH =/=> Chowla); (3) fabrication
-  audit -- is clause (3)'s "big monodromy over Z" assuming an object that does not exist? does
-  clause (1) smuggle in the absent base field? (4) the archimedean place infty -- fatal
-  disanalogy (FALSIFIED) or located open sub-input (relocates)? (5) does the relocated input
-  reduce to a NEW sibling of C5 (Deninger/Connes-Consani Weil-cohomology existence) or to C5
-  itself in disguise (the shift-2 correlation)?
-  PRE-ASSESSMENT (NOT a label; DISTILL decides): expected outcome = RELOCATE C5 to a sharply
-  stated open cohomological input (Weil cohomology + six functors + purity + big monodromy over
-  Z/F_1), the central goal of the Deninger / Connes-Consani programs, Chowla-strength hence
-  strictly stronger than RH. Escalation, NOT a proof and NOT a termination.
+- [L-COH] (TRANSPORT LEMMA, full strength) "(1) sum lambda(n)lambda(n+2) = Lefschetz trace over a
+  Weil cohomology on Spec Z; (2) purity of expected weight; (3) big monodromy kills top-weight
+  invariants; and (1)+(2)+(3) => C5." DISTILLED THIS PASS (work/1781389622-DISTILL.md). OUTCOME:
+  the PROOF reading is FALSIFIED-as-stated; surviving content is the RELOCATION L-COH' (below) to
+  OPEN nodes C7/C-COH-MON/C-inf. AWAITING EXPLORE LABEL.
+
+POST-DISTILL NODES INTRODUCED (work/1781389622-DISTILL.md) — AWAITING EXPLORE LABELS
+(DISTILL pre-fills only ESTABLISHED/FALSIFIED/OPEN; NEEDS-REVIEW-vs-FALSIFIED is EXPLORE's call):
+- [L-COH-as-proof-of-C5] STATUS pre-fill: FALSIFIED-as-stated. Antecedents (Weil cohomology /
+  Frobenius-trace / purity / big monodromy over Z) are not theorems; clause (1) formalism is the
+  explicitly OPEN central goal of Connes/Connes-Consani => cannot be a proof of C5.
+  ADVERSARIAL PASS: Attacks P1 (relocate not prove) + P2 (purity-only falsifier).
+- [PURITY-ONLY] "(1)+(2) => C5 (purity/RH-strength alone gives the bound)." STATUS pre-fill:
+  FALSIFIED. Concrete object: (b) in F_q[t] purity = Weil II is a THEOREM yet twin primes still
+  require the SEPARATE Sawin-Shusterman big-monodromy/Burgess/Fouvry-Michel input (so S-S is NOT a
+  corollary of Weil II); (a) RH/GRH =/=> the unaveraged fixed-shift two-point correlation (only
+  log-averaged known, Tao); (c) numerical witness: global |S(x)|/x ~ x^{-1/2} but worst-bucket
+  max_a |S_{a,d}|/(x/d) -> 1 as d grows (0.001..0.511 at d=2..30030). The concrete object that
+  breaks the purity-only reading. ADVERSARIAL PASS: Attack P2.
+- [L-COH'] (the SURVIVING RELOCATION) "C5 follows IF { C7 AND C-COH-MON AND C-inf }, by transported
+  Grothendieck-Lefschetz + Deligne purity." STATUS pre-fill: OPEN (a conditional reduction whose
+  antecedents are open; the implication SHAPE is the established F_q[t] proof pattern). It is an
+  ESCALATION linking the TPC wall to the Deninger/Connes-Consani programs; NOT a proof of C5.
+  ADVERSARIAL PASS: Attacks P1, P4.
+- [C7] "A Weil-type cohomology + six functors + Poincare-Verdier duality + absolute Frobenius +
+  Grothendieck-Lefschetz trace formula over Spec Z (= F_1 / Connes-Consani arithmetic site)
+  realizing the counting/zeta equality as a Lefschetz formula." STATUS pre-fill: OPEN — a NEW
+  object DISTINCT from C5 and STRICTLY BROADER than TPC (the Deninger/Connes-Consani conjecture;
+  its full purity form would yield RH). AUDIT (open-problem citation): Connes arXiv:1509.05576;
+  Connes-Consani "Geometry of the Arithmetic Site"/arXiv:1405.4527 name this as the MAIN OPEN
+  question. ADVERSARIAL PASS: Attacks P1, P4. Genuine escalation; harder/broader than C5.
+- [C-COH-MON] "The geometric monodromy of the Liouville sheaf L (x) sh_2^* L over Spec Z is big
+  enough to kill the top-weight invariants (= L-COH clause (3))." STATUS pre-fill: OPEN — and it is
+  C5 RE-EXPRESSED ("cohomological C5"): vanishing of the top-weight invariant subspace IS "the
+  shift-2 correlation has no main term" = C5; proving it over Z is equivalent to / harder than C5.
+  NO audit independent of C5; the F_q[t] template (Katz GKM; S-S) is NOT an audit for the Z claim.
+  ADVERSARIAL PASS: Attack P3 (fabrication audit) — asserting it over Z w/o proof = asserting C5.
+- [C-inf] "The archimedean place infinity of Spec Z (no function-field counterpart) can be
+  incorporated into the trace/Lefschetz formalism (properness / compact support)." STATUS pre-fill:
+  OPEN — a THIRD DISTINCT open input (structural disanalogy; F_q[t] has no infinity). AUDIT:
+  Connes treats infinity separately, e.g. "Weil positivity and Trace formula, the archimedean
+  place," arXiv:2006.13771. ADVERSARIAL PASS: Attack P4 — NOT shown fatal, NOT shown handled.
 
 OPEN THREADS:
 - T2 [= the crux C5]: the unaveraged two-point shift-2 cancellation sum_{n<=x, n==a(d)}
-  lambda(n)lambda(n+2)=o(x/d) UNIFORM over d<=x^{1-eps}. *** NOW A CHECKPOINT UNDER ACTIVE
-  ATTACK (not terminal) ***: being escalated via the cohomological transport (A12/L-COH).
-- T4 [optional refinement]: characterize the obstruction by its ABSENCE in F_q[t]. SUBSUMED into
-  A12, which dissects the F_q[t] mechanism input-by-input rather than merely noting absence.
-- T7 [NEW, ACTIVE]: cohomological relocation target -- pin down the exact open input L-COH
-  reduces to; connect to the Deninger dynamical-cohomology and Connes-Consani arithmetic-site
-  programs. Is that input strictly stronger than RH (Chowla-strength)? (yes, pre-checked).
-- T8 [NEW, ACTIVE]: the archimedean place infty -- the structural disanalogy with F_q[t]
-  (which has no infty). Determine whether infty is a FATAL obstruction to the trace formula /
-  properness (=> L-COH FALSIFIED as a route) or a further located open sub-input.
-- T9 [NEW, ACTIVE]: is the relocated cohomological input a DISTINCT new sibling of C5, or
-  logically equivalent to C5 (shift-2 correlation in sheaf-theoretic clothing)? Adjudicates
-  whether A12 is genuine escalation or honest-but-circular.
+  lambda(n)lambda(n+2)=o(x/d) UNIFORM over d<=x^{1-eps}. *** CHECKPOINT UNDER ACTIVE ATTACK (not
+  terminal) ***: escalated via the cohomological transport; now dispersed into C7/C-COH-MON/C-inf.
+- T7 [ACTIVE, ADVANCED]: cohomological relocation target -- RESOLVED this pass into THREE nodes:
+  C7 (broader cohomological existence = Deninger/Connes-Consani), C-COH-MON (= C5 in disguise),
+  C-inf (archimedean). The live escalation now lives on C7.
+- T8 [ACTIVE, ADVANCED]: the archimedean place infinity -- pinned as node C-inf, a DISTINCT located
+  OPEN sub-input (NOT shown fatal, NOT shown handled). Connes treats it separately (arXiv:2006.13771).
+- T9 [ACTIVE, RESOLVED-AS-BOTH]: is the relocated input a NEW sibling or C5 in disguise? ANSWER =
+  BOTH: C7 is a genuinely NEW, strictly broader open object; C-COH-MON is C5 re-expressed. Plus the
+  third input C-inf. So A12 is a genuine ESCALATION (via C7/C-inf) AND honest-but-circular in its
+  monodromy clause (C-COH-MON). Adjudicated by Attacks P3, P4.
 - [T3 CLOSED] C1 Chen-subtraction MEMBERSHIP resolved (inside C1).
+- [T4 CLOSED] obstruction-by-absence-in-F_q[t]: subsumed into A12, mechanism dissected.
 - [T5 CLOSED] necessity = the SAME OPEN OBJECT as C5; circular dependency removed.
 - [T6 CLOSED] C6 folded in & LABELLED; missed-angle audit demonstrated.
 
 CURRENT POSITION:
-- NOT at a terminal state. Under the revised AGENTS.md, locating C5 is a CHECKPOINT, not an exit.
-  This step ESCALATES C5 by importing cross-domain (categorical/cohomological) structure:
-  Cluster 1 / A12 dissects the actual F_q[t] twin-prime proof mechanism (Frobenius+Lefschetz
-  trace; Deligne purity; big monodromy/Fouvry-Michel; six functors+duality) and states the
-  transport lemma L-COH at full strength for DISTILL to attack.
-- Honest pre-assessment (not a label): L-COH most likely RELOCATES C5 to a single open
-  cohomological input (Weil cohomology + purity + big monodromy over Z/F_1, the
-  Deninger/Connes-Consani goal), strictly stronger than RH (Chowla-strength). That is an
-  escalation linking the twin-prime wall to the RH-geometry programs; it is NOT a proof.
-- Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may
-  be NAMED, NOT built upon. L-COH is a PRE-DISTILL candidate and is NOT a legal foundation.
-  GRAVEYARD nodes may NOT be built upon.
-- Next: invoke DISTILL on L-COH.
+- NOT at a terminal state. DISTILL has attacked L-COH and adjudicated PROVE-vs-RELOCATE: L-COH does
+  NOT prove C5; it RELOCATES it. The proof-reading is FALSIFIED-as-stated; the naive purity-only
+  pattern is FALSIFIED by a concrete object (F_q[t]-with-Weil-II-but-no-twin-primes + numerics).
+- The surviving content is the relocation L-COH' to three sharply-stated OPEN nodes: C7 (a NEW
+  object, strictly BROADER than TPC = the Deninger/Connes-Consani Weil-cohomology conjecture),
+  C-COH-MON (= cohomological C5, C5 in disguise), C-inf (the archimedean place, a distinct input).
+  This is an ESCALATION that links the TPC wall to the RH-geometry programs; it is NOT a proof and
+  NOT a termination.
+- AWAITING EXPLORE: label L-COH-as-proof-of-C5 (expected FALSIFIED/GRAVEYARD as a proof), PURITY-ONLY
+  (expected GRAVEYARD), L-COH'/C7/C-COH-MON/C-inf (expected OPEN), then take its next action.
+- Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may be
+  NAMED, NOT built upon. The new nodes are OPEN (and not yet EXPLORE-labelled) => NOT legal
+  foundations. GRAVEYARD nodes may NOT be built upon.
+- Next: invoke EXPLORE to label the post-DISTILL nodes and choose the next action (live escalation
+  candidate: attack C7, or test whether C-COH-MON can be decoupled from C5 — P3 says almost surely not).
 
 CLAIM GRAPH (nodes that may be built upon = C1-membership/C2/C3/C4/C6; C5 named OPEN crux,
-checkpoint under active attack, NOT built upon):
+checkpoint under active attack, NOT built upon; C7/C-COH-MON/C-inf are POST-DISTILL OPEN, awaiting
+EXPLORE labels, NOT built upon):
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
   d|F(n)} a_n : d<=D=x^{1-eps}}, Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg,
@@ -210,23 +230,24 @@ checkpoint under active attack, NOT built upon):
     delta(x)*(x/d) FOR ALL d <= x^{1-eps} AND ALL residues a (mod d)
   (= unaveraged two-point Chowla/Liouville at shift 2, uniform in APs), o(main) strength.
   Both directions (necessity; sufficiency) open at dimension 2. Only log-averaged proven (Tao
-  2015). Chowla-strength: implies RH; NOT implied by RH/GRH.
+  2015). Chowla-strength: NOT implied by RH/GRH (only the LOG-AVERAGED two-point case is known
+  unconditionally; the unaveraged fixed-shift sum does not follow even from GRH).
   DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6 (Siegel-zero
   anti-cancellation) -- all FRAMING; NOT a proven equivalence to TPC.
   STATUS: OPEN (checkpoint under active cross-domain attack). AUDIT: NONE EXISTS (the point).
   Rigorous sub-facts: (i) unaveraged two-point Chowla =o(x) is OPEN, only log-averaged proven
-  (Tao arXiv:1509.05422; Pilatte arXiv:2310.19357); numerics N=3e6-8e6: global |ratio|~6.5e-5 <
-  1/sqrt(x), worst bucket-ratio ->1.0 as d->2e5 => uniform-in-d unwitnessable. (ii) parity
-  obstruction for n(n+2) is HEURISTIC; Bombieri's THEOREM is dim-1 only. (iii) sufficiency for
-  n(n+2) not cited.
-  ESCALATION (this step): A12/L-COH transports the F_q[t] proof mechanism; expected to RELOCATE
-  C5 to an open cohomological input (Weil cohomology + purity + big monodromy over Z/F_1), not
-  resolve it. L-COH sent to DISTILL.
-  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O (uniqueness/centrality confirmed). STAYS
-  OPEN.
+  (Tao arXiv:1509.05422; Pilatte arXiv:2310.19357); numerics N=2e6: global |S(x)|/x ~ x^{-1/2}
+  but worst-bucket max_a |S_{a,d}|/(x/d) -> 1 as d grows (0.001..0.511 at d=2..30030) => uniform-
+  in-d unwitnessable (re-confirmed work/1781389622-DISTILL.md, Attack P2). (ii) parity obstruction
+  for n(n+2) is HEURISTIC; Bombieri's THEOREM is dim-1 only. (iii) sufficiency for n(n+2) not cited.
+  ESCALATION (A12/L-COH): DISTILL (work/1781389622) confirmed L-COH RELOCATES C5 (does not prove
+  it); C5's content disperses into C7 (broader cohomological-existence conjecture) + C-COH-MON
+  (= C5 in sheaf clothing) + C-inf (archimedean). None easier than C5.
+  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O (uniqueness/centrality) + Attacks P1-P4
+  (cohomological relocation adjudicated). STAYS OPEN.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
-  + work/1781388988-EXPLORE.md (A12/L-COH escalation, this step).
+  + work/1781388988-EXPLORE.md (A12/L-COH escalation) + work/1781389622-DISTILL.md (P1-P4).
 
 GRAVEYARD (may NOT be built upon):
 - [L1-as-written] involution a_n->(1±lambda(n))a_n/2 (lambda on n) Type-I invariant. FALSIFIED
@@ -237,4 +258,7 @@ GRAVEYARD (may NOT be built upon):
   necessity is dim EXACTLY 1). Honest content in C5.
 - [C1-parity-blocked-as-audited] reading that C1's comprehensiveness CLOSES necessity. FALSIFIED-
   as-an-audit (only MEMBERSHIP audited; uniform-in-d half is C5). Absorbed into C5.
+- [PURITY-ONLY-pending] (1)+(2)=>C5, i.e. purity/RH-strength alone gives the bound. DISTILL pre-fill
+  FALSIFIED (work/1781389622-DISTILL.md, Attack P2; concrete F_q[t]-with-Weil-II + numerics).
+  AWAITING EXPLORE confirmation before formal entry; listed here as the expected destination.
 ```
