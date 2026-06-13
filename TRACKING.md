@@ -10,22 +10,23 @@ per-step snapshots under `work/`. See `AGENTS.md` for the governing protocol.
 is open. Expected terminal state (3): the parity obstruction stated as one precise
 OPEN claim.
 
-**Latest step:** `work/1781355529-EXPLORE.md` — labelled DISTILL passes F–J (independently
-re-verified) and took action **Review**. **STATUS: TERMINAL STATE (3) DECLARED.** The graph
-is clean, minimal, audited and non-circular, with a single OPEN crux **C5** and **no missed
-escaping angle**. C1 is **split**: its membership half is NEEDS-REVIEW (audited
-closed-under-subtraction linear algebra); its parity-blocking half is FALSIFIED-as-an-audit
-(GRAVEYARD), content absorbed into C5. C2/C3 ESTABLISHED (dimension-1 / thin-sequence scope
-notes verified); C4 ESTABLISHED (re-scoped). C5 — the unaveraged shift-2 two-point Chowla in
-APs, uniform over \(d\le x^{1-\varepsilon}\) — carries BOTH directions (necessity AND
-sufficiency-for-\(n(n+2)\)), BOTH unproven; the reduction "machinery + C5 ⟹ TPC" is itself
-heuristic at dimension 2, so the honest claim is the difficulty **concentrates on** C5.
+**Latest step:** `work/1781356292-DISTILL.md` — an INDEPENDENT adversarial pass on the
+**terminal-state-(3) DECLARATION itself** (the meta-claim that C5 is the single unique OPEN
+crux). Five attacks (K–O). **RESULT: terminal state (3) CONFIRMED-UNDER-ATTACK.** No distinct
+sibling OPEN node found; dependency graph is a sound DAG (C5 sole sink); load-bearing
+citations (Polymath8b, Friedlander–Iwaniec ×2) correctly quoted; C5 non-tautological. ONE
+refinement surfaced: add **C6** (Siegel-zero / Heath-Brown route) so "no missed angle" is
+*demonstrated*, not asserted — it is NOT a sibling (wrong-polarity-of-C5 + believed-false
+hypothesis). **C6 is pre-filled ESTABLISHED-IN-LITERATURE and awaits EXPLORE's label.**
 
-**The crux in one sentence.** The entire difficulty of TPC, reached through every
-unconditional route, concentrates on a single open statement: \(\sum_{n\le x,\ n\equiv a\,(d)}
-\lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all** \(d\le x^{1-\varepsilon}\) and residues
-\(a\) — the unaveraged two-point Chowla/Liouville correlation at shift 2 in arithmetic
-progressions, of which only the logarithmically averaged form is a theorem (Tao 2015).
+**The crux in one sentence (unchanged, now stress-tested).** The entire difficulty of TPC,
+reached through every unconditional route, concentrates on a single open statement:
+\(\sum_{n\le x,\ n\equiv a\,(d)} \lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all**
+\(d\le x^{1-\varepsilon}\) and residues \(a\) — the unaveraged two-point Chowla/Liouville
+correlation at shift 2 in arithmetic progressions, of which only the logarithmically
+averaged form is a theorem (Tao 2015). Adversarially re-confirmed: pair-correlation (≥ HL,
+heuristic equivalence), Siegel-zero/Heath-Brown (¬C5 + believed-false), and binary-Goldbach
+minor arcs (the *same* object as C5) all converge back to this one axis.
 
 ```
 APPROACHES ATTEMPTED:
@@ -50,7 +51,8 @@ APPROACHES ATTEMPTED:
 - [A8] Hardy-Littlewood circle method + prime k-tuple | DEAD END (full TPC, unconditional)
   | source of the conjectural constant; minor arcs uncontrollable for a binary problem.
   NOT an escape (no theorem; missing input is stronger than C5). Same wall as binary
-  Goldbach.
+  Goldbach. CONFIRMED (Attack M): minor-arc bound is a Fourier reformulation of the binary
+  problem itself => SAME object as C5, not a distinct one (strengthens C5 uniqueness).
 - [A9] EH / GEH as conditional input | DEAD END (full TPC even if assumed) / ACTIVE
   (bounded gaps) | does NOT break parity; EH/GEH are Type-I. C5 stays OPEN even under GEH
   (Pass J). Inside C1.
@@ -64,170 +66,187 @@ APPROACHES ATTEMPTED:
 - [A11] Other escapes/non-escapes:
   (a) automorphic/spectral shifted-convolution -> STRENGTHEN Type-I inputs; inside the
       input-side of C1; no sign-sensitive bilinear for lambda(n)lambda(n+2). Governed by C5.
+      (Attack M(c) re-confirmed.)
   (b) additive-combinatorial / Green-Tao ergodic -> long APs, NOT a fixed gap; DEAD END for
-      TPC; no C5-sibling open input.
+      TPC; no C5-sibling open input. (Attack M(b) re-confirmed.)
   (c) function field Sawin-Shusterman -> TPC PROVED over F_q[t] via a geometric/monodromy
       level-beyond-1/2 input (function-field Fouvry-Michel) with NO Z-analogue. GENUINE
       ESCAPE over F_q[t], no Z-theorem at TPC strength; its missing Z-input is a Type-II
       shift-2 correlation = same object as C5 (not a distinct sibling). (Thread T4 refines
       this geometrically but surfaces no new open object.)
+  (d) [NEW, Attack K] pair-correlation / spectral (Montgomery; Bogomolny-Keating;
+      Keating-Smith) -> the HL twin-prime conjecture is EQUIVALENT (heuristic Fourier
+      inversion) to the two-point correlation of zeta zeros; that zero-side formula is
+      itself CONJECTURAL (Montgomery's theorem is RH-conditional, restricted support).
+      NOT an escape: input is >= full HL (STRONGER than C5) and only heuristic. Governed
+      by / implies C5; no distinct sibling.
+  (e) [NEW, Attack L] Siegel-zero / Heath-Brown 1983 dichotomy -> (inf many Siegel zeros)
+      => (inf many twin primes). Hypothesis BELIEVED FALSE (GRH precludes it); a Siegel
+      zero IS a failure of Mobius/Liouville pseudorandomness = the NEGATION of C5. NOT an
+      unconditional escape, NOT a distinct sibling (same lambda-in-APs axis, opposite
+      polarity). => proposed node C6 (ESTABLISHED, awaiting EXPLORE label).
   Friedlander-Iwaniec (a^2+b^4) & Heath-Brown (x^3+2y^3) are the Type-II ESCAPES counting a
   fixed prime form (DIMENSION 1 / thin sequences), no n(n+2) analogue = Claim C3.
 
 CANDIDATE LEMMAS (pre-distill — not yet certified):
-- (none) — passes F-J have been LABELLED; the graph is at terminal state (3).
+- [C6] (proposed this DISTILL pass) Siegel-zero / Heath-Brown route is a CONDITIONAL
+  dichotomy, NOT a distinct sibling OPEN node. Pre-filled STATUS ESTABLISHED-IN-LITERATURE
+  with citations (Heath-Brown PLMS 1983; Tao 2015 exposition; Tao-Teravainen JLMS 2022 /
+  IMRN 2023). AWAITS EXPLORE's label. (Adversarial pass = Attack L, in work/1781356292.)
 
 OPEN THREADS:
 - T2 [= the crux C5, OPEN — TERMINAL]: the unaveraged two-point shift-2 cancellation
   Sum_{n<=x, n==a(d)} lambda(n)lambda(n+2)=o(x/d) UNIFORM over d<=x^{1-eps} (= unaveraged
-  two-point Chowla at shift 2 in APs). BOTH directions across it (necessity:
-  no signed Type-I functional certifies pi_2->inf; sufficiency: this input + sieve =>
-  pi_2->inf) are unproven at dimension 2. Only the log-averaged form is a theorem (Tao
-  2015). This thread is the located wall, not a lead to chase.
+  two-point Chowla at shift 2 in APs). BOTH directions across it (necessity; sufficiency)
+  unproven at dimension 2. Only the log-averaged form is a theorem (Tao 2015). The located
+  wall; CONFIRMED unique under attacks K-O. Not a lead to chase.
 - T4 [optional refinement, not required for terminal state]: characterize the obstruction
-  by its ABSENCE in F_q[t] (Sawin-Shusterman's geometric/monodromy Type-II input).
-  Review §1 confirms this re-describes C5 geometrically; it does NOT surface a new open
-  object. May be pursued by a human but is not a gap in the graph.
-- [T3 CLOSED] C1 Chen-subtraction MEMBERSHIP resolved: subtracted-upper-bound sieves are
-  single mixed-sign linear functionals of Type-I data, closed under subtraction => inside
-  C1's membership half. (Parity-blocked is a SEPARATE claim = C5.)
-- [T5 CLOSED] "Is necessity an established theorem or the same open object as C5?" SETTLED:
-  the SAME OPEN OBJECT as C5 (Pass F/G/H). (i) "sieves can't break parity" is a HEURISTIC
-  (Mobius pseudorandomness); (ii) Bombieri's theorem is DIMENSION-1 only; the n(n+2)
-  statement (iii) is neither, its quantitative form IS C5. Hidden circular dependency
-  REMOVED by demoting necessity into C5.
+  by its ABSENCE in F_q[t] (Sawin-Shusterman). Re-describes C5 geometrically; no new open
+  object.
+- T6 [NEW, optional — for EXPLORE this next step]: fold in node C6 (Siegel-zero/Heath-Brown
+  not-a-sibling) so the "no missed angle" terminal claim is DEMONSTRATED against the most
+  famous conditional twin-prime theorem, not merely asserted. Does NOT reopen terminal state.
+- [T3 CLOSED] C1 Chen-subtraction MEMBERSHIP resolved (closed under subtraction; inside C1).
+- [T5 CLOSED] necessity = the SAME OPEN OBJECT as C5; hidden circular dependency removed.
 
 CURRENT POSITION:
-- TERMINAL STATE (3) DECLARED. Passes F-J labelled (independently re-verified: V-F re-ran
-  Pass F at N=6e6 — worst bucket-ratio 0.0005->0.57 as d->1e5, z-score bounded; V-G re-ran
-  Pass G at d=11 — genuine sqrt-cancellation pointwise, only uniformity open; V-lit
-  confirmed the three load-bearing literature facts). C1 is SPLIT: membership half =>
-  NEEDS-REVIEW (audited linear algebra); parity-blocking half => GRAVEYARD
-  (FALSIFIED-as-an-audit), content absorbed into C5. C2/C3 ESTABLISHED with verified
-  dimension-1/thin-sequence scope notes; C4 ESTABLISHED (re-scoped). C5 is the SINGLE OPEN
-  crux carrying BOTH directions (necessity AND sufficiency-for-n(n+2)), BOTH unproven,
-  BOTH reducing to one object: the unaveraged shift-2 two-point Chowla in APs uniform over
-  d<=x^{1-eps}. Review confirmed: NO unconditional approach escapes {C1-membership, C5} —
-  every family is inside C1 (governed by C5) or a genuine escape (A10, A11c) whose missing
-  Z-input is the SAME object as C5; no sibling OPEN node. The reduction itself
-  ("machinery + C5 => TPC") is NOT rigorous at dim 2 — honest claim: the difficulty
-  CONCENTRATES ON C5, not that C5 finishes the proof.
-- Legal foundations: C1-membership/C2/C3/C4 (NEEDS-REVIEW/ESTABLISHED). C5 may be NAMED as
-  the obstruction, NOT built upon. GRAVEYARD nodes may NOT be built upon.
+- TERMINAL STATE (3): DECLARED (prev step) and now **CONFIRMED-UNDER-ADVERSARIAL-PRESSURE**
+  by an INDEPENDENT DISTILL pass (work/1781356292-DISTILL.md, attacks K-O):
+  (K) pair-correlation/spectral = heuristic equivalence to full HL, input >= C5, non-escape;
+  (L) Siegel-zero/Heath-Brown = ¬C5 + believed-false hypothesis, NOT a distinct sibling;
+  (M) Goldbach minor arcs = SAME object as C5 (strengthens uniqueness), additive-comb dead
+      end, GL(2) Type-I-side;
+  (N) dependency graph = sound DAG, C5 sole sink, C1 audit smuggles no uniform-in-d claim,
+      C4->C2 to an ESTABLISHED node (no OPEN inheritance), no circularity;
+  (O) Polymath8b + Friedlander-Iwaniec x2 citations correctly quoted (snippet-level); C5
+      non-tautological (weaker log-averaged shadow is a theorem); "concentrates on C5"
+      caveat correct and does NOT demote C5.
+  NO distinct sibling OPEN node exists; C5 stays the SINGLE OPEN crux. ONE refinement: add
+  C6 (proposed) to DEMONSTRATE "no missed angle" vs the Siegel-zero route. The reduction
+  "machinery + C5 => TPC" remains NOT rigorous at dim 2 — honest claim is the difficulty
+  CONCENTRATES ON C5 (re-affirmed correct in Attack O.3).
+- NEXT (EXPLORE): first act = LABEL C6 (expected ESTABLISHED-IN-LITERATURE with the
+  "not-a-sibling" scope note); then re-affirm terminal state (3) under attack, or take the
+  next action. C5 stays OPEN, named, not built upon.
+- Legal foundations: C1-membership/C2/C3/C4 (NEEDS-REVIEW/ESTABLISHED), and C6 once labelled.
+  C5 may be NAMED as the obstruction, NOT built upon. GRAVEYARD nodes may NOT be built upon.
 
-CLAIM GRAPH (post-distill, LABELLED; the ONLY nodes that may be built upon are
-C1-membership/C2/C3/C4; C5 is the named OPEN crux and may NOT be built upon):
+CLAIM GRAPH (post-attack; nodes that may be built upon = C1-membership/C2/C3/C4 [+C6 once
+labelled]; C5 is the named OPEN crux and may NOT be built upon):
 - [C1] CLASS DEFINITION + MEMBERSHIP (parity-blocking content REMOVED -> see C5 / GRAVEYARD).
   A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound pi_2(x) >= L(a), L a (possibly
   SIGNED) LINEAR FUNCTIONAL of the Type-I data {T_d = sum_{n<=x, d|F(n)} a_n : d<=D=x^{1-eps}},
-  Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP (surviving checkable content): Brun,
-  Selberg, GPY, Maynard-Tao (nonneg divisor-sum-squared) AND Chen / Buchstab-iterated
-  SUBTRACTED-upper-bound sieves are ALL signed linear functionals of the T_d (Chen:
-  S(A;z) - 1/2 sum_{z<=p<z_1} S(A_p;z) - rem = sum_d c_d T_d, mixed-sign c_d, all
-  d<=z_1*z<D; leading-order values form a VECTOR SPACE closed under subtraction). Asserts
-  ONLY membership; does NOT assert the class is parity-blocked (that is C5).
-  DEPENDS ON: nothing (definition + membership bookkeeping).
-  STATUS: NEEDS-REVIEW (membership half).
+  Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg, GPY, Maynard-Tao AND
+  Chen / Buchstab-iterated SUBTRACTED-upper-bound sieves are ALL signed linear functionals
+  of the T_d (Chen: S(A;z) - 1/2 sum_{z<=p<z_1} S(A_p;z) - rem = sum_d c_d T_d, mixed-sign
+  c_d, all d<=z_1*z<D; leading-order values form a VECTOR SPACE closed under subtraction).
+  Asserts ONLY membership; does NOT assert parity-blocked (that is C5).
+  DEPENDS ON: nothing. STATUS: NEEDS-REVIEW (membership half).
   AUDIT: (a) inspect each method's weight (Maynard, Ann. of Math. 181 (2015), Sec.4-5;
   Selberg); (b) Chen split = sum_d c_d T_d, all d<=z_1*z<D (Halberstam-Richert ch.11;
-  arXiv:math/0412220); (c) closed-under-subtraction is sound LINEAR ALGEBRA — human
-  certifies the pd<=D bookkeeping + closure. SCOPE NOTE: audits MEMBERSHIP only;
-  "...therefore parity-blocked" requires each T_d perturbed by o(main) UNIFORMLY over
-  d<=D under lambda(n)lambda(n+2) — NOT established here, it is C5.
-  ADVERSARIAL PASS: Pass F/G/H. Membership linear algebra SURVIVES; the implicit "hence
-  parity-blocked" did NOT (its input is the open shift-2 Chowla bound) and is merged into
-  C5 / GRAVEYARD.
-  source: work/1781354707-DISTILL.md (Pass F/G/H) + work/1781354180-EXPLORE.md (Part 2)
-  + work/1781355529-EXPLORE.md (V-F/V-G, label).
-- [C2] BOMBIERI ASYMPTOTIC SIEVE / PARITY (dimension EXACTLY 1). For a sequence of sieve
-  dimension exactly 1 on a Type-I EH-level hypothesis, Type-I data determines Lambda_k
-  (k>=2) but provably NOT Lambda_1 (primes) without a Type-II bilinear estimate; explicit
-  density-matched two-sequence construction.
-  DEPENDS ON: established mathematics. | STATUS: ESTABLISHED-IN-LITERATURE.
+  arXiv:math/0412220); (c) closed-under-subtraction is sound LINEAR ALGEBRA. SCOPE NOTE:
+  audits MEMBERSHIP only; "...therefore parity-blocked" requires each T_d perturbed by
+  o(main) UNIFORMLY over d<=D under lambda(n)lambda(n+2) — that is C5.
+  ADVERSARIAL PASS: Pass F/G/H (membership survives; "hence parity-blocked" merged into C5);
+  + Attack N (DEPENDS ON nothing confirmed; audit smuggles NO uniform-in-d claim; no hidden
+  OPEN dependency). SURVIVES as NEEDS-REVIEW.
+  source: work/1781354707-DISTILL.md (F/G/H) + work/1781354180-EXPLORE.md (Part 2)
+  + work/1781355529-EXPLORE.md (V-F/V-G) + work/1781356292-DISTILL.md (Attack N).
+- [C2] BOMBIERI ASYMPTOTIC SIEVE / PARITY (dimension EXACTLY 1). For sieve dimension exactly
+  1 on a Type-I EH-level hypothesis, Type-I data determines Lambda_k (k>=2) but provably NOT
+  Lambda_1 (primes) without a Type-II bilinear estimate.
+  DEPENDS ON: established mathematics. STATUS: ESTABLISHED-IN-LITERATURE.
   AUDIT: Bombieri, "The asymptotic sieve," Rend. Accad. Naz. XL (5) 1/2 (1975/76);
-  Friedlander-Iwaniec, "Asymptotic sieve for primes," Ann. of Math. 148 (1998) (adds a
-  BILINEAR-FORM hypothesis to break parity; companion does a^2+b^4); Tao, "Notes on the
-  Bombieri asymptotic sieve" (2016): H-product converges to a nonzero constant IFF sieve
-  dimension = 1. SCOPE NOTE (verified present/correct): hypothesis is sieve dimension
-  EXACTLY 1; the converse "Type-II input => pi_2(n(n+2))->inf" is NOT among it (heuristic
-  at dimension 2). ADVERSARIAL PASS: Pass H — SURVIVES as a DIMENSION-1 theorem; does NOT
-  extend to dim-2 n(n+2) ((ii)->(iii) is the "a fortiori dim 2" heuristic, GRAVEYARD).
-  Supports C5's framing without establishing dim-2 necessity.
-  source: work/1781353616-DISTILL.md (Pass C/E) + work/1781354707-DISTILL.md (Pass H).
+  Friedlander-Iwaniec, "Asymptotic sieve for primes," Ann. of Math. 148 (1998), pp.1041-1065;
+  Tao, "Notes on the Bombieri asymptotic sieve" (2016). SCOPE NOTE: dimension EXACTLY 1; the
+  converse "Type-II => pi_2(n(n+2))->inf" is NOT among it (heuristic at dim 2).
+  ADVERSARIAL PASS: Pass H + Attack O.2 (FI keywords "parity; parity-sensitive; bilinear
+  hypothesis"; "thin sequences" => dimension-1 scope; no dim-2 transfer asserted; correctly
+  quoted at snippet level). SURVIVES.
+  source: work/1781353616-DISTILL.md (C/E) + work/1781354707-DISTILL.md (H)
+  + work/1781356292-DISTILL.md (Attack O.2).
 - [C3] TYPE-II SUFFICES / IS THE KNOWN ESCAPE (dimension-1 / thin sequences). A
   sign-sensitive bilinear (Type-II) estimate breaks parity and counts a fixed prime form
-  (FI a^2+b^4; Heath-Brown x^3+2y^3); none known for n(n+2). These sit OUTSIDE class C1.
-  DEPENDS ON: established mathematics. | STATUS: ESTABLISHED-IN-LITERATURE.
+  (FI a^2+b^4; Heath-Brown x^3+2y^3); none known for n(n+2). Outside class C1.
+  DEPENDS ON: established mathematics. STATUS: ESTABLISHED-IN-LITERATURE.
   AUDIT: Friedlander-Iwaniec, "The polynomial X^2+Y^4 captures its primes," Ann. of Math.
-  148 (1998); Heath-Brown, "Primes represented by x^3+2y^3," Acta Math. 186 (2001). The
-  "none for n(n+2)" half is an absence-of-citation survey fact (human-verify). SCOPE NOTE
-  (verified): these prove only that Type-II CAN count a fixed prime form for SPECIFIC thin
-  sequences; they do NOT prove "Type-II => pi_2(n(n+2))->inf" (dimension 2, no analogue).
-  ADVERSARIAL PASS: Pass I — SURVIVES as a SUFFICIENCY EXAMPLE; the forward direction of C5
-  is therefore heuristic, not established.
-  source: work/1781353616-DISTILL.md (Pass E) + work/1781354707-DISTILL.md (Pass I).
-- [C4] POLYMATH8b GEH BARRIER (method-specific, GEH-specific). Under GEH the
-  multidimensional first-moment (Maynard-Tao) sieve gives H_1<=6, and the Selberg parity
-  obstruction prevents THIS method from H_1<6 under GEH; under plain EH not even excluded.
-  DEPENDS ON: established mathematics; C2 (parity obstruction instantiated). | STATUS:
-  ESTABLISHED-IN-LITERATURE (re-scoped). AUDIT: D.H.J. Polymath, Res. Math. Sci. 1 (2014)
-  art.12 (arXiv:1407.4897) — verified verbatim: H_1<=6 under GEH is "best possible FROM
-  SIEVE-THEORETIC METHODS thanks to the parity problem"; cannot improve "without going
-  beyond sieve theory itself"; retrospective arXiv:1409.8361. ADVERSARIAL PASS: Pass J —
-  no hidden GRH/EH leak; GEH does NOT break the barrier. Method-/GEH-specific reading
-  SURVIVES; absolute reading stays in GRAVEYARD.
-  source: work/1781353616-DISTILL.md (Pass D) + work/1781354707-DISTILL.md (Pass J).
-- [C5] *** THE CRUX (single OPEN claim — may be NAMED as the obstruction, NOT built upon).***
-  Absorbs the necessity content stripped from C1. The single missing object is an
-  UNAVERAGED TWO-POINT shift-2 cancellation for lambda(F(n))=lambda(n)lambda(n+2):
+  148 (1998), pp.945-1040; Heath-Brown, "Primes represented by x^3+2y^3," Acta Math. 186
+  (2001). "None for n(n+2)" is an absence-of-citation survey fact. SCOPE NOTE: Type-II CAN
+  count a fixed prime form for SPECIFIC thin sequences; does NOT prove "Type-II =>
+  pi_2(n(n+2))->inf".
+  ADVERSARIAL PASS: Pass I + Attack O.2 (title/volume/pages/keywords match; "thin,
+  interesting integer sequences"). SURVIVES.
+  source: work/1781353616-DISTILL.md (E) + work/1781354707-DISTILL.md (I)
+  + work/1781356292-DISTILL.md (Attack O.2).
+- [C4] POLYMATH8b GEH BARRIER (method-specific, GEH-specific). Under GEH the Maynard-Tao
+  sieve gives H_1<=6, and the Selberg parity obstruction prevents THIS method from H_1<6
+  under GEH; under plain EH not even excluded.
+  DEPENDS ON: established mathematics; C2. STATUS: ESTABLISHED-IN-LITERATURE (re-scoped).
+  AUDIT: D.H.J. Polymath, Res. Math. Sci. 1 (2014) art.12 (arXiv:1407.4897) — "best possible
+  FROM SIEVE-THEORETIC METHODS thanks to the parity problem"; retrospective arXiv:1409.8361.
+  ADVERSARIAL PASS: Pass J + Attacks N, O.1 (C4->C2 to an ESTABLISHED node, acyclic, no OPEN
+  inheritance; "from sieve-theoretic methods" qualifier re-verified at snippet level across
+  paper + Tao blog + retrospective). Method-/GEH-specific reading SURVIVES; absolute reading
+  stays GRAVEYARD.
+  source: work/1781353616-DISTILL.md (D) + work/1781354707-DISTILL.md (J)
+  + work/1781356292-DISTILL.md (Attacks N, O.1).
+- [C6] SIEGEL-ZERO / HEATH-BROWN ROUTE = CONDITIONAL DICHOTOMY, NOT A DISTINCT SIBLING OPEN
+  NODE (PROPOSED this pass; EXPLORE to LABEL). Heath-Brown's dichotomy: (inf many twin
+  primes) OR (no Siegel zeros); equivalently inf many Siegel zeros => inf many twin primes
+  (HL asymptotic, inf many scales). Hypothesis BELIEVED FALSE (GRH precludes); a Siegel zero
+  = failure of Mobius/Liouville pseudorandomness = NEGATION of C5. Hence NOT an unconditional
+  escape and introduces NO new open object (same lambda-in-APs axis, opposite polarity) =>
+  CORROBORATES "C5 unique crux".
+  DEPENDS ON: established mathematics (framing input to C5, like C2/C3; preserves the DAG).
+  STATUS (DISTILL pre-fill): ESTABLISHED-IN-LITERATURE (awaiting EXPLORE's label).
+  AUDIT: Heath-Brown, "Prime Twins and Siegel Zeros," Proc. London Math. Soc. (3) 47 (1983)
+  193-224; Tao, "Heath-Brown's theorem on prime twins and Siegel zeroes" (2015-08-26, the
+  dichotomy + "parity obstruction disappears"); Tao-Teravainen, "The Hardy-Littlewood-Chowla
+  conjecture in the presence of a Siegel zero," JLMS 2022; "Siegel zeros, twin primes,
+  Goldbach...," IMRN 2023 (arXiv:2112.11412). Human certifies in <5 min: read Tao's
+  dichotomy; confirm (a) hypothesis believed false, (b) Siegel zero = lambda-character
+  correlation = ¬C5.
+  ADVERSARIAL PASS: Attack L (mounted as strongest sibling candidate; NOT a sibling).
+  source: work/1781356292-DISTILL.md (Attack L).
+- [C5] *** THE CRUX (single OPEN claim — may be NAMED, NOT built upon). *** Single missing
+  object: UNAVERAGED TWO-POINT shift-2 cancellation for lambda(n)lambda(n+2):
     EXISTS eps>0, delta(x)->0 s.t. |sum_{n<=x, n==a (mod d)} lambda(n)lambda(n+2)| <=
     delta(x)*(x/d) FOR ALL d <= x^{1-eps} AND ALL residues a (mod d)
   (= unaveraged two-point Chowla/Liouville at shift 2, uniform in APs), o(main) strength.
-  TWO directions cross it, BOTH OPEN for n(n+2):
-    (Necessity) "No signed linear functional of Type-I data (class C1, incl. subtracted
-      sieves) certifies pi_2(x)->inf." NOT an established theorem: rests on statement (iii),
-      which is neither heuristic (i) (Mobius pseudorandomness PRINCIPLE) nor dim-1 theorem
-      (ii) (Bombieri/FI); its quantitative form IS the uniform cancellation above. C1's
-      "comprehensiveness proves the wall" reduces to THIS — same open object.
-    (Sufficiency) "This input + standard sieve => pi_2(n(n+2))->inf." Also NOT cited for
-      n(n+2) at dimension 2 (Pass I; Tao-Teravainen give almost-all/Siegel-conditional, not
-      fixed shift 2).
-  DEPENDS ON: C1 (membership — frames which functionals are in scope), C2 (dim-1 model), C3
-  (known Type-II escape). NOT a proven equivalence to TPC-via-this-class in either direction.
-  STATUS: OPEN. AUDIT: NONE EXISTS (the point). Rigorous sub-facts, all verified:
-  (i) unaveraged two-point Chowla sum lambda(n)lambda(n+2)=o(x) is OPEN — only log-averaged
-      proven (Tao arXiv:1509.05422, Forum Math. Pi 4 (2016) — "remains an open problem";
-      Pilatte arXiv:2310.19357 only log-averaged). Numerics: global ratio ~9e-5..3.5e-4 . x
-      (< 1/sqrt(x)) at N=6-8e6; per-bucket sqrt-cancellation confirmed (Pass G / V-G) but
-      worst bucket-ratio BLOWS UP 0.0005->0.57 as d->1e5 (Pass F / V-F), so the UNIFORM-in-d
-      statement is unwitnessable by finite x = the open conjecture.
-  (ii) the parity obstruction for n(n+2) is a HEURISTIC principle, not a theorem (Mobius
-      pseudorandomness, Tao 2007/2014); Bombieri's actual THEOREM is dimension-1 only (Tao
-      2016); n(n+2) is dimension 2.
-  (iii) the forward/sufficiency implication for n(n+2) is not a cited theorem (Pass I;
-      Tao-Teravainen almost-all/Siegel-conditional only). To upgrade C5: EITHER prove the
-      uniform unaveraged shift-2 cancellation (major theorem, plausibly yielding TPC) OR a
-      formal dim-2 impossibility theorem (NOT in the literature).
-  ADVERSARIAL PASS: Pass F/G/H/I/J — every attack converged here; necessity is the SAME open
-  object as C5 (hidden circularity removed); robust to GRH/EH/GEH (Pass J). STAYS OPEN with
-  BOTH directions unproven.
-  source: work/1781354707-DISTILL.md (all passes) + work/1781353616-DISTILL.md (all passes)
-  + work/1781354180-EXPLORE.md (V-B/V-C) + work/1781355529-EXPLORE.md (V-F/V-G/V-lit, Review).
+  TWO directions, BOTH OPEN for n(n+2): (Necessity) no signed Type-I functional certifies
+  pi_2->inf — quantitative form IS the uniform cancellation; (Sufficiency) this input + sieve
+  => pi_2(n(n+2))->inf — not cited at dim 2.
+  DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape) [+ C6
+  (Siegel-zero anti-cancellation, same axis) once EXPLORE adopts it] — all FRAMING; NOT a
+  proven equivalence to TPC in either direction.
+  STATUS: OPEN. AUDIT: NONE EXISTS (the point). Rigorous sub-facts: (i) unaveraged two-point
+  Chowla =o(x) is OPEN — only log-averaged proven (Tao arXiv:1509.05422, Forum Math. Pi 4
+  (2016); Pilatte arXiv:2310.19357 log-averaged); numerics N=3e6: global ratio -6.5e-5
+  (<1/sqrt(x)=5.8e-4), per-bucket sqrt-cancellation but worst bucket-ratio ->1.0 as d->2e5
+  (Attack O.3 / V-F / V-G / Pass F/G) => uniform-in-d unwitnessable = open conjecture. (ii)
+  parity obstruction for n(n+2) is HEURISTIC (Mobius pseudorandomness); Bombieri's THEOREM is
+  dimension-1 only; n(n+2) is dimension 2. (iii) forward/sufficiency for n(n+2) not cited
+  (Tao-Teravainen almost-all/Siegel-conditional only).
+  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O — five fresh attacks on the
+  UNIQUENESS/CENTRALITY of C5 all converged back onto its lambda-/prime-pair-correlation
+  axis or onto established/dead content; no distinct sibling; non-tautological (log-averaged
+  shadow is a theorem). STAYS OPEN; CONFIRMED the unique crux under adversarial pressure.
+  source: work/1781354707-DISTILL.md (all) + work/1781353616-DISTILL.md (all)
+  + work/1781354180-EXPLORE.md (V-B/V-C) + work/1781355529-EXPLORE.md (V-F/V-G/V-lit, Review)
+  + work/1781356292-DISTILL.md (Attacks K/L/M/N/O).
 
 GRAVEYARD (may NOT be built upon):
-- [L1-as-written] clause-1's literal involution a_n->(1±lambda(n))a_n/2 with lambda(n)=
-  (-1)^Omega(n) ON n is Type-I invariant. FALSIFIED (Pass A): mass ratio 0.66-0.79 (not 1);
-  EVERY true twin (n>3) has lambda(n)=-1 => all in b_minus, none in b_plus.
-- [C4-absolute] the ABSOLUTE over-reading "no Type-I/no method whatever beats gap 6."
-  FALSIFIED-as-stated: literature ties the barrier to "purely SIEVE-THEORETIC methods" and
-  says plain EH does NOT exclude better; absolute claim is OPEN (= the open parity question).
+- [L1-as-written] clause-1's involution a_n->(1±lambda(n))a_n/2 with lambda(n)=(-1)^Omega(n)
+  ON n is Type-I invariant. FALSIFIED (Pass A): mass ratio 0.66-0.79; every true twin (n>3)
+  has lambda(n)=-1 => all in b_minus.
+- [C4-absolute] absolute "no Type-I/no method whatever beats gap 6." FALSIFIED-as-stated
+  (literature ties barrier to "purely SIEVE-THEORETIC methods"; plain EH does NOT exclude
+  better; absolute claim is OPEN).
 - [dim-2-necessity-as-theorem] Type-II PROVABLY NECESSARY for n(n+2) ("a fortiori dim 2").
-  OPEN, not a theorem: FI necessity is dimension EXACTLY 1; dim-2 transfer is heuristic.
-  CONFIRMED buried (Pass H: (ii)->(iii) not rigorous). Honest content in C5.
-- [C1-parity-blocked-as-audited] The reading that C1's comprehensiveness audit CLOSES the
-  parity-blocking / necessity question. FALSIFIED-as-an-audit (Pass F/G/H + V-F/V-G): only
-  the MEMBERSHIP half is audited; the "hence the class cannot succeed UNIFORMLY in d" half
-  is the open object C5 (bucket-ratio corroboration was a small-d artifact, blows up
-  0.0005->0.57 as d->1e5). Content ABSORBED INTO C5. Not a legal foundation.
-  source: work/1781354707-DISTILL.md (Pass F/G/H) + work/1781355529-EXPLORE.md (V-F/V-G).
+  OPEN, not a theorem (FI necessity is dimension EXACTLY 1; dim-2 transfer heuristic).
+  Honest content in C5.
+- [C1-parity-blocked-as-audited] reading that C1's comprehensiveness CLOSES necessity.
+  FALSIFIED-as-an-audit (Pass F/G/H + V-F/V-G + Attack O.3): only MEMBERSHIP audited; the
+  uniform-in-d half is C5 (bucket-ratio corroboration a small-d artifact, ->1.0 as d->2e5).
+  Content ABSORBED INTO C5.
 ```
