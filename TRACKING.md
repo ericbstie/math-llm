@@ -10,23 +10,24 @@ per-step snapshots under `work/`. See `AGENTS.md` for the governing protocol.
 is open. Expected terminal state (3): the parity obstruction stated as one precise
 OPEN claim.
 
-**Latest step:** `work/1781356292-DISTILL.md` — an INDEPENDENT adversarial pass on the
-**terminal-state-(3) DECLARATION itself** (the meta-claim that C5 is the single unique OPEN
-crux). Five attacks (K–O). **RESULT: terminal state (3) CONFIRMED-UNDER-ATTACK.** No distinct
-sibling OPEN node found; dependency graph is a sound DAG (C5 sole sink); load-bearing
-citations (Polymath8b, Friedlander–Iwaniec ×2) correctly quoted; C5 non-tautological. ONE
-refinement surfaced: add **C6** (Siegel-zero / Heath-Brown route) so "no missed angle" is
-*demonstrated*, not asserted — it is NOT a sibling (wrong-polarity-of-C5 + believed-false
-hypothesis). **C6 is pre-filled ESTABLISHED-IN-LITERATURE and awaits EXPLORE's label.**
+**Latest step:** `work/1781356804-EXPLORE.md` — labelled node **C6** (Siegel-zero /
+Heath-Brown route → ESTABLISHED-IN-LITERATURE, independently verified) and took action
+**Review** (re-affirmation). **STATUS: TERMINAL STATE (3) — DECLARED, then CONFIRMED under an
+INDEPENDENT adversarial pass (attacks K–O in `work/1781356292-DISTILL.md`), and RE-AFFIRMED
+this step with C6 folded in.** The graph is a sound DAG with **C5 the single, unique OPEN
+sink**; no distinct sibling OPEN node survived the five hardest candidate routes; load-bearing
+citations verified at primary-source level; C5 is non-tautological (a strictly weaker
+log-averaged form is a theorem, Tao 2015). The reduction "machinery + C5 ⟹ TPC" remains itself
+heuristic at dimension 2, so the honest claim is the difficulty **concentrates on** C5 — it is
+*located*, not proven equivalent. The FINAL DELIVERABLE (certifiable Claim Graph C1–C6 + honest
+closing statement) lives in `work/1781356804-EXPLORE.md`, Parts 3–4. **This is the final
+terminal state for the project.**
 
-**The crux in one sentence (unchanged, now stress-tested).** The entire difficulty of TPC,
-reached through every unconditional route, concentrates on a single open statement:
-\(\sum_{n\le x,\ n\equiv a\,(d)} \lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all**
-\(d\le x^{1-\varepsilon}\) and residues \(a\) — the unaveraged two-point Chowla/Liouville
-correlation at shift 2 in arithmetic progressions, of which only the logarithmically
-averaged form is a theorem (Tao 2015). Adversarially re-confirmed: pair-correlation (≥ HL,
-heuristic equivalence), Siegel-zero/Heath-Brown (¬C5 + believed-false), and binary-Goldbach
-minor arcs (the *same* object as C5) all converge back to this one axis.
+**The crux in one sentence.** The entire difficulty of TPC, reached through every
+unconditional route surveyed, concentrates on a single open statement: \(\sum_{n\le x,\ n\equiv
+a\,(d)} \lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all** \(d\le x^{1-\varepsilon}\) and
+residues \(a\) — the unaveraged two-point Chowla/Liouville correlation at shift 2 in arithmetic
+progressions, of which only the logarithmically averaged form is a theorem (Tao 2015).
 
 ```
 APPROACHES ATTEMPTED:
@@ -74,25 +75,23 @@ APPROACHES ATTEMPTED:
       ESCAPE over F_q[t], no Z-theorem at TPC strength; its missing Z-input is a Type-II
       shift-2 correlation = same object as C5 (not a distinct sibling). (Thread T4 refines
       this geometrically but surfaces no new open object.)
-  (d) [NEW, Attack K] pair-correlation / spectral (Montgomery; Bogomolny-Keating;
-      Keating-Smith) -> the HL twin-prime conjecture is EQUIVALENT (heuristic Fourier
-      inversion) to the two-point correlation of zeta zeros; that zero-side formula is
-      itself CONJECTURAL (Montgomery's theorem is RH-conditional, restricted support).
-      NOT an escape: input is >= full HL (STRONGER than C5) and only heuristic. Governed
-      by / implies C5; no distinct sibling.
-  (e) [NEW, Attack L] Siegel-zero / Heath-Brown 1983 dichotomy -> (inf many Siegel zeros)
-      => (inf many twin primes). Hypothesis BELIEVED FALSE (GRH precludes it); a Siegel
-      zero IS a failure of Mobius/Liouville pseudorandomness = the NEGATION of C5. NOT an
-      unconditional escape, NOT a distinct sibling (same lambda-in-APs axis, opposite
-      polarity). => proposed node C6 (ESTABLISHED, awaiting EXPLORE label).
+  (d) pair-correlation / spectral (Montgomery; Bogomolny-Keating; Keating-Smith) -> the HL
+      twin-prime conjecture is EQUIVALENT (heuristic Fourier inversion) to the two-point
+      correlation of zeta zeros; that zero-side formula is itself CONJECTURAL (Montgomery's
+      theorem is RH-conditional, restricted support). NOT an escape: input is >= full HL
+      (STRONGER than C5) and only heuristic. Governed by / implies C5; no distinct sibling.
+      (Attack K.)
+  (e) Siegel-zero / Heath-Brown 1983 dichotomy -> (inf many Siegel zeros) => (inf many twin
+      primes). Hypothesis BELIEVED FALSE (GRH precludes it); a Siegel zero IS a failure of
+      Mobius/Liouville pseudorandomness = the NEGATION of C5. NOT an unconditional escape,
+      NOT a distinct sibling (same lambda-in-APs axis, opposite polarity). => node C6,
+      LABELLED ESTABLISHED-IN-LITERATURE this step (Attack L). Independently verified.
   Friedlander-Iwaniec (a^2+b^4) & Heath-Brown (x^3+2y^3) are the Type-II ESCAPES counting a
   fixed prime form (DIMENSION 1 / thin sequences), no n(n+2) analogue = Claim C3.
 
 CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [C6] (proposed this DISTILL pass) Siegel-zero / Heath-Brown route is a CONDITIONAL
-  dichotomy, NOT a distinct sibling OPEN node. Pre-filled STATUS ESTABLISHED-IN-LITERATURE
-  with citations (Heath-Brown PLMS 1983; Tao 2015 exposition; Tao-Teravainen JLMS 2022 /
-  IMRN 2023). AWAITS EXPLORE's label. (Adversarial pass = Attack L, in work/1781356292.)
+- (none open) C6 has been distilled (Attack L) and LABELLED ESTABLISHED-IN-LITERATURE this
+  step; it is now in the CLAIM GRAPH. No pre-distill candidate remains.
 
 OPEN THREADS:
 - T2 [= the crux C5, OPEN — TERMINAL]: the unaveraged two-point shift-2 cancellation
@@ -103,36 +102,26 @@ OPEN THREADS:
 - T4 [optional refinement, not required for terminal state]: characterize the obstruction
   by its ABSENCE in F_q[t] (Sawin-Shusterman). Re-describes C5 geometrically; no new open
   object.
-- T6 [NEW, optional — for EXPLORE this next step]: fold in node C6 (Siegel-zero/Heath-Brown
-  not-a-sibling) so the "no missed angle" terminal claim is DEMONSTRATED against the most
-  famous conditional twin-prime theorem, not merely asserted. Does NOT reopen terminal state.
 - [T3 CLOSED] C1 Chen-subtraction MEMBERSHIP resolved (closed under subtraction; inside C1).
 - [T5 CLOSED] necessity = the SAME OPEN OBJECT as C5; hidden circular dependency removed.
+- [T6 CLOSED] C6 (Siegel-zero/Heath-Brown not-a-sibling) folded in and LABELLED this step;
+  the "no missed angle" claim is now DEMONSTRATED, not asserted. Terminal state not reopened.
 
 CURRENT POSITION:
-- TERMINAL STATE (3): DECLARED (prev step) and now **CONFIRMED-UNDER-ADVERSARIAL-PRESSURE**
-  by an INDEPENDENT DISTILL pass (work/1781356292-DISTILL.md, attacks K-O):
-  (K) pair-correlation/spectral = heuristic equivalence to full HL, input >= C5, non-escape;
-  (L) Siegel-zero/Heath-Brown = ¬C5 + believed-false hypothesis, NOT a distinct sibling;
-  (M) Goldbach minor arcs = SAME object as C5 (strengthens uniqueness), additive-comb dead
-      end, GL(2) Type-I-side;
-  (N) dependency graph = sound DAG, C5 sole sink, C1 audit smuggles no uniform-in-d claim,
-      C4->C2 to an ESTABLISHED node (no OPEN inheritance), no circularity;
-  (O) Polymath8b + Friedlander-Iwaniec x2 citations correctly quoted (snippet-level); C5
-      non-tautological (weaker log-averaged shadow is a theorem); "concentrates on C5"
-      caveat correct and does NOT demote C5.
-  NO distinct sibling OPEN node exists; C5 stays the SINGLE OPEN crux. ONE refinement: add
-  C6 (proposed) to DEMONSTRATE "no missed angle" vs the Siegel-zero route. The reduction
-  "machinery + C5 => TPC" remains NOT rigorous at dim 2 — honest claim is the difficulty
-  CONCENTRATES ON C5 (re-affirmed correct in Attack O.3).
-- NEXT (EXPLORE): first act = LABEL C6 (expected ESTABLISHED-IN-LITERATURE with the
-  "not-a-sibling" scope note); then re-affirm terminal state (3) under attack, or take the
-  next action. C5 stays OPEN, named, not built upon.
-- Legal foundations: C1-membership/C2/C3/C4 (NEEDS-REVIEW/ESTABLISHED), and C6 once labelled.
+- TERMINAL STATE (3): DECLARED (work/1781355529-EXPLORE.md), CONFIRMED-UNDER-ADVERSARIAL-
+  PRESSURE by an INDEPENDENT DISTILL pass (work/1781356292-DISTILL.md, attacks K-O), and
+  RE-AFFIRMED this step with C6 folded in. C5 is the SINGLE, UNIQUE OPEN crux; no distinct
+  sibling OPEN node across the five hardest candidate routes; the graph is a sound DAG with
+  C5 the unique sink; load-bearing citations correctly quoted; C5 non-tautological. The
+  reduction "machinery + C5 => TPC" remains NOT rigorous at dim 2 — honest claim is the
+  difficulty CONCENTRATES ON C5. This is the FINAL terminal state for the project.
+- Legal foundations: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED-IN-LITERATURE).
   C5 may be NAMED as the obstruction, NOT built upon. GRAVEYARD nodes may NOT be built upon.
+- The FINAL DELIVERABLE (complete certifiable Claim Graph C1-C6 + honest closing statement)
+  is recorded in work/1781356804-EXPLORE.md, Part 3 and Part 4.
 
-CLAIM GRAPH (post-attack; nodes that may be built upon = C1-membership/C2/C3/C4 [+C6 once
-labelled]; C5 is the named OPEN crux and may NOT be built upon):
+CLAIM GRAPH (nodes that may be built upon = C1-membership/C2/C3/C4/C6; C5 is the named OPEN
+crux and may NOT be built upon):
 - [C1] CLASS DEFINITION + MEMBERSHIP (parity-blocking content REMOVED -> see C5 / GRAVEYARD).
   A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound pi_2(x) >= L(a), L a (possibly
   SIGNED) LINEAR FUNCTIONAL of the Type-I data {T_d = sum_{n<=x, d|F(n)} a_n : d<=D=x^{1-eps}},
@@ -183,31 +172,34 @@ labelled]; C5 is the named OPEN crux and may NOT be built upon):
   under GEH; under plain EH not even excluded.
   DEPENDS ON: established mathematics; C2. STATUS: ESTABLISHED-IN-LITERATURE (re-scoped).
   AUDIT: D.H.J. Polymath, Res. Math. Sci. 1 (2014) art.12 (arXiv:1407.4897) — "best possible
-  FROM SIEVE-THEORETIC METHODS thanks to the parity problem"; retrospective arXiv:1409.8361.
-  ADVERSARIAL PASS: Pass J + Attacks N, O.1 (C4->C2 to an ESTABLISHED node, acyclic, no OPEN
-  inheritance; "from sieve-theoretic methods" qualifier re-verified at snippet level across
-  paper + Tao blog + retrospective). Method-/GEH-specific reading SURVIVES; absolute reading
-  stays GRAVEYARD.
+  FROM SIEVE-THEORETIC METHODS thanks to the parity problem obstruction"; retrospective
+  arXiv:1409.8361. ADVERSARIAL PASS: Pass J + Attacks N, O.1 (C4->C2 to an ESTABLISHED node,
+  acyclic, no OPEN inheritance; "from sieve-theoretic methods" qualifier re-verified at
+  snippet level across paper + Tao blog + retrospective). Method-/GEH-specific reading
+  SURVIVES; absolute reading stays GRAVEYARD.
   source: work/1781353616-DISTILL.md (D) + work/1781354707-DISTILL.md (J)
   + work/1781356292-DISTILL.md (Attacks N, O.1).
 - [C6] SIEGEL-ZERO / HEATH-BROWN ROUTE = CONDITIONAL DICHOTOMY, NOT A DISTINCT SIBLING OPEN
-  NODE (PROPOSED this pass; EXPLORE to LABEL). Heath-Brown's dichotomy: (inf many twin
-  primes) OR (no Siegel zeros); equivalently inf many Siegel zeros => inf many twin primes
-  (HL asymptotic, inf many scales). Hypothesis BELIEVED FALSE (GRH precludes); a Siegel zero
-  = failure of Mobius/Liouville pseudorandomness = NEGATION of C5. Hence NOT an unconditional
-  escape and introduces NO new open object (same lambda-in-APs axis, opposite polarity) =>
-  CORROBORATES "C5 unique crux".
+  NODE. Heath-Brown's dichotomy: (inf many twin primes) OR (no Siegel zeros); equivalently
+  inf many Siegel zeros => inf many twin primes (HL asymptotic, inf many scales). Hypothesis
+  BELIEVED FALSE (GRH precludes); a Siegel zero = failure of Mobius/Liouville pseudorandomness
+  = NEGATION of C5. Hence NOT an unconditional escape and introduces NO new open object (same
+  lambda-in-APs axis, opposite polarity) => CORROBORATES "C5 unique crux".
   DEPENDS ON: established mathematics (framing input to C5, like C2/C3; preserves the DAG).
-  STATUS (DISTILL pre-fill): ESTABLISHED-IN-LITERATURE (awaiting EXPLORE's label).
+  STATUS: ESTABLISHED-IN-LITERATURE (LABELLED this step, independently verified). SCOPE NOTE:
+  conditional theorem on a hypothesis believed FALSE; does NOT supply an unconditional route
+  and is NOT a sibling of C5 — it CONFIRMS the missed-angle audit.
   AUDIT: Heath-Brown, "Prime Twins and Siegel Zeros," Proc. London Math. Soc. (3) 47 (1983)
   193-224; Tao, "Heath-Brown's theorem on prime twins and Siegel zeroes" (2015-08-26, the
-  dichotomy + "parity obstruction disappears"); Tao-Teravainen, "The Hardy-Littlewood-Chowla
-  conjecture in the presence of a Siegel zero," JLMS 2022; "Siegel zeros, twin primes,
-  Goldbach...," IMRN 2023 (arXiv:2112.11412). Human certifies in <5 min: read Tao's
-  dichotomy; confirm (a) hypothesis believed false, (b) Siegel zero = lambda-character
-  correlation = ¬C5.
+  dichotomy + "parity obstruction disappears [as] the Mobius function is strongly correlated
+  with some Dirichlet characters"); Tao-Teravainen, "Prime Tuples and Siegel Zeros"
+  (arXiv:2111.14054); "Siegel zeros, twin primes, Goldbach...," IMRN 2023 (arXiv:2112.11412).
+  Human certifies in <5 min: read Tao's dichotomy; confirm (a) hypothesis believed false,
+  (b) Siegel zero = lambda-character correlation = ¬C5.
   ADVERSARIAL PASS: Attack L (mounted as strongest sibling candidate; NOT a sibling).
-  source: work/1781356292-DISTILL.md (Attack L).
+  Independently re-verified this step (two fresh searches corroborate the dichotomy, the
+  believed-false status, and the mu-correlation mechanism at primary-source/quoted level).
+  source: work/1781356292-DISTILL.md (Attack L) + work/1781356804-EXPLORE.md (labelling).
 - [C5] *** THE CRUX (single OPEN claim — may be NAMED, NOT built upon). *** Single missing
   object: UNAVERAGED TWO-POINT shift-2 cancellation for lambda(n)lambda(n+2):
     EXISTS eps>0, delta(x)->0 s.t. |sum_{n<=x, n==a (mod d)} lambda(n)lambda(n+2)| <=
@@ -216,9 +208,9 @@ labelled]; C5 is the named OPEN crux and may NOT be built upon):
   TWO directions, BOTH OPEN for n(n+2): (Necessity) no signed Type-I functional certifies
   pi_2->inf — quantitative form IS the uniform cancellation; (Sufficiency) this input + sieve
   => pi_2(n(n+2))->inf — not cited at dim 2.
-  DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape) [+ C6
-  (Siegel-zero anti-cancellation, same axis) once EXPLORE adopts it] — all FRAMING; NOT a
-  proven equivalence to TPC in either direction.
+  DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6
+  (Siegel-zero anti-cancellation, same axis) — all FRAMING; NOT a proven equivalence to TPC
+  in either direction.
   STATUS: OPEN. AUDIT: NONE EXISTS (the point). Rigorous sub-facts: (i) unaveraged two-point
   Chowla =o(x) is OPEN — only log-averaged proven (Tao arXiv:1509.05422, Forum Math. Pi 4
   (2016); Pilatte arXiv:2310.19357 log-averaged); numerics N=3e6: global ratio -6.5e-5
@@ -230,10 +222,11 @@ labelled]; C5 is the named OPEN crux and may NOT be built upon):
   ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O — five fresh attacks on the
   UNIQUENESS/CENTRALITY of C5 all converged back onto its lambda-/prime-pair-correlation
   axis or onto established/dead content; no distinct sibling; non-tautological (log-averaged
-  shadow is a theorem). STAYS OPEN; CONFIRMED the unique crux under adversarial pressure.
+  shadow is a theorem). STAYS OPEN; CONFIRMED the unique crux under adversarial pressure;
+  RE-AFFIRMED this step.
   source: work/1781354707-DISTILL.md (all) + work/1781353616-DISTILL.md (all)
   + work/1781354180-EXPLORE.md (V-B/V-C) + work/1781355529-EXPLORE.md (V-F/V-G/V-lit, Review)
-  + work/1781356292-DISTILL.md (Attacks K/L/M/N/O).
+  + work/1781356292-DISTILL.md (Attacks K/L/M/N/O) + work/1781356804-EXPLORE.md (Review).
 
 GRAVEYARD (may NOT be built upon):
 - [L1-as-written] clause-1's involution a_n->(1±lambda(n))a_n/2 with lambda(n)=(-1)^Omega(n)
