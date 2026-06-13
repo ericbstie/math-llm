@@ -11,25 +11,32 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate.**
 
-**Latest step:** `work/1781390160-EXPLORE.md` — LABELLED the L-COH DISTILL pass and took action
-**Review**. Labels: **L-COH-as-a-proof** and **PURITY-ONLY** → FALSIFIED (GRAVEYARD; the latter via the
-concrete 𝔽_q[t] "purity-is-necessary-not-sufficient" object + a re-run numerical witness, worst
-bucket-ratio → ~0.69 at d=30030); **C7** (a Weil-cohomology/Lefschetz formalism over Spec ℤ —
-Deninger / Connes–Consani; strictly broader than TPC), **C-COH-MON** (= C5 in cohomological clothing),
-**C∞** (the archimedean place; distinct), and the relocation **L-COH′** → all OPEN. **Cluster-1 verdict:
-the cohomological transport RELOCATES C5, it does NOT break it** — every relocated node is no easier than
-(or strictly broader than) C5 — so it is an escalation linking the TPC wall to the RH-geometry programs,
-not a proof. **Recommended next escalation: Cluster 5** (the quantitative-uniformity bridge, aimed
-directly at C5's uniform-in-d content, which has attackable ℤ-objects), with **Cluster 3**
-(additive×multiplicative / parity-structural) as the alternate. **No terminal state declared.**
+**Latest step:** `work/1781394759-EXPLORE.md` — action **Reframe**, opening **Cluster 5 (A13)**, the
+quantitative-uniformity bridge. Built a [0,∞]-(Lawvere)-enriched **fibration** p: S_x → D_x^op of the
+family {S_{a,d}} over the **moduli poset** (divisibility), with exact additivity (ADD: S_{a,d}=Σ_{a'≡a(d)}
+S_{a',d'}) and **descent** (Σ_a S_{a,d}=G(x), d-independent — verified exactly = −940 at N=2e6). Expressed
+C5's uniform regime as the **L∞-pushforward** U_d (limit / right-Kan-extension flavour) and the proven
+averaged regime (Tao 2015 log-averaged Chowla(2), arXiv:1509.05422; Matomäki–Radziwiłł / MRT) as the
+**L1/L2-pushforward** A^(2)_d (colimit / left-Kan flavour); the averaged-vs-uniform **gap = the
+lax-monoidal / Beck–Chevalley defect** R_d = ‖S_{·,d}‖_∞ /(‖S_{·,d}‖_2/√d) ∈ [1,∞), giving the **exact
+factorization U_d = A^(2)_d · R_d**. Numerics (N=2e6) validate it: A^(2)_d ≈ √(d/x) (square-root
+cancellation), R_d ≈ √(2 ln d) (benign extremal factor), the **worst bucket itself square-root-cancels**
+(so U_d→1 is the √log d factor, NOT a genuine main term), and at fixed d U_d→0 (difficulty = the edge
+d≈x^{1−ε}). Candidate lemma **L-QUB** (a characterization) introduced and **ready for DISTILL**.
+**HONESTY VERDICT (recorded, weighted first): MOSTLY-RENAME** — the categorical iff is the identity in
+categorical clothing and PROVIDES NO new bound; the analytic content must enter at the per-fiber
+cancellation, which is C5. The one non-rename sliver: the factorization separates a provable-in-spirit
+averaged factor from a purely combinatorial extremal defect, exposing the new attackable sub-question
+**T12** (is sup_d R_d controllable given averaged control, or is uniform A^(2)_d→0 itself just C5?).
+Legitimate **escalation to record, NOT progress dressed up. No terminal state.**
 
 **The crux in one sentence.** The entire difficulty of TPC, reached through every
 unconditional route surveyed, concentrates on a single open statement — **C5**: \(\sum_{n\le x,\
 n\equiv a\,(d)} \lambda(n)\lambda(n+2)=o(x/d)\) **uniformly over all** \(d\le x^{1-\varepsilon}\)
-and residues \(a\) — the unaveraged two-point Chowla/Liouville correlation at shift 2 in
-arithmetic progressions (only the log-averaged form is a theorem, Tao 2015). Cluster 1 dispersed
-C5's content into {C7 (broader), C-COH-MON (= C5 in sheaf clothing), C∞ (archimedean)} — none easier
-than C5; next we attack C5's uniform-in-d content directly (Cluster 5).
+and residues \(a\) — equivalently **U(x):=max_{d≤x^{1−ε}} max_a |S_{a,d}(x)|/(x/d) → 0**. Cluster 1
+RELOCATED C5 into {C7 (broader), C-COH-MON (= C5 in disguise), C∞ (archimedean)}, none easier; Cluster 5
+(this step) FACTORS U(x) = A^(2)_d·R_d (averaged factor × Beck–Chevalley defect) over ℤ — a faithful
+coordinate system, but the difficulty stays at the per-fiber cancellation (decider sub-thread T12).
 
 ```
 APPROACHES ATTEMPTED:
@@ -52,7 +59,7 @@ APPROACHES ATTEMPTED:
 - [A10] Chowla/Liouville-correlation (Matomaki-Radziwill, Tao log-Chowla, Tao-Teravainen) |
   PROMISING / ACTIVE | the only family not in-principle parity-blocked; unconditional FIXED-
   shift-2 theorem absent (only log-averaged Tao 2015, almost-all-shift, or Siegel-conditional).
-  HOME of C5. NEXT ESCALATION (Cluster 5) lives here: attack the uniform-in-d quantity directly.
+  HOME of C5. Cluster 5 (A13) executes HERE: attacks the uniform-in-d quantity U(x) directly.
 - [A11] Other escapes/non-escapes:
   (a) automorphic/spectral shifted-convolution -> strengthen Type-I inputs; inside C1; no
       sign-sensitive bilinear for lambda(n)lambda(n+2). Governed by C5.
@@ -62,10 +69,7 @@ APPROACHES ATTEMPTED:
   (c) function field Sawin-Shusterman -> TPC PROVED over F_q[t] via Frobenius/etale-cohomology
       + Deligne purity + big monodromy (function-field Fouvry-Michel), level beyond 1/2. Genuine
       escape over F_q[t]; no Z-theorem. MECHANISM dissected in A12; DISTILL confirmed purity is
-      NECESSARY-NOT-SUFFICIENT even there (big monodromy is a SEPARATE input; re-verified this
-      pass against the S-S abstract: Burgess-improvement + "Mobius mimicked by Dirichlet
-      characters" + Fouvry-Michel variant). Missing Z-input = the cohomological package, now
-      split & LABELLED into C7/C-COH-MON/C-inf.
+      NECESSARY-NOT-SUFFICIENT even there. Missing Z-input split & LABELLED into C7/C-COH-MON/C-inf.
   (d) pair-correlation / spectral (Montgomery; Bogomolny-Keating) -> HL twin-prime ~ two-point
       correlation of zeta zeros; zero-side formula itself conjectural; input >= full HL > C5.
       Governed by / implies C5. (Attack K.)
@@ -76,72 +80,91 @@ APPROACHES ATTEMPTED:
   thin sequences; no n(n+2) analogue = Claim C3.
 - [A12] CATEGORICAL / COHOMOLOGICAL TRANSPORT (Cluster 1 — the cancellation engine) | ACTIVE
   (relocated, not broken; downstream nodes parked as OPEN escalation links) | TRANSPORT the
-  F_q[t] twin-prime proof to Z. Mechanism (work/1781388988): (a) Frobenius + Grothendieck-
-  Lefschetz = trace; (b) Deligne purity / Weil II = sqrt-cancellation; (c) big geometric
-  monodromy (Katz / function-field Fouvry-Michel) forces main-term vanishing; (d) six functors
-  + Verdier duality = functional equation. 0 of 4 is a Z-theorem. DISTILL (work/1781389622) +
-  LABELLING (this step): L-COH-as-proof = FALSIFIED (GRAVEYARD); PURITY-ONLY = FALSIFIED
-  (GRAVEYARD); surviving content = relocation L-COH' (OPEN) into C7 (NEW, broader than TPC) +
-  C-COH-MON (= C5 in disguise) + C-inf (new archimedean input). VERDICT: Cluster 1 RELOCATES C5,
-  does NOT break the wall; it connects TPC to the Deninger/Connes-Consani RH-geometry programs
-  and surfaces the archimedean place as a distinct obstruction. Next escalation moves to a
-  DIFFERENT cluster (Cluster 5; see T10).
+  F_q[t] twin-prime proof to Z. 0 of 4 clauses is a Z-theorem. DISTILL + LABELLING:
+  L-COH-as-proof = FALSIFIED (GRAVEYARD); PURITY-ONLY = FALSIFIED (GRAVEYARD); surviving content =
+  relocation L-COH' (OPEN) into C7 (NEW, broader than TPC) + C-COH-MON (= C5 in disguise) + C-inf
+  (new archimedean input). VERDICT: Cluster 1 RELOCATES C5, does NOT break the wall.
+- [A13] QUANTITATIVE-UNIFORMITY BRIDGE (Cluster 5) | ACTIVE (NEW this step) | Reframe over Z:
+  fibration p: S_x -> D_x^op of {S_{a,d}} over the moduli poset (divisibility), refinement maps
+  rho_{d'->d} with EXACT additivity (ADD) and DESCENT (sum_a S_{a,d}=G(x), d-independent, verified).
+  Two regimes as Kan extensions along p: L-infinity pushforward = U_d (C5/uniform = limit/right-Kan
+  flavour); L1/L2 pushforward = averaged A^(2)_d (Tao log-Chowla / MR regime = colimit/left-Kan
+  flavour). Gap = lax-monoidal / Beck-Chevalley defect R_d = ||S||_inf / (||S||_2/sqrt d), giving the
+  EXACT factorization U_d = A^(2)_d * R_d. [0,inf]-(Lawvere)-enrichment carries delta(x). NUMERICS
+  (N=2e6) validate: A^(2)_d ~ sqrt(d/x) (sqrt-cancellation), R_d ~ sqrt(2 ln d) (extremal), worst
+  bucket sqrt-cancels (U_d->1 is the benign log factor, not a main term), fixed-d U_d->0 (difficulty
+  = the edge d~x^{1-eps}). SELF-ASSESSMENT: MOSTLY-RENAME (the iff is the identity dressed
+  categorically; the machinery organizes but provides NO bound) + ONE new attackable sub-question
+  (T12: is sup_d R_d controllable given averaged control, or = C5?). Candidate lemma L-QUB to DISTILL.
 
 CANDIDATE LEMMAS (pre-distill — not yet certified):
-- (none active) — L-COH was DISTILLED (work/1781389622) and LABELLED this step; resolved into the
-  GRAVEYARD readings + the OPEN nodes L-COH'/C7/C-COH-MON/C-inf. No new candidate introduced this
-  step (a Review): a "MR-as-partial-monodromy" sub-claim was CONSIDERED and DECLINED for having no
-  checkable audit (no Z-object carries a monodromy group; that is C7, which is OPEN) => it would be
-  OPEN, i.e. C-COH-MON, not progress. See Part 1.1.
+- [L-QUB] (quantitative-uniformity bridge) C5 (U(x)->0) <=> sup_{d<=x^{1-eps}} A^(2)_d(x) R_d(x) -> 0,
+  where A^(2)_d = (mean_a (S_{a,d}/(x/d))^2)^{1/2} (averaged factor) and R_d = ||S_{.,d}||_inf /
+  (||S_{.,d}||_2/sqrt d) in [1,inf) (the lax-monoidal / Beck-Chevalley defect of the averaging
+  pushforward along the moduli fibration p). Content-locating clause: C5 holds IF {sup_d A^(2)_d -> 0
+  AND sup_d R_d <= x^{o(1)}, product o(1)}, and ALL analytic difficulty beyond averaged (L2) control is
+  carried by the single extremal functional sup_d R_d.
+  ALREADY CHECKED: U_d = A^(2)_d R_d is an exact identity (numerically A^(2)_d~sqrt(d/x), R_d~sqrt(2 ln d),
+  N=2e6); worst bucket sqrt-cancels; fixed-d U_d->0; DESCENT exact & d-independent; fixed-eps envelope
+  sqrt(2 ln d)sqrt(d/x)->0 but non-uniform in eps.
+  WANT STRESS-TESTED: (a) does the framing PROVE/recover/improve ANY uniformity, or literally no estimate
+  (=> rename)? (b) is the equivalence real, or does a side smuggle (A^(2) is averaged-over-a, IMPLIED by
+  per-bucket cancellation, not free) / prove-less (is "R_d<=x^{o(1)} given A^(2)" equivalent to C5 =>
+  circular)? (c) is A^(2)-on-average just Tao2015/MR restated? (d) data: confirm R_d tracks U_d/A^(2)_d;
+  sup_d R_d ~ sqrt(log x) = x^{o(1)} so the hypothesis is satisfiable and the burden re-routes onto
+  uniform A^(2)_d->0 -- IS uniform A^(2)_d->0 just C5-in-L2-clothing? THE decider for provides-vs-renames.
+  SELF-ASSESSMENT (honest, recorded): MOSTLY-RENAME. The iff is a tautology in categorical dress
+  (= the identity + sup of a product); the categorical machinery provides NO new bound; analytic content
+  must enter at the per-fiber cancellation = C5. Legitimate ESCALATION to record (a faithful coordinate
+  system + a clean factorization validated over Z + one new attackable sub-question T12), NOT progress.
 
 OPEN THREADS:
 - T2 [= the crux C5]: the unaveraged two-point shift-2 cancellation sum_{n<=x, n==a(d)}
   lambda(n)lambda(n+2)=o(x/d) UNIFORM over d<=x^{1-eps}. *** CHECKPOINT UNDER ACTIVE ATTACK (not
-  terminal) ***. Cluster-1 escalation RESOLVED: relocates into C7/C-COH-MON/C-inf, none easier.
-  Difficulty now localized (P2 witness, re-run this pass) to ONE measurable quantity:
-  max_a |S_{a,d}|/(x/d) uniform over d<=x^{1-eps}. Next escalation = Cluster 5 (T10).
-- T10 [NEW, ACTIVE — RECOMMENDED NEXT ESCALATION]: Cluster 5, the quantitative-uniformity bridge.
-  Attack the uniform-in-d quantity DIRECTLY with the machinery that moves unaveraged/uniform two-
-  point sums (Matomaki-Radziwill; Tao 2015 entropy-decrement / log-averaged Chowla(2); Pilatte
-  arXiv:2310.19357; Tao-Teravainen). Sharp question: is there a route from LOG-AVERAGED (proven)
-  to a genuinely UNAVERAGED, uniform-in-d bound, or is the entropy-decrement loss PROVABLY the
-  obstruction? Has attackable Z-objects (unlike Cluster 1). Subsumes the honest form of any
-  "partial monodromy" intuition (= averaged equidistribution).
-- T11 [NEW, ACTIVE — ALTERNATE ESCALATION]: Cluster 3, additive x multiplicative / parity-
-  structural. Attempt to BREAK parity structurally (Gowers norms / nilsequences / inverse
-  theorems controlling lambda(n)lambda(n+2); Tao-Teravainen higher-order Fourier). Different axis
-  from Cluster 1 (geometry) and Cluster 5 (analytic uniformity). Higher risk; deepest wall.
-- [T7 RESOLVED-BY-LABELLING] cohomological relocation target -> adjudicated into C7 (broader),
-  C-COH-MON (= C5 in disguise), C-inf (archimedean). The live downstream link is C7 (parked OPEN).
-- [T8 RESOLVED-BY-LABELLING] the archimedean place infinity -> pinned & LABELLED as node C-inf
-  (OPEN; NOT shown fatal, NOT shown handled; Connes treats it separately, arXiv:2006.13771).
-- [T9 RESOLVED-BY-LABELLING] new sibling vs C5-in-disguise -> ANSWER = BOTH + a third: C7 is
-  genuinely NEW & strictly broader; C-COH-MON is C5 re-expressed; C-inf is a distinct new input.
+  terminal) ***. Cluster-1 escalation RESOLVED (relocates into C7/C-COH-MON/C-inf, none easier).
+  Difficulty localized to ONE measurable quantity U(x)=max_{d<=x^{1-eps}} max_a |S_{a,d}|/(x/d).
+  Cluster 5 (A13/T10) now EXECUTING against U(x).
+- T10 [ACTIVE — EXECUTING]: Cluster 5, the quantitative-uniformity bridge. Reframe done this step:
+  fibration over the moduli poset; U_d = A^(2)_d * R_d (averaged factor x Beck-Chevalley/lax-monoidal
+  defect); candidate L-QUB to DISTILL. Sharp residual = T12.
+- T12 [NEW, ACTIVE — the decider]: is the extremal defect functional sup_{d<=x^{1-eps}} R_d(x)
+  controllable given averaged (L2) control WITHOUT re-proving per-bucket cancellation (=> a real reduction,
+  PROVIDES), or is "sup_d A^(2)_d->0 uniformly" itself equivalent to C5 (=> RENAME)? Data: sup_d R_d ~
+  sqrt(log x)=x^{o(1)} (satisfiable), so the burden re-routes onto uniform A^(2)_d->0; the open question is
+  whether THAT is strictly weaker than C5. Suspected: rename (entropy-decrement loses exactly L-infinity-in-d).
+- T11 [ACTIVE — ALTERNATE ESCALATION]: Cluster 3, additive x multiplicative / parity-structural
+  (Gowers norms / nilsequences / inverse theorems controlling lambda(n)lambda(n+2); Tao-Teravainen
+  higher-order Fourier). Different axis from Cluster 1 (geometry) and Cluster 5 (analytic uniformity).
+- [T7 RESOLVED-BY-LABELLING] cohomological relocation target -> C7 (broader), C-COH-MON (= C5 in
+  disguise), C-inf (archimedean). Live downstream link is C7 (parked OPEN).
+- [T8 RESOLVED-BY-LABELLING] the archimedean place infinity -> node C-inf (OPEN).
+- [T9 RESOLVED-BY-LABELLING] new sibling vs C5-in-disguise -> BOTH + a third (C7/C-COH-MON/C-inf).
 - [T3 CLOSED] C1 Chen-subtraction MEMBERSHIP resolved (inside C1).
-- [T4 CLOSED] obstruction-by-absence-in-F_q[t]: subsumed into A12, mechanism dissected.
+- [T4 CLOSED] obstruction-by-absence-in-F_q[t]: subsumed into A12.
 - [T5 CLOSED] necessity = the SAME OPEN OBJECT as C5; circular dependency removed.
-- [T6 CLOSED] C6 folded in & LABELLED; missed-angle audit demonstrated.
+- [T6 CLOSED] C6 folded in & LABELLED.
 
 CURRENT POSITION:
-- NOT at a terminal state. The L-COH DISTILL pass is now LABELLED (independently re-verified):
-  L-COH-as-proof-of-C5 = FALSIFIED (GRAVEYARD); PURITY-ONLY = FALSIFIED (GRAVEYARD); C7/C-COH-MON/
-  C-inf/L-COH' = OPEN (OPEN-CHECKPOINTS, NOT legal foundations); A12 = ACTIVE.
-- CLUSTER-1 VERDICT (this Review): cohomological transport RELOCATES C5 to {C7 (broader than TPC),
-  C-COH-MON (= C5 in cohomological clothing), C-inf (a NEW distinct archimedean input)}, none
-  easier than C5; it does NOT break the wall. Honest value: it CONNECTS the TPC wall to the
-  Deninger/Connes-Consani RH-geometry programs and SURFACES the archimedean place as a genuinely
-  distinct obstruction. Escalation, not a proof, not a termination. The analytic falsifier (P2)
-  and the categorical reframing AGREE because C-COH-MON is literally the cohomological avatar of
-  the unaveraged-uniform cancellation (same fact, two languages).
-- NEXT ESCALATION (recommended): Cluster 5 (T10) — the quantitative-uniformity bridge aimed
-  directly at C5's uniform-in-d content (the quantity the P2 witness isolates), using MR / Tao
-  log-Chowla / Pilatte / Tao-Teravainen; alternate is Cluster 3 (T11), parity-structural.
-- Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may be
-  NAMED, NOT built upon. C7/C-COH-MON/C-inf/L-COH' are OPEN => NOT legal foundations. GRAVEYARD
-  nodes may NOT be built upon.
-- Next step: invoke EXPLORE to open the Cluster-5 escalation (T10) — likely an Apply (import the
-  MR/entropy-decrement machinery against the uniform-in-d quantity) or an Introduce (a crisp,
-  possibly conditional, attackable sub-claim about log-averaged -> unaveraged uniformity).
+- NOT at a terminal state. This step: a REFRAME opening Cluster 5 (A13). Built a [0,inf]-enriched
+  fibration p: S_x -> D_x^op of {S_{a,d}} over the moduli poset with exact additivity (ADD) and descent
+  (DESCENT, verified d-independent). Expressed C5's uniform regime as an L-infinity (limit/right-Kan)
+  pushforward and the proven averaged regime (Tao log-Chowla / MR) as an L1/L2 (colimit/left-Kan)
+  pushforward; the averaged-vs-uniform GAP as the lax-monoidal / Beck-Chevalley defect R_d, giving the
+  EXACT factorization U_d = A^(2)_d * R_d. NUMERICS (N=2e6) validate the factorization and show
+  A^(2)_d~sqrt(d/x), R_d~sqrt(2 ln d), worst bucket sqrt-cancels, fixed-d U_d->0, difficulty = the edge.
+- HONESTY VERDICT (recorded, weighted first): MOSTLY-RENAME. The categorical iff (L-QUB) is the identity
+  U_d=A^(2)_d R_d in categorical clothing; the machinery PROVIDES NO new estimate; the analytic content
+  must enter at the per-fiber cancellation, which is C5. The ONE non-rename sliver: the factorization
+  SEPARATES a provable-in-spirit averaged factor from a purely combinatorial extremal defect, exposing the
+  new attackable sub-question T12. Likely outcome: T12 is itself C5 (entropy-decrement loses
+  L-infinity-in-d). This is a legitimate ESCALATION to record, NOT progress dressed up. No terminal state.
+- Candidate L-QUB is READY FOR DISTILL, with the four named attacks (a)-(d) and the single decider question
+  (T12) pre-specified.
+- Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may be NAMED,
+  NOT built upon. C7/C-COH-MON/C-inf/L-COH' are OPEN => NOT legal foundations. L-QUB is a candidate lemma
+  (pre-distill) => NOT a legal foundation. GRAVEYARD nodes may NOT be built upon.
+- Next step: invoke DISTILL to attack L-QUB (the four named attacks + the T12 decider), then EXPLORE to
+  label and either record the rename honestly or develop the surviving sub-question.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
@@ -211,27 +234,30 @@ foundations.):
     delta(x)*(x/d) FOR ALL d <= x^{1-eps} AND ALL residues a (mod d)
   (= unaveraged two-point Chowla/Liouville at shift 2, uniform in APs), o(main) strength.
   Both directions (necessity; sufficiency) open at dimension 2. Only log-averaged proven (Tao
-  2015). Chowla-strength: NOT implied by RH/GRH (only the LOG-AVERAGED two-point case is known
-  unconditionally; the unaveraged fixed-shift sum does not follow even from GRH).
+  2015). Chowla-strength: NOT implied by RH/GRH.
+  LOCALIZATION (A13/Cluster 5, this step): C5 <=> U(x):=max_{d<=x^{1-eps}} max_a |S_{a,d}|/(x/d) -> 0;
+  factorization U_d = A^(2)_d * R_d (averaged factor x Beck-Chevalley/lax-monoidal fiber defect),
+  numerically validated; difficulty = the edge d~x^{1-eps}. See candidate L-QUB (NOT yet certified).
   DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6 (Siegel-zero
   anti-cancellation) -- all FRAMING; NOT a proven equivalence to TPC.
   STATUS: OPEN (checkpoint under active cross-domain attack). AUDIT: NONE EXISTS (the point).
   Rigorous sub-facts: (i) unaveraged two-point Chowla =o(x) is OPEN, only log-averaged proven
-  (Tao arXiv:1509.05422; Pilatte arXiv:2310.19357); numerics RE-RUN this pass (N=1e6): global
-  |S(x)|/x ~ x^{-1/2} but worst-bucket max_a |S_{a,d}|/(x/d) GROWS toward 1 with d
-  (0.000,0.002,0.014,0.041,0.169,0.691 at d=2,6,30,210,2310,30030) => uniform-in-d unwitnessable
-  and the difficulty is localized to THIS quantity. (ii) parity obstruction for n(n+2) is
-  HEURISTIC; Bombieri's THEOREM is dim-1 only. (iii) sufficiency for n(n+2) not cited.
+  (Tao arXiv:1509.05422; Pilatte arXiv:2310.19357); numerics (N up to 2e6): global |S(x)|/x ~
+  x^{-1/2} but worst-bucket max_a |S_{a,d}|/(x/d) GROWS toward 1 with d => uniform-in-d unwitnessable;
+  THIS STEP refines it: U_d=A^(2)_d R_d, A^(2)_d~sqrt(d/x), R_d~sqrt(2 ln d) (extremal, benign), worst
+  bucket sqrt-cancels => U_d->1 is the log factor not a main term; fixed-d U_d->0. (ii) parity
+  obstruction for n(n+2) is HEURISTIC; Bombieri's THEOREM is dim-1 only. (iii) sufficiency for n(n+2)
+  not cited.
   COHOMOLOGICAL RE-EXPRESSION (A12/L-COH, DISTILLED + LABELLED): C5's content disperses into C7
   (broader cohomological-existence conjecture = Deninger/Connes-Consani) + C-COH-MON (= C5 in
   sheaf clothing) + C-inf (archimedean). None easier than C5; this RELOCATES, does not reduce.
-  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O (uniqueness/centrality) + Attacks P1-P4
-  (cohomological relocation adjudicated & labelled). STAYS OPEN.
+  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4. STAYS OPEN.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
-  + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md (labels).
+  + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
+  + work/1781394759-EXPLORE.md (this step: U(x) factorization U_d=A^(2)_d R_d).
 
-  --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN this step; NOT legal foundations) ---
+  --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN; NOT legal foundations) ---
 - [C7] "A Weil-type cohomology + six functors + Poincare-Verdier duality + absolute Frobenius +
   Grothendieck-Lefschetz trace formula over Spec Z (= F_1 / Connes-Consani arithmetic site)
   realizing the counting/zeta equality as a Lefschetz formula."
@@ -251,21 +277,16 @@ foundations.):
   IS "the shift-2 correlation has no main term" = C5; proving it over Z is equivalent to / harder
   than C5.
   AUDIT: NONE independent of C5. The F_q[t] template (Katz GKM, Ann. Math. Studies 116; S-S
-  Burgess/Fouvry-Michel monodromy computation, arXiv:1808.04001) is NOT an audit for the Z claim
-  (there the monodromy computation is the hard theorem, not a free input). No Z-object has known-
-  large monodromy in the required sense.
-  ADVERSARIAL PASS: Attack P3 (fabrication audit) — asserting it over Z w/o proof = asserting C5.
-  LABELLED OPEN (= cohomological C5; circular w.r.t. C5; re-expresses, does not reduce).
+  Burgess/Fouvry-Michel monodromy computation, arXiv:1808.04001) is NOT an audit for the Z claim.
+  No Z-object has known-large monodromy in the required sense.
+  ADVERSARIAL PASS: Attack P3 (fabrication audit). LABELLED OPEN (= cohomological C5; circular).
   source: work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md (label).
 - [C-inf] "The archimedean place infinity of Spec Z (no function-field counterpart) can be
   incorporated into the trace/Lefschetz formalism (properness / compact support)."
   DEPENDS ON: C7. STATUS: OPEN — a THIRD DISTINCT open input (structural disanalogy; F_q[t] has
   no infinity). Neither identical to C5 nor to C7's bare existence statement.
-  AUDIT (open-problem citation): Connes treats infinity separately, e.g. "Weil positivity and
-  Trace formula, the archimedean place," arXiv:2006.13771. No clause of L-COH addresses infinity.
-  ADVERSARIAL PASS: Attack P4 — NOT shown fatal (would be unaudited terminal claim), NOT shown
-  handled (would be fabrication). LABELLED OPEN (distinct from C5/C7; the transport's one new
-  deliverable that is NOT C5-in-disguise).
+  AUDIT (open-problem citation): Connes treats infinity separately, e.g. arXiv:2006.13771.
+  ADVERSARIAL PASS: Attack P4. LABELLED OPEN (distinct from C5/C7).
   source: work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md (label).
 - [L-COH'] (the surviving RELOCATION) "C5 follows IF { C7 AND C-COH-MON AND C-inf }, by transported
   Grothendieck-Lefschetz + Deligne purity."
@@ -280,21 +301,17 @@ foundations.):
 
 GRAVEYARD (may NOT be built upon):
 - [L-COH-as-proof-of-C5] "(1)+(2)+(3) over Spec Z exist as available inputs and => C5, PROVING C5."
-  FALSIFIED-as-stated (this step's label; DISTILL Attacks P1+P2). 0 of its load-bearing
-  hypotheses is a Z-theorem; clause (1)'s formalism (Weil cohomology / Lefschetz formula over Z)
-  is the explicitly OPEN central goal of Connes/Connes-Consani (arXiv:1509.05576; arXiv:1405.4527),
-  so it cannot be a proof. Superseded by the relocation L-COH' (OPEN).
+  FALSIFIED-as-stated (DISTILL Attacks P1+P2). 0 of its load-bearing hypotheses is a Z-theorem;
+  clause (1)'s formalism is the explicitly OPEN central goal of Connes/Connes-Consani. Superseded
+  by the relocation L-COH' (OPEN).
   source: work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md (label).
 - [PURITY-ONLY] "(1)+(2) => C5: purity / RH-strength alone yields the uniform two-point bound."
-  FALSIFIED (this step's label; DISTILL Attack P2; numerics RE-RUN & literature RE-CHECKED this
-  pass). Concrete object: (a) RH/GRH =/=> the unaveraged fixed-shift two-point lambda-correlation
-  (only LOG-AVERAGED known, Tao arXiv:1509.05422; Pilatte arXiv:2310.19357); (b) DECISIVE: in
-  F_q[t] purity = Weil II is a THEOREM yet twin primes STILL need the SEPARATE Sawin-Shusterman
-  big-monodromy / Burgess-improvement / Fouvry-Michel input (Annals 196 (2022), arXiv:1808.04001;
-  S-S is NOT a corollary of Weil II); (c) numerics: global |S(x)|/x ~ x^{-1/2} but worst-bucket
-  max_a |S_{a,d}|/(x/d) GROWS toward 1 with d (re-run N=1e6: 0.000..0.691 at d=2..30030). The
-  concrete object that breaks the purity-only reading. (Retires the prior [PURITY-ONLY-pending]
-  placeholder.)
+  FALSIFIED (DISTILL Attack P2). Concrete object: (a) RH/GRH =/=> the unaveraged fixed-shift two-
+  point lambda-correlation (only LOG-AVERAGED known, Tao arXiv:1509.05422; Pilatte arXiv:2310.19357);
+  (b) DECISIVE: in F_q[t] purity = Weil II is a THEOREM yet twin primes STILL need the SEPARATE
+  Sawin-Shusterman big-monodromy / Burgess / Fouvry-Michel input (Annals 196 (2022),
+  arXiv:1808.04001); (c) numerics: global |S(x)|/x ~ x^{-1/2} but worst-bucket max_a |S_{a,d}|/(x/d)
+  GROWS toward 1 with d.
   source: work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md (label).
 - [L1-as-written] involution a_n->(1±lambda(n))a_n/2 (lambda on n) Type-I invariant. FALSIFIED
   (Pass A): mass ratio 0.66-0.79; every true twin (n>3) has lambda(n)=-1 => all in b_minus.
