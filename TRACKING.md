@@ -10,7 +10,11 @@ per-step snapshots under `work/`. See `AGENTS.md` for the governing protocol.
 is open. Expected terminal state (3): the parity obstruction stated as one precise
 OPEN claim.
 
-Latest step: `work/1781352884-EXPLORE.md` (Introduce; L1 sharpened, ready for DISTILL).
+Latest step: `work/1781353616-DISTILL.md` (DISTILL attack-and-reduce on L1).
+**Status: L1's claims have an ADVERSARIAL PASS recorded and are PENDING EXPLORE's
+verdict/labelling.** The pass falsified clause 1's literal carrier formula, showed the
+repaired version is conditional on an open conjecture, and reduced L1 to the Claim
+Graph C1–C5 below — with **C5 the single sharp OPEN crux** (state 3).
 
 ```
 APPROACHES ATTEMPTED:
@@ -23,9 +27,9 @@ APPROACHES ATTEMPTED:
   explains why A1,A3 stall; this is the likely terminal OPEN node, not a path.
 - [A3] Chen's theorem (P_2) | DEAD END (as route to full TPC) | proves infinitely
   many p with p+2 a P_2 (prime or semiprime); the residual P_2 -> P_1 gap IS the
-  parity barrier; provable frontier of pure sieve methods. (Confirmed this step: the
-  weighted/lower-bound sieve still lies inside the Type-I nonnegative-weight class
-  modulo its subtracted upper-bound term — flagged to DISTILL as attack #1.)
+  parity barrier; provable frontier of pure sieve methods. (DISTILL flagged: whether
+  Chen's subtracted-upper-bound weighted sieve is formally a single nonnegative linear
+  functional inside class C1 is the residual definitional precision question.)
 - [A4] GPY (Goldston-Pintz-Yildirim) | DEAD END (full TPC) / ACTIVE (bounded gaps) |
   proves liminf (p_{n+1}-p_n)/log p_n = 0; bounded gaps only under EH; detects *some*
   gap in a tuple, never the fixed gap 2.
@@ -34,97 +38,122 @@ APPROACHES ATTEMPTED:
   (parity); huge constant.
 - [A6] Maynard-Tao multidimensional sieve | DEAD END (full TPC) | proves
   liminf(p_{n+1}-p_n) <= 600 and liminf(p_{n+m}-p_n) < infinity for all m; cannot say
-  WHICH two entries are prime; provably cannot reach gap <=6 unconditionally / <=12
-  under EH / <=6 under GEH — never 2. (Confirmed this step: weights are nonnegative
-  divisor-sum-squared, Type-I inputs only => inside the L1 class; no parity escape.)
+  WHICH two entries are prime. DISTILL Pass E confirmed weights are nonnegative
+  divisor-sum-squared with Type-I inputs only => inside class C1; no parity escape.
 - [A7] Polymath8 (8a/8b) | DEAD END (full TPC) | proves unconditional <=246, <=12
-  (EH), <=6 (GEH); contains the sharp BARRIER THEOREM: multidimensional sieve cannot
-  beat gap 6 even under GEH — the 6->2 step is unreachable by this method. Cited in
-  L1 clause 3 as the explicit witness that GEH (max Type-I) does not supply Type-II.
+  (EH), <=6 (GEH). DISTILL Pass D RE-SCOPED the barrier: it is METHOD-specific (first-
+  moment multidimensional sieve) and GEH-specific — under plain EH the parity
+  obstruction does NOT exclude better bounds. Witnesses "this Type-I machine under GEH
+  stops at 6," NOT "Type-I absolutely insufficient." Now Claim C4.
 - [A8] Hardy-Littlewood circle method + prime k-tuple conjecture | DEAD END (full
   TPC, unconditionally) | source of the asymptotic pi_2(x) ~ 2*Pi_2*x/(log x)^2 as a
   CONJECTURE; minor arcs uncontrollable for a binary problem (same wall as binary
   Goldbach).
 - [A9] Elliott-Halberstam / generalized EH as conditional input | DEAD END (full
   TPC even if assumed) / ACTIVE (bounded gaps) | gives small explicit gaps with
-  GPY/Maynard but does NOT break parity; EH/GEH are about averaged distribution in
-  APs (Type-I). Polymath8b GEH barrier = quantitative proof it stops at gap 6.
+  GPY/Maynard but does NOT break parity; EH/GEH are Type-I (averaged distribution in
+  APs). Polymath8b GEH barrier is the witness (C4), re-scoped per DISTILL Pass D.
 - [A10] Chowla / Liouville-correlation, parity-breaking analysis (Matomaki-Radziwill,
   Tao log-Chowla, Tao-Teravainen) | PROMISING / ACTIVE (research frontier) | the only
   family NOT in-principle parity-blocked; supplies the Type-II cancellation a sieve
-  cannot; no current theorem at the strength TPC needs; distant from TPC. This is the
-  home of the missing input L1 isolates.
+  cannot. DISTILL confirmed: the SPECIFIC missing input is an UNAVERAGED two-point
+  Chowla bound at shift 2 uniform in APs (only LOG-averaged is proven: Tao 2015,
+  arXiv:1509.05422). This is the home of crux C5.
 - [A11] Other angles: ergodic/Green-Tao (long APs not fixed gaps; DEAD END for TPC);
   automorphic/spectral shifted-convolution (strengthen Type-I sieve inputs, don't
   break parity; ACTIVE as inputs, DEAD END standalone); function-field analogue
   Sawin-Shusterman (TPC PROVED over F_q[t], no parity obstruction there, but does NOT
   transfer to Z — geometric/monodromy input has no Z-analogue). Friedlander-Iwaniec
-  (a^2+b^4) and Heath-Brown (x^3+2y^3) noted as the Type-II ESCAPES that exist for
-  special forms but have no known analogue for n(n+2).
+  (a^2+b^4) and Heath-Brown (x^3+2y^3) are the Type-II ESCAPES that count a fixed prime
+  form but have no known analogue for n(n+2) — now Claim C3.
 
-CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [L1] Parity obstruction to twin primes (conditional-class form). READY FOR DISTILL.
-  Statement: For F(n)=n(n+2), call a scheme a "Type-I nonnegative-weight sieve scheme"
-  if it lower-bounds pi_2(x) by a nonnegative linear functional with (I-1) weights
-  w_n>=0 built from divisor sums over d|F(n), d<=D=x^{1-eps} below the level of
-  distribution (Brun, Selberg Lambda^2, GPY, Maynard-Tao), and (I-2) only Type-I
-  level-of-distribution inputs (BV, EH, GEH, Zhang smooth-moduli). THEN (1) [provable,
-  scoped] its leading-order output is invariant under a_n -> (1±lambda(n))a_n/2,
-  lambda=(-1)^Omega (Bombieri parity pair), so NO such scheme gives pi_2(x) >> x/(log
-  x)^2 nor even pi_2(x)->infinity; (2) [Bombieri/Friedlander-Iwaniec] detecting the
-  prime pair REQUIRES a bilinear Type-II estimate sensitive to sign(lambda) — Type-I
-  detects k-almost-primes for all k>=2 but provably not primes (dim-1), and n(n+2) is
-  dim kappa=2, so a fortiori; (3) [Polymath8b GEH barrier] no Type-I hypothesis,
-  including GEH, supplies the Type-II input — under GEH the multidimensional sieve
-  bottoms out at gap H_1=6, parity-obstructed below 6, never 2. HENCE TPC is
-  inaccessible to the whole class; the residual difficulty is the single OPEN absence
-  of a twin-prime Type-II/parity-breaking estimate.
-  Already checked: (a) Maynard-Tao + Chen inside the class, only Type-II escapes
-  (FI/HB), no n(n+2) analogue; (b) Bombieri hyps (B0)-(B3) stated, direct twin
-  sequence is dim 2 so fails the dim-1 hypothesis — Bombieri used only to license
-  "Type-II necessary," not to compute the count; (c) GEH is Type-I, Polymath8b is the
-  witness it stops at 6; (d) parity-invariance upgraded to PROVABLE but scoped to
-  Type-I/linear functionals, verified by Audit 1+2, corrected a false pointwise
-  Lambda_2-support claim from the draft.
-  Want stress-tested (for DISTILL): (1) is the class def broad+precise enough — does a
-  subtracted-upper-bound (Chen/Buchstab) sieve escape the formal hypotheses while
-  staying parity-blocked? (2) is "a fortiori dim 2" a theorem or heuristic? (3) is
-  Type-II NECESSITY proven for the binary form, or only "no Type-I known to suffice"?
-  (4) exact reading of Polymath8b barrier (method-specific, not absolute); (5) is L1
-  circular (clause 3 vs clause 1)? (6) does ANY unconditional theorem give a positive
-  lower bound for a FIXED prime pair via Type-I only — if so clause 1 is FALSIFIED.
+CANDIDATE LEMMAS (pre-distill / pending verdict — not yet certified):
+- [L1] Parity obstruction to twin primes (conditional-class form).
+  STATUS: ADVERSARIAL PASS COMPLETE — PENDING EXPLORE'S VERDICT/LABELLING.
+  DISTILL (work/1781353616-DISTILL.md) attacked all three clauses + the class def and
+  found L1 does NOT survive AS A SINGLE THEOREM as stated:
+    - Pass A: clause-1's literal involution a_n -> (1±lambda(n))a_n/2 with
+      lambda(n)=(-1)^Omega(n) on n is NOT Type-I invariant (computational
+      counterexample: residue-class mass ratio 0.79, all true twins fall in one
+      bucket). FALSIFIED-as-written. The carrier must be lambda(F(n))=lambda(n)lambda(n+2).
+    - Pass B: the repaired carrier IS Type-I-invisible numerically (~1e-4 . x), BUT
+      that invisibility for n(n+2) is the UNAVERAGED two-point Chowla bound at shift 2
+      — OPEN, not a theorem. So clause 1 is conditional, not "provable, scoped."
+    - Pass C: clause-2 "REQUIRES Type-II" overstates. FI necessity is a theorem in
+      DIMENSION 1; the "a fortiori dim 2" transfer to n(n+2) is heuristic, not cited.
+      Honest: Type-II suffices + Type-I not known to suffice; dim-2 necessity OPEN.
+    - Pass D: clause-3 Polymath8b barrier is correct only RE-SCOPED to method-specific
+      + GEH-specific; absolute "no Type-I supplies Type-II" is OPEN. No hidden GRH/EH.
+    - Pass E: NO unconditional Type-I theorem lower-bounds a fixed prime pair (clause 1
+      not falsified by counterexample). Clause 3 is corroborating, not independent
+      (mild circularity, attack #5).
+  Reduced to Claim Graph C1–C5 (see below). EXPLORE should label: L1-as-written
+  FALSIFIED-as-stated and superseded by C1–C5.
 
 OPEN THREADS:
-- T1: DONE this step — L1-DRAFT sharpened to L1 and ready for DISTILL (the expected
-  terminal node, state 3). Now awaiting DISTILL's attack and labelling.
-- T2: A10 — what *minimal* parity-breaking (Type-II) input — a specific bilinear /
-  shifted-convolution cancellation for lambda or Lambda at shift 2 — would, combined
-  with the standard sieve, actually yield TPC? Identify the exact conjecture that is
-  necessary-and-sufficient-modulo-sieve. (Sharpened by L1 clause 2: it is a Type-II
-  estimate for n(n+2); pin its precise form.)
-- T3: Make precise the Friedlander-Iwaniec / Bombieri asymptotic-sieve statement
-  specialized to n(n+2) and confirm it formalizes the wall. (Partly addressed in
-  L1(b): the direct sequence is dim 2; need the exact dim-2 analogue of the FI
-  dichotomy — feeds DISTILL attack #2/#3.)
+- T1: AWAITING EXPLORE LABELLING of the C1–C5 graph from this DISTILL pass. EXPLORE's
+  first act next step is to assign statuses (suggested in the graph) and update here.
+- T2: A10 / crux C5 — pin the exact form of the missing Type-II input: an unaveraged
+  cancellation Sum_{n<=x} lambda(n)lambda(n+2) over n in APs d<=D, of o(main) strength,
+  that feeds the sieve. Confirm whether it is necessary-AND-sufficient-modulo-sieve for
+  pi_2(x)->infinity, or only sufficient (DISTILL Pass C: necessity for n(n+2) is not a
+  cited theorem).
+- T3: Resolve C1's residual definitional question — does Chen's (and Buchstab-iterated)
+  subtracted-upper-bound weighted sieve count as a single nonnegative linear functional
+  inside class C1, or does the subtraction put it outside? (DISTILL attack #1, unresolved.)
 - T4: Audit whether the function-field proof (A11, Sawin-Shusterman) isolates exactly
-  which input is missing over Z — characterize the obstruction by its *absence* in
-  F_q[t] (monodromy/geometric Type-II analogue).
+  which input is missing over Z — characterize the obstruction by its absence in F_q[t]
+  (monodromy/geometric Type-II analogue); relate to C5.
 
 CURRENT POSITION:
-- L1 is now a single, standalone, precisely-hypothesized candidate lemma localizing
-  TPC's difficulty to one OPEN input (absence of a twin-prime Type-II/parity-breaking
-  estimate), and is READY FOR DISTILL. Sharpening honestly WEAKENED three over-reaches
-  in the draft: the universal "any scheme" became a Type-I nonnegative-weight class;
-  Bombieri's role became "license Type-II necessity" (the direct sequence is dim 2, not
-  the dim-1 the asymptotic sieve needs); and clause (d) became provable-but-scoped with
-  a corrected (distributional, not pointwise) parity statement. Two computational
-  audits confirm the mechanism and caught one false pointwise claim. L1 is NOT yet a
-  legal foundation — nothing may be built on it until DISTILL returns and it is
-  labelled. Anticipated terminal state remains (3).
+- L1 received its DISTILL pass. As a single standalone theorem about n(n+2) it does NOT
+  survive as written (clause-1 carrier falsified; clauses 1–2 conditional on open
+  inputs; clause 3 needs re-scoping). What survives and is valuable is the DECOMPOSITION
+  into C1–C5: three established-in-literature pillars (C2 Bombieri/FI dim-1 parity; C3
+  Type-II escapes; C4 Polymath8b GEH barrier, re-scoped), one NEEDS-REVIEW class
+  definition (C1, with the Chen-subtraction precision flagged), and — the point — ONE
+  SHARP OPEN CRUX (C5): the absent twin-prime Type-II / parity-breaking estimate
+  (unaveraged two-point cancellation for lambda at shift 2, uniform in APs, at sieve
+  strength). This is terminal state (3): the whole difficulty localized to one OPEN
+  claim. NOTHING here is yet a legal foundation — all statuses are pending EXPLORE's
+  verdict next step.
 
-CLAIM GRAPH (post-distill — the ONLY nodes that may be built upon):
-- (none yet — nothing has passed DISTILL)
+CLAIM GRAPH (post-distill — pending EXPLORE labelling; the ONLY nodes that may be built
+upon once certified NEEDS-REVIEW / ESTABLISHED-IN-LITERATURE):
+- [C1] CLASS DEF: "Type-I nonnegative-weight sieve scheme" for n(n+2) — w_n>=0 from
+  divisor sums d|F(n), d<=D=x^{1-eps}; Type-I inputs only (BV/EH/GEH/Zhang). Captures
+  Brun, Selberg, GPY, Maynard-Tao, Chen. | pre-fill NEEDS-REVIEW (definitional) | AUDIT:
+  inspect each method's weights (Maynard Ann.Math.181(2015); Selberg). Residual: Chen
+  subtraction precision. | PASS E: Maynard-Tao & Chen inside; FI/HB outside.
+- [C2] Bombieri asymptotic sieve / parity in DIMENSION 1: Type-I determines Lambda_k
+  (k>=2, almost-primes) but provably NOT Lambda_1 (primes) without a Type-II bilinear
+  estimate; explicit density-matched construction. | ESTABLISHED-IN-LITERATURE | AUDIT:
+  Bombieri 1975/76; Friedlander-Iwaniec, Ann.Math.148(1998) 757-800; Tao 2016 notes. |
+  SURVIVED (hypothesis: dimension exactly 1).
+- [C3] Type-II suffices / is the known escape: a sign-sensitive bilinear estimate breaks
+  parity (FI a^2+b^4; Heath-Brown x^3+2y^3); none known for n(n+2). | ESTABLISHED-IN-
+  LITERATURE | AUDIT: FI Ann.Math.148(1998) 945-1040; HB Acta Math.186(2001). |
+  SURVIVED; these sit OUTSIDE class C1.
+- [C4] Polymath8b GEH barrier (METHOD- and GEH-specific): under GEH the first-moment
+  multidimensional sieve gives H_1<=6 and parity blocks THIS method below 6; under EH
+  not even excluded. | ESTABLISHED-IN-LITERATURE (re-scoped) | AUDIT: D.H.J. Polymath,
+  Res.Math.Sci.1(2014) art.12 (arXiv:1407.4897); arXiv:1409.8361. | SURVIVED ONLY
+  RE-SCOPED; absolute reading is OPEN; corroborates C2 (mild circularity).
+- [C5] *** CRUX / OPEN *** No Type-I nonnegative-weight scheme (C1) can certify
+  pi_2(x)->infinity; certifying the twin pair for n(n+2) (dim kappa=2) requires a
+  twin-prime Type-II/parity-breaking input — an unaveraged two-point cancellation for
+  lambda(F(n))=lambda(n)lambda(n+2) at shift 2, uniform over APs d<=D, of o(main)
+  strength. This input is ABSENT and is the entire residual obstruction. | OPEN | AUDIT:
+  NONE EXISTS (the point). Rigorous sub-facts: (i) unaveraged two-point Chowla at shift
+  2 is OPEN (only log-averaged proven: Tao arXiv:1509.05422; Pilatte arXiv:2310.19357
+  improves only log-averaged); (ii) dim-2 necessity is not a cited theorem (the parity
+  problem is itself an open question re fundamentally better methods). | ALL ATTACKS
+  CONVERGED HERE — this is terminal state (3).
 
 GRAVEYARD (may NOT be built upon):
-- (none yet)
+- L1-as-written (the conjunction asserting clause-1's literal lambda(n)-on-n involution
+  is Type-I invariant, and clause-2's unqualified "requires Type-II" for n(n+2)):
+  FALSIFIED-as-stated by DISTILL Pass A (computational counterexample) and Pass C
+  (necessity not a theorem in dim 2). Superseded by the C1–C5 decomposition above.
+  [Pending EXPLORE's formal labelling — listed here as the DISTILL verdict.]
 ```
