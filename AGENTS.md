@@ -79,26 +79,32 @@ Candidate lemmas that have not been through DISTILL are not legal foundations.
 
 ## Valid terminal states
 
-The work ends — successfully and honestly — at any of these:
+There are **exactly three exit conditions** — the only ways the loop self-terminates:
 
-1. **A complete Claim Graph for a proof**, every claim ESTABLISHED-IN-LITERATURE or
-   NEEDS-REVIEW with a clean AUDIT that survived its adversarial pass — i.e.
-   everything is now waiting only on human certification.
-2. **A complete Claim Graph for a disproof**, same standard.
-3. **A single, precisely stated OPEN claim** that the entire difficulty reduces to —
-   you've shown the problem is hard exactly because of this one obstruction, stated
-   sharply enough that a human sees why it's the crux. **This is a real result.**
+1. **Verify.** A complete Claim Graph for a **proof** of the conjecture, every claim
+   ESTABLISHED-IN-LITERATURE or NEEDS-REVIEW with a clean AUDIT that survived its
+   adversarial pass — everything now waiting only on human certification.
+2. **Falsify.** A complete Claim Graph for a **disproof**, same standard.
+3. **Independence.** A rigorous proof that the conjecture is **unprovable** in a
+   specified formal system, same standard.
 
-**State (3) is the expected outcome for the Twin Prime Conjecture.** Reaching it is
-success, not failure. The original sin of research prompts is treating "I located
-the exact wall" as non-termination, which pressures the production of a fake exit.
-**Do not do that.** Locating the wall precisely — e.g. pinning the obstruction to
-the parity problem in sieve theory, stated as one sharp claim — is the win that's
-actually on the table.
+**Locating an obstruction is NOT a terminal state.** Pinning the difficulty to a
+single sharp OPEN claim (e.g. the parity barrier) is a *checkpoint*, not an exit: the
+loop must then either **break** that obstruction or **escalate** it — keep attacking
+it, including by importing new cross-domain structure (e.g. categorical reframings) —
+and may pause only at (1)–(3) above or when a human explicitly halts. Do not treat a
+well-stated wall as a finish line.
 
-Absence of progress is also not a reason to fake motion: if an EXPLORE line dies,
-record it as a DEAD END on the tracking sheet with the reason, and either open a
-new thread or distill to the wall.
+**Method constraint (this is NOT a fourth exit; it never stops the loop).** We do not
+fabricate. A statement with no checkable audit is OPEN; an obstruction we cannot yet
+break is recorded honestly as open and attacked further — **never relabelled a
+proof.** This is what keeps the Claim Graph trustworthy to the human reviewers; it
+constrains *how* we pursue (1)–(3), and is the one rule the pressure to terminate may
+not override.
+
+Absence of progress is not a reason to fake motion: if an EXPLORE line dies, record it
+as a DEAD END on the tracking sheet with the reason, then open a new thread or mount a
+new cross-domain reframing — never a fake exit.
 
 ---
 
@@ -114,9 +120,10 @@ new thread or distill to the wall.
 - When DISTILL hands you a concrete counterexample, **mark it FALSIFIED.** Do not
   negotiate with a specific failing case to keep a result you're attached to — that
   is the precise failure the split was built to prevent, run in reverse.
-- You may end with the honest sentence: **"I made no progress that survives audit;
-  here is the wall, stated as precisely as I can."** That sentence is permitted and
-  is sometimes the most valuable output.
+- You may always **state** the honest sentence: **"I have made no progress that
+  survives audit; here is the wall, stated as precisely as I can."** That is permitted
+  and often valuable — but it is a checkpoint to report and then keep attacking (break
+  it, or reframe it across domains), **not** a terminal state.
 
 ---
 
@@ -170,8 +177,9 @@ itself.)
 State the problem. Enter EXPLORE mode (invoke the `explore` agent) — populate the
 tracking sheet with the major known approaches to the Twin Prime Conjecture and
 their status in the literature, then choose your first of the four actions. Switch
-to DISTILL when you have something or when you hit the wall. **Expect terminal state
-(3).** Follow the file + git protocol above for every step: one new
+to DISTILL when you have something or when you hit the wall. **Expect a long campaign:
+the parity barrier is a checkpoint to break or escalate, not an exit.** Follow the file
++ git protocol above for every step: one new
 `work/<unix-timestamp>-<MODE>.md`, an updated root `TRACKING.md`, one commit.
 
 > The scaffolding (this file, the two agents, the `TRACKING.md` skeleton, and
