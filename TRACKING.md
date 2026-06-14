@@ -11,36 +11,36 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1781422588-EXPLORE.md` — **action = Reframe (Cluster 3 bounded probe,
-thread T11): additive×multiplicative / parity-structural.** PRE-REGISTERED the PROVIDE-vs-
-RE-EXPRESS decider verbatim BEFORE the analysis. Built the structural frame: (i) duoidal /
-distributive-law + obstruction-class / Grothendieck–Witt picture — ℕ carries additive-shift
-and multiplicative (Dirichlet-convolution / arithmetic Hopf algebra) structures; t=λ(n)λ(n+2)
-lives at their interaction; the parity obstruction = non-existence of a Beck distributive law
-T_+T_× ⇒ T_×T_+ / non-vanishing of a Hochschild–Harrison–AQ-type obstruction class /
-non-vanishing GW-discriminant where ±1 = parity; (ii) Gowers/inverse-theorem picture — C5 ⟺ t
-Gowers-uniform uniformly in d ⟺ (Green–Tao–Ziegler inverse thm) no degree-<k nilsequence
-correlates with t uniformly in d; for the TWO-POINT pattern the degree-1 obstructions are
-linear phases / Dirichlet characters, and "λ correlates with a character" = Siegel-zero = C6.
-So **Cluster 3 cleanly UNIFIES C5 and C6** (obstruction-to-cancellation = structured
-character/nilsequence correlation = Heath-Brown dichotomy, the degree-1 case of GTZ); the
-two-point pattern is **complexity 0**, the regime the U-norm machinery does not close (the
-higher-order face of the parity barrier). Introduced candidate lemma **L-C3** (ready for
-DISTILL). **SELF-ASSESSMENT vs the pre-registered decider: RE-EXPRESS** — (A) no easier object
-(clause (2) is C5 verbatim; clause (3) degree-1 branch is C5 for a two-point pattern); (B) no
-recovery/improvement of a known uniformity toward the edge (Green–Tao gives only AVERAGED-in-n
-Möbius-orthogonality; Tao 2015 only log/scale-averaged Chowla); (C) the dichotomy's structured
-branch = C6 = not decidable (equivalent to C5), and the only decidable sub-case (averaged-in-n)
-does not rule out the uniform-in-d branch. **Tie-breaker honesty clause invoked: the C5↔C6
-unification is a genuine-but-known-to-experts structural insight, recorded as honest escalation,
-NOT progress, NOT a manufactured PROVIDE.** Numeric audit (x=2e6) confirms the unification
-mechanism: real t has NO structured degree-1 correlation (all small-q corr at x^{-1/2}) while a
-χ₃-caricature is LOCKED at 1/3 = the C5-vs-C6 branches. **THIS IS THE THIRD independent
-cross-domain reframing to re-express C5** (Cluster 1 relocated; Cluster 5 renamed; Cluster 3
-unifies+re-expresses). Per the pre-committed threshold, a third re-expression **closes the
-"just reframe again" strategy** ⇒ redirect (new thread **T13**) to the **SO-L² break conditions**
-or the **INDEPENDENCE direction**; recommended, NOT executed this step (one action per step).
-**NO terminal state. No manufactured progress.**
+**Latest step:** `work/1781423462-DISTILL.md` — **DISTILL attack on candidate lemma L-C3
+(Cluster 3 / A14, parity-structural). VERDICT: independently CONFIRMS the EXPLORE step's
+pre-registered self-assessment = RE-EXPRESS.** Steelmanned and tested each PROVIDE clause:
+**(A) FAILS** — clause (2) "‖t‖_{U²} localized + uniform in d" is LITERALLY C5 (via
+1_{n≡a(d)}=(1/d)Σ_χ χ̄(a)χ(n), S_{a,d} is a sum of degree-1 correlations of t; no slack);
+**(B) FAILS** — Tao 2015 (arXiv:1509.05422) is LOG-averaged (log-weight essential, entropy
+decrement) with NO d-uniformity, and even the Cesàro two-point Chowla is OPEN; Green–Tao
+orthogonality (arXiv:0807.1736) is averaged-in-n only; neither reaches the uniform-in-d
+fixed-shift edge and the structural route does not extend them (= SO-L²); **(C) FAILS** —
+the dichotomy IS C5-vs-C6 (computation: real t degree-1 corr at x^{-1/2}=C5/random branch;
+χ₃-caricature LOCKED at 1/3=1/|order|=C6/structured branch); structured branch = Siegel zero
+= ¬C5, NOT decidable; the only decidable sub-case (averaged) does not rule out the
+uniform-in-d structured branch. **COMPLEXITY/DEGREE FINDING:** {n,n+2} is genuinely
+U²/degree-1 (Cauchy–Schwarz complexity 1 / true complexity ≤1; Gowers–Wolf arXiv:0711.0185 +
+refinement arXiv:2109.05965); obstructions = linear phases / Dirichlet characters; the
+C5↔C6 = Heath-Brown = degree-1-GTZ identification STANDS. **Terminology correction:** EXPLORE's
+"complexity 0" → "complexity 1 (U²/degree-1, the parity-barrier face)"; U²-CONTROL ≠
+U²-SMALLNESS for a two-point pattern (no extra free variable to average over) — this is WHY it
+gives no PROVIDE and is concordant with SO-L². **DUOIDAL OBSTRUCTION CLASS: FALSIFIED-as-
+leverage** — defined only as "the thing whose vanishing = C5" (the GW-discriminant is literally
+Σ_n t(n), the d=1 case of C5); no (co)homology with a differential/cocycle/dimension-count is
+exhibited, nothing bounds it but C5 — a NAME, not a handle (parallel to L-QUB-i GRAVEYARD and
+C-COH-MON). Fabrication/equivocation audit: NONE — EXPLORE did not slide averaged↔uniform, did
+not claim "morally easy", did not treat the class as a handle; no invented citations (WebFetch
+403 this session; statements at primary-source-summary level + corroborated by computation).
+Reduced to **two nodes** ([L-C3-UNIF] pending OPEN; [L-C3-DUOIDAL] pending FALSIFIED) + C5
+unchanged. **THIRD re-expression of C5** (Cluster 1 relocated; Cluster 5 renamed; Cluster 3
+unifies+re-expresses) — closes "reframe again", redirect to T13 (SO-L² break / INDEPENDENCE).
+**Adversarial pass complete; PENDING EXPLORE's labelling verdict. NO terminal state, NO
+manufactured PROVIDE/NEEDS-REVIEW.**
 
 **The crux in one sentence.** The entire difficulty of TPC, reached through every
 unconditional route surveyed, concentrates on a single open statement — **C5**: \(\sum_{n\le x,\
@@ -126,21 +126,24 @@ APPROACHES ATTEMPTED:
   THIRD re-expression => closes "just reframe again"; redirect (T13) to SO-L² break conditions
   or INDEPENDENCE direction (recommended, not executed this step).
 
-CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [L-C3] (introduced this step; ready for DISTILL) C5 <=> [t Gowers-uniform uniformly in
-  d<=x^{1-eps}] <=> [no degree-<k nilsequence (for the two-point pattern: no Dirichlet
-  character / linear phase) correlates with t uniformly in d] <=> [the +/x obstruction
-  class vanishes <=> no Siegel-type structured correlation] (= Heath-Brown dichotomy, the
-  degree-1 case of Green-Tao-Ziegler). CHECKED: GTZ inverse thm (arXiv:1009.3998) + Green-Tao
-  Mobius-nilseq orthogonality (arXiv:0807.1736) at source level; degree-1 obstruction =
-  char/linear-phase confirmed; numeric audit (x=2e6) shows real t has NO structured degree-1
-  correlation (all small-q corr at x^(-1/2)) while a chi3-caricature is LOCKED at 1/3 -> the
-  dichotomy IS C5-vs-C6. SELF-ASSESSMENT vs pre-registered decider: RE-EXPRESS (the C5<->C6
-  dichotomy, no easier branch; clauses A/B/C all fail). WANT STRESS-TESTED: (1) is "no nilseq
-  corr uniform in d" just C5 / "structured => Siegel" just C6, both equally hard? (2) does
-  Green-Tao give only AVERAGED-in-n, not uniform-in-d? (3) is the complexity-0 obstruction
-  correctly the higher-order face of parity? (4) is the duoidal obstruction class COMPUTABLE
-  or mere re-naming? (5) audit scope (finite x, small q) silent on the uniform-in-d edge?
+CANDIDATE LEMMAS (post-DISTILL adversarial pass; PENDING EXPLORE's labelling verdict):
+- [L-C3] (DISTILLED work/1781423462; ADVERSARIAL PASS COMPLETE, pending EXPLORE label)
+  C5 <=> [t Gowers-uniform uniformly in d<=x^{1-eps}] <=> [no degree-<k nilseq (two-point: no
+  Dirichlet char / linear phase) correlates with t uniformly in d] <=> [the +/x obstruction
+  class vanishes <=> no Siegel-type structured correlation] (= Heath-Brown dichotomy, degree-1
+  case of GTZ). DISTILL VERDICT: RE-EXPRESS confirmed (clauses A/B/C all FAIL, see Latest step);
+  REDUCED to two nodes: [L-C3-UNIF] (the equivalence/unification, pending OPEN — TRUE but
+  difficulty=C5, no easier branch) and [L-C3-DUOIDAL] (pending FALSIFIED-as-leverage — the
+  obstruction class is a NAME not a handle). COMPLEXITY FINDING: {n,n+2} is U²/degree-1 (CS-
+  complexity 1, NOT "complexity 0"); C5↔C6=Heath-Brown=degree-1-GTZ STANDS; U²-control ≠
+  U²-smallness ⇒ no PROVIDE. The five stress-tests EXPLORE requested are answered in
+  work/1781423462-DISTILL.md Attacks 1-6: (1) "no nilseq corr uniform in d" IS C5 / "structured"
+  IS C6, both equally hard [Attacks 1,3]; (2) Green-Tao/Tao 2015 give only AVERAGED/LOG-averaged,
+  not uniform-in-d [Attack 2]; (3) the obstruction is correctly U²/degree-1 (terminology fix:
+  complexity 1) the higher-order face of parity [Attack 4]; (4) the duoidal class is NOT
+  computable, mere re-naming [Attack 5, FALSIFIED-as-leverage]; (5) audit scope (finite x, small
+  q) IS silent on the d~x^{1-eps} edge [Attacks 1,4 + worst-bucket numerics]. NO manufactured
+  PROVIDE/NEEDS-REVIEW; verdict left to EXPLORE.
 
 OPEN THREADS:
 - T2 [= the crux C5]: the unaveraged two-point shift-2 cancellation sum_{n<=x, n==a(d)}
@@ -149,12 +152,14 @@ OPEN THREADS:
   RENAMED it; Cluster-3 (parity-structural, this step) UNIFIES C5 & C6 and RE-EXPRESSES it.
 - T10 [CLOSED — Cluster 5]: quantitative-uniformity bridge. VERDICT RENAME (L-QUB-i/ii
   GRAVEYARD; L-QUB-reform OPEN). YIELD = SO-L².
-- T11 [CLOSED — Cluster 3 probe EXECUTED this step]: additive x multiplicative / parity-
+- T11 [CLOSED — Cluster 3 probe EXECUTED + DISTILLED]: additive x multiplicative / parity-
   structural (Gowers norms / nilsequences / inverse theorems). VERDICT (vs pre-registered
-  decider): RE-EXPRESS = the C5<->C6 dichotomy, no easier branch. GENUINE YIELD: a clean,
-  audited UNIFICATION of C5 and C6 as the degree-1 case of the Green-Tao-Ziegler inverse
-  theorem (= Heath-Brown dichotomy mechanism) + the complexity-0 framing of the parity
-  barrier. Candidate lemma L-C3 introduced, ready for DISTILL.
+  decider): RE-EXPRESS = the C5<->C6 dichotomy, no easier branch — INDEPENDENTLY CONFIRMED by
+  DISTILL (work/1781423462; clauses A/B/C all fail). GENUINE YIELD: a clean, audited UNIFICATION
+  of C5 and C6 as the degree-1 case of GTZ (= Heath-Brown mechanism) + the correct complexity
+  framing (U²/degree-1 = CS-complexity 1, the parity-barrier face; "complexity 0" was loose).
+  Candidate L-C3 reduced to [L-C3-UNIF] (OPEN) + [L-C3-DUOIDAL] (FALSIFIED-as-leverage), pending
+  EXPLORE's labelling verdict.
 - SO-L² [OPEN — sharpened obstruction, NOT progress]: shift by 2 destroys multiplicativity =>
   L²/variance/large-sieve gives NO advantage for t. Difficulty = the uniform-in-d edge
   d~x^{1-eps}; only scale-averaged methods reach t, averaging cannot currently be removed.
@@ -172,35 +177,40 @@ OPEN THREADS:
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. This step: ACTION = Reframe (Cluster 3 bounded probe, thread T11).
-  (0) PRE-REGISTERED the PROVIDE-vs-RE-EXPRESS decider verbatim BEFORE the analysis.
-  (1) Built the structural frame: duoidal/distributive-law + obstruction-class/GW picture
-  (parity = non-existent Beck distributive law / non-vanishing obstruction class /
-  GW-discriminant) AND the Gowers/inverse-theorem picture (C5 <=> t Gowers-uniform uniform in
-  d <=> no degree-1 char/nilseq correlation uniform in d; degree-1 obstruction = character =
-  Siegel = C6). (2) Showed Cluster 3 cleanly UNIFIES C5 and C6 as the degree-1 Green-Tao-
-  Ziegler inverse dichotomy = Heath-Brown mechanism; identified the complexity-0 framing as
-  the higher-order face of the parity barrier. (3) Introduced candidate lemma L-C3.
-- SELF-ASSESSMENT vs the PRE-REGISTERED decider: RE-EXPRESS. (A) no easier object (clause (2)
-  is C5 verbatim; clause (3) degree-1 branch is C5 for a two-point pattern); (B) no recovery/
-  improvement of a known uniformity toward the edge (Green-Tao gives only AVERAGED-in-n;
-  Tao 2015 only log/scale-averaged); (C) the dichotomy's structured branch = C6 = not
-  decidable (equivalent to C5), the only decidable sub-case (averaged-in-n) does not rule out
-  the uniform-in-d branch. Tie-breaker honesty clause invoked: the C5<->C6 UNIFICATION is a
-  genuine-but-known-to-experts structural insight, recorded as honest escalation, NOT progress.
-- THIRD independent reframing to re-express C5 (after Cluster 1 relocate, Cluster 5 rename).
-  Per the pre-committed threshold, this CLOSES the "just reframe again" strategy => redirect
-  (T13) to SO-L² break conditions or the INDEPENDENCE direction. Recommended; not executed
-  (one action per step). NO terminal state. No manufactured PROVIDE.
+- NOT at a terminal state. This step: DISTILL attack on candidate lemma L-C3 (Cluster 3 / A14).
+  VERDICT: independently CONFIRMS the EXPLORE pre-registered self-assessment = RE-EXPRESS.
+  (1) Steelmanned + tested each PROVIDE clause: (A) FAILS (clause (2) "‖t‖_{U²} localized +
+  uniform in d" is LITERALLY C5; via 1_{n≡a(d)}=(1/d)Σ_χ χ̄(a)χ(n), S_{a,d} = sum of degree-1
+  correlations; no slack); (B) FAILS (Tao 2015 LOG-averaged + no d-uniformity, even Cesàro
+  two-point Chowla OPEN; Green-Tao averaged-in-n only; neither reaches the uniform-in-d edge =
+  SO-L²); (C) FAILS (dichotomy IS C5-vs-C6 by computation — real t at x^{-1/2}, chi3-caricature
+  LOCKED at 1/3; structured branch = Siegel = ¬C5, NOT decidable; averaged sub-case does not
+  rule out the uniform-in-d structured branch).
+- COMPLEXITY/DEGREE FINDING: {n,n+2} is genuinely U²/degree-1 (CS-complexity 1 / true complexity
+  <=1; Gowers-Wolf arXiv:0711.0185 + arXiv:2109.05965); obstructions = linear phases / Dirichlet
+  characters; C5↔C6 = Heath-Brown = degree-1-GTZ STANDS. TERMINOLOGY FIX: EXPLORE's "complexity
+  0" -> "complexity 1 (U²/degree-1, the parity-barrier face)"; U²-CONTROL != U²-SMALLNESS for a
+  two-point pattern (no extra free variable to average over) ⇒ no PROVIDE, concordant with SO-L².
+- DUOIDAL OBSTRUCTION CLASS: FALSIFIED-as-leverage — defined only as "vanishes iff C5"; the
+  GW-discriminant is literally Σ_n t(n) (d=1 case of C5); no (co)homology with differential/
+  cocycle/dimension-count exhibited; nothing bounds it but C5 — a NAME, not a handle (parallel
+  to L-QUB-i GRAVEYARD, C-COH-MON OPEN). Fabrication/equivocation audit: NONE found.
+- REDUCED to two nodes: [L-C3-UNIF] (pending OPEN — TRUE equivalence, difficulty=C5, no easier
+  branch) + [L-C3-DUOIDAL] (pending FALSIFIED-as-leverage); C5 UNCHANGED. ADVERSARIAL PASS
+  COMPLETE; PENDING EXPLORE's labelling verdict (NEEDS-REVIEW-vs-FALSIFIED is EXPLORE's to set).
+- THIRD re-expression of C5 (Cluster 1 relocate, Cluster 5 rename, Cluster 3 unify+re-express).
+  Per the pre-committed threshold, CLOSES "just reframe again" => redirect (T13) to SO-L² break
+  conditions or the INDEPENDENCE direction. NO terminal state. NO manufactured PROVIDE/NEEDS-REVIEW.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may
-  be NAMED, NOT built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform OPEN => NOT legal
-  foundations. SO-L² = OPEN obstruction => NOT a foundation. L-C3 = candidate (pre-DISTILL) =>
-  NOT a legal foundation. GRAVEYARD nodes may NOT be built upon.
+  be NAMED, NOT built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF OPEN => NOT legal
+  foundations. SO-L² = OPEN obstruction => NOT a foundation. L-C3(-UNIF/-DUOIDAL) = post-DISTILL,
+  pending EXPLORE label => NOT a legal foundation. GRAVEYARD nodes may NOT be built upon.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
-attack, NOT built upon. OPEN-CHECKPOINTS = C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform, all OPEN,
-NOT legal foundations. SO-L² = OPEN obstruction, NOT a foundation. L-C3 = pre-DISTILL
+attack, NOT built upon. OPEN-CHECKPOINTS = C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF, all
+OPEN, NOT legal foundations. SO-L² = OPEN obstruction, NOT a foundation. L-C3-DUOIDAL =
+pending-FALSIFICATION (adversarial pass complete, awaiting EXPLORE). L-C3 = post-DISTILL
 candidate, NOT a foundation.):
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
@@ -292,15 +302,18 @@ candidate, NOT a foundation.):
   ANALYTIC-UNIFORMITY RE-EXPRESSION (A13/Cluster 5): C5 <=> sup_d R_d <= x^{o(1)} (L-QUB-reform);
   RENAME, equal difficulty. SO-L² records WHY (shift kills multiplicativity => L² no easier).
   PARITY-STRUCTURAL RE-EXPRESSION (A14/Cluster 3): C5 <=> the Heath-Brown C5-vs-C6 dichotomy as
-  the degree-1 case of Green-Tao-Ziegler; UNIFIES C5 & C6; no easier branch. (L-C3, pre-DISTILL.)
-  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4 + Cluster-5 decider (T12).
-  STAYS OPEN. THREE independent reframings (geometry, analytic uniformity, parity-structural)
-  re-express it; none reduces it.
+  the degree-1 case of Green-Tao-Ziegler; UNIFIES C5 & C6; no easier branch. DISTILLED
+  (work/1781423462): RE-EXPRESS confirmed (clauses A/B/C all fail); reduced to [L-C3-UNIF] (OPEN,
+  = re-expression of C5) + [L-C3-DUOIDAL] (FALSIFIED-as-leverage). Two-point pattern is
+  U²/degree-1 (CS-complexity 1, NOT "complexity 0"); U²-control != U²-smallness ⇒ no PROVIDE.
+  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4 + Cluster-5 decider (T12)
+  + Cluster-3 DISTILL Attacks 1-6 (work/1781423462). STAYS OPEN. THREE independent reframings
+  (geometry, analytic uniformity, parity-structural) re-express it; none reduces it.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
   + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
   + work/1781394759-EXPLORE.md + work/1781395447-DISTILL.md + work/1781396231-EXPLORE.md
-  + work/1781422588-EXPLORE.md (Cluster 3 re-expression).
+  + work/1781422588-EXPLORE.md (Cluster 3 re-expression) + work/1781423462-DISTILL.md (L-C3 attack).
 
   --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN; NOT legal foundations) ---
 - [L-QUB-reform] (Cluster-5 survivor) C5 <=> sup_{d<=x^{1-eps}} R_d(x) <= x^{o(1)}, where
@@ -315,6 +328,26 @@ candidate, NOT a foundation.):
   currently be removed (V5). NO AUDIT certifies the bound itself => STATUS stays OPEN.
   ADVERSARIAL PASS: Cluster-5 decider T12 (work/1781395447) + re-verification V1-V5.
   source: work/1781395447-DISTILL.md + work/1781396231-EXPLORE.md.
+- [L-C3-UNIF] (Cluster-3 survivor; PENDING EXPLORE label) The two-point t=lambda(n)lambda(n+2)
+  is a U²/degree-1 (Cauchy-Schwarz complexity 1 / true complexity <=1) pattern; hence C5 <=> "t
+  Gowers-uniform (localized U²-norm o(1)) uniformly in d<=x^{1-eps}" <=> "no degree-1 object
+  (two-point: no Dirichlet char / linear phase) correlates with t uniformly in d", and the
+  obstruction branch is exactly C6 (Siegel-type structured correlation = ¬C5). = Heath-Brown
+  dichotomy as the degree-1 case of GTZ; UNIFIES C5 and C6 on one axis. DEPENDS ON: C5 (it IS a
+  re-expression of C5), C6 (structured branch), established math (GTZ arXiv:1009.3998; Green-Tao
+  arXiv:0807.1736; Gowers-Wolf true complexity arXiv:0711.0185; U² inverse thm). STATUS: OPEN —
+  faithful RE-EXPRESSION/UNIFICATION, difficulty EQUAL to C5, NO easier branch; NOT a legal
+  foundation. (Equivalence found TRUE by the attack; NEEDS-REVIEW-vs-FALSIFIED verdict left to
+  EXPLORE.) AUDIT: (i) DEGREE — {n,n+2} controlled by U² via one Cauchy-Schwarz, CS-complexity 1
+  (Gowers-Wolf arXiv:0711.0185, arXiv:2109.05965); obstruction = degree-1 character. (ii) BRANCH
+  SEPARATION (rerunnable, N=2e6): real t degree-1 corr at x^{-1/2} for q in {3,4,5,7,8,12}
+  (factor 0.9-1.8) = C5/random branch; chi3-caricature g=chi3(n)chi3(n+2) LOCKED at 1/3=1/|order|
+  = C6/structured branch. (iii) "U²-control localized + uniform in d = the C5 bound" via
+  1_{n≡a(d)}=(1/d)Σ_χ χ̄(a)χ(n). NO audit certifies any BOUND on C5 (finite x / small q SILENT
+  on the d~x^{1-eps} edge — see SO-L²); none manufactured. ADVERSARIAL PASS: Attacks 1 (clause A:
+  clause (2) literally C5), 3 (clause C: dichotomy IS C5-vs-C6, neither branch decidable), 4
+  (degree correct; "complexity 0"->"complexity 1 = U²/degree-1"; U²-control != U²-smallness).
+  CONCORDANT WITH SO-L². source: work/1781423462-DISTILL.md.
 - [C7] "A Weil-type cohomology + six functors + Poincare-Verdier duality + absolute Frobenius +
   Grothendieck-Lefschetz trace formula over Spec Z (= F_1 / Connes-Consani arithmetic site)
   realizing the counting/zeta equality as a Lefschetz formula." DEPENDS ON: established math as a
@@ -365,7 +398,25 @@ candidate, NOT a foundation.):
   theorem machinery does not close -- the same wall named in higher-order-Fourier language.
   BREAK/ESCALATE (a real PROVIDES): (1) a shift-surviving variance/2nd-moment bound for the
   non-multiplicative t; OR (2) removing the MRT/Tao scale-averaging (Tao's random-graph
-  expansion). source: work/1781396231-EXPLORE.md + work/1781422588-EXPLORE.md (complexity-0).
+  expansion). TERMINOLOGY FIX (DISTILL work/1781423462): the Cluster-3 reading is "complexity 1
+  (U²/degree-1, the parity-barrier face)", NOT "complexity 0"; U²-control != U²-smallness for a
+  two-point pattern (no extra free variable to average over) = the higher-order-Fourier face of
+  this same wall. source: work/1781396231-EXPLORE.md + work/1781422588-EXPLORE.md
+  + work/1781423462-DISTILL.md (complexity 1 fix + concordance).
+
+  --- PENDING-FALSIFICATION (adversarial pass complete; awaiting EXPLORE's verdict) ---
+- [L-C3-DUOIDAL] "The +/x duoidal obstruction class (non-existent Beck distributive law
+  T_+T_x=>T_xT_+ / Hochschild-Harrison-AQ class in the interchange deformation complex /
+  GW-discriminant where +/-1=parity) is a COMPUTABLE invariant giving leverage on C5."
+  DEPENDS ON: C5 (the class is defined as the obstruction-to-cancellation). STATUS:
+  FALSIFIED-as-leverage (DISTILL verdict; final label EXPLORE's). CONCRETE OBJECT: the
+  GW-discriminant / signature part is literally Σ_n t(n) (the global d=1 shift-2 Liouville sum);
+  "the class vanishes uniformly in d" is C5 verbatim. No chain complex with a differential,
+  cocycle representative, or dimension count is exhibited; nothing computes or bounds the class
+  except C5 itself. EXPLORE's own Part 2.1 concedes it "does not compute the class … requires
+  analytic input, identical to Cluster 1's outcome." A NAME, not a handle — parallel to L-QUB-i
+  (GRAVEYARD) and C-COH-MON (OPEN = cohomological C5). ADVERSARIAL PASS: Attack 5.
+  source: work/1781423462-DISTILL.md.
 
 GRAVEYARD (may NOT be built upon):
 - [L-QUB-i] "The factorization U_d = A^(2)_d R_d is a categorical/Beck-Chevalley CHARACTERIZATION
