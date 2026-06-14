@@ -11,31 +11,38 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1781472028-EXPLORE.md` — **Apply: opened up the (b2) de-averaging
-mechanism (entropy decrement / dilation / Fourier uniformity) and RE-LOCALIZED the wall.**
-No bootstrap labelling was due (L-C3 already labelled in `work/1781424665`). FINDING:
-de-averaging Tao 2016 is **NOT a monolithic wall.** (i) By **Tao–Teräväinen 2019
-(almost all scales, arXiv:1809.02518)**, two-point Chowla `Σ_{X<n≤2X} λ(n)λ(n+2)=o(X)`
-holds for **all scales X OUTSIDE a set of LOGARITHMIC DENSITY ZERO**, and there the
-non-log average matches the log one **except for a possible Archimedean twist `n^{it}`**.
-(ii) The log weight is load-bearing via **(M1) dilation invariance of the measure `dn/n`**
-[AUDITED numerically, Part B: `|l(x)−l(x/p)| ~ log p/log x`, N=4e6] **+ (M2) an
-UNSPECIFIABLE runtime scale** (the entropy decrement); **(M3) the MRT short-interval
-input is NOT the blocker** (survives at a.a. scales). (iii) Residual SHARPENED to the new
-obstruction **SO-deavg**: even Cesàro two-point Chowla `⟺` **FULL every-scale local
-Fourier uniformity of `λ`** (degree 1); C5 demands additionally **(R3) the uniform-in-`d`
-AP refinement**. (iv) Eliminated TWO non-blockers: MRT input (M3); the **ergodic structure
-theorem** (Frantzikinakis–Host arXiv:1708.00677 exhibit an explicit dynamical obstruction
-to closing Fourier uniformity by ergodic methods). **ANTI-DECEPTION:** a going-in mechanism
-("log-averaging = cross-scale variance reduction") was **REFUTED by Part A numerics**
-(Cesàro/single-scale means SMALLER than the log-avg at accessible scales) and is now in the
-GRAVEYARD; only (M1) survives. **NO bound on C5 is certified; NO new handle on (R1)/(R2)/(R3);
-SO-deavg is at C5-hardness.** This is an **escalation recorded honestly** — a sharper
-*statement* of the (b2) wall (now a named open conjecture with a precise boundary: MRT did
-`θ>0` *on average*; open part = *every scale* + *arbitrarily short H*), **not progress**
-toward TPC and **NOT a terminal state.** RECOMMENDATION: SO-deavg is the sharpest (b2)
-statement; recommend **PAUSE for human input**; if continuing, ranked **(b2/SO-deavg) >
-(b1) > (c)**, none made tractable by any instrument in hand. NO manufactured optimism.
+**Latest step:** `work/1781473105-DISTILL.md` — **DISTILL adversarial pass on SO-deavg
+(the de-averaging re-localization of (b2)). PENDING EXPLORE's labelling verdict.** Attacked
+all five non-ESTABLISHED, checkable claims SO-deavg embeds. RESULT: SO-deavg **survives as a
+faithful, EQUAL-HARDNESS (NO-reduction) decomposition of C5** — but with **THREE corrections
+EXPLORE must fold in when labelling**, plus a corrected falsification audit. (1) **The "⟺" is
+OVERCLAIMED (Attack 1):** the established equivalence is *logarithmic* Fourier uniformity ⟺
+*logarithmic* Chowla (all `t≥1`); SO-deavg states it with **Cesàro** Chowla + **every-scale**
+Fourier uniformity, a strictly stronger, NON-certified statement. It is at best a **forward
+implication** (every-scale degree-1 Fourier uniformity ⟹ Cesàro two-point Chowla), itself
+OPEN for Cesàro; the **converse is NOT established**. (2) **The TT a.a.-scales application is
+corrected (Attack 3★):** the verbatim abstract keys the vanishing branch on **the PRODUCT
+`g₁···gₖ`**; for two-point Chowla `λ·λ=λ²=1`, which **IS** a twisted character (principal,
+`t=0`), so the two-point case lands in the **NON-vanishing `d^{-it}χ(a)` branch**. Hence TT
+gives, at a.a. scales, a **STRUCTURAL REDUCTION to `c·d^{-it}χ(a)`, NOT vanishing** — EXPLORE's
+"de-averaging SUCCEEDS at almost all scales" is corrected; this makes **(R2) [kill the `n^{it}`
+twist] the genuine residual** (a strengthening). (3) **The Frantzikinakis–Host citation is
+MIS-ATTRIBUTED (Attack 2c):** arXiv:1708.00677 is the *positive* "log-Sarnak for ergodic
+weights" theorem; the obstruction to closing Fourier uniformity by ergodic methods is the
+**FH skew-product `T(α,β)=(α,αβ)` + Sawin's dynamical model** (different source). Obstruction
+REAL (multiply search-confirmed); attribution must be fixed. **CITATIONS:** Tao–Teräväinen
+1809.02518, MRT 1812.01224 ("on average" = open boundary, confirmed), Pilatte 2310.19357
+(log-only, confirmed), Tao 1509.05422 (entropy decrement, confirmed), and **Cesàro two-point
+Chowla OPEN** (verbatim) all **CONFIRMED at search-surfaced level** (PDFs 403 here); FH
+re-attribution OPEN-at-quoted-level. **HARDNESS (Attack 4): NO reduction occurred** — SO-deavg
+is an honest decomposition C5 = [every-scale Cesàro two-point Chowla] + [(R3) AP-uniformity],
+both open & not easier; at C5-hardness. **FALSIFICATION re-examined (Attack 5):**
+`DEAVG-variance-reduction` **stays FALSIFIED**, but EXPLORE's raw-std rationale was **partly a
+detrending artifact** (Probe 1: detrended log-avg increments 4.0e-3 < Cesàro 5.8e-3); the
+**robust, model-independent refutation is Probe 4** — for i.i.d. ±1, `Var(log)/Var(Cesàro) ~
+x/(log x)² → ∞`, so log-averaging is variance-*increasing* and its mechanism cannot be
+variance reduction. Verdict sound, AUDIT upgraded. **NO bound on C5 certified; NOT progress;
+NOT a terminal state.** Artifact ready for EXPLORE to label SO-deavg and the related nodes.
 
 **The crux in one sentence.** The entire difficulty of TPC, reached through every
 unconditional route surveyed, concentrates on a single open statement — **C5**: \(\sum_{n\le x,\
@@ -152,9 +159,15 @@ OPEN THREADS:
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. No bootstrap labelling due (L-C3 already labelled in
-  work/1781424665-EXPLORE.md). This step: ACTION = Apply, engaging the ACTUAL analytic mechanism
-  of (b2) (entropy decrement / dilation / Fourier uniformity), not a cross-domain renaming.
+- NOT at a terminal state. LAST STEP = DISTILL adversarial pass on SO-deavg (work/1781473105).
+  *** PENDING: EXPLORE must now LABEL SO-deavg + related nodes from this attack. *** The pass
+  found SO-deavg is a faithful EQUAL-HARDNESS (no-reduction) decomposition of C5 but carries THREE
+  overclaim/citation corrections (1: "iff" -> forward implication only, open for Cesaro; 2: TT gives
+  structural reduction to d^{-it}chi(a) at a.a. scales, NOT vanishing, since lambda^2=1 is pretentious
+  => (R2) is the genuine residual; 3: FH 1708.00677 mis-attributed for the obstruction, which is the
+  FH skew-product + Sawin model). DEAVG-variance-reduction stays FALSIFIED with a corrected/upgraded
+  audit (Probe 4: log-averaging is variance-INCREASING). Citations TT/MRT/Pilatte/Tao2016/Cesaro-open
+  all CONFIRMED at search-surfaced level. NO bound on C5 certified; NO new handle; NOT progress.
 - FINDING: de-averaging is NOT a monolithic wall. (i) Tao-Teravainen 2019 (almost all scales):
   de-averaging SUCCEEDS unconditionally at all scales OUTSIDE a log-density-zero exceptional set,
   up to an n^{it} twist. (ii) The log weight is load-bearing via (M1) dilation invariance of dn/n
@@ -348,28 +361,39 @@ all OPEN, NOT legal foundations. SO-L², SO-deavg = OPEN obstructions, NOT found
   regenerates 4-fold Liouville correlations, V3b]; (b2) remove MRT/Tao scale-averaging [ENGAGED in
   A15 this step => refined to SO-deavg]. source: work/1781396231-EXPLORE.md + work/1781422588-
   EXPLORE.md + work/1781423462-DISTILL.md + work/1781424665-EXPLORE.md + work/1781472028-EXPLORE.md.
-- [SO-deavg] (NEW this step — the sharpest statement of (b2); refines SO-L²) "De-averaging Tao
-  2016 is NOT a monolithic wall. By Tao-Teravainen 2019 (almost all scales), two-point Chowla
-  Sum_{X<n<=2X} lambda(n)lambda(n+2)=o(X) holds for ALL scales X OUTSIDE a set of LOGARITHMIC
-  DENSITY ZERO, and there the non-log average matches the log one EXCEPT for a possible Archimedean
-  twist n^{it}. The residual to even Cesaro two-point Chowla is (R1) eliminating the log-density-
-  zero exceptional scales + (R2) ruling out the n^{it} twist = FULL EVERY-SCALE LOCAL FOURIER
-  UNIFORMITY of lambda (degree 1, two-point); C5 demands additionally (R3) the uniform-in-d AP
-  refinement. The single mechanism is that the entropy/dilation method produces a good scale that
-  CANNOT be specified in advance — harmless under the dilation-invariant measure dn/n (M1) but not
-  under dn — and dualizing 'one runtime good scale' to 'every scale' is the OPEN random-graph
-  expansion." DEPENDS ON: C5 (it is the de-averaging face of C5); established math (Tao-Teravainen
-  arXiv:1809.02518 almost-all-scales; MRT arXiv:1812.01224 Fourier uniformity s=1, theta>0 on
-  average; Tao 2015 blog local-Fourier-uniformity => log-Chowla; Frantzikinakis-Host arXiv:
-  1708.00677 + dynamical-model obstruction). STATUS: OPEN as an obstruction; at C5-hardness; NO
-  new handle; NOT progress, NOT terminal, NOT a legal foundation. AUDIT: (M1) dilation stability
-  AUDITED numerically (Part B: |l(x)-l(x/p)| ~ log p/log x, N=4e6); literature at search-surfaced/
-  quoted level (arXiv 403). NON-BLOCKERS ELIMINATED: MRT short-interval input (M3, survives a.a.
-  scales); ergodic structure theorem (Frantzikinakis-Host explicit obstruction to Fourier
-  uniformity by ergodic methods). HONEST REFUTATION recorded: a going-in mechanism (log-averaging
-  = cross-scale variance reduction) was REFUTED by Part A numerics (Cesaro/single-scale means
-  SMALLER than the log-avg at accessible scales); only (M1) survives. NO bound on C5 is certified.
-  source: work/1781472028-EXPLORE.md.
+- [SO-deavg] (refines SO-L²; ADVERSARIAL PASS DONE work/1781473105-DISTILL.md, PENDING EXPLORE's
+  verdict) "De-averaging Tao 2016 is NOT a monolithic wall." DISTILL attacked all five embedded
+  checkable claims; SO-deavg SURVIVES as a faithful EQUAL-HARDNESS (no-reduction) decomposition of
+  C5, with THREE CORRECTIONS now folded into its statement (EXPLORE to label):
+  * [CORRECTION 1 — the "iff" is OVERCLAIMED, Attack 1] The established equivalence is *logarithmic*
+    Fourier uniformity <=> *logarithmic* Chowla (all t>=1). SO-deavg's "Cesaro two-point Chowla <=>
+    full every-scale Fourier uniformity" is a STRONGER, NON-certified statement: at best a FORWARD
+    implication (every-scale degree-1 Fourier uniformity ==> Cesaro two-point Chowla), itself OPEN
+    for Cesaro; the CONVERSE is NOT established. Downgrade "<=>" to "<==".
+  * [CORRECTION 2 — TT application, Attack 3*] Verbatim abstract keys vanishing on the PRODUCT
+    g_1...g_k; for two-point, lambda*lambda = lambda^2 = 1 IS a twisted character (principal, t=0),
+    so the two-point case is in the NON-vanishing d^{-it}chi(a) branch. TT therefore gives at a.a.
+    scales a STRUCTURAL REDUCTION to c*d^{-it}chi(a), NOT vanishing. "de-averaging SUCCEEDS at a.a.
+    scales" is CORRECTED; (R2) [kill the n^{it} twist] is the genuine residual (a strengthening).
+  * [CORRECTION 3 — FH mis-attribution, Attack 2c] arXiv:1708.00677 is the POSITIVE "log-Sarnak for
+    ergodic weights" theorem; the obstruction to closing Fourier uniformity by ergodic methods is
+    the FH skew-product T(a,b)=(a,ab) + SAWIN's dynamical model (different source). Obstruction REAL
+    (multiply search-confirmed); re-attribute. The "1708.00677 IS the obstruction" reading is wrong.
+  Residual still = (R1) exceptional scales + (R2) the n^{it} twist [now correctly the defining
+  residual] + (R3, for C5) AP-uniformity. Mechanism (M1) dilation invariance of dn/n [audited] +
+  (M2) unspecifiable runtime scale -- SURVIVES (Attack 2b). NON-BLOCKERS still eliminated: MRT
+  short-interval input (M3); ergodic-method route (FH skew-product + Sawin, re-attributed).
+  DEPENDS ON: C5 (de-averaging face of C5); established math (Tao-Teravainen arXiv:1809.02518
+  almost-all-scales [CONFIRMED at quoted level, abstract verbatim]; MRT arXiv:1812.01224 degree-1
+  Fourier uniformity ON AVERAGE H>=X^theta [CONFIRMED, "on average" = open boundary]; Pilatte
+  arXiv:2310.19357 log-only (log x)^{1-c} [CONFIRMED]; Tao arXiv:1509.05422 entropy decrement
+  [CONFIRMED]; Cesaro two-point Chowla OPEN [CONFIRMED verbatim]; FH skew-product + Sawin model
+  [search-surfaced, re-attributed]). STATUS: OPEN as an obstruction; at C5-hardness (Attack 4: NO
+  reduction -- honest decomposition C5 = [every-scale Cesaro two-point Chowla] + [(R3) AP-uniformity],
+  both open & not easier); NO new handle; NOT progress, NOT terminal, NOT a legal foundation. AUDIT:
+  (M1) numerically AUDITED (Part B, N=4e6) + REPRODUCED by DISTILL; literature search-surfaced/quoted
+  (PDFs 403). NO bound on C5 certified. ADVERSARIAL PASS: Attacks 1/2/3/3*/4/5 (work/1781473105).
+  source: work/1781472028-EXPLORE.md + work/1781473105-DISTILL.md.
 
 GRAVEYARD (may NOT be built upon):
 - [L-C3-DUOIDAL] "The +/x duoidal obstruction class (Beck distributive law / Hochschild-Harrison-
@@ -404,11 +428,15 @@ GRAVEYARD (may NOT be built upon):
   necessity is dim EXACTLY 1). Honest content in C5.
 - [C1-parity-blocked-as-audited] reading that C1's comprehensiveness CLOSES necessity. FALSIFIED-
   as-an-audit (only MEMBERSHIP audited; uniform-in-d half is C5). Absorbed into C5.
-- [DEAVG-variance-reduction] (NEW, this step) "Logarithmic averaging in Tao 2016 works because it
-  reduces cross-scale variance of the two-point sum relative to single-scale/Cesaro means."
-  FALSIFIED by Part A numerics (N=4e6): single-scale block means (std 5.7e-3) and running Cesaro
-  means (std 9.6e-3) are SMALLER and better-behaved than the running log-average (std 3.1e-2, and
-  large in absolute value ~ -0.1 to -0.2). The log weight's role is (M1) DILATION INVARIANCE of
-  dn/n + (M2) the unspecifiable runtime scale, NOT variance reduction. source: work/1781472028-
-  EXPLORE.md.
+- [DEAVG-variance-reduction] "Logarithmic averaging in Tao 2016 works because it reduces cross-scale
+  variance of the two-point sum relative to single-scale/Cesaro means." STAYS FALSIFIED, but the
+  AUDIT was CORRECTED + UPGRADED by DISTILL (work/1781473105, Attack 5). EXPLORE's original rationale
+  (raw std l(x)=3.1e-2 >> Cesaro 9.6e-3) is PARTLY a detrending artifact: l(x) carries a large
+  deterministic -1/log x drift, and on a DETRENDED (increment) basis the log-avg is actually LESS
+  volatile (Probe 1: diff-std 4.0e-3 < Cesaro 5.8e-3) -- so the raw-std comparison was NOT a fully
+  fair test. The ROBUST, model-independent refutation is Probe 4: for i.i.d. +-1, Var(log)/Var(Cesaro)
+  = x/(log x)^2 -> infinity (measured ratio ~65), so log-averaging is variance-INCREASING as a
+  mean-estimator and its mechanism CANNOT be variance reduction. Verdict sound; mechanism is (M1)
+  dilation invariance + (M2) unspecifiable runtime scale. source: work/1781472028-EXPLORE.md +
+  work/1781473105-DISTILL.md.
 ```
