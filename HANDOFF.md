@@ -18,14 +18,20 @@ re-derived from scratch.
    verdict, live targets). This is the resume anchor.
 3. `writeups/2026-06-14-categorical-reframings-of-the-twin-prime-crux.md` — the consolidated
    three-cluster cross-domain campaign (the most recent body of work).
-4. `work/*-{EXPLORE,DISTILL}.md` (17 files) — immutable per-step history with the actual
-   mathematics, attacks, and rerunnable code+output.
+4. `work/*-{EXPLORE,DISTILL}.md` (20 files) — immutable per-step history with the actual
+   mathematics, attacks, and rerunnable code+output. The latest three (ts 1781472028 / 1781473105
+   / 1781473701) are the (b2) de-averaging engagement → `SO-deavg` (below).
 
-**Current frontier:** the crux **C5** (below) / the sharpened obstruction **SO-L²** / the sharpest
-live target **(b2)** = de-averaging Tao 2016. Ranked next-moves if continuing: **(b2) > (b1) > (c)**.
+**Current frontier:** the crux **C5** (below) / the sharpened obstruction **SO-L²** / its
+de-averaging face now sharpened to **SO-deavg** (below). Target **(b2)** has been *engaged*
+analytically (not just named): it re-localized — and survived DISTILL as an **equal-hardness,
+no-reduction** decomposition of C5, with the genuine residual = **(R2)** kill the `n^{it}` twist
+**+ (R3)** AP-uniformity. Ranked next-moves if continuing: **(b2/SO-deavg) > (b1) > (c)** — none has
+an instrument in hand.
 
 **Do-not-redo (one line):** Clusters 1, 5, 3 are tried (verdicts below); the categorical-concept
-ranking is below; Cluster 2 is subsumed by Cluster 1; independence (c) has no current method.
+ranking is below; Cluster 2 is subsumed by Cluster 1; (b2) is engaged → `SO-deavg` (the two natural
+instruments for its residual are existing walls — see DO-NOT-REDO); independence (c) has no method.
 
 ---
 
@@ -38,6 +44,11 @@ RELOCATE, Cluster 5 RENAME, Cluster 3 UNIFY+RE-EXPRESS), which — per a pre-reg
 closed the "reframe across domains again" strategy. This is **strong evidence, not proof**, that
 C5 is the irreducible crux, with three concordant reasons why (≥-RH-geometry; non-multiplicativity;
 U²-control ≠ U²-smallness). No proof/disproof/independence has been obtained, and none is claimed.
+A later session then *engaged the top live target* **(b2)** (de-averaging Tao 2016) analytically:
+it sharpened the de-averaging face of C5 to the obstruction **SO-deavg** and — after DISTILL caught
+three overclaims — recorded it as a faithful **equal-hardness** decomposition (every-scale degree-1
+Fourier uniformity **⟹** Cesàro two-point Chowla, *forward implication only*; genuine residual =
+**(R2)** `n^{it}` twist + **(R3)** AP-uniformity). It too is at C5-hardness with no new handle.
 
 ---
 
@@ -60,6 +71,7 @@ For `t(n) := λ(n)λ(n+2)` (λ = Liouville) and `S_{a,d}(x) := Σ_{n≤x, n≡a 
 | **C-COH-MON** | OPEN | the big-monodromy clause = **C5 in cohomological clothing** |
 | **C∞** | OPEN | the archimedean place — a distinct obstruction, no `𝔽_q[t]` counterpart |
 | **SO-L²** | obstruction (audited) | the shift destroys multiplicativity ⇒ L²/variance/large-sieve gives no advantage; difficulty = the uniform-in-`d` edge |
+| **SO-deavg** | OPEN obstruction (audited) | the de-averaging face of C5: every-scale degree-1 Fourier uniformity of `λ` **⟹** Cesàro two-point Chowla (fwd only); residual = **(R2)** kill the `n^{it}` twist + **(R3)** AP-uniformity. Since `λ²=χ₀`, TT 2016 gives a *structural reduction to `c·d^{−it}χ(a)`* (not vanishing) at a.a. scales. Equal-hardness, no reduction |
 | **L-QUB-reform** | OPEN | `C5 ⟺ sup_d R_d ≤ x^{o(1)}` (a rename, difficulty = C5) |
 | **L-C3-UNIF** | OPEN | `C5 ⟺` Gowers-uniformity of `t` uniform in `d` `⟺` no degree-1 character correlation (= C5↔C6 unification) |
 | GRAVEYARD | FALSIFIED | L-COH-as-proof, PURITY-ONLY, L-QUB-i, L-QUB-ii, L-C3-DUOIDAL, and the C1–C6 over-readings — see `TRACKING.md` |
@@ -155,6 +167,14 @@ the chat-only ranking, persisted so it is not regenerated.
 - **Do not propose C-COH-MON / a "+/× obstruction class" / an L²-factorization as leverage** —
   all three are FALSIFIED-as-leverage (they collapse to C5). New categorical objects must come
   with an *independent* bound, not a definition "= C5".
+- **Do not re-propose the two natural instruments for `SO-deavg`'s residual (R2)** — both are
+  existing walls: (i) *across-scale rigidity of* `t(X)` via `λ(pn)=−λ(n)` IS the M1 dilation play at
+  the M2 unspecifiable scale = the open every-scale/random-graph expansion; (ii) *Halász/pretentious
+  distance* is inapplicable (`t` is non-multiplicative) = SO-L². Also: do **not** claim "de-averaging
+  succeeds at almost all scales" for the two-point case — `λ²=χ₀` lands in TT's *non-vanishing*
+  branch (structural reduction to `c·d^{−it}χ(a)`); and do **not** cite Frantzikinakis–Host
+  arXiv:1708.00677 as the ergodic *obstruction* (it is the positive log-Sarnak theorem; the
+  obstruction is the FH skew-product `T(α,β)=(α,αβ)` + Sawin's model).
 - **Do not pursue independence (c) expecting a method** — none exists; the Hamkins construction
   builds a TPC-*equivalent* sentence independent of PA only *because* TPC's truth is unknown, which
   is not an independence proof of TPC.
@@ -166,9 +186,15 @@ the chat-only ranking, persisted so it is not regenerated.
 ## Where to go next (if continuing past the pause)
 
 The honest live targets, all at genuine C5-hardness with no new tool currently in hand:
-- **(b2) De-average Tao 2016** — remove the logarithmic/scale averaging from the two-point Chowla
-  theorem. Correctly localized as *the* missing ingredient; a famous open frontier (even Cesàro
-  two-point Chowla is open). **Sharpest target.**
+- **(b2) De-average Tao 2016 → now `SO-deavg`** — ENGAGED (work ts 1781472028/473105/473701) and
+  DISTILL-verified as an equal-hardness, no-reduction decomposition of C5. Corrected residual:
+  **(R2)** kill the `n^{it}` twist (the genuine defining piece — `λ²=χ₀` is pretentious, so TT 2016
+  gives a *structural reduction to* `c·d^{−it}χ(a)` at a.a. scales, **not** vanishing) **+ (R3)**
+  AP-uniformity. Equivalently: every-scale degree-1 Fourier uniformity **⟹** Cesàro two-point Chowla
+  (forward only; even Cesàro is open; MRT is *on-average* — the open boundary is *every scale* +
+  arbitrarily short `H`). A Review exhausted the two natural instruments (both = existing walls; see
+  DO-NOT-REDO), so **no in-graph next move is tractable without a new instrument.** **Sharpest
+  target, but blocked.**
 - **(b1) A shift-surviving variance bound** for the non-multiplicative `t` — blocked by SO-L² (the
   variance off-diagonal regenerates four-fold Liouville correlations instead of collapsing).
 - **(c) Independence** — no current method (see DO-NOT-REDO).
