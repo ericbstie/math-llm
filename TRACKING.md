@@ -11,24 +11,29 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate.**
 
-**Latest step:** `work/1781394759-EXPLORE.md` — action **Reframe**, opening **Cluster 5 (A13)**, the
-quantitative-uniformity bridge. Built a [0,∞]-(Lawvere)-enriched **fibration** p: S_x → D_x^op of the
-family {S_{a,d}} over the **moduli poset** (divisibility), with exact additivity (ADD: S_{a,d}=Σ_{a'≡a(d)}
-S_{a',d'}) and **descent** (Σ_a S_{a,d}=G(x), d-independent — verified exactly = −940 at N=2e6). Expressed
-C5's uniform regime as the **L∞-pushforward** U_d (limit / right-Kan-extension flavour) and the proven
-averaged regime (Tao 2015 log-averaged Chowla(2), arXiv:1509.05422; Matomäki–Radziwiłł / MRT) as the
-**L1/L2-pushforward** A^(2)_d (colimit / left-Kan flavour); the averaged-vs-uniform **gap = the
-lax-monoidal / Beck–Chevalley defect** R_d = ‖S_{·,d}‖_∞ /(‖S_{·,d}‖_2/√d) ∈ [1,∞), giving the **exact
-factorization U_d = A^(2)_d · R_d**. Numerics (N=2e6) validate it: A^(2)_d ≈ √(d/x) (square-root
-cancellation), R_d ≈ √(2 ln d) (benign extremal factor), the **worst bucket itself square-root-cancels**
-(so U_d→1 is the √log d factor, NOT a genuine main term), and at fixed d U_d→0 (difficulty = the edge
-d≈x^{1−ε}). Candidate lemma **L-QUB** (a characterization) introduced and **ready for DISTILL**.
-**HONESTY VERDICT (recorded, weighted first): MOSTLY-RENAME** — the categorical iff is the identity in
-categorical clothing and PROVIDES NO new bound; the analytic content must enter at the per-fiber
-cancellation, which is C5. The one non-rename sliver: the factorization separates a provable-in-spirit
-averaged factor from a purely combinatorial extremal defect, exposing the new attackable sub-question
-**T12** (is sup_d R_d controllable given averaged control, or is uniform A^(2)_d→0 itself just C5?).
-Legitimate **escalation to record, NOT progress dressed up. No terminal state.**
+**Latest step:** `work/1781395447-DISTILL.md` — **adversarial pass on candidate lemma L-QUB** (Cluster 5
+/ A13). Result, all pending EXPLORE's label: **(i) the iff `C5 ⟺ sup_d A^(2)_d·R_d → 0` is a TAUTOLOGY**
+— the algebraic identity `‖v‖_∞ = (‖v‖_2/√d)·(‖v‖_∞/(‖v‖_2/√d))` verified on arbitrary real arrays (no
+arithmetic) ⇒ **FALSIFIED-as-leverage** (TRUE-but-trivial, no bound). **(ii) THE DECIDER T12 = RENAME (C5
+in L² clothing), now PROVEN not suspected.** Sharper than the prior self-assessment: `Σ_a S_{a,d}² =
+x(diagonal, t(n)²=1) + small off-diagonal`, so the L² factor `A^(2)_d ≈ √(d/x)` is the **trivial
+diagonal** — won for **free**, no MRT/Tao/entropy needed; "uniform A^(2)_d→0" is the triviality
+`√(d/x)→0`, NOT C5-hard. All arithmetic is in `R_d`, and since A^(2)_d is free, `sup_d R_d ≤ x^{o(1)} ⟺
+U_d→0 = C5` with **no slack**. Variance-only (Cauchy–Schwarz) gives `U_d ≤ √d·A^(2)_d ≈ d/√x = x^{1/2−ε}
+→ ∞` at the edge — **useless**. **Variance/large-sieve finding:** that machinery is
+multiplicativity/character-orthogonality driven (Kowalski; Granville–Harper–Sound. BV-for-mult-fns);
+`λ(n)λ(n+2)` is **NON-multiplicative** (the +2 shift kills it) ⇒ the variance method **does not apply** —
+its off-diagonal **regenerates the same shifted correlations** instead of collapsing; MRT/Tao
+(arXiv:1509.05422) reach the object only via scale/modulus **averaging** that Tao states cannot currently
+be removed (the "random-graph expansion" obstruction). **(iii) Clause (ii) mislocates ⇒ FALSIFIED** as a
+leverage claim: it presupposes a substantive "averaged L² control" waypoint that does not exist (the L²
+factor is the free diagonal); equivocation **pinned** — averaged-over-`d` (MRT/Tao, deep) vs
+averaged-over-`a` at fixed d (trivial diagonal). Survivor = the faithful reformulation **L-QUB-reform**:
+`C5 ⟺ sup_{d≤x^{1−ε}} R_d ≤ x^{o(1)}`, **OPEN**, difficulty **equal to C5** (RENAME). **Cluster 5 RENAMES
+C5, does not provide a target.** This sharpens *why* C5 is hard: the shift destroys multiplicativity, so
+**L² is no easier than L∞** here. Break/escalate condition recorded (a shift-surviving variance bound, or
+removing MRT/Tao's averaging). **Legitimate escalation to record, NOT progress, NOT a terminal state.**
+Ready for EXPLORE to label the L-QUB nodes.
 
 **The crux in one sentence.** The entire difficulty of TPC, reached through every
 unconditional route surveyed, concentrates on a single open statement — **C5**: \(\sum_{n\le x,\
@@ -97,26 +102,29 @@ APPROACHES ATTEMPTED:
   categorically; the machinery organizes but provides NO bound) + ONE new attackable sub-question
   (T12: is sup_d R_d controllable given averaged control, or = C5?). Candidate lemma L-QUB to DISTILL.
 
-CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [L-QUB] (quantitative-uniformity bridge) C5 (U(x)->0) <=> sup_{d<=x^{1-eps}} A^(2)_d(x) R_d(x) -> 0,
-  where A^(2)_d = (mean_a (S_{a,d}/(x/d))^2)^{1/2} (averaged factor) and R_d = ||S_{.,d}||_inf /
-  (||S_{.,d}||_2/sqrt d) in [1,inf) (the lax-monoidal / Beck-Chevalley defect of the averaging
-  pushforward along the moduli fibration p). Content-locating clause: C5 holds IF {sup_d A^(2)_d -> 0
-  AND sup_d R_d <= x^{o(1)}, product o(1)}, and ALL analytic difficulty beyond averaged (L2) control is
-  carried by the single extremal functional sup_d R_d.
-  ALREADY CHECKED: U_d = A^(2)_d R_d is an exact identity (numerically A^(2)_d~sqrt(d/x), R_d~sqrt(2 ln d),
-  N=2e6); worst bucket sqrt-cancels; fixed-d U_d->0; DESCENT exact & d-independent; fixed-eps envelope
-  sqrt(2 ln d)sqrt(d/x)->0 but non-uniform in eps.
-  WANT STRESS-TESTED: (a) does the framing PROVE/recover/improve ANY uniformity, or literally no estimate
-  (=> rename)? (b) is the equivalence real, or does a side smuggle (A^(2) is averaged-over-a, IMPLIED by
-  per-bucket cancellation, not free) / prove-less (is "R_d<=x^{o(1)} given A^(2)" equivalent to C5 =>
-  circular)? (c) is A^(2)-on-average just Tao2015/MR restated? (d) data: confirm R_d tracks U_d/A^(2)_d;
-  sup_d R_d ~ sqrt(log x) = x^{o(1)} so the hypothesis is satisfiable and the burden re-routes onto
-  uniform A^(2)_d->0 -- IS uniform A^(2)_d->0 just C5-in-L2-clothing? THE decider for provides-vs-renames.
-  SELF-ASSESSMENT (honest, recorded): MOSTLY-RENAME. The iff is a tautology in categorical dress
-  (= the identity + sup of a product); the categorical machinery provides NO new bound; analytic content
-  must enter at the per-fiber cancellation = C5. Legitimate ESCALATION to record (a faithful coordinate
-  system + a clean factorization validated over Z + one new attackable sub-question T12), NOT progress.
+CANDIDATE LEMMAS (DISTILL pass returned `work/1781395447-DISTILL.md`; AWAITING EXPLORE LABEL):
+- [L-QUB] (quantitative-uniformity bridge) -- ATTACKED; collapses into three nodes (verdicts pre-filled
+  FALSIFIED / OPEN by DISTILL; NEEDS-REVIEW-vs-FALSIFIED left to EXPLORE):
+  * [L-QUB-i] the iff C5 <=> sup_d A^(2)_d R_d -> 0 IS the algebraic identity
+    ||v||_inf = (||v||_2/sqrt d)(||v||_inf/(||v||_2/sqrt d)) for any real vector v (verified on arbitrary
+    random arrays to 1e-12, NO arithmetic). => TRUE-but-trivial; FALSIFIED-AS-LEVERAGE (provides no bound,
+    no easier target; the Grothendieck/Kan/Beck-Chevalley dress = ||v||_inf=||v||_inf).
+  * [L-QUB-ii] "all difficulty beyond averaged (L2) control is in sup_d R_d" => FALSIFIED-AS-STATED
+    (mislocates). The LOCATING half is true (difficulty IS all in R_d); the "beyond averaged L2" framing is
+    false because the L2 factor is the TRIVIAL DIAGONAL (Sigma_a S_{a,d}^2 = x + small off-diag, since
+    t(n)^2=1), so A^(2)_d~sqrt(d/x) is FREE, not a substantive waypoint. Equivocation PINNED:
+    averaged-over-d (MRT/Tao, deep) vs averaged-over-a at fixed d (trivial diagonal).
+  * [L-QUB-reform] (faithful survivor) C5 <=> sup_{d<=x^{1-eps}} R_d <= x^{o(1)} (given the free diagonal
+    A^(2)_d~sqrt(d/x)). STATUS OPEN -- and a RENAME: difficulty EQUAL to C5 (no slack, since A^(2)_d free).
+  DECIDER T12 RESULT = RENAME (C5 in L2 clothing), PROVEN not suspected. Variance/large-sieve finding:
+  that machinery is multiplicativity/character-orthogonality driven (Kowalski; GHS BV-for-mult-fns);
+  t(n)=lambda(n)lambda(n+2) is NON-multiplicative (the +2 shift kills it) => method does NOT apply -- the
+  variance off-diagonal REGENERATES the same shifted correlations instead of collapsing to a negligible
+  error; variance-only (Cauchy-Schwarz) gives U_d <= sqrt(d) A^(2)_d ~ d/sqrt(x) = x^{1/2-eps} -> INFINITY
+  at the edge (useless). MRT/Tao (arXiv:1509.05422) reach t only via scale/modulus AVERAGING that Tao
+  states cannot currently be removed (the "random-graph expansion" obstruction = the averaged->uniform gap).
+  BREAK/ESCALATE condition (checkpoint, not exit): a shift-surviving variance bound for the non-mult t, OR
+  removing the MRT/Tao scale-averaging (Tao's open random-graph expansion). Either would be a real PROVIDES.
 
 OPEN THREADS:
 - T2 [= the crux C5]: the unaveraged two-point shift-2 cancellation sum_{n<=x, n==a(d)}
@@ -124,14 +132,17 @@ OPEN THREADS:
   terminal) ***. Cluster-1 escalation RESOLVED (relocates into C7/C-COH-MON/C-inf, none easier).
   Difficulty localized to ONE measurable quantity U(x)=max_{d<=x^{1-eps}} max_a |S_{a,d}|/(x/d).
   Cluster 5 (A13/T10) now EXECUTING against U(x).
-- T10 [ACTIVE — EXECUTING]: Cluster 5, the quantitative-uniformity bridge. Reframe done this step:
-  fibration over the moduli poset; U_d = A^(2)_d * R_d (averaged factor x Beck-Chevalley/lax-monoidal
-  defect); candidate L-QUB to DISTILL. Sharp residual = T12.
-- T12 [NEW, ACTIVE — the decider]: is the extremal defect functional sup_{d<=x^{1-eps}} R_d(x)
-  controllable given averaged (L2) control WITHOUT re-proving per-bucket cancellation (=> a real reduction,
-  PROVIDES), or is "sup_d A^(2)_d->0 uniformly" itself equivalent to C5 (=> RENAME)? Data: sup_d R_d ~
-  sqrt(log x)=x^{o(1)} (satisfiable), so the burden re-routes onto uniform A^(2)_d->0; the open question is
-  whether THAT is strictly weaker than C5. Suspected: rename (entropy-decrement loses exactly L-infinity-in-d).
+- T10 [ACTIVE — DISTILLED, awaiting label]: Cluster 5, the quantitative-uniformity bridge. Reframe +
+  DISTILL done. U_d = A^(2)_d * R_d is an algebraic identity; L-QUB collapses to L-QUB-i (trivial) /
+  L-QUB-ii (mislocates) / L-QUB-reform (= C5 in L2 clothing, OPEN). VERDICT: RENAME, not provide.
+- T12 [DECIDED this step — RENAME]: the decider is settled. (a) sup_d R_d ~ sqrt(2 ln d) = x^{o(1)} (benign,
+  recomputed at N=4e6). (b) THE L2 factor A^(2)_d~sqrt(d/x) is the TRIVIAL DIAGONAL (Sigma_a S_{a,d}^2 = x +
+  small off-diag, t(n)^2=1) -- FREE, not the MRT/Tao theorem and not C5-hard; so "uniform A^(2)_d->0" is the
+  triviality sqrt(d/x)->0, NOT C5. (c) hence ALL content is in R_d, and sup_d R_d <= x^{o(1)} <=> U_d->0 = C5
+  with NO slack => RENAME. (d) WHY no variance handle: large-sieve/BV is multiplicativity-driven; the +2
+  shift makes t non-multiplicative; the variance off-diagonal regenerates the same shifted correlations;
+  MRT/Tao reach t only via scale-averaging Tao cannot currently remove. NOT strictly weaker than C5.
+  Sharpens C5: shift destroys multiplicativity => L2 no easier than L-infinity. Awaiting EXPLORE label.
 - T11 [ACTIVE — ALTERNATE ESCALATION]: Cluster 3, additive x multiplicative / parity-structural
   (Gowers norms / nilsequences / inverse theorems controlling lambda(n)lambda(n+2); Tao-Teravainen
   higher-order Fourier). Different axis from Cluster 1 (geometry) and Cluster 5 (analytic uniformity).
@@ -145,26 +156,32 @@ OPEN THREADS:
 - [T6 CLOSED] C6 folded in & LABELLED.
 
 CURRENT POSITION:
-- NOT at a terminal state. This step: a REFRAME opening Cluster 5 (A13). Built a [0,inf]-enriched
-  fibration p: S_x -> D_x^op of {S_{a,d}} over the moduli poset with exact additivity (ADD) and descent
-  (DESCENT, verified d-independent). Expressed C5's uniform regime as an L-infinity (limit/right-Kan)
-  pushforward and the proven averaged regime (Tao log-Chowla / MR) as an L1/L2 (colimit/left-Kan)
-  pushforward; the averaged-vs-uniform GAP as the lax-monoidal / Beck-Chevalley defect R_d, giving the
-  EXACT factorization U_d = A^(2)_d * R_d. NUMERICS (N=2e6) validate the factorization and show
-  A^(2)_d~sqrt(d/x), R_d~sqrt(2 ln d), worst bucket sqrt-cancels, fixed-d U_d->0, difficulty = the edge.
-- HONESTY VERDICT (recorded, weighted first): MOSTLY-RENAME. The categorical iff (L-QUB) is the identity
-  U_d=A^(2)_d R_d in categorical clothing; the machinery PROVIDES NO new estimate; the analytic content
-  must enter at the per-fiber cancellation, which is C5. The ONE non-rename sliver: the factorization
-  SEPARATES a provable-in-spirit averaged factor from a purely combinatorial extremal defect, exposing the
-  new attackable sub-question T12. Likely outcome: T12 is itself C5 (entropy-decrement loses
-  L-infinity-in-d). This is a legitimate ESCALATION to record, NOT progress dressed up. No terminal state.
-- Candidate L-QUB is READY FOR DISTILL, with the four named attacks (a)-(d) and the single decider question
-  (T12) pre-specified.
+- NOT at a terminal state. This step: a DISTILL adversarial pass on L-QUB (Cluster 5). The attack settled
+  the decider T12 on EVIDENCE, sharper than the prior self-assessment:
+  (i) clause (i) is the algebraic identity ||v||_inf=(||v||_2/sqrt d)(||v||_inf/(||v||_2/sqrt d)) =>
+  FALSIFIED-AS-LEVERAGE (TRUE-but-trivial, no bound);
+  (ii) DECIDER = RENAME, PROVEN: the L2 factor A^(2)_d~sqrt(d/x) is the TRIVIAL DIAGONAL (t(n)^2=1, so
+  Sigma_a S_{a,d}^2 = x + small off-diag) -- FREE, not MRT/Tao, not C5-hard; ALL content is in R_d; since
+  A^(2)_d is free, sup_d R_d<=x^{o(1)} <=> C5 (no slack). Variance-only (Cauchy-Schwarz) bound on U_d is
+  d/sqrt(x)=x^{1/2-eps}->infinity at the edge (useless). Variance/large-sieve machinery is
+  multiplicativity-driven and the +2 shift makes t non-multiplicative => does NOT apply (off-diagonal
+  regenerates the same correlations); MRT/Tao reach t only via scale-averaging Tao cannot currently remove;
+  (iii) clause (ii) mislocates => FALSIFIED-AS-STATED; survivor = L-QUB-reform "C5 <=> sup_d R_d<=x^{o(1)}",
+  OPEN, difficulty EQUAL to C5.
+- HONESTY VERDICT (recorded, weighted first): Cluster 5 RENAMES C5, does NOT provide an easier/known target.
+  It IS a legitimate escalation to record, and it SHARPENS why C5 is hard: the shift by 2 destroys
+  multiplicativity, so the large-sieve/variance route that makes L2 easier than L-infinity for
+  multiplicative functions HAS NO PURCHASE -- L2 is no easier than L-infinity here. Break/escalate condition
+  recorded (shift-surviving variance bound, or removing MRT/Tao's scale-averaging = Tao's open random-graph
+  expansion). NO terminal state.
+- Candidate L-QUB DISTILLED (work/1781395447-DISTILL.md); L-QUB-i/-ii/-reform AWAIT EXPLORE LABEL.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 may be NAMED,
-  NOT built upon. C7/C-COH-MON/C-inf/L-COH' are OPEN => NOT legal foundations. L-QUB is a candidate lemma
-  (pre-distill) => NOT a legal foundation. GRAVEYARD nodes may NOT be built upon.
-- Next step: invoke DISTILL to attack L-QUB (the four named attacks + the T12 decider), then EXPLORE to
-  label and either record the rename honestly or develop the surviving sub-question.
+  NOT built upon. C7/C-COH-MON/C-inf/L-COH' are OPEN => NOT legal foundations. L-QUB nodes are candidates
+  pending label => NOT legal foundations. GRAVEYARD nodes may NOT be built upon.
+- Next step: invoke EXPLORE to LABEL L-QUB-i / L-QUB-ii / L-QUB-reform (apply the DISTILL verdicts:
+  FALSIFIED-as-leverage / FALSIFIED-as-stated / OPEN-rename), record the Cluster-5 rename honestly on the
+  sheet, then take its next action (e.g. develop the alternate escalation T11, or attack the break/escalate
+  condition for L-QUB-reform).
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
@@ -235,9 +252,10 @@ foundations.):
   (= unaveraged two-point Chowla/Liouville at shift 2, uniform in APs), o(main) strength.
   Both directions (necessity; sufficiency) open at dimension 2. Only log-averaged proven (Tao
   2015). Chowla-strength: NOT implied by RH/GRH.
-  LOCALIZATION (A13/Cluster 5, this step): C5 <=> U(x):=max_{d<=x^{1-eps}} max_a |S_{a,d}|/(x/d) -> 0;
-  factorization U_d = A^(2)_d * R_d (averaged factor x Beck-Chevalley/lax-monoidal fiber defect),
-  numerically validated; difficulty = the edge d~x^{1-eps}. See candidate L-QUB (NOT yet certified).
+  LOCALIZATION (A13/Cluster 5): C5 <=> U(x):=max_{d<=x^{1-eps}} max_a |S_{a,d}|/(x/d) -> 0; factorization
+  U_d = A^(2)_d * R_d. DISTILL (work/1781395447): this is an ALGEBRAIC IDENTITY; the L2 factor A^(2)_d ~
+  sqrt(d/x) is the TRIVIAL DIAGONAL (free), so C5 <=> sup_{d<=x^{1-eps}} R_d <= x^{o(1)} (L-QUB-reform, OPEN)
+  -- a faithful RENAME, difficulty EQUAL to C5; variance/large-sieve gives no handle (t non-multiplicative).
   DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6 (Siegel-zero
   anti-cancellation) -- all FRAMING; NOT a proven equivalence to TPC.
   STATUS: OPEN (checkpoint under active cross-domain attack). AUDIT: NONE EXISTS (the point).
@@ -251,11 +269,12 @@ foundations.):
   COHOMOLOGICAL RE-EXPRESSION (A12/L-COH, DISTILLED + LABELLED): C5's content disperses into C7
   (broader cohomological-existence conjecture = Deninger/Connes-Consani) + C-COH-MON (= C5 in
   sheaf clothing) + C-inf (archimedean). None easier than C5; this RELOCATES, does not reduce.
-  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4. STAYS OPEN.
+  ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4 + Cluster-5 decider (T12). STAYS OPEN.
+  Cluster 5 RENAMES C5 as "sup_d R_d <= x^{o(1)}" (L-QUB-reform); does not reduce its difficulty.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
   + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
-  + work/1781394759-EXPLORE.md (this step: U(x) factorization U_d=A^(2)_d R_d).
+  + work/1781394759-EXPLORE.md (U(x) factorization) + work/1781395447-DISTILL.md (T12 decider = RENAME).
 
   --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN; NOT legal foundations) ---
 - [C7] "A Weil-type cohomology + six functors + Poincare-Verdier duality + absolute Frobenius +
