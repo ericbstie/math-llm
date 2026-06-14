@@ -11,10 +11,37 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1781478452-EXPLORE.md` — **APPLY the ergodic / measure-rigidity
-(Furstenberg-systems) instrument to the corrected residual (R2)** (the orchestrator's NEW
-out-of-framework bet; NOT a categorical cluster, NOT a reframing of C5). No bootstrap labelling
-was due (the prior step already labelled its DISTILL). The probe imports the dictionary **(D1)**
+**Latest step:** `work/1781479461-DISTILL.md` — **DISTILL attack on `L-ERG-RIG`** (the
+spectral-rigidity reformulation of (R2)) and its five stress-tests. **VERDICT: the three load-bearing
+stress-tests HELD (the wall stood); NO handle opened in 3/4/5; `L-ERG-RIG` is a faithful EQUAL-HARDNESS
+reformulation (NOT a reduction, NOT an overclaim, no GRH/EH), now PENDING EXPLORE's LABEL.** Findings:
+**(Stress-test 3, FH log-only) WALL HELD, sharpened** — verified at near-verbatim search level that the
+`t=0`-forcing content is log-only: **strong stationarity (dilation invariance) holds for the LOGARITHMIC
+Furstenberg system but PROVABLY FAILS for Cesàro** (FH–Lemańczyk arXiv:2304.03121). **Correction to
+Leak 1:** the bare "no irrational spectrum" structure theorem is NOT itself log-only; what is log-only
+is the strong-stationarity / `t=0`-forcing consequence. **(Stress-test 4, Sawin class-closure) WALL HELD,
+scope narrowed, one sub-claim now OPEN** — Sawin proves class-invariance of the *progress techniques*
+(not literally of the FH structure theorems); the load-bearing conclusion survives via shared COARSE
+averaged invariants (spectrum/entropy), but "anomalous models share the FH invariants EXACTLY" is OPEN
+(Sawin's exact class axioms / model invariants did NOT surface; PDF + UCLA thesis 403). **(Stress-test 5,
+higher-rank re-entry) WALL HELD DECISIVELY** — the `×p` multiplicative dilations are the AFFINE semigroup
+`n↦pn+b`, NOT a commuting `ℤ^d` action: verified numerically `D_p∘T = T^p∘D_p ≠ T∘D_p`; they are a
+log-system artifact, not measure-preserving per-scale; no higher-rank/adelic action for Ratner/EKL/×2×3
+to bite. **(Translation audit, Part B) SOUND** — `n^{it}` over `dn/n` is an irrational scaling-flow
+Kronecker eigenvalue, principal exactly at `t=0`; re-ran + reproduced; fixed the EXPLORE transcription
+typo (`p=5,t=0.5` = `0.693314+0.720636j`). **(Hardness) EQUAL-HARDNESS, NOT a reduction:** downgrade the
+stated `iff` to a FORWARD implication (mirror of SO-deavg CORRECTION 1); no GRH/EH; parity correctly
+located. **Citations verified at search-surfaced/quoted level only (all PDFs/HTML/blog 403); no citation
+invented; the one place the claim outran what is readable (Sawin's exact class axioms) is marked OPEN.**
+NET: rigidity is defeated by Sawin's model with the mechanism now CITATION-BACKED and CORRECTED;
+`L-ERG-RIG` carries the cleanest *reason* yet for the wall (strong stationarity is log-only; its Cesàro
+analogue provably fails; no higher-rank action). **NO bound on C5 certified; `L-ERG-RIG` is NOT a legal
+foundation, NOT progress, NOT terminal.** Reduced claim graph = {ERG-B, ERG-1, ERG-2, ERG-3, ERG-NET};
+the adversarial passes are recorded; **EXPLORE to label next** (forward-implication downgrade on ERG-1;
+corrected Leaks 1–2 folded into ERG-2 with its OPEN sub-claim).
+
+**Prior step (now attacked):** `work/1781478452-EXPLORE.md` — APPLY the ergodic / measure-rigidity
+(Furstenberg-systems) instrument to the corrected residual (R2). The probe imports the dictionary **(D1)**
 Frantzikinakis–Host structure theorem (Furstenberg systems of Liouville have **no irrational
 spectrum**; ergodicity of the **log** system ⟺ log Chowla; arXiv:1804.08556 / 1708.00677) +
 **(D2)** Frantzikinakis–Lemańczyk (arXiv:2304.03121: pretentious ⟹ **rational discrete spectrum +
@@ -138,24 +165,32 @@ APPROACHES ATTEMPTED:
   rigidity (Ratner/EKL/x2x3) INAPPLICABLE -- positive-entropy single-Z-action, NO higher-rank
   algebraic structure; on the zero-entropy pretentious factor rigidity is VACUOUS (certifies
   "rotation", not "t=0"). Candidate lemma L-ERG-RIG = spectral-rigidity reformulation of (R2)
-  [PENDING DISTILL]. NOT progress, NOT terminal; NO bound certified.
+  [DISTILL-ATTACKED work/1781479461: stress-tests 3/4/5 ALL HELD, NO handle; EQUAL-HARDNESS not a
+  reduction; iff downgraded to forward; Leak 1 corrected (strong stationarity is the log-only piece,
+  fails Cesaro); Leak 2 narrowed (class-invariance of progress techniques, one sub-claim OPEN);
+  PENDING EXPLORE LABEL]. NOT progress, NOT terminal; NO bound certified.
 
-CANDIDATE LEMMAS (pre-distill — not yet certified):
-- [L-ERG-RIG] (NEW, this step; PENDING DISTILL) Spectral-rigidity reformulation of (R2): (R2) holds
-  iff the family of (un-log-averaged) Furstenberg systems of lambda has NO nontrivial irrational
-  eigenvalue uniformly across scales, i.e. iff the scaling-flow eigenvalue t(X) [Part B] is forced
-  to 0 at every scale. At the LOG-averaged level this is the established FH theorem (D1, t=0
-  regime); the residual content of (R2) is exactly the UN-AVERAGING of FH's "no irrational spectrum"
-  from the log-Furstenberg system to every scale; and this un-averaging is OBSTRUCTED by Sawin's
-  class (D3). CHECKED: Part B (n^{it}=irrational scaling-flow eigenvalue, machine-precision +
-  rotation number irrational); (D1)/(D2)/(D3) at search-surfaced level (the translation lands on
-  real theorems). WANT STRESS-TESTED: (1) iff vs forward-only; (2) equal-hardness vs accidental
-  reduction vs trivial rename; (3) is FH really LOG-only (the single most load-bearing dependency
-  for Leak 1); (4) is Sawin's class genuinely closed under the FH/Lemanczyk structure theorems
-  (Leak 2); (5) any higher-rank/unipotent action encoding t(X) to which EKL/Ratner WOULD apply
-  (Leak 3) -- construct or definitively rule out. EXPECTATION (anti-deception): faithful EQUAL-
-  HARDNESS reformulation, residual = un-averaging FH spectral rigidity, blocked by Sawin's class;
-  NOT a reduction. NOT a legal foundation. source: work/1781478452-EXPLORE.md.
+CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
+- [L-ERG-RIG] (ATTACKED by DISTILL work/1781479461; ADVERSARIAL PASS COMPLETE, PENDING EXPLORE's
+  LABEL) Spectral-rigidity reformulation of (R2). DISTILL VERDICT: faithful EQUAL-HARDNESS
+  reformulation (NOT a reduction, NOT an overclaim, no GRH/EH); the three load-bearing stress-tests
+  3/4/5 ALL HELD (the wall stood; NO handle). REDUCED to claim graph {ERG-B, ERG-1, ERG-2, ERG-3,
+  ERG-NET} below. CORRECTIONS DISTILL requires EXPLORE to fold in when labelling:
+  * the stated "iff" must be DOWNGRADED to a FORWARD implication (ERG-1; mirror of SO-deavg
+    CORRECTION 1) -- the converse (R2) => no-irrational-eigenvalue-uniformly is NOT established;
+  * Leak 1 RESTATED: the bare "no irrational spectrum" theorem is NOT itself log-only; the LOG-only
+    piece is the STRONG-STATIONARITY / t=0-forcing consequence, which FH-Lemanczyk prove holds for
+    the LOGARITHMIC system but PROVABLY FAILS for Cesaro (arXiv:2304.03121, verbatim-level);
+  * Leak 2 NARROWED: Sawin proves class-invariance of the PROGRESS TECHNIQUES (not literally of the
+    FH structure theorems); the conclusion "no available structural input forces t(X)=0 per scale"
+    survives via SHARED COARSE INVARIANTS (spectrum/entropy) -- but the sub-claim "Sawin's anomalous
+    models share the FH invariants EXACTLY" is OPEN (exact class axioms + model invariants did NOT
+    surface; PDF/thesis 403).
+  AUDITED: Part B re-run (ERG-B; n^{it}=irrational scaling-flow eigenvalue, machine precision, =1 at
+  t=0; transcription typo p=5,t=0.5 fixed to 0.693314+0.720636j); ERG-3 non-commutation D_p∘T =
+  T^p∘D_p != T∘D_p verified numerically on Liouville data. Literature at search-surfaced/quoted level
+  (all PDFs/HTML/blog 403); no citation invented. NOT a legal foundation; NOT progress; NOT terminal.
+  source: work/1781478452-EXPLORE.md (introduced) + work/1781479461-DISTILL.md (attacked + reduced).
 
 OPEN THREADS:
 - T2 [= the crux C5]: unaveraged two-point shift-2 cancellation, UNIFORM over d<=x^{1-eps}.
@@ -169,55 +204,70 @@ OPEN THREADS:
 - SO-deavg [OPEN — sharpened+CORRECTED sub-obstruction]: TT 2019 gives, for two-point, STRUCTURAL
   REDUCTION to c*d^{-it}chi(a) at a.a. scales. Residual (R1)+(R2)[defining]+(R3). Every-scale
   degree-1 Fourier uniformity ==> Cesaro two-point Chowla [FORWARD only]. Mechanism (M1)+(M2).
-- T14 [NEW — ERGODIC / MEASURE-RIGIDITY thread, A16]: import Furstenberg-systems + rigidity onto
-  (R2). FINDING (this step): rigidity DEFEATED by Sawin's model, mechanism named (Leaks 1-3); the
-  ONLY rigidity that attaches is the FH/Lemanczyk LOG-spectral structure theorem, which is Sawin-
-  class-invariant and lives in the t=0 regime; genuine measure rigidity (Ratner/EKL/x2x3) is
-  inapplicable (positive entropy, rank 1) and vacuous on the pretentious factor. Candidate lemma
-  L-ERG-RIG (spectral-rigidity reformulation of (R2)) PENDING DISTILL. NOT progress, NOT terminal.
+- T14 [ERGODIC / MEASURE-RIGIDITY thread, A16 — DISTILL-ATTACKED, pending EXPLORE label]: import
+  Furstenberg-systems + rigidity onto (R2). DISTILL (work/1781479461) attacked L-ERG-RIG: all three
+  load-bearing stress-tests HELD (the wall stood, NO handle). Rigidity DEFEATED by Sawin's model with
+  the mechanism now CITATION-BACKED + CORRECTED: the log-only piece is STRONG STATIONARITY (dilation
+  invariance), which FH-Lemanczyk prove FAILS for Cesaro (st-3); Sawin's class-invariance is of the
+  PROGRESS TECHNIQUES, conclusion survives via shared coarse invariants but one sub-claim OPEN (st-4);
+  genuine measure rigidity inapplicable -- the x_p dilations are the AFFINE semigroup (D_p∘T=T^p∘D_p
+  != T∘D_p, verified), not a commuting higher-rank action (st-5). L-ERG-RIG = faithful EQUAL-HARDNESS
+  reformulation (iff -> forward), NOT a reduction. PENDING EXPLORE LABEL. NOT progress, NOT terminal.
 - T13 [the post-campaign redirection]: three reframings CLOSED the "reframe again" strategy. Live:
   (a) [RULED OUT] a fourth categorical/cohomological reframing.
   (b) attack an SO-L² break condition — (b1) variance bound [C5-hardness]; (b2) de-average Tao 2016
       [ENGAGED + CORRECTED A15 => SO-deavg; (R2) admits no new instrument from rigidity either, A16].
   (c) INDEPENDENCE (exit 3): NO current method. OPEN; legitimate exit-direction only upon a proof.
-  (d) [NEW] ergodic/measure-rigidity import (A16/T14) — ENGAGED this step; candidate L-ERG-RIG
-      pending DISTILL; rigidity defeated by Sawin's model (mechanism named). If L-ERG-RIG distills to
-      equal-hardness (expected), PAUSE stands strengthened; if a leak (items 3-5) cracks, new handle.
-  RECOMMENDATION (this step): invoke DISTILL on L-ERG-RIG; PAUSE recommendation otherwise stands.
+  (d) ergodic/measure-rigidity import (A16/T14) — ENGAGED + DISTILL-ATTACKED. OUTCOME: L-ERG-RIG
+      distilled to faithful EQUAL-HARDNESS reformulation; stress-tests 3/4/5 ALL HELD (NO handle);
+      rigidity defeated by Sawin's model, mechanism now citation-backed + corrected. PAUSE stands
+      STRENGTHENED (the wall now carries its cleanest reason: strong stationarity is log-only, its
+      Cesaro analogue provably fails, no higher-rank action). PENDING EXPLORE LABEL of L-ERG-RIG.
+  RECOMMENDATION (now): EXPLORE labels L-ERG-RIG (graph {ERG-B/ERG-1/ERG-2/ERG-3/ERG-NET}; downgrade
+      iff->forward on ERG-1; OPEN sub-claim in ERG-2); PAUSE recommendation otherwise stands.
 - [T7/T8/T9 RESOLVED-BY-LABELLING] cohomological relocation -> C7 / C-COH-MON / C-inf.
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. This step (no bootstrap labelling due; latest step already labelled its
-  DISTILL): ACTION = Apply the ergodic / measure-rigidity (Furstenberg-systems) instrument to (R2),
-  per orchestrator's out-of-framework directive. Introduced candidate lemma L-ERG-RIG (PENDING
-  DISTILL).
-- KEY FINDING: rigidity is DEFEATED by Sawin's model, and the mechanism is now NAMED (not "still
-  hard"): (Leak 1) the only rigidity that attaches to the Furstenberg system of lambda is the FH/
-  Lemanczyk LOG-spectral structure theorem, which lives in the t=0/dn-over-n regime and cannot
-  remove that measure; (Leak 2) it is SAWIN-CLASS-INVARIANT and Sawin exhibits anomalous-local
-  models in the class, so no class-invariant structure theorem forces the per-scale t(X)=0; (Leak 3)
-  genuine measure rigidity (Ratner/EKL/x2x3/BLMV) is INAPPLICABLE (positive-entropy single-Z-action,
-  no higher-rank algebraic action) and VACUOUS on the zero-entropy pretentious factor (certifies
-  "rotation", not "t=0"). Part B audit (inline) certifies the load-bearing translation: n^{it} over
-  dn/n IS a scaling-flow eigenvalue, irrational for t!=0.
+- NOT at a terminal state. This step = DISTILL attack on L-ERG-RIG (work/1781479461). Next step =
+  EXPLORE bootstrap-labels L-ERG-RIG from this adversarial pass, then takes its next action.
+- KEY FINDING (DISTILL): the three load-bearing stress-tests 3/4/5 ALL HELD; NO handle opened;
+  rigidity is DEFEATED by Sawin's model with the mechanism now CITATION-BACKED + CORRECTED:
+  (st-3) the LOG-only piece is STRONG STATIONARITY (dilation invariance), which FH-Lemanczyk prove
+  holds for the logarithmic system but PROVABLY FAILS for Cesaro (arXiv:2304.03121, verbatim-level);
+  the bare "no irrational spectrum" theorem is NOT itself log-only (Leak 1 corrected). (st-4) Sawin
+  proves class-invariance of the PROGRESS TECHNIQUES (not literally of the FH structure theorems);
+  the conclusion "no available structural input forces t(X)=0 per scale" survives via SHARED COARSE
+  invariants, but the sub-claim "anomalous models share the FH invariants EXACTLY" is OPEN (exact
+  class axioms / model invariants did not surface; PDF/thesis 403). (st-5) genuine measure rigidity
+  inapplicable -- the x_p dilations are the AFFINE semigroup (D_p∘T=T^p∘D_p != T∘D_p, verified
+  numerically on Liouville data), not a commuting higher-rank action; vacuous on the pretentious
+  factor. Part B re-audited + reproduced (ERG-B; transcription typo p=5,t=0.5 -> 0.693314+0.720636j).
+- HARDNESS (DISTILL): L-ERG-RIG = faithful EQUAL-HARDNESS reformulation of (R2), NOT a reduction, NOT
+  an overclaim; the stated "iff" must be DOWNGRADED to a FORWARD implication (mirror SO-deavg
+  CORRECTION 1); no GRH/EH smuggled; parity correctly located. Reduced graph = {ERG-B, ERG-1, ERG-2,
+  ERG-3, ERG-NET} (in work/1781479461-DISTILL.md).
 - ANTI-DECEPTION: NO bound on C5 certified; L-ERG-RIG is a REFORMULATION candidate, NOT a bound, NOT
-  a legal foundation. The "rigidity forces t=0" argument was STATED then REFUTED (Sawin defeats it;
-  GRAVEYARD node ERG-RIG-forces-t0-as-proof); not kept. Two literature dependencies (FH log-only;
-  Sawin class-closure) flagged as DISTILL stress-tests rather than asserted as certified.
-- RECOMMENDATION: invoke DISTILL on L-ERG-RIG (items 1-5). Expected verdict: faithful equal-hardness
-  reformulation (new sharper REASON for the wall: Sawin class-invariance), strengthening the PAUSE
-  recommendation. If DISTILL cracks item 3/4/5, that is the new handle.
+  a legal foundation, NOT progress, NOT terminal. Literature verified at search-surfaced/quoted level
+  ONLY (all PDFs/HTML/blog 403); no citation invented; the one place the claim outran what is readable
+  (Sawin's exact class axioms / model invariants) is marked OPEN (ERG-2 sub-claim).
+- RECOMMENDATION: EXPLORE labels L-ERG-RIG (likely NEEDS-REVIEW for the audited components ERG-B/ERG-3
+  as a faithful reformulation, with ERG-1 downgraded to forward and ERG-2's sub-claim OPEN; the
+  REFORMULATION itself OPEN, NOT a foundation). PAUSE recommendation stands, STRENGTHENED: the wall now
+  carries its cleanest reason (strong stationarity is log-only; Cesaro analogue provably fails; no
+  higher-rank action). If a human wants the loop to continue, the only live escalation that supplies a
+  FINER-than-coarse-invariant distinction of lambda from Sawin's anomalous models is a new cross-domain
+  structure (cohomological/higher-rank) -- which the rigidity import did NOT supply.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 NAMED,
   NOT built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF OPEN. SO-L², SO-deavg = OPEN
-  obstructions => NOT foundations. L-ERG-RIG = candidate (PENDING DISTILL) => NOT a foundation.
-  GRAVEYARD nodes may NOT be built upon.
+  obstructions => NOT foundations. L-ERG-RIG = attacked candidate (PENDING EXPLORE LABEL) => NOT a
+  foundation. GRAVEYARD nodes may NOT be built upon.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
 escalation, NOT built upon. OPEN-CHECKPOINTS = C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF,
 all OPEN, NOT legal foundations. SO-L², SO-deavg = OPEN obstructions, NOT foundations. L-ERG-RIG =
-PRE-DISTILL candidate, NOT a foundation.):
+DISTILL-ATTACKED candidate (pending EXPLORE label), NOT a foundation.):
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
   d|F(n)} a_n : d<=D=x^{1-eps}}, Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg,
@@ -300,11 +350,14 @@ PRE-DISTILL candidate, NOT a foundation.):
   AP-uniformity, i.e. every-scale degree-1 Fourier uniformity of lambda ==> Cesaro two-point Chowla
   (FORWARD only; converse not established); C5 adds (R3). No easier branch (RE-LOCALIZE). Mechanism:
   (M1) dilation invariance of dn/n [audited] + (M2) unspecifiable runtime scale.
-  ERGODIC / MEASURE-RIGIDITY AIM (A16/T14, this step): the n^{it} twist of (R2) is, over dn/n, a
-  SCALING-FLOW EIGENVALUE (irrational for t!=0; Part B audit) = a nontrivial Kronecker eigenvalue
-  of the Furstenberg system of lambda. (R2) <=> kill it at every scale = UN-AVERAGE FH's "no
-  irrational spectrum" from the LOG system to every scale. RIGIDITY DEFEATED BY SAWIN'S MODEL
-  (mechanism named, Leaks 1-3); candidate L-ERG-RIG PENDING DISTILL. No bound certified.
+  ERGODIC / MEASURE-RIGIDITY AIM (A16/T14, DISTILL-ATTACKED work/1781479461): the n^{it} twist of
+  (R2) is, over dn/n, a SCALING-FLOW EIGENVALUE (irrational for t!=0; Part B re-audited) = a
+  nontrivial Kronecker eigenvalue of the Furstenberg system of lambda. (R2) reformulated (FORWARD):
+  killing it at every scale = un-averaging the STRONG-STATIONARITY content from the LOG system to
+  every scale. RIGIDITY DEFEATED BY SAWIN'S MODEL, mechanism CITATION-BACKED + CORRECTED:
+  strong stationarity is LOG-only and FAILS for Cesaro (st-3); Sawin class-invariance of the progress
+  techniques, one sub-claim OPEN (st-4); x_p dilations = affine semigroup not higher-rank (st-5).
+  L-ERG-RIG = EQUAL-HARDNESS reformulation (not a reduction), pending EXPLORE label. No bound certified.
   DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6 (Siegel-zero
   anti-cancellation) -- all FRAMING; NOT a proven equivalence to TPC.
   STATUS: OPEN (checkpoint under active cross-domain + analytic + ergodic attack). AUDIT: NONE
@@ -320,8 +373,12 @@ PRE-DISTILL candidate, NOT a foundation.):
   ANALYTIC-UNIFORMITY RE-EXPRESSION (A13): C5 <=> sup_d R_d <= x^{o(1)} (L-QUB-reform); RENAME.
   PARITY-STRUCTURAL RE-EXPRESSION (A14): C5 <=> Heath-Brown C5-vs-C6 dichotomy = degree-1 GTZ.
   DE-AVERAGING RE-LOCALIZATION (A15): de-averaging face of C5 <=> SO-deavg (residual (R2)).
-  ERGODIC-RIGIDITY AIM (A16): (R2) <=> kill an irrational scaling-flow eigenvalue at every scale;
-  rigidity defeated by Sawin's model (L-ERG-RIG pending DISTILL).
+  ERGODIC-RIGIDITY AIM (A16, DISTILL-ATTACKED work/1781479461): (R2) reformulated as "kill an
+  irrational scaling-flow eigenvalue at every scale" (forward implication; ERG-B/ERG-1 audited);
+  rigidity defeated by Sawin's model, mechanism CITATION-BACKED -- log-only piece = STRONG
+  STATIONARITY, provably FAILS for Cesaro (st-3); class-invariance of progress techniques, one
+  sub-claim OPEN (st-4); x_p dilations = affine semigroup not higher-rank, D_p∘T=T^p∘D_p!=T∘D_p
+  verified (st-5). EQUAL-HARDNESS, not a reduction. L-ERG-RIG pending EXPLORE label.
   CAMPAIGN VERDICT: THREE categorical reframings (relocate/rename/unify) each RE-EXPRESS C5;
   "reframe again" CLOSED. (b2) de-averaging (A15) RE-LOCALIZES + CORRECTS the de-averaging face to
   SO-deavg (residual (R2)). Ergodic-rigidity (A16) is the NEW out-of-framework instrument aimed at
@@ -413,11 +470,16 @@ PRE-DISTILL candidate, NOT a foundation.):
   NON-BLOCKERS eliminated: MRT short-interval input (M3); ergodic structure-theorem route (FH skew-
   product + Sawin). REVIEW (work/1781473701): (R2) admits no new instrument from across-scale
   rigidity-of-t(X) (= M1+M2) or Halasz (inapplicable, = SO-L²). ERGODIC-RIGIDITY PROBE
-  (work/1781478452, A16/T14): the dedicated rigidity import also DEFEATED by Sawin's model -- the
-  only rigidity that attaches (FH/Lemanczyk LOG-spectral structure) is Sawin-class-invariant and in
-  the t=0 regime; genuine measure rigidity (Ratner/EKL/x2x3) inapplicable (positive entropy, rank 1)
-  / vacuous on the pretentious factor. (R2) translated: kill an irrational scaling-flow eigenvalue
-  at every scale (Part B audit). Candidate L-ERG-RIG (spectral-rigidity reformulation) PENDING DISTILL.
+  (work/1781478452, A16/T14) -- DISTILL-ATTACKED (work/1781479461): the dedicated rigidity import is
+  DEFEATED by Sawin's model, mechanism now CITATION-BACKED + CORRECTED. (st-3) the log-only piece is
+  STRONG STATIONARITY (dilation invariance), which FH-Lemanczyk prove FAILS for Cesaro -- the bare
+  "no irrational spectrum" theorem is NOT itself log-only (Leak 1 corrected). (st-4) Sawin proves
+  class-invariance of the PROGRESS TECHNIQUES; conclusion survives via shared coarse invariants but
+  the sub-claim "anomalous models share FH invariants exactly" is OPEN (PDF/thesis 403). (st-5)
+  genuine measure rigidity inapplicable -- x_p dilations = affine semigroup (D_p∘T=T^p∘D_p!=T∘D_p,
+  verified), not a commuting higher-rank action; vacuous on the pretentious factor. (R2) reformulated
+  (FORWARD): kill an irrational scaling-flow eigenvalue at every scale (ERG-B re-audited). L-ERG-RIG
+  (spectral-rigidity reformulation) = EQUAL-HARDNESS, not a reduction; PENDING EXPLORE LABEL.
   DEPENDS ON: C5 (de-averaging face of C5); established math (Tao-Teravainen arXiv:1809.02518
   almost-all-scales [CONFIRMED at quoted level]; MRT arXiv:1812.01224 degree-1 Fourier uniformity
   ON AVERAGE [CONFIRMED]; Pilatte arXiv:2310.19357 log-only [CONFIRMED]; Tao arXiv:1509.05422
@@ -429,9 +491,13 @@ PRE-DISTILL candidate, NOT a foundation.):
   NOT terminal, NOT a legal foundation. AUDIT: (M1) numerically AUDITED + REPRODUCED; (A16) Part B
   audit (n^{it}=scaling-flow eigenvalue) inline; literature search-surfaced/quoted (PDFs 403). NO
   bound on C5 certified. ADVERSARIAL PASS: Attacks 1/2/3/3*/4/5 (work/1781473105). LABELLED OPEN
-  (work/1781473701); ergodic-rigidity probe added (work/1781478452).
+  (work/1781473701); ergodic-rigidity probe added (work/1781478452) and ATTACKED by DISTILL
+  (work/1781479461): stress-tests 3/4/5 ALL HELD, rigidity defeated by Sawin's model with mechanism
+  citation-backed (strong stationarity log-only + fails Cesaro; class-invariance of progress
+  techniques, one sub-claim OPEN; x_p dilations = affine semigroup not higher-rank); L-ERG-RIG =
+  equal-hardness reformulation pending EXPLORE label. STILL OPEN; no new handle.
   source: work/1781472028-EXPLORE.md + work/1781473105-DISTILL.md + work/1781473701-EXPLORE.md
-  + work/1781478452-EXPLORE.md.
+  + work/1781478452-EXPLORE.md + work/1781479461-DISTILL.md.
 
 GRAVEYARD (may NOT be built upon):
 - [L-C3-DUOIDAL] "The +/x duoidal obstruction class (Beck distributive law / Hochschild-Harrison-
