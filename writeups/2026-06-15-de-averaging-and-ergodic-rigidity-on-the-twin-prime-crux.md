@@ -31,7 +31,7 @@ explicitly out-of-framework bet. Two results:
   rigidity (Ratner / EKL / ×2×3) and the Furstenberg-systems structure theory at (R2). Outcome:
   **no handle — rigidity is defeated by "Sawin's model,"** but for a now-*named, citation-backed*
   reason: the `t=0`-forcing ingredient (strong stationarity) holds for the **logarithmic**
-  Furstenberg system and **provably fails for Cesàro** (Frantzikinakis–Lemańczyk), while genuine
+  Furstenberg system and **provably fails for Cesàro** (Frantzikinakis–Lemańczyk–de la Rue), while genuine
   measure rigidity cannot bite (the dilations form an affine semigroup, not a higher-rank action).
 
 Two engagements, **zero reductions**. C5 remains the irreducible crux. The work leaves exactly one
@@ -124,7 +124,7 @@ All three load-bearing stress-tests held; no handle opened. The mechanism, now n
 
 - **Leak 1 (the killing step is log-only).** The bare Frantzikinakis–Host "no irrational spectrum"
   is *not itself* log-only; what is log-only is the **strong-stationarity** (dilation-invariance)
-  consequence that forces `t = 0`. **Frantzikinakis–Lemańczyk (arXiv:2304.03121)** prove strong
+  consequence that forces `t = 0`. **Frantzikinakis–Lemańczyk–de la Rue (arXiv:2304.03121)** prove strong
   stationarity holds for the **logarithmic** Furstenberg system but **provably fails for Cesàro**.
   There is no un-averaged version of the killing step on offer.
 - **Leak 2 (the available input is Sawin-class-type).** "Sawin's model" (arXiv:1809.03280) exhibits
@@ -162,7 +162,7 @@ language and now **citation-backed**:
 
 > **(4) The de-averaging killing step is intrinsically logarithmic.** The dilation/strong-
 > stationarity structure that would force the correlation's main term to vanish lives on the
-> measure `dn/n`; its Cesàro analogue *provably fails* (Frantzikinakis–Lemańczyk). Equivalently,
+> measure `dn/n`; its Cesàro analogue *provably fails* (Frantzikinakis–Lemańczyk–de la Rue). Equivalently,
 > the open residual is full *every-scale* Fourier uniformity, and the only structural inputs
 > available are blind to it within Sawin's class.
 
@@ -189,8 +189,44 @@ No terminal state is declared; locating the wall is a checkpoint, not an exit.
 
 ## 6. Resolution of `ERG-2`
 
-*(This section is completed after the resolution step that follows this writeup; see the live
-`TRACKING.md` and the corresponding `work/` step for the audited determination.)*
+The Sawin source (arXiv:1809.03280) was subsequently supplied and **read in full**, resolving the one
+access-blocked lead. **Verdict: `ERG-2`-as-worded is FALSE, but there is NO handle — the wall is
+strengthened.** (Audit trail: `work/1781505731-EXPLORE.md` → `work/1781506716-DISTILL.md` →
+`work/1781528204-EXPLORE.md`.)
+
+**What Sawin actually proves.** He defines a *class* of dynamical systems (Definition 1.1, axioms
+(1)–(5)) by modifying Tao's construction of Furstenberg limits of Liouville (his ref [7] = Tao's 2017
+notes, axioms (i)–(iv)). Crucially he **drops the first axiom of [7, Prop 1]** — verbatim, *"the
+dynamical system actually arises as a limit of Liouville"* — replacing it with the weaker
+**`d`-Fourier uniformity** (Definition 1.4). His anomalous examples are **polynomial-phase `d`-step
+nilsystems** `X=(ℝ^{d+1}/H)×Ẑ` (Thm 3.1/3.2), whose membership is contingent on that drop. The recent
+sign-pattern/Chowla methods (MRT, MRT–Tao, entropy-decrement) apply to the *whole* class precisely
+because they do **not** use the dropped axiom.
+
+**The decisive point (Sawin p. 9, verbatim).** For `d=1` his model *is* the Kronecker rotation
+`(T², m_{T²}, T)` — Frantzikinakis–Host's own Liouville counterexample (the `(T²,T)` system; Sawin's
+ref [2], p. 7) — which has **irrational pure-point spectrum**. So Sawin's anomalous models do **not**
+share the "no-irrational-spectrum" invariant: the literal `ERG-2` wording is **false**, and the
+structure theorem *escapes* Sawin's counterexample.
+
+**Why this is not a handle.** The escape is bought entirely by the dropped axiom (i) = **strong
+stationarity** (Furstenberg–Katznelson dilation invariance `n↦pn`), a **logarithmic** property whose
+**Cesàro/per-scale analogue provably fails** (FLdlR, arXiv:2304.03121). Since (R2) is a Cesàro/per-scale
+statement, the escape yields nothing new — it is already available at the log level (which is *why*
+log-Chowla two-point is a theorem). **Escaping Sawin ≠ proving (R2).** An adversarial DISTILL pass
+confirmed this on its hardest setting — it tried to construct a Cesàro handle and found none: the
+per-scale property Sawin's models satisfy (`d`-Fourier uniformity) is the GHK/`U¹` level *already
+unconditionally available at Cesàro* (MRT, `d=1`) and is **provably blind to the `n^{it}` twist** (a
+nontrivial scaling-flow eigenfunction has vanishing GHK `U¹`; computed `3.9e-6 → 0`). The Kronecker
+reading and the axiom-dependency logic also survived the pass; no conflation of `d`-Fourier uniformity
+with strong stationarity.
+
+**Net + caveat.** `ERG-2` is discharged with no handle; the de-averaging wall gains a fifth concrete,
+now primary-source-anchored reason (the `t=0`-forcing structure is intrinsically logarithmic). One
+honest caveat survives: the load-bearing FLdlR separation (arXiv:2304.03121) was cited only at
+triangulated/search-surfaced level (its PDF remained 403) and is carried as an **OPEN dependency** —
+reading it in full would *confirm*, not move, the wall. No bound on C5 is certified; this is a
+strengthened checkpoint, not progress and not a terminal state.
 
 ---
 
@@ -215,7 +251,9 @@ than asserted (this is exactly the status of `ERG-2` until §6). One primary sou
 - Pilatte, *Improved bounds for the two-point logarithmic Chowla conjecture*, arXiv:2310.19357.
 - Frantzikinakis–Host, *The logarithmic Sarnak conjecture for ergodic weights*, arXiv:1708.00677;
   and *Furstenberg systems of bounded multiplicative functions…*, arXiv:1804.08556.
-- Frantzikinakis–Lemańczyk (strong stationarity: logarithmic vs Cesàro), arXiv:2304.03121.
-- Sawin (the obstruction class / anomalous models), arXiv:1809.03280.
+- Frantzikinakis–Lemańczyk–de la Rue (strong stationarity: logarithmic vs Cesàro), arXiv:2304.03121
+  (ETDS 2024). *Cited at triangulated/search-surfaced level — not read in full (403); OPEN dependency.*
+- Sawin, *Dynamical models for Liouville and obstructions to further progress on sign patterns*,
+  arXiv:1809.03280. *Read in full (provided directly) for §6.*
 - Measure rigidity: Ratner; Einsiedler–Katok–Lindenstrauss; Furstenberg ×2×3; Bourgain–Lindenstrauss–
   Michel–Venkatesh.
