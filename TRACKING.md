@@ -11,10 +11,29 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1781505731-EXPLORE.md` — **APPLY the Sawin primary source (arXiv:1809.03280, now
-provided) to RESOLVE the OPEN, formerly access-blocked sub-claim `ERG-2`.** No DISTILL was pending. Read
-the paper in full + re-extracted load-bearing pages from the PDF. **VERDICT on ERG-2: FALSE-as-worded /
-NO HANDLE / WALL STRENGTHENED.** (Q1) Class = **Definition 1.1** axioms (1)-(5); **[7] = Tao's blog
+**Latest step:** `work/1781506716-DISTILL.md` — **DISTILL attack on candidate `ERG-2R`** (the Sawin
+arXiv:1809.03280 resolution of sub-claim `ERG-2`). Five passes; Sawin read in full + re-extracted from
+PDF. **RESULT: `ERG-2R` SURVIVES as a no-handle / equal-hardness disposition; the wall HELD and is now
+SHARPER — adversarial pass PENDING EXPLORE's verdict.** (P1, decisive — hidden Cesàro handle) **NO handle
+found**, all three concrete routes collapse; the *named* reason: the per-scale property Sawin's models
+satisfy (Def 1.4 / `d`-Fourier uniformity) is the GHK level **already unconditionally available at Cesàro**
+(MRT, `d=1`) and is **provably blind to the `n^{it}` twist** (a nontrivial eigenfunction has vanishing GHK
+`U^1`; computed 3.9e-6→0); the only `t=0`-forcing structure (strong stationarity) is log-only. (P2,
+Kronecker reading) **SURVIVES** — p.9 quote verbatim-confirmed from PDF; `(T²,m_{T²},T)`=Kronecker rotation
+with irrational pure-point spectrum, correct from Sawin's explicit construction. (P3, conflation) **NO
+conflation** — Def 1.1(1)-(5), Def 1.4, Tao-Prop-1 axiom (i) kept distinct; strong stationarity (=FK
+dilation invariance `n↦pn`, independently confirmed) is finer than Def 1.4 and the twist separates them;
+"axiom (i)=strong stationarity" is a SHORTHAND for the sound implication `axiom(i)⟹(log-limit of λ)⟹strong
+stationarity (log)`, the log-averaging step confirmed from **Sawin p.2 itself**. (P4, citation integrity)
+**ONE ERROR to fix:** Sawin's internal refs [1]-[8] all correctly identified ([7]=Tao blog, [1]=FH
+1804.08556, [2]=FH Annals 187, [3]=MRT, [4]=MRT-Tao — confirmed from PDF p.13), **BUT the external
+dependency arXiv:2304.03121 is mis-attributed**: it is **FLdlR (Frantzikinakis–Lemańczyk–de la Rue)**, NOT
+"FH–Lemańczyk" — **Host is not an author**; its content is triangulated across 3 searches but **unread in
+full** (all mirrors 403) → carry as **OPEN dependency**. (P5, scope) equal-hardness / no-handle; no
+reduction, no bound, no GRH/EH/GEH smuggled; escape correctly NOT over-read as progress; parity/C5
+untouched. EXPLORE's prior **VERDICT on ERG-2 (FALSE-as-worded / NO HANDLE / WALL STRENGTHENED) is
+CONFIRMED**, with two deltas to fold in (FLdlR author fix; OPEN-dependency cap on 2304.03121).
+For the record, EXPLORE's findings: (Q1) Class = **Definition 1.1** axioms (1)-(5); **[7] = Tao's blog
 "Furstenberg limits of the Liouville function" (2017)**, axioms (i)-(iv). (Q2) The DROPPED **first axiom
 of [7, Prop 1]** is, verbatim, *"the dynamical system actually arises as a limit of Liouville"*; Sawin
 replaces it by the **weaker axiom = `d`-Fourier uniformity (Def 1.4)**; his anomalous models =
@@ -28,7 +47,7 @@ rotation `(T²,T)` = **FH's own Liouville counterexample [2, p.7]**, which **has
 spectrum** → it does **NOT** share the "no-irrational-spectrum" invariant. (Q4) So the literal ERG-2
 wording is **FALSE/imprecise**, *but this is NO handle on (R2)*: the structure-theorem escape from Sawin's
 counterexample is bought entirely by axiom (i) = **strong stationarity**, a **LOG-level** phenomenon whose
-**Cesàro/per-scale analogue PROVABLY FAILS** (FH–Lemańczyk arXiv:2304.03121); (R2) is a Cesàro statement,
+**Cesàro/per-scale analogue PROVABLY FAILS** (FLdlR arXiv:2304.03121); (R2) is a Cesàro statement,
 so the escape gives it nothing new (it is already known at the log level — that is *why* log-Chowla
 two-point [5] is a theorem). **Escaping Sawin ≠ proving (R2).** The progress-technique half of ERG-2's
 conclusion ("no class-invariant technique forces `t(X)=0`") is **CONFIRMED from primary text.**
@@ -147,19 +166,20 @@ APPROACHES ATTEMPTED:
   IRRATIONAL pure-point spectrum -> does NOT share the "no-irrational-spectrum" invariant. (Q4)
   VERDICT: ERG-2 literal wording FALSE/imprecise, but NO HANDLE on (R2); WALL STRENGTHENED -- the
   structure-theorem escape exists only via dropped axiom (i) = strong stationarity, which is a LOG-
-  level phenomenon whose CESARO analogue PROVABLY FAILS (FH-Lemanczyk 2304.03121); (R2) needs Cesaro,
+  level phenomenon whose CESARO analogue PROVABLY FAILS (FLdlR 2304.03121); (R2) needs Cesaro,
   so the escape is useless for (R2). Escaping Sawin != proving (R2). Candidate lemma ERG-2R introduced
   for DISTILL (NOT a foundation, NOT a bound). NO bound on C5. NOT progress, NOT terminal.
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- [ERG-2R] (NEW, pending DISTILL) "Reading Sawin's actual axioms (arXiv:1809.03280): the FH/Lemanczyk
+- [ERG-2R] (DISTILL-ATTACKED work/1781506716 — adversarial pass PENDING EXPLORE's verdict; survives as
+  no-handle / equal-hardness, with TWO deltas to fold in) "Reading Sawin's actual axioms (arXiv:1809.03280): the FH/Lemanczyk
   strong-stationarity structure-theorem input that would force the per-scale scaling-flow eigenvalue
   t(X)=0 is NOT a class-invariant of Sawin's dynamical-model class -- it is the content of the DROPPED
   axiom (i) ('the system actually arises as a limit of Liouville'). Sawin's anomalous polynomial-phase
   models do NOT share that invariant (his d=1 model IS the Kronecker rotation (T^2,T) = FH's Liouville
   counterexample [2,p.7], which HAS irrational pure-point spectrum). HOWEVER this yields NO handle on
   (R2): the escape from Sawin's counterexample is bought entirely by axiom (i) = strong stationarity,
-  a LOGARITHMIC phenomenon whose CESARO/per-scale analogue PROVABLY FAILS (FH-Lemanczyk 2304.03121);
+  a LOGARITHMIC phenomenon whose CESARO/per-scale analogue PROVABLY FAILS (FLdlR 2304.03121);
   (R2) is a Cesaro/per-scale statement, so the structure-theorem route gives it NOTHING new (escaping
   Sawin at the log level is already KNOWN -- it is why log-Chowla two-point [5] is a theorem)."
   WHAT I'VE CHECKED: Def 1.1 axioms (1)-(5); §1 p.2 (axiom (i) = 'arises as a limit of Liouville';
@@ -173,6 +193,24 @@ CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
   is faithful to Sawin + FH; (3) that I have not conflated d-Fourier uniformity (Sawin's axiom) with
   strong stationarity (FH's log-only property). NOT a legal foundation; NOT a bound; NOT a claim of
   progress on C5.
+  *** ADVERSARIAL PASS (DISTILL work/1781506716; PENDING EXPLORE's verdict) ***: all 3 stress-tests
+  ANSWERED. (1) NO hidden Cesaro handle — all three handle-routes collapse; named structural reason:
+  Def 1.4/d-Fourier uniformity is the GHK level already unconditionally available at Cesaro (MRT, d=1)
+  and is PROVABLY BLIND to the n^{it} twist (nontrivial eigenfunction has vanishing GHK U^1, computed
+  3.9e-6->0); only strong stationarity forces t=0, log-only. EQUAL-HARDNESS/NO-HANDLE CONFIRMED.
+  (2) (T^2,m_{T^2},T)/Kronecker/irrational-spectrum reading CONFIRMED (p.9 verbatim from PDF + correct
+  from Sawin's explicit construction X=(R^2/H)x Z^). (3) NO conflation of d-Fourier uniformity with
+  strong stationarity — they are kept distinct and the twist SEPARATES them; "axiom (i)=strong
+  stationarity" is shorthand for the sound implication axiom(i)=>(log-limit of lambda)=>strong
+  stationarity (log), the log-averaging step confirmed from Sawin p.2 itself.
+  *** TWO DELTAS for EXPLORE to fold in *** (a) CITATION FIX: arXiv:2304.03121 = FLdlR
+  (Frantzikinakis-Lemanczyk-de la Rue, ETDS 2024), NOT "FH-Lemanczyk" — HOST IS NOT AN AUTHOR; correct
+  throughout. (b) OPEN-DEPENDENCY CAP: the FLdlR log-vs-Cesaro strong-stationarity separation is
+  triangulated across 3 search summaries but UNREAD IN FULL (all mirrors 403) -> carry as OPEN
+  dependency (search-confirmed, not primary-read); to upgrade, read 2304.03121's theorem+hypotheses
+  directly. VERDICT-LEFT-FOR-EXPLORE: no concrete counterexample to ERG-2R's no-handle disposition was
+  found (=> not FALSIFIED); but its load-bearing external fact is OPEN-capped. Sawin's internal refs
+  [1]-[8] all CORRECTLY identified by EXPLORE (PDF p.13 audited).
 
 OPEN THREADS:
 - T2 [= the crux C5]: unaveraged two-point shift-2 cancellation, UNIFORM over d<=x^{1-eps}.
@@ -196,7 +234,7 @@ OPEN THREADS:
   (R2). Stress-tests 3/4/5 HELD. Rigidity DEFEATED by Sawin's model, mechanism CITATION-BACKED +
   CORRECTED + (A17) PRIMARY-SOURCE-ANCHORED: the structure-theorem input is NOT class-invariant (it
   is dropped axiom (i) = strong stationarity), but the escape it buys is LOG-only (Cesaro provably
-  fails, FH-Lemanczyk 2304.03121), so NO handle on (R2). L-ERG-RIG = faithful EQUAL-HARDNESS
+  fails, FLdlR 2304.03121), so NO handle on (R2). L-ERG-RIG = faithful EQUAL-HARDNESS
   reformulation, OPEN. The former access-blocked handle (ERG-2) is now DISCHARGED. NOT progress,
   NOT terminal.
 - T13 [the post-campaign redirection]: three reframings CLOSED the "reframe again" strategy. Live:
@@ -230,7 +268,7 @@ CURRENT POSITION:
     the "no-irrational-spectrum / strong-stationarity" invariant.
   * BUT this is NOT a handle on (R2): the structure-theorem escape is bought entirely by the DROPPED
     axiom (i) ("the system actually arises as a limit of Liouville") = strong stationarity, a LOG-level
-    phenomenon whose CESARO/per-scale analogue PROVABLY FAILS (FH-Lemanczyk 2304.03121). (R2) is a
+    phenomenon whose CESARO/per-scale analogue PROVABLY FAILS (FLdlR 2304.03121). (R2) is a
     Cesaro/per-scale statement; the escape gives it NOTHING new (it is already known at the log level
     -- that is why log-Chowla two-point [5] is a theorem). Escaping Sawin != proving (R2).
   * NET: ERG-2 = FALSE-AS-WORDED / NO HANDLE / WALL STRENGTHENED. The progress-technique half of
@@ -241,14 +279,15 @@ CURRENT POSITION:
   with a fully primary-source-anchored wall-reason. ERG-1/ERG-B/ERG-3 unchanged.
 - HONEST STATEMENT (permitted by AGENTS.md): "I made no progress on C5 that survives audit this step;
   but I CLOSED the one access-blocked uncertainty in the wall." The wall = un-average strong
-  stationarity (force per-scale t=0 / dilation invariance n->pn at the Cesaro level), which FH-Lemanczyk
+  stationarity (force per-scale t=0 / dilation invariance n->pn at the Cesaro level), which FLdlR
+  (arXiv:2304.03121; author-corrected DISTILL work/1781506716 -- HOST is NOT an author)
   prove FAILS for Cesaro and which -- now confirmed from Sawin's actual axioms -- the available
   techniques cannot supply because the only structure that could (axiom (i) / strong stationarity)
   lives at the log level. CHECKPOINT, NOT exit.
 - ANTI-DECEPTION: NO bound on C5 certified; ERG-2R is a CORRECTED DISPOSITION + EQUAL-HARDNESS/NO-
   HANDLE statement (pending DISTILL), NOT a bound, NOT a legal foundation, NOT progress, NOT terminal.
   Sawin verified at PRIMARY-SOURCE level (full text + PDF re-extraction; references [1]-[8] identified
-  from the reference list). FH-Lemanczyk 2304.03121 (the Cesaro-vs-log strong-stationarity gap) remains
+  from the reference list). FLdlR 2304.03121 (the Cesaro-vs-log strong-stationarity gap) remains
   at search-surfaced/quoted level (PDF previously 403) -- this is the one dependency in ERG-2R not read
   in full this step, and DISTILL should weight it.
 - RECOMMENDATION: PAUSE, strengthened. The single highest-value previously-blocked next action
@@ -469,7 +508,7 @@ lemma pending DISTILL.):
   variables). STATUS: NEEDS-REVIEW (reproducible audit; a supporting fact, NOT a foundation toward
   TPC). AUDIT: DISTILL PASS 4 code+output (dn/n=du rel.err 1.8e-5; machine-precision n-independence
   of p^{it}; rotation number t*log2/2pi irrational for q<200; eigenvalue =1 at t=0; transcription
-  typo fixed p=5,t=0.5 -> 0.693314+0.720636j). Reproducible <5 min. Matches FH-Lemanczyk verbatim
+  typo fixed p=5,t=0.5 -> 0.693314+0.720636j). Reproducible <5 min. Matches FLdlR 2304.03121 verbatim
   ("n^{it} = the only pretentious fns with trivial RATIONAL spectrum"). WHY ATTACK FAILS: a
   confirmation (firms the bridge), not a crack; change of variables elementary + reproduced.
   ADVERSARIAL PASS: DISTILL PASS 4. LABELLED NEEDS-REVIEW work/1781480168.
@@ -485,12 +524,14 @@ lemma pending DISTILL.):
   located. LABELLED OPEN (forward) work/1781480168.
 - [ERG-2] No structure theorem of the available (FH/Lemanczyk spectral + entropy) type can force the
   per-scale t(X)=0. (i) "No irrational spectrum" alone admits an n^{it} (Kronecker) factor; the step
-  that would kill it is STRONG STATIONARITY (dilation invariance), which FH-Lemanczyk prove holds for
+  that would kill it is STRONG STATIONARITY (dilation invariance), which FLdlR (arXiv:2304.03121;
+  Frantzikinakis-Lemanczyk-de la Rue -- HOST is NOT an author, citation-corrected DISTILL
+  work/1781506716) prove holds for
   the LOGARITHMIC Furstenberg system but FAILS for Cesaro systems. (ii) The surviving structural
   inputs are coarse averaged invariants (spectrum type, entropy, building blocks) that Sawin's
   in-class anomalous (polynomial-phase) models are constructed to share -- so no such invariant
   separates lambda from an anomalous model. DEPENDS ON: established math (FH arXiv:1804.08556 = Sawin
-  ref [1]; FH-Lemanczyk arXiv:2304.03121; Sawin arXiv:1809.03280 = NOW READ IN FULL). STATUS: OPEN
+  ref [1]; FLdlR arXiv:2304.03121; Sawin arXiv:1809.03280 = NOW READ IN FULL). STATUS: OPEN
   (the reformulation it serves is OPEN) BUT the former access-blocked SUB-CLAIM is RESOLVED
   (work/1781505731, A17). RESOLUTION: the literal sub-claim "Sawin's anomalous models share the FH
   structure-theorem invariants EXACTLY" is FALSE/imprecise -- Sawin's d=1 anomalous model IS the
@@ -499,15 +540,16 @@ lemma pending DISTILL.):
   (R2): the structure-theorem input is NOT class-invariant precisely because it is the content of the
   DROPPED axiom (i) ("the system actually arises as a limit of Liouville"); the escape it buys from
   Sawin's counterexample is the LOG-level strong-stationarity escape (already KNOWN -- it is why
-  log-Chowla two-point [5] is a theorem), whose CESARO/per-scale analogue PROVABLY FAILS (FH-Lemanczyk
-  2304.03121); (R2) is Cesaro, so the escape gives it NOTHING. The progress-technique half of the
+  log-Chowla two-point [5] is a theorem), whose CESARO/per-scale analogue PROVABLY FAILS (FLdlR
+  arXiv:2304.03121 -- author-corrected, HOST not an author, DISTILL work/1781506716; search-confirmed,
+  UNREAD IN FULL = OPEN dependency); (R2) is Cesaro, so the escape gives it NOTHING. The progress-technique half of the
   conclusion ("no class-invariant technique forces t(X)=0") is CONFIRMED from primary text (Abstract;
   §1; Def 1.4; Props 4.1/4.2 with only Equation 1 = dynamical Chowla). NET = FALSE-AS-WORDED / NO
   HANDLE / WALL STRENGTHENED. AUDIT: PDF re-extraction audits A (p.2: axiom (i) = "arises as a limit
   of Liouville"; whole-class methods do not use it) + B (Remark 3.5 p.11: axioms (ii)-(iv) hold, (i)
   may/may not); Def 1.1 (axioms (1)-(5)); Def 1.4 (d-Fourier uniformity = the weaker replacement);
   Thm 3.1/3.2 (polynomial-phase nilsystem models); p.9 (d=1 = (T^2,T) = FH ctrex [2,p.7]); refs
-  [1]/[2] identified. The one remaining search-surfaced dependency = FH-Lemanczyk 2304.03121 (the
+  [1]/[2] identified. The one remaining search-surfaced dependency = FLdlR 2304.03121 (the
   Cesaro-vs-log strong-stationarity gap). NEW candidate lemma ERG-2R (pending DISTILL) records the
   resolved mechanism + flags exactly what DISTILL should re-attack. ADVERSARIAL PASS: DISTILL PASS
   1 + PASS 2 (work/1781479461) + PRIMARY-SOURCE resolution (work/1781505731). Former OPEN sub-claim
@@ -573,7 +615,9 @@ lemma pending DISTILL.):
   (work/1781478452, A16/T14) -- DISTILL-ATTACKED (work/1781479461) + LABELLED (work/1781480168) +
   ERG-2 sub-claim RESOLVED (work/1781505731, A17): the dedicated rigidity import is DEFEATED by
   Sawin's model, mechanism now CITATION-BACKED + CORRECTED + PRIMARY-SOURCE-ANCHORED. (ERG-2/Leak-1)
-  the log-only piece is STRONG STATIONARITY (dilation invariance), which FH-Lemanczyk prove FAILS for
+  the log-only piece is STRONG STATIONARITY (dilation invariance), which FLdlR (arXiv:2304.03121,
+  Frantzikinakis-Lemanczyk-de la Rue -- HOST not an author, citation-corrected DISTILL
+  work/1781506716) prove FAILS for
   Cesaro. (ERG-2/Leak-2 + A17) Sawin proves class-invariance of the PROGRESS TECHNIQUES (CONFIRMED
   from primary text); the structure-theorem input is NOT class-invariant but is the DROPPED axiom (i)
   = strong stationarity, whose escape is log-only -> NO handle on (R2) (Sawin's d=1 model = (T^2,T) =
@@ -590,7 +634,7 @@ lemma pending DISTILL.):
   Halasz, dedicated measure-rigidity, AND the structure-theorem route via Sawin's dropped axiom all
   collapse to existing walls / give only the log-only escape); NOT progress, NOT terminal, NOT a
   legal foundation. AUDIT: (M1) numerically AUDITED + REPRODUCED; (A16) Part B audit (ERG-B) inline;
-  (A17) Sawin PDF re-extraction audits inline; FH-Lemanczyk 2304.03121 search-surfaced/quoted. NO
+  (A17) Sawin PDF re-extraction audits inline; FLdlR 2304.03121 search-surfaced/quoted. NO
   bound on C5 certified. ADVERSARIAL PASS: Attacks 1/2/3/3*/4/5 (work/1781473105); LABELLED OPEN
   (work/1781473701); ergodic-rigidity probe added (work/1781478452), ATTACKED (work/1781479461),
   LABELLED (work/1781480168); ERG-2 sub-claim RESOLVED from primary source (work/1781505731). STILL
@@ -642,8 +686,9 @@ GRAVEYARD (may NOT be built upon):
   eigenvalue => t(X)=0 forced at every scale => (R2), proving it." FALSIFIED-as-stated (Part C,
   work/1781478452; CONFIRMED by DISTILL PASS 6; and FURTHER CONFIRMED by the Sawin primary source
   A17, work/1781505731): FH 'no irrational spectrum' alone admits an n^{it} Kronecker factor; the
-  t=0-forcing step is STRONG STATIONARITY (dilation invariance), which FH-Lemanczyk prove holds for
-  the LOG system but FAILS for Cesaro (ERG-2/Leak-1, arXiv:2304.03121); the structure-theorem input
+  t=0-forcing step is STRONG STATIONARITY (dilation invariance), which FLdlR prove holds for
+  the LOG system but FAILS for Cesaro (ERG-2/Leak-1, arXiv:2304.03121 = Frantzikinakis-Lemanczyk-de la
+  Rue -- HOST not an author, citation-corrected DISTILL work/1781506716); the structure-theorem input
   is NOT class-invariant but is exactly Sawin's DROPPED axiom (i), whose escape is LOG-only -> no
   Cesaro handle (A17); genuine measure rigidity (Ratner/EKL/x2x3) is inapplicable (ERG-3/Leak-3).
   The honest survivor is the REFORMULATION L-ERG-RIG (= ERG-NET, OPEN), NOT this proof. source:
