@@ -18,16 +18,20 @@ re-derived from scratch.
    verdict, live targets). This is the resume anchor.
 3. `writeups/2026-06-14-categorical-reframings-of-the-twin-prime-crux.md` — the consolidated
    three-cluster cross-domain campaign (the most recent body of work).
-4. `work/*-{EXPLORE,DISTILL}.md` (20 files) — immutable per-step history with the actual
-   mathematics, attacks, and rerunnable code+output. The latest three (ts 1781472028 / 1781473105
-   / 1781473701) are the (b2) de-averaging engagement → `SO-deavg` (below).
+4. `work/*-{EXPLORE,DISTILL}.md` (23 files) — immutable per-step history with the actual
+   mathematics, attacks, and rerunnable code+output. ts 1781472028/473105/473701 = the (b2)
+   de-averaging engagement → `SO-deavg`; ts 1781478452/479461/480168 = the **ergodic/measure-
+   rigidity** import (A16) → `L-ERG-RIG` (below).
 
 **Current frontier:** the crux **C5** (below) / the sharpened obstruction **SO-L²** / its
 de-averaging face now sharpened to **SO-deavg** (below). Target **(b2)** has been *engaged*
 analytically (not just named): it re-localized — and survived DISTILL as an **equal-hardness,
 no-reduction** decomposition of C5, with the genuine residual = **(R2)** kill the `n^{it}` twist
-**+ (R3)** AP-uniformity. Ranked next-moves if continuing: **(b2/SO-deavg) > (b1) > (c)** — none has
-an instrument in hand.
+**+ (R3)** AP-uniformity. The **out-of-framework ergodic/measure-rigidity bet** (A16) was then aimed
+at (R2): it produced the reformulation **`L-ERG-RIG`** (OPEN, equal-hardness) but **found no handle —
+rigidity is defeated by Sawin's model** (mechanism now citation-backed; see below). Ranked next-moves
+if continuing: **(b2/SO-deavg) > (b1) > (c)** — none has an instrument in hand; the one thin, concrete,
+currently-blocked lead is the **ERG-2** sub-claim (needs PDF access — see below).
 
 **Do-not-redo (one line):** Clusters 1, 5, 3 are tried (verdicts below); the categorical-concept
 ranking is below; Cluster 2 is subsumed by Cluster 1; (b2) is engaged → `SO-deavg` (the two natural
@@ -49,6 +53,13 @@ it sharpened the de-averaging face of C5 to the obstruction **SO-deavg** and —
 three overclaims — recorded it as a faithful **equal-hardness** decomposition (every-scale degree-1
 Fourier uniformity **⟹** Cesàro two-point Chowla, *forward implication only*; genuine residual =
 **(R2)** `n^{it}` twist + **(R3)** AP-uniformity). It too is at C5-hardness with no new handle.
+A further session took the **out-of-framework ergodic/measure-rigidity bet** (A16) at (R2): via the
+Furstenberg-systems dictionary, (R2) = killing an irrational scaling-flow eigenvalue at every scale.
+EXPLORE→DISTILL→label found **rigidity is defeated by Sawin's model** — all three stress-tests held —
+yielding the reformulation **`L-ERG-RIG`** (OPEN, equal-hardness) with the *cleanest reason yet* for
+the wall: the `t=0`-forcing step (strong stationarity) holds for the **log** Furstenberg system but
+**provably fails for Cesàro** (FH–Lemańczyk arXiv:2304.03121); genuine measure rigidity (Ratner/EKL/
+×2×3) cannot bite (rank-1, positive entropy; the `×p` dilations are an affine semigroup, not `ℤ^d`).
 
 ---
 
@@ -74,6 +85,7 @@ For `t(n) := λ(n)λ(n+2)` (λ = Liouville) and `S_{a,d}(x) := Σ_{n≤x, n≡a 
 | **SO-deavg** | OPEN obstruction (audited) | the de-averaging face of C5: every-scale degree-1 Fourier uniformity of `λ` **⟹** Cesàro two-point Chowla (fwd only); residual = **(R2)** kill the `n^{it}` twist + **(R3)** AP-uniformity. Since `λ²=χ₀`, TT 2016 gives a *structural reduction to `c·d^{−it}χ(a)`* (not vanishing) at a.a. scales. Equal-hardness, no reduction |
 | **L-QUB-reform** | OPEN | `C5 ⟺ sup_d R_d ≤ x^{o(1)}` (a rename, difficulty = C5) |
 | **L-C3-UNIF** | OPEN | `C5 ⟺` Gowers-uniformity of `t` uniform in `d` `⟺` no degree-1 character correlation (= C5↔C6 unification) |
+| **L-ERG-RIG** | OPEN | the **ergodic** reformulation of (R2): (R2) **⟸** "the Furstenberg systems of `λ` have no nontrivial irrational (scaling-flow) eigenvalue, uniformly across scales." Equal-hardness. Rigidity is **defeated by Sawin's model** — the `t=0`-forcing strong stationarity is log-only & **fails for Cesàro** (FH–Lemańczyk 2304.03121); Ratner/EKL can't bite (rank-1; `×p` = affine semigroup). Sub-claim **ERG-2** OPEN (access-blocked) |
 | GRAVEYARD | FALSIFIED | L-COH-as-proof, PURITY-ONLY, L-QUB-i, L-QUB-ii, L-C3-DUOIDAL, and the C1–C6 over-readings — see `TRACKING.md` |
 
 **Cross-cutting finding:** C-COH-MON, L-QUB-i, and L-C3-DUOIDAL each collapsed to "the thing whose
@@ -175,6 +187,14 @@ the chat-only ranking, persisted so it is not regenerated.
   branch (structural reduction to `c·d^{−it}χ(a)`); and do **not** cite Frantzikinakis–Host
   arXiv:1708.00677 as the ergodic *obstruction* (it is the positive log-Sarnak theorem; the
   obstruction is the FH skew-product `T(α,β)=(α,αβ)` + Sawin's model).
+- **Do not re-run the ergodic/measure-rigidity bet on (R2) expecting a handle** — done (A16,
+  `L-ERG-RIG`): rigidity is defeated by Sawin's model. Specifically: (i) the only rigidity that
+  attaches to `λ`'s Furstenberg system is the FH/Lemańczyk log-spectral structure theorem, whose
+  `t=0`-forcing consequence (strong stationarity) is **log-only and provably fails for Cesàro**
+  (2304.03121); (ii) it is Sawin-class-type input, not stronger; (iii) genuine measure rigidity
+  (Ratner/EKL/×2×3) is inapplicable — rank-1, positive entropy, and the `×p` dilations form the
+  affine semigroup `n↦pn+b`, **not** a commuting `ℤ^d` action (verified). The ONE thin lead left is
+  the access-blocked **ERG-2** sub-claim (below), not a re-run.
 - **Do not pursue independence (c) expecting a method** — none exists; the Hamkins construction
   builds a TPC-*equivalent* sentence independent of PA only *because* TPC's truth is unknown, which
   is not an independence proof of TPC.
@@ -186,20 +206,23 @@ the chat-only ranking, persisted so it is not regenerated.
 ## Where to go next (if continuing past the pause)
 
 The honest live targets, all at genuine C5-hardness with no new tool currently in hand:
-- **(b2) De-average Tao 2016 → now `SO-deavg`** — ENGAGED (work ts 1781472028/473105/473701) and
-  DISTILL-verified as an equal-hardness, no-reduction decomposition of C5. Corrected residual:
-  **(R2)** kill the `n^{it}` twist (the genuine defining piece — `λ²=χ₀` is pretentious, so TT 2016
-  gives a *structural reduction to* `c·d^{−it}χ(a)` at a.a. scales, **not** vanishing) **+ (R3)**
-  AP-uniformity. Equivalently: every-scale degree-1 Fourier uniformity **⟹** Cesàro two-point Chowla
-  (forward only; even Cesàro is open; MRT is *on-average* — the open boundary is *every scale* +
-  arbitrarily short `H`). A Review exhausted the two natural instruments (both = existing walls; see
-  DO-NOT-REDO), so **no in-graph next move is tractable without a new instrument.** **Sharpest
-  target, but blocked.**
+- **(ERG-2) The one thin, concrete, currently-BLOCKED lead** — resolve whether **Sawin's anomalous
+  models (arXiv:1809.03280; UCLA thesis qt4wr015m0) share the FH/Lemańczyk structure-theorem
+  invariants *exactly*.** If they do NOT, the structure theorem may escape Sawin's counterexample and
+  give a handle on (R2). Blocked only by PDF access (all arXiv/HTML/thesis returned HTTP-403 in every
+  session). **Needs a human (or a session) with PDF access** — highest-value blocked next action.
+- **(b2) De-average Tao 2016 → `SO-deavg`** — ENGAGED + DISTILL-verified as an equal-hardness,
+  no-reduction decomposition of C5. Residual = **(R2)** kill the `n^{it}` twist (`λ²=χ₀` pretentious,
+  so TT 2016 gives a *structural reduction to* `c·d^{−it}χ(a)` at a.a. scales, **not** vanishing) **+
+  (R3)** AP-uniformity. Both natural analytic instruments AND the out-of-framework **ergodic-rigidity**
+  bet (A16, `L-ERG-RIG`) are now exhausted as existing walls (see DO-NOT-REDO). **Sharpest target,
+  but blocked.**
 - **(b1) A shift-surviving variance bound** for the non-multiplicative `t` — blocked by SO-L² (the
   variance off-diagonal regenerates four-fold Liouville correlations instead of collapsing).
 - **(c) Independence** — no current method (see DO-NOT-REDO).
 
-Ranked: **(b2) > (b1) > (c)**. A genuinely new idea must either supply an *unconditional* handle on
-the uniform-in-`d` edge that survives non-multiplicativity, or break one of the three concordant
-reasons in `writeups/…`. Anything that reduces to "C5 again" is, by the campaign's evidence,
-expected — record it and move on.
+Ranked among *tractable-with-access*: **(ERG-2, if PDFs become available) > (b2) > (b1) > (c)**. A
+genuinely new idea must either supply an *unconditional* handle on the uniform-in-`d` edge that
+survives non-multiplicativity, break one of the concordant reasons in `writeups/…`, or — newest —
+beat Sawin's model with a non-class-invariant rigidity input. Anything that reduces to "C5 again" is,
+by the evidence, expected — record it and move on.
