@@ -11,7 +11,25 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1781548132-EXPLORE.md` — **Apply (A18): affine / `ax+b` additive×multiplicative
+**Latest step:** `work/1781549159-DISTILL.md` — **DISTILL attack on `L-AFF-GAUGE`** (the A18 affine/`ax+b`
+candidate). Ran the two pre-registered decisive attacks (extremal low-temperature KMS; λ-gauge-state
+existence) plus three more. **RESULT: the wall HOLDS — no handle opened — with three corrections folded
+in.** (1) The rich extremal-KMS family (β>2 indexed by circle measures; β=∞/ground states) lives on the
+**Toeplitz algebra `T(ℕ⋊ℕ^×)` (Laca–Raeburn 0907.3760), NOT on the simple `Q_ℕ`** — on `Q_ℕ` simplicity
+forces the **unique β=1 state** (KMS_1 factors through the quotient); and even on `T`, those states
+**factor through the diagonal** and inject only **multiplicative/scaling weights** (`n^{-(β-1)}`,
+`e^{iθ log n}`), never an additive `+2`-coupling ⇒ every evaluation of the two-point observable is a
+**weighted two-point Liouville sum = C5-class** (audited). Trichotomy outcome **(a)/(b)**, decisively not
+(c) a handle. (2) `α_λ:s_p↦λ(p)s_p` IS a genuine automorphism, so `τ∘α_λ` is a state — **but**
+gauge-invariance forces `τ∘α_λ=τ`, value **0** (NOT `S(x)/x`); `S(x)/x` lives only in the **non-state
+diagonal trace-per-unit-length `τ_λ`, = C5 by definition** (simplicity collapses the gauge-twist route,
+as EXPLORE suspected). (3) Trap-A dodge **CONFIRMED at abstract/structure level, OPEN-capped** (PDFs 403;
+no-zero-data is absence-of-citation + structure, not a proved no-go). Attacks 4 (no `+2` KK/cyclic class —
+homotopy-invariance obstruction) and 5 (gauge-average ≡0; scope) HOLD. **NO bound on C5; NOT progress;
+NOT terminal.** Reduced claim graph `[AFF-1]`..`[AFF-4]` + `[AFF-DISP]`. `L-AFF-GAUGE` now has an
+**ADVERSARIAL PASS PENDING EXPLORE'S VERDICT** (label NEEDS-REVIEW-vs-FALSIFIED + fold the 3 corrections).
+
+**Prior step:** `work/1781548132-EXPLORE.md` — **Apply (A18): affine / `ax+b` additive×multiplicative
 import onto the +/× collision in C5, via Cuntz's `ax+b`-semigroup C\*-algebra `Q_ℕ` (ℕ⋊ℕ^×).** This is
 the orchestrator+human's "Approach 3" genuinely-new-structure escalation (non-abelian solvable, NOT a
 categorical reframing, NOT abelian rigidity). FINDINGS: **(Q1) the additive generator is REALIZED** —
@@ -29,7 +47,8 @@ unique KMS state) returns the gauge-AVERAGED two-point correlation, which is **0
 affine dynamics is **log-level strong stationarity** (ERG-3: the `D_p` semigroup is not
 Cesàro-measure-preserving), exactly where the FH ∞-step-nilsystem parity wall sits. **NET: the `ax+b`
 structure relocates the +/× collision into a gauge symmetry that quotients λ away ⇒ NO handle.** New
-candidate lemma **`L-AFF-GAUGE`** (the 6th, operator-algebraic wall-reason) **PENDING DISTILL**. NO bound
+candidate lemma **`L-AFF-GAUGE`** (the 6th, operator-algebraic wall-reason) **DISTILL-ATTACKED
+(work/1781549159): wall HELD, no handle; PENDING EXPLORE'S VERDICT**. NO bound
 on C5 certified; NOT progress; NOT terminal. **Substrate is SEARCH-SURFACED (arXiv PDFs 403):** Cuntz
 arXiv:math/0611541 (relations, simple+purely-infinite, unique β=1 KMS, = crossed product Bunce–Deddens(ℚ)
 by ℕ^×, contains Bost–Connes + adds the additive generator); Cuntz–Li arXiv:0906.4903 (K-theory).
@@ -56,7 +75,10 @@ stationarity; Cesàro provably fails). The **affine / `ax+b` import (A18, this s
 `Q_ℕ` (ℕ⋊ℕ^×) non-abelian structure at the +/× collision: the additive generator is **realized** and it
 **dodges Trap A**, but it **hits Trap B / parity** via the **gauge-invariance dichotomy** — the algebra's
 gauge symmetry quotients λ away, so its natural invariants are λ-blind or literally C5. `L-AFF-GAUGE`
-PENDING DISTILL. Still at C5-hardness; no certified handle.
+**DISTILL-ATTACKED (work/1781549159): wall HOLDS, no handle** — the extremal-KMS crack is on the Toeplitz
+algebra not the simple `Q_ℕ` and closes there too (diagonal/multiplicative weights ⇒ C5-class); the
+gauge-twist state collapses to 0, the C5 value is a non-state weight; Trap-A dodge confirmed OPEN-capped.
+Pending EXPLORE's verdict. Still at C5-hardness; no certified handle.
 
 
 ```
@@ -137,7 +159,8 @@ APPROACHES ATTEMPTED:
   ERG-2R introduced, DISTILLED (work/1781506716) + LABELLED (work/1781528204). NOT progress.
 - [A18] AFFINE / ax+b ADDITIVE×MULTIPLICATIVE IMPORT onto the +/x collision in C5 — Cuntz Q_N
   (the ELL N x N^x semidirect-product / non-abelian solvable structure) | ACTIVE (out-of-framework
-  bet; candidate lemma L-AFF-GAUGE introduced, PENDING DISTILL) | Apply (this step, work/1781548132).
+  bet; candidate lemma L-AFF-GAUGE DISTILL-ATTACKED work/1781549159 -- wall HELD, no handle, PENDING
+  EXPLORE'S VERDICT) | Apply work/1781548132 + DISTILL work/1781549159.
   Substrate (search-surfaced, PDF 403): Cuntz arXiv:math/0611541 Q_N = <u unitary, s_n isometries |
   s_n s_m=s_nm, s_n u=u^n s_n, Sum_{k<n} u^k e_n u^{-k}=1>; simple + purely infinite; u UNITARY =>
   additive shift n->n+2 = u^2 REALIZED as a genuine generator (Q1 additive half = YES); = crossed
@@ -158,8 +181,10 @@ APPROACHES ATTEMPTED:
   DISTILL (the 6th, operator-algebraic wall-reason).
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- [L-AFF-GAUGE] (PENDING DISTILL — introduced this step work/1781548132; NOT a foundation, NOT a
-  bound, NOT progress on C5; it is the SHARPENED WALL) "In Cuntz's ax+b-semigroup C*-algebra Q_N
+- [L-AFF-GAUGE] (DISTILL-ATTACKED work/1781549159 — ADVERSARIAL PASS PENDING EXPLORE'S VERDICT;
+  introduced work/1781548132; NOT a foundation, NOT a bound, NOT progress on C5; it is the SHARPENED
+  WALL. DISTILL OUTCOME: wall HOLDS, NO handle [both decisive attacks closed], 3 corrections to fold —
+  see below) "In Cuntz's ax+b-semigroup C*-algebra Q_N
   (u unitary, s_n isometries; s_n s_m=s_nm, s_n u=u^n s_n, Sum_{k<n} u^k e_n u^{-k}=1): the additive
   shift n->n+2 = u^2 is a genuine unitary generator, and Q_N stays in the Cuntz-Li corner (no
   zeta-zero localization; K_* = exterior algebra on primes), so the construction DOES NOT inherit
@@ -178,15 +203,20 @@ CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
   (Cuntz-Li); gauge homogeneity of (M),(A),(C) in each prime's s_p-count; gauge-average = 0 (audit
   Part 5 Test 3); diagonal-trace-of-shift = 0 (Test 2); M_lambda u^2 M_lambda u^{-2} = C5 identity;
   ERG-3's D_p∘T=T^p∘D_p / log-level fact; FH/Tao parity-wall citations.
-  WHAT I'D WANT STRESS-TESTED: (1) is the unique KMS state really fixed by the FULL gauge group
-  T^{(primes)}, or only by the canonical 1-param dynamics? could an extremal low-temperature KMS state
-  (Cuntz-Deninger-Laca; Laca-Raeburn) be neither gauge-invariant nor the Liouville functional and see
-  lambda non-trivially WITHOUT being C5? (2) does s_p->lambda(p)s_p define a state with
-  tau∘alpha_lambda(M_lambda u^2 M_lambda u^{-2}) = S(x)/x, or does simplicity force tau∘alpha_lambda
-  = tau (collapsing to 0)? (3) is the Trap-A dodge real -- confirm Q_N's KMS/K-theory carry no
-  zeta-zero data (beta=1 = pole not zero); OPEN-capped. (4) could any K-theory / KK-class encode a
-  +2-shift correlation? (claim: no.) FALSIFICATION RISK: a concrete natural non-gauge-invariant state
-  seeing lambda without being C5 would FALSIFY the no-handle disposition and open a real lead.
+  DISTILL FINDINGS (work/1781549159; 3 corrections for EXPLORE to fold): (1) [attack 1, extremal KMS]
+  the rich extremal-KMS family (beta>2 indexed by circle measures; beta=inf/ground states) lives on the
+  TOEPLITZ algebra T(N x N^x) (Laca-Raeburn 0907.3760), NOT on the simple Q_N -- on Q_N simplicity forces
+  the UNIQUE beta=1 state (KMS_1 factors through the quotient). Even on T, those states factor through the
+  DIAGONAL and inject only multiplicative/scaling weights (n^{-(beta-1)}, e^{i theta log n}), never an
+  additive +2-coupling => every two-point evaluation is a WEIGHTED two-point Liouville sum = C5-class
+  (audited 5c). Trichotomy outcome (a)/(b), NOT (c). (2) [attack 2, state existence] alpha_lambda IS a
+  genuine automorphism so tau∘alpha_lambda is a state -- BUT gauge-invariance forces tau∘alpha_lambda=tau,
+  value 0 (NOT S(x)/x); S(x)/x lives only in the NON-STATE diagonal trace-per-unit-length tau_lambda = C5
+  by definition (simplicity DOES collapse the gauge-twist route). (3) [attack 3] Trap-A dodge CONFIRMED at
+  abstract/structure level, OPEN-capped (PDFs 403; no-zero-data = absence-of-citation + structure, not a
+  proved no-go). (4)/(5) [attacks 4/5] no +2-encoding KK/cyclic class (homotopy-invariance obstruction);
+  gauge-average ≡0 reproduced; scope correct. NET: wall HOLDS, no handle, sharper. NO concrete λ-seeing
+  non-C5 state found => no-handle disposition NOT falsified (EXPLORE assigns NEEDS-REVIEW-vs-FALSIFIED).
   NOT a legal foundation; NOT a bound; NOT a claim of progress on C5.
 - [ERG-2R] (DISTILL-ATTACKED work/1781506716 — LABELLED work/1781528204: CONFIRMED-under-attack;
   ERG-2 RESOLVED FALSE-as-worded; equal-hardness / NO-HANDLE; two deltas folded in; NOT a foundation,
@@ -208,8 +238,8 @@ OPEN THREADS:
   (b2)/A15 RE-LOCALIZED + CORRECTED its de-averaging face to SO-deavg (residual (R2)); ergodic-
   rigidity/A16 aimed at (R2), DEFEATED by Sawin's model (L-ERG-RIG = equal-hardness, OPEN); Sawin
   primary source READ (A17) -- ERG-2 resolved, NO handle; affine/ax+b A18 aimed at the +/x collision,
-  HITS Trap B via gauge dichotomy (L-AFF-GAUGE, pending DISTILL). All re-express/relocate C5; none
-  reduces it.
+  HITS Trap B via gauge dichotomy (L-AFF-GAUGE, DISTILL-ATTACKED work/1781549159 -- wall HELD, no
+  handle, PENDING EXPLORE'S VERDICT). All re-express/relocate C5; none reduces it.
 - T10 [CLOSED — Cluster 5]: RENAME. YIELD = SO-L².
 - T11 [CLOSED — Cluster 3]: RE-EXPRESS. Unifies C5/C6.
 - SO-L² [OPEN — sharpened obstruction]: shift by 2 destroys multiplicativity => L²/variance/
@@ -224,16 +254,20 @@ OPEN THREADS:
   Rigidity DEFEATED by Sawin's model; structure-theorem input = dropped axiom (i) = strong
   stationarity, escape LOG-only (Cesaro fails, FLdlR 2304.03121), NO handle. L-ERG-RIG = equal-
   hardness, OPEN. NOT progress.
-- T15 [AFFINE / ax+b thread, A18 — this step; candidate L-AFF-GAUGE PENDING DISTILL]: import the
-  Cuntz Q_N (ELL N x N^x) non-abelian structure onto the +/x collision in C5. RESULT: additive
-  generator REALIZED (u^2), DODGES Trap A (stays in Cuntz-Li corner; K_* = exterior algebra on
-  primes; beta=1 KMS at pole not zero), but HITS Trap B / parity via the GAUGE-INVARIANCE DICHOTOMY
-  (natural trace lambda-blind; only lambda-seeing functional = C5; K_* has no +2 class; affine
-  dynamics is log-level). EQUAL-HARDNESS / NO-HANDLE. To attack: (i) DISTILL L-AFF-GAUGE (probe
-  whether an extremal/non-gauge-invariant KMS state sees lambda without being C5; whether the Trap-A
-  dodge truly holds; whether any KK-class encodes a +2 correlation). (ii) Upgrade the search-surfaced
-  Cuntz relations + no-zero-localization by reading math/0611541 + 0906.4903 in full (PDF 403 this
-  step). NOT progress, NOT terminal.
+- T15 [AFFINE / ax+b thread, A18 — candidate L-AFF-GAUGE DISTILL-ATTACKED work/1781549159, PENDING
+  EXPLORE'S VERDICT]: import the Cuntz Q_N (ELL N x N^x) non-abelian structure onto the +/x collision in
+  C5. RESULT: additive generator REALIZED (u^2), DODGES Trap A (stays in Cuntz-Li corner; K_* = exterior
+  algebra on primes; beta=1 KMS at pole not zero), but HITS Trap B / parity via the GAUGE-INVARIANCE
+  DICHOTOMY (natural trace lambda-blind; only lambda-seeing functional = C5; K_* has no +2 class; affine
+  dynamics is log-level). EQUAL-HARDNESS / NO-HANDLE. DISTILL VERDICT: wall HOLDS, NO handle opened --
+  both decisive attacks closed. The extremal-KMS crack lives on the TOEPLITZ algebra not the simple Q_N
+  (Laca-Raeburn 0907.3760: KMS_1 factors through the quotient; Q_N has the unique beta=1 state) and
+  closes there too (states factor through the diagonal, inject only multiplicative/scaling weights =>
+  C5-class). Gauge-twist state collapses to 0; C5 value is a non-state weight. Trap-A dodge confirmed
+  OPEN-capped. 3 corrections for EXPLORE to fold; NEEDS-REVIEW-vs-FALSIFIED verdict is EXPLORE's. NEXT to
+  attack: (i) EXPLORE labels L-AFF-GAUGE + folds corrections. (ii) Upgrade the search-surfaced Cuntz
+  relations + no-zero-localization by reading math/0611541 + 0906.4903 + 0907.3760 in full (PDF 403).
+  NOT progress, NOT terminal.
 - T13 [the post-campaign redirection]: three reframings CLOSED the "reframe again" strategy. Live:
   (a) [RULED OUT] a fourth categorical/cohomological reframing.
   (b) attack an SO-L² break condition — (b1) variance bound [C5-hardness]; (b2) de-average Tao 2016
@@ -274,25 +308,37 @@ CURRENT POSITION:
     strong stationarity (ERG-3: D_p semigroup not Cesaro-measure-preserving), where the FH infinity-
     step-nilsystem parity wall sits. The ax+b structure quotients lambda away.
   * NET: A18 = REALIZES the additive generator + DODGES Trap A, but HITS Trap B / parity. A 6th,
-    operator-algebraic reason the wall holds (the gauge dichotomy), recorded as L-AFF-GAUGE for DISTILL.
+    operator-algebraic reason the wall holds (the gauge dichotomy), L-AFF-GAUGE DISTILL-ATTACKED
+    (work/1781549159): wall HELD, no handle, PENDING EXPLORE'S VERDICT.
 - HONEST STATEMENT (permitted by AGENTS.md): "I made no progress on C5 that survives audit this step.
   The ax+b/Cuntz route realizes the additive generator and even dodges the RH-strength trap, but it
   hits Trap B through a new, sharply-stated mechanism: the algebra's gauge symmetry quotients the
   Liouville weighting away, so its natural invariants are either lambda-blind or literally C5. Here is
   the wall, as precisely as I can state it (L-AFF-GAUGE)." CHECKPOINT, NOT exit.
 - ANTI-DECEPTION: NO bound on C5 certified. L-AFF-GAUGE is a NO-HANDLE / EQUAL-HARDNESS wall-statement
-  (pending DISTILL), NOT a bound, NOT a legal foundation, NOT progress, NOT terminal. Cuntz relations +
-  K-theory + KMS facts are SEARCH-SURFACED (PDF 403) -- DISTILL should weight this and the no-zero-
-  localization OPEN cap. The gauge-average / diagonal-trace audits ARE reproducible (work file Part 5).
-- RECOMMENDATION: DISTILL should attack L-AFF-GAUGE: (i) probe whether an extremal/non-gauge-invariant
-  KMS state could see lambda without being C5 by definition (the one crack); (ii) confirm the Trap-A
-  dodge (no zeta-zero data in Q_N's KMS/K-theory); (iii) confirm no KK-class encodes a +2-shift
-  correlation. If the gauge argument holds, A18 is CLOSED as a source of progress and PAUSE stands.
+  (DISTILL-ATTACKED work/1781549159 -- wall HELD, no handle; PENDING EXPLORE'S VERDICT), NOT a bound, NOT
+  a legal foundation, NOT progress, NOT terminal. Cuntz relations + K-theory + KMS facts are SEARCH-
+  SURFACED (PDF 403); DISTILL weighted this -- the no-zero-localization (Trap-A dodge) + no-+2-KK-class
+  claims are OPEN-capped. The gauge-average / diagonal-trace audits ARE reproducible (re-run in DISTILL).
+- DISTILL OUTCOME (work/1781549159): both pre-registered decisive attacks CLOSED without a handle.
+  (1) extremal low-temperature KMS: the rich family is on the TOEPLITZ algebra T(N x N^x) not the simple
+  Q_N (Laca-Raeburn 0907.3760; on Q_N simplicity => unique beta=1 state), and closes there too (diagonal
+  /multiplicative-weight => C5-class). (2) gauge-state existence: alpha_lambda is a real automorphism but
+  tau∘alpha_lambda=tau=0; S(x)/x is a NON-STATE diagonal weight = C5. (3) Trap-A dodge confirmed abstract
+  -level, OPEN-capped. (4/5) no +2-KK class (homotopy-invariance); gauge-average ≡0 reproduced; scope OK.
+  3 corrections for EXPLORE to fold (extremal KMS on T not Q_N; tau_lambda a non-state weight + collapse;
+  Trap-A/KK OPEN caps). NEEDS-REVIEW-vs-FALSIFIED verdict is EXPLORE's; no concrete λ-seeing non-C5 state
+  => no-handle disposition NOT falsified by the attack.
+- RECOMMENDATION (next EXPLORE step): FIRST label L-AFF-GAUGE (NEEDS-REVIEW: no counterexample, the
+  attack holds the wall) + fold the 3 corrections, then either upgrade by reading math/0611541 +
+  0906.4903 + 0907.3760 in full to discharge the OPEN caps, or PAUSE (A18 CLOSED as a source of progress;
+  the gauge argument held). A18 RULES IN a not-≥RH corner (real map gain) but DELIVERS NO handle on C5.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 NAMED,
   NOT built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF OPEN. SO-L², SO-deavg = OPEN
   obstructions => NOT foundations. ERG-B/ERG-3 = NEEDS-REVIEW supporting facts but NOT foundations
   toward TPC; ERG-1/ERG-2/ERG-NET (L-ERG-RIG) = OPEN; ERG-2R = DISTILLED + LABELLED; L-AFF-GAUGE =
-  candidate lemma PENDING DISTILL. GRAVEYARD nodes may NOT be built upon.
+  candidate lemma DISTILL-ATTACKED (work/1781549159), PENDING EXPLORE'S VERDICT. GRAVEYARD nodes may
+  NOT be built upon.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
@@ -300,7 +346,8 @@ escalation, NOT built upon. OPEN-CHECKPOINTS = C7/C-COH-MON/C-inf/L-COH'/L-QUB-r
 all OPEN, NOT legal foundations. SO-L², SO-deavg = OPEN obstructions, NOT foundations. ERG-* =
 ergodic-rigidity reformulation nodes: ERG-B/ERG-3 NEEDS-REVIEW supporting facts [NOT foundations
 toward TPC], ERG-1/ERG-2/ERG-NET OPEN. ERG-2R = DISTILLED + LABELLED. L-AFF-GAUGE = affine/ax+b
-candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
+candidate lemma DISTILL-ATTACKED work/1781549159 [wall HELD, no handle; PENDING EXPLORE'S VERDICT; the
+sharpened wall; NOT a foundation].):
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
   d|F(n)} a_n : d<=D=x^{1-eps}}, Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg,
@@ -391,7 +438,8 @@ candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
   FAILS (ERG-2/Leak-1, arXiv:2304.03121); structure-theorem input = dropped axiom (i), NO handle.
   x_p dilations = affine semigroup not higher-rank (ERG-3, D_p∘T=T^p∘D_p!=T∘D_p verified). L-ERG-RIG
   = EQUAL-HARDNESS reformulation, OPEN.
-  AFFINE / ax+b AIM (A18/T15, this step; candidate L-AFF-GAUGE PENDING DISTILL): the non-commuting
+  AFFINE / ax+b AIM (A18/T15; candidate L-AFF-GAUGE DISTILL-ATTACKED work/1781549159, PENDING EXPLORE'S
+  VERDICT -- wall HELD, no handle): the non-commuting
   (n->n+2, n->pn) pair = ERG-3's affine relation is the DEFINING relation s_p u=u^p s_p of Cuntz's
   Q_N (ELL N x N^x). Additive shift n->n+2 = u^2 REALIZED as a unitary generator. DODGES Trap A:
   Q_N stays in the Cuntz-Li corner (K_* = exterior algebra on primes; unique beta=1 KMS at the POLE
@@ -420,9 +468,12 @@ candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
   ERGODIC-RIGIDITY AIM (A16, DISTILL-ATTACKED + LABELLED; ERG-2 RESOLVED A17): (R2) reformulated as
   "kill an irrational scaling-flow eigenvalue at every scale" (FORWARD); rigidity defeated by Sawin's
   model, PRIMARY-SOURCE-ANCHORED. EQUAL-HARDNESS. L-ERG-RIG OPEN.
-  AFFINE / ax+b AIM (A18, this step; L-AFF-GAUGE PENDING DISTILL): the +/x collision relocated into
-  Cuntz Q_N; additive generator realized, Trap A dodged, but Trap B HIT via the gauge dichotomy
-  (natural trace lambda-blind; only lambda-seeing functional = C5). EQUAL-HARDNESS / NO-HANDLE.
+  AFFINE / ax+b AIM (A18; L-AFF-GAUGE DISTILL-ATTACKED work/1781549159, PENDING EXPLORE'S VERDICT): the
+  +/x collision relocated into Cuntz Q_N; additive generator realized, Trap A dodged, but Trap B HIT via
+  the gauge dichotomy (natural trace lambda-blind; only lambda-seeing functional = C5). EQUAL-HARDNESS /
+  NO-HANDLE. DISTILL HELD the wall (extremal KMS are on the Toeplitz algebra not the simple Q_N + close
+  there too as diagonal/multiplicative-weight C5-class sums; gauge-twist state = 0; C5 value = non-state
+  weight; Trap-A dodge OPEN-capped).
   CAMPAIGN VERDICT: THREE categorical reframings (relocate/rename/unify) each RE-EXPRESS C5;
   "reframe again" CLOSED. (b2) de-averaging (A15) RE-LOCALIZES the de-averaging face to SO-deavg.
   Ergodic-rigidity (A16) DEFEATED by Sawin's model (PRIMARY-SOURCE-anchored, A17). Affine/ax+b (A18)
@@ -435,7 +486,8 @@ candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
   lambda away; its natural invariants are lambda-blind or literally C5).
   ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4 + Cluster-5 decider (T12)
   + Cluster-3 DISTILL Attacks 1-6 + SO-deavg DISTILL Attacks 1-5/3* + ergodic-rigidity DISTILL
-  stress-tests 3/4/5 + RV-1/RV-2/RV-3. (Affine/ax+b L-AFF-GAUGE pending DISTILL.) STAYS OPEN.
+  stress-tests 3/4/5 + RV-1/RV-2/RV-3. (Affine/ax+b L-AFF-GAUGE DISTILL-ATTACKED work/1781549159 --
+  wall HELD, no handle; PENDING EXPLORE'S VERDICT.) STAYS OPEN.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
   + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
@@ -443,7 +495,8 @@ candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
   + work/1781422588-EXPLORE.md + work/1781423462-DISTILL.md + work/1781424665-EXPLORE.md
   + work/1781472028-EXPLORE.md + work/1781473105-DISTILL.md + work/1781473701-EXPLORE.md
   + work/1781478452-EXPLORE.md + work/1781479461-DISTILL.md + work/1781480168-EXPLORE.md
-  + work/1781505731-EXPLORE.md + work/1781528204-EXPLORE.md + work/1781548132-EXPLORE.md.
+  + work/1781505731-EXPLORE.md + work/1781528204-EXPLORE.md + work/1781548132-EXPLORE.md
+  + work/1781549159-DISTILL.md.
 
   --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN; NOT legal foundations) ---
 - [L-QUB-reform] (Cluster-5 survivor) C5 <=> sup_{d<=x^{1-eps}} R_d(x) <= x^{o(1)}, where
@@ -567,8 +620,9 @@ candidate lemma PENDING DISTILL [the sharpened wall; NOT a foundation].):
   (R1)+(R2)[DEFINING]+(R3). Mechanism (M1)+(M2). ERGODIC-RIGIDITY PROBE (A16) DISTILL-ATTACKED +
   LABELLED + ERG-2 RESOLVED (A17): rigidity DEFEATED by Sawin's model, PRIMARY-SOURCE-ANCHORED.
   L-ERG-RIG = EQUAL-HARDNESS, OPEN. NOTE (A18): the affine/ax+b operator-algebra route to the +/x
-  collision likewise gives NO handle (gauge dichotomy, L-AFF-GAUGE pending DISTILL), consistent with
-  the affine dynamics being LOG-level. DEPENDS ON: C5; established math (Tao-Teravainen
+  collision likewise gives NO handle (gauge dichotomy, L-AFF-GAUGE DISTILL-ATTACKED work/1781549159 --
+  wall HELD: extremal KMS are on the Toeplitz algebra not the simple Q_N + close there too as
+  diagonal/multiplicative-weight C5-class sums), consistent with the affine dynamics being LOG-level. DEPENDS ON: C5; established math (Tao-Teravainen
   arXiv:1809.02518; MRT arXiv:1812.01224; Pilatte arXiv:2310.19357; Tao arXiv:1509.05422; Cesaro
   two-point Chowla OPEN; FH arXiv:1804.08556; FLdlR arXiv:2304.03121 [search-surfaced]; Sawin
   arXiv:1809.03280 [READ IN FULL]). STATUS: OPEN as an obstruction; at C5-hardness; NO new handle.
