@@ -1,4 +1,4 @@
-# De-averaging and ergodic rigidity on the twin-prime crux: two engagements of C5's residual
+# De-averaging and ergodic rigidity on the twin-prime crux: three engagements of C5's residual
 
 **Status: exploratory working notes for human review. No proof, disproof, or independence
 result is claimed.** Every load-bearing assertion below is either an established citation, a
@@ -34,9 +34,11 @@ explicitly out-of-framework bet. Two results:
   Furstenberg system and **provably fails for Cesàro** (Frantzikinakis–Lemańczyk–de la Rue), while genuine
   measure rigidity cannot bite (the dilations form an affine semigroup, not a higher-rank action).
 
-Two engagements, **zero reductions**. C5 remains the irreducible crux. The work leaves exactly one
-thin, concrete lead — the sub-claim **ERG-2** — whose resolution requires reading a specific paper
-(arXiv:1809.03280); §6 records its resolution.
+A third engagement (**§7**) then imported the **affine `ax+b` (additive×multiplicative) structure** via
+Cuntz's semigroup C\*-algebra `Q_ℕ`: it is the **first escalation to *dodge* the ≥RH trap** (a genuine
+map gain — a not-≥RH corner) yet still yields **no handle**, hitting the wall by a new *gauge-invariance
+dichotomy*. Three engagements, **zero reductions**. C5 remains the irreducible crux. The one thin lead —
+the sub-claim **ERG-2** — required reading arXiv:1809.03280; **§6** records its resolution (also no handle).
 
 ---
 
@@ -230,7 +232,50 @@ strengthened checkpoint, not progress and not a terminal state.
 
 ---
 
-## 7. Reproducibility and citation caveat
+## 7. Engagement III — the affine / `ax+b` higher-rank import (`L-AFF-GAUGE`)
+
+The ergodic bet failed because the λ-system is **rank-1**. But `n↦pn` and `n↦n+2` do **not** commute
+(`D_p∘T = T^p∘D_p`) — they generate the **affine `ax+b`** (solvable, non-abelian) group. Engagement III
+imports that genuinely higher structure. A **literature check first** mapped the terrain (all
+search-surfaced; arXiv PDFs 403): the *combination* "affine/`ax+b` rigidity or Bost–Connes / arithmetic-
+site cohomology vs. two-point Chowla" is **apparently novel**, but it faces **two traps** — the
+adele-class-space **trace formula is ≡ RH** (Connes 1999; Connes–Consani), and the integer shift `n↦n+2`
+is **not a live generator** in existing BC/scaling-site dynamics — leaving one **un-trapped corner**: the
+**Cuntz–Li `ℕ⋊ℕ^×` semigroup C\*-algebra** (no zero-localization theorem attached).
+
+**What was built (A18).** In Cuntz's `Q_ℕ` (`s_n s_m = s_{nm}`, `s_n u = u^n s_n`, `Σ_{k<n} u^k e_n u^{−k}=1`)
+the additive shift `n↦n+2 = u²` is a genuine **unitary** generator, and the affine relation `s_p u = u^p s_p`
+is *exactly* the `+/×` non-commutation. So the object Approach 3 needs **can be built** here.
+
+**The map gain — Trap A is dodged (first time).** `Q_ℕ` stays in the K-theory/KMS corner: `K_*` is the
+exterior algebra on the primes, and the KMS phase transition sits at ζ's **pole** (β=1), carrying **no
+zero-localization data**; it does **not** invoke the adele-class-space trace formula. So — unlike every
+prior cohomological route, all of which were ≥ RH — **A18 rules in a corner that is not ≥ RH.** (Audited
+only at structure/abstract level — the Cuntz facts are search-surfaced — so it is recorded OPEN.)
+
+**The wall — Trap B, by a new mechanism (the gauge dichotomy).** The Liouville gauge `s_p ↦ λ(p)s_p = −s_p`
+is an **automorphism** of `Q_ℕ`. Hence (a) every **gauge-invariant** functional — in particular the
+canonical trace and the unique β=1 KMS state — returns the gauge-*averaged* correlation, which is
+**identically 0 term-by-term**, so it is **λ-blind**; and (b) the *only* functional recovering
+`Σ λ(n)λ(n+2)` is a non-state weight `τ_λ` whose value **is `S(x)/x` = C5 by definition**. The `ax+b`
+structure **quotients λ away**: its natural invariants are either λ-blind or literally C5.
+
+**DISTILL confirmation + corrections.** The hardest attack — could an **extremal low-temperature KMS
+state** see λ without being C5? — closed: that family lives on the **Toeplitz** algebra `T(ℕ⋊ℕ^×)`
+(Laca–Raeburn), not the simple `Q_ℕ`, and even there the states factor through the diagonal and inject
+only **multiplicative/scaling** weights (`n^{−(β−1)}`, `e^{iθ log n}`) — never an additive `+2`-coupling —
+so every two-point evaluation is a weighted Liouville sum = C5-class. The gauge-twist `α_λ` *is* an
+automorphism but its state has value **0**; `S(x)/x` lives only in the non-state weight. (The Trap-A dodge
+and "no additive-`+2` K-class" are OPEN-capped: search-surfaced/structural, not proved no-gos.)
+
+**Net.** A18 is the **most structurally successful escalation attempted** — the first to escape the ≥RH
+trap — yet it delivers **no handle** on C5, supplying instead a **sixth, operator-algebraic reason the
+wall holds** (the gauge dichotomy), concordant with the prior five. Still OPEN at C5; not progress, not a
+terminal state.
+
+---
+
+## 8. Reproducibility and citation caveat
 
 Each numerical audit (the variance-reduction refutation, the `ERG-B` eigenvalue translation, the
 `D_p∘T ≠ T∘D_p` non-commutation) is a short self-contained script with code + output pasted inline
@@ -257,3 +302,9 @@ than asserted (this is exactly the status of `ERG-2` until §6). One primary sou
   arXiv:1809.03280. *Read in full (provided directly) for §6.*
 - Measure rigidity: Ratner; Einsiedler–Katok–Lindenstrauss; Furstenberg ×2×3; Bourgain–Lindenstrauss–
   Michel–Venkatesh.
+- (§7, Engagement III; all search-surfaced — arXiv PDFs 403) Cuntz, *C\*-algebras associated with the
+  ax+b-semigroup over ℕ*, arXiv:math/0611541; Cuntz–Li, arXiv:0906.4903; Laca–Raeburn, *Phase transition
+  on the Toeplitz algebra of the affine semigroup over ℕ*, arXiv:0907.3760.
+- (§7, the ≥RH trap) Connes, *Trace formula in noncommutative geometry and the zeros of the Riemann zeta
+  function*, Selecta Math. 5 (1999) 29–106; Connes–Consani, *The Scaling Site*, arXiv:1603.03191;
+  Connes–Consani–Marcolli, *Weil's proof and the geometry of the adèles class space*.
