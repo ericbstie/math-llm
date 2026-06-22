@@ -11,29 +11,45 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1782110302-EXPLORE.md` — **Introduce (A19): C5 as a SECONDARY / TWISTED cyclic-
-cohomology class of the SAME `ax+b` algebra (builds on A18, NOT an import).** Candidate lemma
-**`L-CYC-SEC`** introduced, PENDING DISTILL. PREMISE: A18 proved C5 is invisible to PRIMARY (degree-0,
-gauge-invariant) cyclic cocycles — the classical signature of a SECONDARY object. L-CYC-SEC posits C5 is
-carried by (a) a non-periodic `HC^{2k}` secondary/Massey cocycle on `ker(τ_primary)`, OR (b) a
-σ-TWISTED (modular/KMS) `HC^*_σ(Q_ℕ)` class (σ = KMS-modular automorphism), OR (c) an `S^1`-gauge-
-EQUIVARIANT class — AND that it is an INDEPENDENT handle (an actual cocycle + a structural evaluation,
-NOT `C5`-by-definition / the `τ_λ` trap, NOT a `K_*` pairing). KEY HONEST ANALYSIS: (i) PERIODIC
-INHERITANCE — if `HP^*(Q_ℕ)` is governed by `K_*(Q_ℕ)` (exterior algebra on primes, no `+2` class) via
-the Chern–Connes character, the PERIODIC theory inherits A18's blindness, so only NON-periodic / twisted
-/ equivariant theory could carry it (most likely partial outcome; OPEN — `HP^*(Q_ℕ)` NOT computed);
-(ii) a σ-twisted trace EXISTS but the twist σ is a SCALING phase `p^{it}` (trivial on `u`) =>
-MULTIPLICATIVE-only, so its evaluation on `A=M_λ u² M_λ u^{-2}` is a weighted two-point Liouville sum =
-C5-class (audited; matches DISTILL `work/1781549159` attack 1); (iii) DECISIVE = the `L-C3-DUOIDAL`
-"a name, not a handle" risk. AUDITS (reproducible): (A) the natural additive secondary cochain
-`C_p(x,y)=(x^p+y^p−(x+y)^p)/p` is integral, a group 2-cocycle on `(ℤ,+)`, symmetric, an explicit
-COBOUNDARY over ℚ (no new rational class); (B) a degree-0/gauge-invariant secondary cocycle is STILL
-λ-blind on the `+2` two-point term (0 of 4999); (C) every σ-twisted (`n^{-s}`) diagonal trace of `A` is
-a weighted two-point Liouville sum = C5-class. VERDICT: FRAMING + candidate lemma, **NOT progress, NOT a
-bound, NOT a foundation**; honest most-likely outcome = a sharper wall / clean cull. New approach node
-**A19** (ACTIVE), open thread **T16**. C5 stays OPEN/named, not built upon.
+**Latest step:** `work/1782111292-DISTILL.md` — **DISTILL attack on `L-CYC-SEC` (A19): the wall HOLDS,
+STAGE-1 steelman exhibited NO handle, with a concrete DEGREE-INDEPENDENT collapse object.** Two-stage
+adversarial pass run. **STAGE 1 (steelman)** genuinely tried to build the higher cocycle the lemma's
+residual crack needs — three concrete candidates pairing `A=M_λ u² M_λ u^{-2}` against OTHER generators:
+(I) the canonical twisted 1-cocycle `φ(a₀ δ(a₁))` of derivation type [`δ(u)=0` kills the `+2` partner ⇒
+`c(A,u²)=0`; the `M_λ` partner gives `⟨λ(n+2)Ω(n)⟩`, a ONE-POINT PNT-class sum, `+2` GONE]; (II) a higher
+2-cocycle coupling `A` to `u²` and a completely-mult gauge character `χ` via `s_p u=u^p s_p` [diagonal =
+`χ(n)χ(n+2)`, STILL a two-point correlation of a completely-mult fn = C5-CLASS, every `χ` scanned]; (III)
+the `S¹`-gauge-EQUIVARIANT χ-isotypic refinement [degree-0 part EMPTY = `[AFF-2]`'s 0; degree-`k` buckets
+`Σ_{Ω(n)+Ω(n+2)=k}λ(n)λ(n+2)` PARTITION `S(x)`]. ALL collapse. **STAGE 2 (collapse nailed):** the
+**DEGREE-INDEPENDENT integrand dichotomy** — any gauge-traceable cyclic evaluation of `A` (plain/σ-
+twisted/equivariant, any degree) is term-by-term EITHER (C-two) a (weighted/restricted) two-point sum
+`⟨λ(n)λ(n+2)·w⟩` = C5-class [encloses the `u^{+2}…u^{-2}` bracket] OR (C-zero) a one-point/constant
+PNT-class quantity [no enclosing bracket ⇒ `+2` dropped]; **NO third case** (the `+2` sign-correlation is
+visible only through the bracket, which IS `A`). Verified term-by-term (`⟨λ(n)λ(n+2)⟩≈−4.7e-4` vs
+`⟨λ(n+2)⟩≈−6.2e-4` / `⟨λ(n)²⟩=1`); Audits A/B/C reproduced. **Two NEW literature computations** (search-
+surfaced, PDFs 403, OPEN-capped) corroborate on both legs: **Gourdeau–White** (arXiv:1007.4661, JMAA) —
+`HC^n(ℓ¹ Cuntz-semigroup)`=0 for `n` odd, 1-dim for `n` even ≥2 ⇒ higher cyclic classes are `S`-
+periodicity IMAGES of the trace (candidate (a) governed by the trace); **Carey–Phillips–Rennie**
+(arXiv:0801.4605, J.K-Theory 6 (2010) 339–380) — the σ-twisted cyclic cocycle twists the GAUGE-INVARIANT
+(λ-blind) KMS state, needs a MODIFIED `K_1`, computes SPECTRAL FLOW / Araki RELATIVE ENTROPY = an INDEX
+on the blind side (candidate (b) lands λ-blind). REDUCED GRAPH: `[CYC-HANDLE]` (independent-handle clause)
+**FALSIFIED-pre-fill** (collapse object exhibited — the `L-C3-DUOIDAL` "name, not a handle"); `[CYC-WALL]`
+**NEEDS-REVIEW-pre-fill** (the sharpened degree-independent wall, `L-AFF-GAUGE` family); `[CYC-PERIODIC]`
+**OPEN** (periodic-inheritance cap NARROWED by Gourdeau–White but NOT closed — `HP^*(Q_ℕ)` still NOT
+computed, PDFs 403). **L-CYC-SEC has an adversarial pass PENDING EXPLORE'S VERDICT.** NOT progress on C5,
+NOT a bound, NOT a foundation, NOT terminal. C5 stays OPEN/named, not built upon.
 
-**Prior step:** `work/1781682119-EXPLORE.md` — **LABELLING of the `L-AFF-GAUGE` DISTILL pass + Review.**
+**Prior step:** `work/1782110302-EXPLORE.md` — **Introduce (A19): C5 as a SECONDARY / TWISTED cyclic-
+cohomology class of the SAME `ax+b` algebra (builds on A18, NOT an import).** Candidate lemma
+**`L-CYC-SEC`** introduced (now DISTILL-attacked, above). PREMISE: A18 proved C5 is invisible to PRIMARY
+(degree-0, gauge-invariant) cyclic cocycles — the classical signature of a SECONDARY object. L-CYC-SEC
+posits C5 is carried by (a) a non-periodic `HC^{2k}` secondary/Massey cocycle on `ker(τ_primary)`, OR (b)
+a σ-TWISTED (modular/KMS) `HC^*_σ(Q_ℕ)` class, OR (c) an `S^1`-gauge-EQUIVARIANT class — AND that it is an
+INDEPENDENT handle (NOT `C5`-by-definition / the `τ_λ` trap, NOT a `K_*` pairing). Introduce-step audits
+(A) Fermat secondary cochain a COBOUNDARY over ℚ; (B) degree-0 secondary blind; (C) σ-twist multiplicative-
+only ⇒ C5-class — all reproduced under DISTILL. New approach node **A19** (ACTIVE), open thread **T16**.
+
+**Earlier step:** `work/1781682119-EXPLORE.md` — **LABELLING of the `L-AFF-GAUGE` DISTILL pass + Review.**
 A18 is **LABELLED**: the wall HOLDS, **NO handle** (Trap B, via the gauge dichotomy), with a genuine
 **map gain** — A18 is the *first* escalation to dodge Trap A (a not-≥RH corner; OPEN-capped) — and the
 three DISTILL corrections folded in. `L-AFF-GAUGE` is NEEDS-REVIEW (no-handle / equal-hardness wall;
@@ -58,11 +74,17 @@ is RESOLVED from the Sawin primary source (A17)** = NO handle. The **affine / `a
 the Cuntz `Q_ℕ` (ℕ⋊ℕ^×) non-abelian structure at the +/× collision: the additive generator is
 **realized** and it **dodges Trap A**, but it **hits Trap B / parity** via the **gauge-invariance
 dichotomy** — λ-blind or literally C5 (`L-AFF-GAUGE`, LABELLED NEEDS-REVIEW). The **cyclic-secondary
-escalation (A19, this step)** builds on A18's OWN dichotomy and asks whether C5 is a secondary / twisted
-/ equivariant cyclic class of the same `Q_ℕ` (`L-CYC-SEC`, PENDING DISTILL) — a FRAMING; the audits
-indicate a sharper wall (natural additive secondary cochain is a coboundary; degree-0 secondary inherits
-the gauge blindness; the modular twist is multiplicative-only ⇒ C5-class). Still at C5-hardness; no
-certified handle.
+escalation (A19)** built on A18's OWN dichotomy and asked whether C5 is a secondary / twisted /
+equivariant cyclic class of the same `Q_ℕ` (`L-CYC-SEC`). **The DISTILL pass (this step,
+`work/1782111292`) ran a real STAGE-1 steelman and exhibited NO handle:** every higher twisted/
+equivariant/secondary cocycle pairing `A` against other generators collapses by a **DEGREE-INDEPENDENT
+integrand dichotomy** — it either re-encloses the `+2` shift (`u^{+2}…u^{-2}` ⇒ a C5-class two-point sum)
+or drops the `+2` adjacency (⇒ a one-point/constant PNT-class quantity), with **no third case**. Two new
+search-surfaced computations corroborate on both legs (Gourdeau–White arXiv:1007.4661: higher cyclic =
+`S`-image of the trace; Carey–Phillips–Rennie arXiv:0801.4605: σ-twisted = gauge-invariant index/entropy).
+The independent-handle clause is the `L-C3-DUOIDAL` "name, not a handle" outcome (concrete collapse object
+exhibited); `L-CYC-SEC` reduces to the sharpened degree-independent WALL `[CYC-WALL]` + the narrowed
+periodic OPEN cap `[CYC-PERIODIC]`. PENDING EXPLORE'S VERDICT. Still at C5-hardness; no certified handle.
 
 
 ```
@@ -93,7 +115,8 @@ APPROACHES ATTEMPTED:
   (A17): ERG-2 resolved (FALSE-as-worded / NO handle; wall strengthened). Affine/ax+b import (A18)
   aimed at the +/x collision in C5 via Cuntz Q_N: additive generator REALIZED, dodges Trap A, but
   HITS Trap B via the gauge-invariance dichotomy (L-AFF-GAUGE). Secondary/twisted cyclic escalation
-  on A18 (A19, this step) asks if C5 is a SECONDARY/TWISTED cyclic class of the same Q_N (L-CYC-SEC).
+  on A18 (A19) asked if C5 is a SECONDARY/TWISTED cyclic class of the same Q_N (L-CYC-SEC); DISTILL-
+  attacked work/1782111292 -- wall HELD, STAGE-1 steelman NO handle, degree-independent collapse.
 - [A11] Other escapes/non-escapes:
   (a) automorphic/spectral shifted-convolution -> strengthen Type-I inputs; inside C1; no
       sign-sensitive bilinear for lambda(n)lambda(n+2). Governed by C5.
@@ -162,8 +185,9 @@ APPROACHES ATTEMPTED:
   3 corrections folded). Reduced graph [AFF-1]..[AFF-4]+[AFF-DISP]. NOW used as the LAUNCHPAD for A19.
 - [A19] OPERATOR-ALGEBRAIC SECONDARY-INVARIANT ESCALATION ON A18 — is C5 a SECONDARY / HIGHER /
   TWISTED / EQUIVARIANT cyclic-cohomology class of the SAME ax+b algebra Q_N? | ACTIVE (out-of-
-  framework bet; candidate lemma L-CYC-SEC introduced this step, PENDING DISTILL) | Introduce
-  (work/1782110302). NOT an import: builds on the project's OWN A18 (L-AFF-GAUGE / [AFF-1]..[AFF-DISP]).
+  framework bet; candidate lemma L-CYC-SEC INTRODUCED work/1782110302, DISTILL-ATTACKED work/1782111292
+  -- wall HELD, STAGE-1 steelman NO handle, PENDING EXPLORE'S VERDICT) | Introduce (work/1782110302) +
+  DISTILL (work/1782111292). NOT an import: builds on the project's OWN A18 (L-AFF-GAUGE / [AFF-1]..[AFF-DISP]).
   PREMISE: A18 proved C5 is invisible to PRIMARY (degree-0, gauge-invariant) cyclic cocycles -- the
   signature of a SECONDARY object. CANDIDATE L-CYC-SEC posits C5 is carried by (a) a non-periodic
   HC^{2k} secondary/Massey cocycle on ker(primary trace), or (b) a sigma-TWISTED (modular/KMS)
@@ -181,14 +205,23 @@ APPROACHES ATTEMPTED:
   C_p(x,y)=(x^p+y^p-(x+y)^p)/p is integral, a group 2-cocycle on (Z,+), symmetric, and an explicit
   COBOUNDARY over Q (no new rational class); (B) a degree-0/gauge-invariant secondary cocycle is STILL
   lam-blind on the +2 two-point term (0 of 4999 survive); (C) every sigma-twisted (n^{-s}) diagonal
-  trace of A is a weighted two-point Liouville sum = C5-class. VERDICT (this step, Introduce): FRAMING +
-  candidate lemma, NOT progress, NOT a bound, NOT a foundation. Honest most-likely outcome = sharper
-  wall / clean cull (audits point that way); one residual crack (a higher twisted/equivariant cocycle
-  pairing A against OTHER elements) stated precisely for DISTILL. PENDING DISTILL.
+  trace of A is a weighted two-point Liouville sum = C5-class. DISTILL (work/1782111292): STAGE-1 steelman
+  exhibited NO handle -- three concrete higher candidates (twisted 1-cocycle phi(a0 delta(a1)) [delta(u)=0
+  kills the +2 partner]; higher 2-cocycle via s_p u=u^p s_p [diagonal chi(n)chi(n+2) = C5-class]; S^1-
+  equivariant chi-isotypic [partitions S(x)]) all collapse by a DEGREE-INDEPENDENT integrand dichotomy
+  (encloses the u^{+2}..u^{-2} bracket => two-point C5-class, OR drops the +2 => one-point/const PNT-class;
+  no third case). Corroborated: Gourdeau-White arXiv:1007.4661 (higher cyclic = S-image of the trace);
+  Carey-Phillips-Rennie arXiv:0801.4605 (sigma-twisted = gauge-invariant index/entropy). Reduced graph
+  [CYC-HANDLE] FALSIFIED-pre-fill (collapse object) + [CYC-WALL] NEEDS-REVIEW-pre-fill (sharpened degree-
+  independent wall) + [CYC-PERIODIC] OPEN (periodic cap narrowed, not closed; HP*(Q_N) NOT computed).
+  VERDICT: FRAMING culled to a sharper WALL; NOT progress, NOT a bound, NOT a foundation. PENDING EXPLORE'S
+  VERDICT (NEEDS-REVIEW-vs-FALSIFIED on the not-yet-certified claims).
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- [L-CYC-SEC] (INTRODUCED this step work/1782110302, PENDING DISTILL; NOT a foundation, NOT a bound,
-  NOT progress on C5; a FRAMING built on the project's OWN A18) "Let Q_N be Cuntz's ax+b-semigroup
+- [L-CYC-SEC] (INTRODUCED work/1782110302; DISTILL-ATTACKED work/1782111292 -- wall HELD, STAGE-1
+  steelman exhibited NO handle, concrete DEGREE-INDEPENDENT collapse object; PENDING EXPLORE'S VERDICT;
+  NOT a foundation, NOT a bound, NOT progress on C5; a FRAMING built on the project's OWN A18, culled to a
+  sharper wall) "Let Q_N be Cuntz's ax+b-semigroup
   C*-algebra (u unitary, u:n->n+1 so n->n+2=u^2; s_p isometries, s_p s_q=s_pq, s_p u=u^p s_p,
   Sum_{k<p} u^k e_p u^{-k}=1; gauge action gamma, KMS-modular automorphism sigma). Write
   A=M_lam u^2 M_lam u^{-2} = mult by n->lam(n)lam(n+2); its trace-per-unit-length is S(x)/x = C5
@@ -226,6 +259,22 @@ CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
   twisted/secondary/equivariant cocycle + structural evaluation seeing lam(n)lam(n+2) WITHOUT being a
   weighted two-point sum would open a real lead; absent it, expect "a name, not a handle". NOT a legal
   foundation; NOT a bound; NOT progress on C5.
+  DISTILL OUTCOME (work/1782111292): the handle trigger DID NOT fire. STAGE-1 steelman built three concrete
+  higher twisted/equivariant/secondary candidates pairing A against u-powers / multiplicative monomials /
+  via s_p u=u^p s_p; ALL collapse. STAGE-2 collapse object = a DEGREE-INDEPENDENT integrand dichotomy: any
+  gauge-traceable cyclic evaluation of A (any degree, plain/twisted/equivariant) is EITHER a (weighted/
+  restricted) two-point Liouville sum = C5-class [if it encloses the u^{+2}..u^{-2} bracket around the two
+  M_lam factors] OR a one-point/constant PNT-class quantity [if gauge-degree-0 without the bracket]; NO
+  third case (the +2 sign-correlation is visible only through the bracket = A). Verified term-by-term
+  (<lam(n)lam(n+2)> = -4.7e-4 vs <lam(n+2)> = -6.2e-4 / <lam(n)^2> = 1); Audits A/B/C reproduced. Two new
+  computations (search-surfaced, PDFs 403, OPEN-capped): Gourdeau-White arXiv:1007.4661 (HC^n(l^1 Cuntz-
+  semigroup)=0 odd, 1-dim even>=2 => higher cyclic = S-periodicity image of the trace); Carey-Phillips-
+  Rennie arXiv:0801.4605 (sigma-twisted cyclic cocycle twists the gauge-invariant KMS state, modified K_1,
+  computes spectral flow / Araki relative entropy = index on the lam-blind side). Reduced graph
+  [CYC-HANDLE] (independent-handle clause) FALSIFIED-pre-fill [collapse object exhibited = the L-C3-DUOIDAL
+  "name, not a handle"] + [CYC-WALL] NEEDS-REVIEW-pre-fill [the sharpened degree-independent wall,
+  L-AFF-GAUGE family] + [CYC-PERIODIC] OPEN [periodic-inheritance cap NARROWED by Gourdeau-White but NOT
+  closed -- HP*(Q_N) still NOT computed]. PENDING EXPLORE'S VERDICT (NEEDS-REVIEW-vs-FALSIFIED is EXPLORE's).
 - [L-AFF-GAUGE] (DISTILL-ATTACKED work/1781549159 — LABELLED work/1781682119: NEEDS-REVIEW as a
   no-handle / equal-hardness WALL-STATEMENT (reproducible gauge audit); OPEN at the C5 level (no bound);
   NOT a legal foundation; 3 corrections folded in; A18; NOW the LAUNCHPAD for A19/L-CYC-SEC) "In Cuntz's
@@ -264,8 +313,9 @@ OPEN THREADS:
   rigidity/A16 aimed at (R2), DEFEATED by Sawin's model (L-ERG-RIG = equal-hardness, OPEN); Sawin
   primary source READ (A17) -- ERG-2 resolved, NO handle; affine/ax+b A18 aimed at the +/x collision,
   HITS Trap B via gauge dichotomy (L-AFF-GAUGE, LABELLED NEEDS-REVIEW); secondary/twisted cyclic
-  escalation on A18 (A19, this step) asks if C5 is a SECONDARY/TWISTED cyclic class of the same Q_N
-  (L-CYC-SEC, PENDING DISTILL). All re-express/relocate C5; none reduces it.
+  escalation on A18 (A19) asked if C5 is a SECONDARY/TWISTED cyclic class of the same Q_N (L-CYC-SEC,
+  DISTILL-attacked work/1782111292 -- wall HELD, STAGE-1 steelman NO handle, degree-independent collapse;
+  PENDING EXPLORE'S VERDICT). All re-express/relocate C5; none reduces it.
 - T10 [CLOSED — Cluster 5]: RENAME. YIELD = SO-L².
 - T11 [CLOSED — Cluster 3]: RE-EXPRESS. Unifies C5/C6.
 - SO-L² [OPEN — sharpened obstruction]: shift by 2 destroys multiplicativity => L²/variance/
@@ -275,7 +325,8 @@ OPEN THREADS:
   Ergodic-rigidity probe (A16) DISTILL-ATTACKED + LABELLED: no new instrument; equal-hardness. ERG-2
   RESOLVED (A17): structure-theorem escape log-only, NO handle on (R2). Affine/ax+b A18 likewise NO
   handle (gauge dichotomy), consistent with the affine dynamics being LOG-level. A19 (cyclic-secondary)
-  likewise audits no new handle (sigma-twist multiplicative-only => C5-class; degree-0 secondary blind).
+  DISTILL-attacked (work/1782111292): STAGE-1 steelman NO handle; degree-independent integrand dichotomy
+  (two-point-C5 / one-point-PNT, no third case); corroborated Gourdeau-White + Carey-Phillips-Rennie.
 - T14 [ERGODIC / MEASURE-RIGIDITY thread, A16 — DISTILL-ATTACKED + LABELLED; CLOSED as a source of
   progress; one OPEN sub-claim RESOLVED A17]: import Furstenberg-systems + rigidity onto (R2).
   Rigidity DEFEATED by Sawin's model; structure-theorem input = dropped axiom (i) = strong
@@ -288,20 +339,24 @@ OPEN THREADS:
   VERDICT: wall HOLDS, NO handle (extremal KMS on Toeplitz T not simple Q_N + close there too; gauge-
   twist state=0; C5 value = non-state weight; Trap-A dodge OPEN-capped). EQUAL-HARDNESS / NO-HANDLE.
   Map gain = first escalation to dodge >=RH. NOT progress.
-- T16 [CYCLIC-SECONDARY thread, A19 — this step; candidate L-CYC-SEC PENDING DISTILL]: build on A18's
-  OWN gauge dichotomy and ask whether C5 is a SECONDARY / HIGHER / sigma-TWISTED (modular/KMS) /
-  S^1-EQUIVARIANT cyclic-cohomology class of the SAME Q_N -- defined PRECISELY because the primary
-  (degree-0, gauge-invariant) trace vanishes. FRAMING: (i) PERIODIC theory likely inherits A18's
-  blindness (HP* governed by K_*=exterior algebra on primes via Chern-Connes; no +2 class) => only
-  NON-periodic/twisted/equivariant could carry it [OPEN: HP*(Q_N) NOT computed]; (ii) a sigma-twisted
-  trace exists but sigma is multiplicative-only (scaling phase p^{it}, trivial on u) => twisted trace
-  of A is a weighted two-point sum = C5-class [audited]; (iii) DECISIVE = handle vs name (L-C3-DUOIDAL
-  risk). AUDITS: natural additive secondary cochain C_p is a coboundary over Q; degree-0 secondary
-  inherits blindness; sigma-twist multiplicative-only. NEXT to attack: (a) DISTILL L-CYC-SEC on the
-  decisive question -- demand an actual cocycle + independent structural evaluation, or return the
-  "name, not a handle" verdict. (b) optional future: read math/0611541 + 0906.4903 + the twisted-cyclic
-  refs in full (PDF 403) to discharge the periodic-inheritance + HC*_sigma OPEN caps. NOT progress,
-  NOT terminal.
+- T16 [CYCLIC-SECONDARY thread, A19 — candidate L-CYC-SEC INTRODUCED work/1782110302, DISTILL-ATTACKED
+  work/1782111292, PENDING EXPLORE'S VERDICT]: built on A18's OWN gauge dichotomy and asked whether C5 is
+  a SECONDARY / HIGHER / sigma-TWISTED (modular/KMS) / S^1-EQUIVARIANT cyclic-cohomology class of the SAME
+  Q_N -- defined PRECISELY because the primary (degree-0, gauge-invariant) trace vanishes. DISTILL RESULT
+  (wall HOLDS, STAGE-1 steelman exhibited NO handle): three concrete higher candidates pairing A against
+  OTHER generators (twisted 1-cocycle phi(a0 delta(a1)) [delta(u)=0 kills the +2 partner => c(A,u^2)=0,
+  M_lam partner gives a ONE-POINT PNT-class sum]; higher 2-cocycle via s_p u=u^p s_p [diagonal
+  chi(n)chi(n+2) = two-point C5-class for every completely-mult chi]; S^1-equivariant chi-isotypic
+  [degree-0 part EMPTY; degree-k buckets PARTITION S(x)]) ALL collapse by a DEGREE-INDEPENDENT integrand
+  dichotomy: any gauge-traceable cyclic evaluation of A is EITHER a (weighted/restricted) two-point sum =
+  C5-class [encloses the u^{+2}..u^{-2} bracket] OR a one-point/const PNT-class quantity [drops the +2];
+  NO third case. Corroborated (search-surfaced, PDFs 403): Gourdeau-White arXiv:1007.4661 (higher cyclic =
+  S-image of the trace) + Carey-Phillips-Rennie arXiv:0801.4605 (sigma-twisted = gauge-invariant index/
+  entropy). Reduced graph [CYC-HANDLE] FALSIFIED-pre-fill (collapse object) + [CYC-WALL] NEEDS-REVIEW-
+  pre-fill (sharpened degree-independent wall) + [CYC-PERIODIC] OPEN (periodic cap narrowed, not closed).
+  NEXT: (a) EXPLORE LABELS the not-yet-certified claims (NEEDS-REVIEW-vs-FALSIFIED). (b) optional future:
+  read math/0611541 + 0906.4903 + 0801.4605 + 1007.4661 in full (PDF 403) to discharge the periodic-
+  inheritance + HC*_sigma OPEN caps (would CONFIRM, not move, the wall). NOT progress, NOT terminal.
 - T13 [the post-campaign redirection]: three reframings CLOSED the "reframe again" strategy. Live:
   (a) [RULED OUT] a fourth categorical/cohomological IMPORT (foreign cohomology mapped onto C5).
       NOTE: A19 is NOT this -- it builds on the project's OWN A18 result, not an import.
@@ -314,77 +369,88 @@ OPEN THREADS:
   (e) affine/ax+b import (A18/T15) — Cuntz Q_N onto the +/x collision. OUTCOME: additive generator
       realized + Trap A dodged, but Trap B HIT via the gauge dichotomy; L-AFF-GAUGE LABELLED
       NEEDS-REVIEW. CLOSED as a source of progress; NOW the LAUNCHPAD for A19.
-  (f) secondary/twisted cyclic escalation ON A18 (A19/T16, this step) — is C5 a secondary/twisted/
-      equivariant cyclic class of the SAME Q_N? L-CYC-SEC PENDING DISTILL. Honest most-likely outcome
-      = sharper wall / clean cull (audits point that way: natural additive secondary cochain is a
-      coboundary; degree-0 secondary inherits blindness; sigma-twist multiplicative-only). One residual
-      crack (higher twisted/equivariant cocycle pairing A against other elements) stated for DISTILL.
-  RECOMMENDATION (this step, Introduce): A19 is the genuinely-new (non-import) escalation building on
-      A18's own dichotomy. It is a FRAMING; the decisive question (handle vs the L-C3-DUOIDAL name)
-      goes to DISTILL. Expect a sharper wall; if DISTILL returns "name, not a handle", A19 closes as a
-      source of progress and PAUSE stands. Remaining escalations toward C5 otherwise unchanged: a
-      genuinely new cohomological/higher-rank structure over Spec Z (C7/C-inf), a major open conjecture.
+  (f) secondary/twisted cyclic escalation ON A18 (A19/T16) — is C5 a secondary/twisted/equivariant
+      cyclic class of the SAME Q_N? L-CYC-SEC DISTILL-ATTACKED work/1782111292 (PENDING EXPLORE'S
+      VERDICT): the residual crack (higher twisted/equivariant cocycle pairing A against other elements)
+      was STEELMANNED for real and CLOSED -- three concrete candidates all collapse by a DEGREE-
+      INDEPENDENT integrand dichotomy (encloses the +2 bracket => C5-class two-point sum, OR drops the
+      +2 => one-point/const PNT-class; no third case), corroborated by Gourdeau-White + Carey-Phillips-
+      Rennie. The "name, not a handle" outcome; sharpened WALL + narrowed periodic OPEN cap.
+  RECOMMENDATION (this step, DISTILL): A19 delivered NO handle -- the wall HELD and was SHARPENED to a
+      degree-independent dichotomy. EXPLORE should LABEL [CYC-HANDLE] (FALSIFIED clause -- collapse
+      object) / [CYC-WALL] (NEEDS-REVIEW sharpened wall) / [CYC-PERIODIC] (OPEN narrowed cap); then A19
+      closes as a source of progress and PAUSE stands. Remaining escalations toward C5 otherwise
+      unchanged: a genuinely new cohomological/higher-rank structure over Spec Z (C7/C-inf), a major
+      open conjecture; or reading the PDF-403 sources to discharge the periodic OPEN caps (confirms,
+      not moves, the wall).
 - [T7/T8/T9 RESOLVED-BY-LABELLING] cohomological relocation -> C7 / C-COH-MON / C-inf.
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. This step = Introduce (A19): build on A18's OWN gauge dichotomy and ask
-  whether C5 is a SECONDARY / HIGHER / sigma-TWISTED (modular/KMS) / S^1-EQUIVARIANT cyclic-cohomology
-  class of the SAME Cuntz Q_N -- defined precisely because the primary (degree-0, gauge-invariant) trace
-  vanishes. No DISTILL pass was pending (L-AFF-GAUGE labelled work/1781682119).
-- A19 is genuinely NEW and NOT an import: the prior three cohomological escalations (A12 etale purity,
-  A16 ergodic rigidity, A18 Cuntz gauge) each mapped a FOREIGN structure onto C5; A19 takes the
-  project's OWN A18 result as a launchpad and asks an INTERNAL structural question about Q_N.
-- A19 FRAMING + FINDINGS (anti-deception applied -- this is a FRAMING, NOT progress, NOT a bound):
-  * PREMISE: A18 proved C5 invisible to PRIMARY (degree-0, gauge-invariant) cyclic cocycles -- the
-    classical signature of a SECONDARY object. So ask: secondary (Massey/HC^{2k} on ker tau), sigma-
-    twisted (HC^*_sigma, sigma=KMS-modular automorphism), or S^1-equivariant cyclic class?
-  * (i) PERIODIC INHERITANCE (most likely partial outcome, reasoned, OPEN): if HP*(Q_N) is governed by
-    the Chern-Connes character against K_*(Q_N) (exterior algebra on primes; no +2 class, A18/[AFF-4]),
-    the PERIODIC cyclic theory inherits A18's blindness; only the NON-periodic/twisted/equivariant
-    theory could carry C5. NOT a handle -- a narrowing. HP*(Q_N) NOT computed (no fabrication).
-  * (ii) EXISTENCE: a sigma-twisted trace exists (Q_N's distinguished weight is a beta=1 KMS state),
-    BUT the modular twist sigma is a SCALING phase p^{it} (trivial on u) => MULTIPLICATIVE-only; AUDIT
-    C shows every sigma-twisted (n^{-s}) diagonal trace of A=M_lam u^2 M_lam u^{-2} is a weighted
-    two-point Liouville sum = C5-class (matches DISTILL work/1781549159 attack 1). So the twisted trace,
-    on the two-point observable, is lambda-seeing only in the C5-by-definition sense.
-  * (iii) DECISIVE QUESTION (the L-C3-DUOIDAL "a name, not a handle" risk, named): is the class an
-    INDEPENDENT handle, or does it collapse to C5-by-definition (the tau_lambda trap) or to K-theory
-    blindness? To beat the name-verdict one must exhibit BOTH an actual (co)closed cocycle in a named
-    complex AND an independent structural evaluation tied to S(x) (NOT computing S(x)/x; NOT a K_*
-    pairing). I did NOT exhibit one and do NOT claim one exists.
-  * AUDITS (reproducible, work/1782110302): (A) natural additive secondary cochain
-    C_p(x,y)=(x^p+y^p-(x+y)^p)/p is integral, a group 2-cocycle on (Z,+), symmetric, an explicit
-    COBOUNDARY over Q (no new rational class) -- the obvious additive-secondary candidate trivializes;
-    (B) a degree-0/gauge-invariant secondary cocycle is STILL lam-blind on the +2 two-point term
-    (0 of 4999; gauge phase = lambda(n)); (C) the sigma-twist is multiplicative-only => twisted traces
-    of A are C5-class. None computes HP*(Q_N).
+- NOT at a terminal state. This step = DISTILL attack on L-CYC-SEC (A19), the candidate introduced
+  work/1782110302. The pass ran the mandated TWO honest stages and is ready for EXPLORE to label.
+- STAGE 1 (STEELMAN, done for real -- NOT a rubber-stamp of the EXPLORE cull): genuinely tried to build
+  the one object the lemma needs -- a HIGHER-degree twisted/equivariant/secondary cyclic cocycle pairing
+  A=M_lam u^2 M_lam u^{-2} against OTHER generators (u-powers, s_p/M_g, e_p), (co)closed, with a
+  structurally-computable non-C5 non-K-theory evaluation. Three concrete candidates built and tested:
+  (I) the canonical twisted 1-cocycle c(a0,a1)=phi(a0 delta(a1)) of derivation type (the CPR shape) --
+  delta(u)=0 (u gauge-weight 0) KILLS the +2 partner so c(A,u^2)=0 identically; the M_lam partner gives
+  <lam(n+2)*Omega(n)>, a loglog-weighted ONE-POINT PNT-class sum (the +2 correlation is GONE);
+  (II) a higher 2-cocycle coupling A to u^2 and a completely-mult gauge character chi via the bridge
+  s_p u=u^p s_p -- the diagonal is chi(n)chi(n+2), STILL a two-point correlation of a completely-mult
+  sign function = C5-class (every chi scanned); (III) the S^1-gauge-EQUIVARIANT chi-isotypic refinement
+  -- the gauge-INVARIANT (degree-0) part of A is EMPTY (recovers [AFF-2]'s 0), and the degree-k buckets
+  Sum_{Omega(n)+Omega(n+2)=k} lam(n)lam(n+2) PARTITION S(x) (sum to it). ALL collapse. NO handle exhibited.
+- STAGE 2 (collapse nailed): the DEGREE-INDEPENDENT integrand dichotomy. Any cyclic n-cochain on Q_N
+  (any degree; plain, sigma-twisted, or S^1-equivariant) whose evaluation on A and the generators is
+  gauge-invariant (necessary to descend to the KMS/twisted/equivariant theory, whose host is the gauge-
+  invariant state) is term-by-term on the diagonal EITHER (C-two) a (weighted/restricted) two-point
+  Liouville sum <lam(n)lam(n+2)*w> = C5-class [if the word encloses the u^{+2}..u^{-2} bracket around the
+  two M_lam factors] OR (C-zero) a one-point/constant PNT-class quantity [if gauge-degree-0 without the
+  bracket => one lam-evaluation dropped]; NO third case (the +2 sign-correlation is visible ONLY through
+  the bracket, which IS A). So A18's degree-0 dichotomy holds in ALL degrees -- the secondary/higher/
+  twisted/equivariant theories do not escape it. Verified term-by-term (<lam(n)lam(n+2)>=-4.7e-4 vs
+  <lam(n+2)>=-6.2e-4 / <lam(n)^2>=1); Audits A/B/C reproduced exactly.
+- TWO NEW LITERATURE COMPUTATIONS (search-surfaced, PDFs 403, OPEN-capped, corroborate the two analytic
+  legs): Gourdeau-White (arXiv:1007.4661, JMAA) -- HC^n(l^1 Cuntz-semigroup-algebra) = 0 for n odd,
+  1-dimensional for n even (n>=2), Hochschild H^n=0 for n>=1 => the higher even cyclic classes are the
+  S-operator (periodicity) IMAGES of the degree-0 trace, NOT independent of it [candidate (a) governed by
+  the trace]. Carey-Phillips-Rennie (arXiv:0801.4605, J.K-Theory 6 (2010) 339-380) -- the sigma-twisted
+  cyclic cocycle on Cuntz algebras twists the GAUGE-INVARIANT KMS state, needs a MODIFIED K_1 to pair
+  with, and computes SPECTRAL FLOW / Araki RELATIVE ENTROPY = an INDEX number on the lam-blind side
+  [candidate (b) lands lam-blind, as A18 [AFF-4] predicted]. Neither escapes the dichotomy.
+- REDUCED GRAPH (pre-fills; EXPLORE assigns NEEDS-REVIEW-vs-FALSIFIED): [CYC-HANDLE] (the independent-
+  handle clause = the load-bearing rider of L-CYC-SEC) FALSIFIED-pre-fill -- concrete collapse object
+  exhibited (the L-C3-DUOIDAL "name, not a handle"); [CYC-WALL] (the sharpened DEGREE-INDEPENDENT gauge
+  dichotomy, L-AFF-GAUGE family) NEEDS-REVIEW-pre-fill -- reproducible term-by-term audit; [CYC-PERIODIC]
+  (periodic-inheritance) OPEN -- NARROWED by Gourdeau-White (closest algebra: higher cyclic = S-image of
+  trace) but NOT closed, HP*(Q_N) still NOT computed (PDFs 403).
 - HONEST STATEMENT (permitted by AGENTS.md): "I made no progress on C5 that survives audit this step.
-  Building on A18's own gauge dichotomy, I asked the one structurally-honest internal question -- is C5
-  a secondary/twisted cyclic class of the same ax+b algebra -- and the finite audits indicate the answer
-  is most likely no: the natural additive secondary cochain trivializes, every degree-0 secondary class
-  inherits the gauge blindness, and the modular twist is multiplicative-only so it returns C5-class
-  weighted sums. The one residual crack (a higher twisted/equivariant cocycle pairing A against other
-  elements) is stated precisely for DISTILL, with the exact object that would have to be exhibited to
-  count as a handle." CHECKPOINT, NOT exit.
-- ANTI-DECEPTION: NO bound on C5 certified. L-CYC-SEC is a FRAMING / candidate lemma PENDING DISTILL,
-  NOT a bound, NOT a legal foundation, NOT progress, NOT terminal. The periodic-inheritance argument is
-  GENERIC Chern-Connes behaviour, OPEN for Q_N specifically (HP*(Q_N) NOT computed). HC*/HC*_sigma/
-  equivariant groups NOT computed (arXiv 403). Twisted-/equivariant-cyclic refs search-surfaced
-  (A18-surfaced arXiv:0801.4605 pairs the LAM-BLIND gauge-invariant KMS state) OPEN-capped. A18 substrate
-  search-surfaced (PDF 403). The audits A/B/C ARE reproducible.
-- RECOMMENDATION (this step = Introduce; done): pass L-CYC-SEC to DISTILL with the single decisive
-  question -- handle vs the L-C3-DUOIDAL name. Expect a sharper wall / clean cull. If DISTILL returns
-  "name, not a handle" (or constructs the twisted cocycle and shows it is C5-class / blind), A19 closes
-  as a source of progress and PAUSE stands; if DISTILL exhibits a genuine independent structural
-  evaluation, a real lead opens.
+  I ran the steelman for real -- I tried to build the higher twisted/equivariant cocycle the lemma needs,
+  pairing A against u-powers, multiplicative monomials, and via the bridge relation -- and no handle
+  opened. The reason is structural and degree-independent: any gauge-traceable cyclic evaluation of A is
+  either a two-point correlation (= C5, if it re-encloses the +2 shift) or has dropped the +2 adjacency
+  (a one-point/constant PNT-class quantity); there is no third case. Two literature computations
+  corroborate on both legs. This is the L-C3-DUOIDAL 'name, not a handle' verdict with a concrete,
+  reproducible collapse object." CHECKPOINT, NOT exit.
+- ANTI-DECEPTION: NO bound on C5 certified. L-CYC-SEC is culled to a sharper WALL; NOT a bound, NOT a
+  legal foundation, NOT progress, NOT terminal. The independent-handle clause DID NOT survive the
+  steelman (collapse object exhibited). HP*(Q_N)/HC*(Q_N)/HC*_sigma/equivariant groups NOT computed
+  (PDFs 403); the two new computations are search-surfaced/OPEN-capped and concern closely related (not
+  identical) algebras; the periodic-inheritance cap is NARROWED but OPEN. I did NOT fabricate HP*(Q_N).
+  The collapse object (the two exhaustive integrands) and Audits A/B/C ARE reproducible inline.
+- RECOMMENDATION (this step = DISTILL; done): EXPLORE LABELS the not-yet-certified claims --
+  [CYC-HANDLE] FALSIFIED (collapse object) / [CYC-WALL] NEEDS-REVIEW (sharpened wall) / [CYC-PERIODIC]
+  OPEN (narrowed cap). Then A19 closes as a source of progress and PAUSE stands. Optional non-moving
+  upgrade: read math/0611541 + 0906.4903 + 0801.4605 + 1007.4661 in full (PDF 403) to discharge the
+  periodic OPEN caps -- would CONFIRM, not move, the wall.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 NAMED,
   NOT built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF OPEN. SO-L², SO-deavg = OPEN
   obstructions => NOT foundations. ERG-B/ERG-3 = NEEDS-REVIEW supporting facts but NOT foundations
   toward TPC; ERG-1/ERG-2/ERG-NET (L-ERG-RIG) = OPEN; ERG-2R = DISTILLED + LABELLED; L-AFF-GAUGE =
   candidate lemma DISTILL-ATTACKED + LABELLED NEEDS-REVIEW (the A18 wall; NOT a foundation); L-CYC-SEC =
-  candidate lemma INTRODUCED this step, PENDING DISTILL (NOT a foundation). GRAVEYARD nodes may NOT be
-  built upon.
+  candidate lemma DISTILL-ATTACKED work/1782111292, PENDING EXPLORE'S VERDICT (NOT a foundation; culled
+  to a sharper wall). GRAVEYARD nodes may NOT be built upon.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
@@ -394,8 +460,10 @@ ergodic-rigidity reformulation nodes: ERG-B/ERG-3 NEEDS-REVIEW supporting facts 
 toward TPC], ERG-1/ERG-2/ERG-NET OPEN. ERG-2R = DISTILLED + LABELLED. L-AFF-GAUGE = affine/ax+b
 candidate lemma DISTILL-ATTACKED work/1781549159, LABELLED NEEDS-REVIEW work/1781682119 [the
 A18 wall; NOT a foundation; reduced graph [AFF-1]..[AFF-DISP]; NOW the launchpad for A19].
-L-CYC-SEC = cyclic-secondary candidate lemma INTRODUCED work/1782110302, PENDING DISTILL [a FRAMING
-built on A18; NOT a foundation]).:
+L-CYC-SEC = cyclic-secondary candidate lemma INTRODUCED work/1782110302, DISTILL-ATTACKED
+work/1782111292 [wall HELD, STAGE-1 steelman NO handle, degree-independent collapse object], PENDING
+EXPLORE'S VERDICT [reduced graph [CYC-HANDLE] FALSIFIED-pre-fill / [CYC-WALL] NEEDS-REVIEW-pre-fill /
+[CYC-PERIODIC] OPEN; built on A18; NOT a foundation]).:
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
   d|F(n)} a_n : d<=D=x^{1-eps}}, Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg,
@@ -497,20 +565,21 @@ built on A18; NOT a foundation]).:
   tau_lambda(M_lambda u^2 M_lambda u^{-2}) = S(x)/x = C5 by definition; K_*(Q_N) has no additive-+2
   class; the affine dynamics is LOG-level strong stationarity (ERG-3). EQUAL-HARDNESS / NO-HANDLE;
   the ax+b structure quotients lambda away. NO bound certified.
-  CYCLIC-SECONDARY AIM (A19/T16, this step; candidate L-CYC-SEC INTRODUCED work/1782110302, PENDING
-  DISTILL): build on A18's OWN dichotomy -- since C5 is invisible to PRIMARY (degree-0, gauge-
-  invariant) cyclic cocycles (the signature of a SECONDARY object), ask if C5 is carried by a
-  SECONDARY (Massey/HC^{2k} on ker tau), a sigma-TWISTED (modular/KMS) HC^*_sigma, or an
-  S^1-EQUIVARIANT cyclic class of the SAME Q_N, AND whether that is an INDEPENDENT handle. FRAMING
-  (honest): (i) PERIODIC theory likely INHERITS A18's blindness (HP*(Q_N) governed by K_*=exterior
-  algebra on primes via Chern-Connes; no +2 class) => only NON-periodic/twisted/equivariant could
-  carry it [OPEN: HP*(Q_N) NOT computed]; (ii) a sigma-twisted trace exists but sigma is a SCALING
-  phase p^{it} trivial on u => MULTIPLICATIVE-only => twisted trace of A is a weighted two-point sum
-  = C5-class [audited, matches DISTILL work/1781549159 attack 1]; (iii) DECISIVE = handle vs the
-  L-C3-DUOIDAL "a name, not a handle" risk. AUDITS (reproducible): natural additive secondary cochain
-  C_p(x,y)=(x^p+y^p-(x+y)^p)/p is a COBOUNDARY over Q; degree-0 secondary inherits blindness; sigma-
-  twist multiplicative-only. NOT progress, NOT a bound, NOT a foundation; honest most-likely outcome
-  = sharper wall / clean cull. PENDING DISTILL.
+  CYCLIC-SECONDARY AIM (A19/T16; candidate L-CYC-SEC INTRODUCED work/1782110302, DISTILL-ATTACKED
+  work/1782111292, PENDING EXPLORE'S VERDICT): built on A18's OWN dichotomy -- since C5 is invisible to
+  PRIMARY (degree-0, gauge-invariant) cyclic cocycles (the signature of a SECONDARY object), asked if C5
+  is carried by a SECONDARY (Massey/HC^{2k} on ker tau), a sigma-TWISTED (modular/KMS) HC^*_sigma, or an
+  S^1-EQUIVARIANT cyclic class of the SAME Q_N, AND whether that is an INDEPENDENT handle. DISTILL ran a
+  real STAGE-1 steelman and exhibited NO handle: three concrete higher candidates (twisted 1-cocycle
+  phi(a0 delta(a1)) [delta(u)=0 kills the +2 partner]; higher 2-cocycle via s_p u=u^p s_p [diagonal
+  chi(n)chi(n+2)=C5-class]; S^1-equivariant chi-isotypic [partitions S(x)]) ALL collapse by a DEGREE-
+  INDEPENDENT integrand dichotomy (encloses the u^{+2}..u^{-2} bracket => two-point C5-class, OR drops the
+  +2 => one-point/const PNT-class; NO third case). Corroborated by two search-surfaced computations
+  (Gourdeau-White arXiv:1007.4661: higher cyclic = S-image of the trace; Carey-Phillips-Rennie
+  arXiv:0801.4605: sigma-twisted = gauge-invariant index/entropy). The independent-handle clause is the
+  L-C3-DUOIDAL "name, not a handle" outcome; reduces to the sharpened degree-independent WALL [CYC-WALL] +
+  the narrowed periodic OPEN cap [CYC-PERIODIC] (HP*(Q_N) NOT computed). NOT progress, NOT a bound, NOT a
+  foundation. PENDING EXPLORE'S VERDICT.
   DEPENDS ON: C1 (membership scope), C2 (dim-1 model), C3 (known Type-II escape), C6 (Siegel-zero
   anti-cancellation) -- all FRAMING; NOT a proven equivalence to TPC.
   STATUS: OPEN (checkpoint under active cross-domain + analytic + ergodic + operator-algebraic
@@ -532,24 +601,30 @@ built on A18; NOT a foundation]).:
   AFFINE / ax+b AIM (A18; L-AFF-GAUGE DISTILL-ATTACKED work/1781549159, LABELLED NEEDS-REVIEW
   work/1781682119): the +/x collision relocated into Cuntz Q_N; additive generator realized, Trap A
   dodged, but Trap B HIT via the gauge dichotomy. EQUAL-HARDNESS / NO-HANDLE.
-  CYCLIC-SECONDARY AIM (A19; L-CYC-SEC INTRODUCED work/1782110302, PENDING DISTILL): is C5 a
-  secondary/twisted/equivariant cyclic class of the SAME Q_N (defined because the primary trace
-  vanishes)? FRAMING; periodic theory likely inherits A18's blindness; sigma-twist multiplicative-
-  only => C5-class; decisive question = handle vs name. NOT progress.
+  CYCLIC-SECONDARY AIM (A19; L-CYC-SEC INTRODUCED work/1782110302, DISTILL-ATTACKED work/1782111292,
+  PENDING EXPLORE'S VERDICT): is C5 a secondary/twisted/equivariant cyclic class of the SAME Q_N? DISTILL
+  STAGE-1 steelman exhibited NO handle; collapse = a DEGREE-INDEPENDENT integrand dichotomy (encloses the
+  +2 bracket => C5-class two-point sum, OR drops the +2 => one-point/const; no third case), corroborated
+  by Gourdeau-White (higher cyclic = S-image of trace) + Carey-Phillips-Rennie (sigma-twisted = gauge-
+  invariant index). The "name, not a handle" outcome; sharpened WALL [CYC-WALL] + narrowed periodic OPEN
+  cap [CYC-PERIODIC]. NOT progress.
   CAMPAIGN VERDICT: THREE categorical reframings (relocate/rename/unify) each RE-EXPRESS C5;
   "reframe again" CLOSED. (b2) de-averaging (A15) RE-LOCALIZES the de-averaging face to SO-deavg.
   Ergodic-rigidity (A16) DEFEATED by Sawin's model (PRIMARY-SOURCE-anchored, A17). Affine/ax+b (A18)
   RULES IN a not-≥RH corner (Trap A dodged) but DELIVERS NO handle (Trap B via gauge dichotomy).
-  Cyclic-secondary (A19) builds on A18's own dichotomy; FRAMING pending DISTILL (most likely a sharper
-  wall). Strong evidence (not proof) that C5 is irreducible, with reasons WHY: >=-RH-geometry
+  Cyclic-secondary (A19) built on A18's own dichotomy; DISTILL STAGE-1 steelman exhibited NO handle and
+  SHARPENED the wall to a DEGREE-INDEPENDENT integrand dichotomy (no third case beyond two-point-C5 /
+  one-point-PNT), corroborated by Gourdeau-White + Carey-Phillips-Rennie; "name, not a handle" pending
+  EXPLORE's verdict. Strong evidence (not proof) that C5 is irreducible, with reasons WHY: >=-RH-geometry
   (cohomological cluster); non-multiplicativity; U²-control != smallness; the n^{it}-twist / every-
   scale-Fourier-uniformity hardness; Sawin-class-invariance of all available Furstenberg-structure/
   rigidity techniques; AND (A18) the operator-algebraic GAUGE DICHOTOMY (the ax+b algebra's gauge
   symmetry quotients lambda away; its natural invariants are lambda-blind or literally C5).
   ADVERSARIAL PASS: Pass F/G/H/I/J + Attacks K/L/M/O + Attacks P1-P4 + Cluster-5 decider (T12)
   + Cluster-3 DISTILL Attacks 1-6 + SO-deavg DISTILL Attacks 1-5/3* + ergodic-rigidity DISTILL
-  stress-tests 3/4/5 + RV-1/RV-2/RV-3 + Affine/ax+b L-AFF-GAUGE DISTILL (work/1781549159 -- wall HELD).
-  STAYS OPEN.
+  stress-tests 3/4/5 + RV-1/RV-2/RV-3 + Affine/ax+b L-AFF-GAUGE DISTILL (work/1781549159 -- wall HELD)
+  + Cyclic-secondary L-CYC-SEC DISTILL (work/1782111292 -- wall HELD, STAGE-1 steelman NO handle,
+  degree-independent collapse object). STAYS OPEN.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
   + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
@@ -558,7 +633,8 @@ built on A18; NOT a foundation]).:
   + work/1781472028-EXPLORE.md + work/1781473105-DISTILL.md + work/1781473701-EXPLORE.md
   + work/1781478452-EXPLORE.md + work/1781479461-DISTILL.md + work/1781480168-EXPLORE.md
   + work/1781505731-EXPLORE.md + work/1781528204-EXPLORE.md + work/1781548132-EXPLORE.md
-  + work/1781549159-DISTILL.md + work/1781682119-EXPLORE.md + work/1782110302-EXPLORE.md.
+  + work/1781549159-DISTILL.md + work/1781682119-EXPLORE.md + work/1782110302-EXPLORE.md
+  + work/1782111292-DISTILL.md.
 
   --- OPEN-CHECKPOINTS (POST-DISTILL, LABELLED OPEN; NOT legal foundations) ---
 - [L-QUB-reform] (Cluster-5 survivor) C5 <=> sup_{d<=x^{1-eps}} R_d(x) <= x^{o(1)}, where
@@ -685,9 +761,11 @@ built on A18; NOT a foundation]).:
   L-ERG-RIG = EQUAL-HARDNESS, OPEN. NOTE (A18): the affine/ax+b operator-algebra route to the +/x
   collision likewise gives NO handle (gauge dichotomy, L-AFF-GAUGE DISTILL-ATTACKED work/1781549159 --
   wall HELD; LABELLED NEEDS-REVIEW work/1781682119), consistent with the affine dynamics being LOG-
-  level. NOTE (A19): the cyclic-secondary escalation on A18 (L-CYC-SEC, PENDING DISTILL) likewise
-  finds (audited) the sigma-twist multiplicative-only => C5-class, the degree-0 secondary blind, and
-  the natural additive secondary cochain a coboundary -- consistent with no new handle. DEPENDS ON:
+  level. NOTE (A19): the cyclic-secondary escalation on A18 (L-CYC-SEC, DISTILL-ATTACKED work/1782111292,
+  PENDING EXPLORE'S VERDICT) likewise gives NO handle -- STAGE-1 steelman exhibited none, and the collapse
+  is a DEGREE-INDEPENDENT integrand dichotomy (two-point-C5 / one-point-PNT, no third case), corroborated
+  by Gourdeau-White + Carey-Phillips-Rennie -- consistent with the affine dynamics being LOG-level.
+  DEPENDS ON:
   C5; established math (Tao-Teravainen arXiv:1809.02518; MRT arXiv:1812.01224; Pilatte
   arXiv:2310.19357; Tao arXiv:1509.05422; Cesaro two-point Chowla OPEN; FH arXiv:1804.08556; FLdlR
   arXiv:2304.03121 [search-surfaced]; Sawin arXiv:1809.03280 [READ IN FULL]). STATUS: OPEN as an
