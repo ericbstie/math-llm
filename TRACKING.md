@@ -11,7 +11,23 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1782174769-EXPLORE.md` — **LABELLING of the `L-CYC-SEC` (A19) DISTILL pass
+**Latest step:** `work/1782745771-EXPLORE.md` — **A20 (Apply): import of Buium's arithmetic δ-geometry
+(p-derivations / the Fermat quotient) onto the +/× collision — DEAD END.** δ-geometry is the cleanest
+*native* additive×multiplicative structure over Spec ℤ (the p-derivation `δ_p(x)=(x−x^p)/p` is **nontrivial
+on ℤ**, exactly where the Frobenius lift `ψ_p=id` is trivial), and it **dodges Trap A** (Diophantine, not
+RH-calibrated — a **2nd not-≥RH route after A18**). But it is **not a route to C5**, for three concordant
+reasons (3-thread survey, verified cites; arXiv PDFs 403 = OPEN-capped): **(i) wrong coupling** — the
+Fermat quotient is a p-adic **LOGARITHM** `q_p(ab)≡q_p(a)+q_p(b)` (audited), turning × into +, the *dual
+opposite* of λ's multiplicative ±1 sign; **(ii) Trap B / parity-blind** — no `Ω mod 2` datum (cannot tell
+λ from `|λ|=1`); computes per-variety/fixed-prime p-adic Diophantine invariants & bounds (effective
+Manin–Mumford, δ-characters, δ-modular forms), with **no global counting object** (no "x", no `Σ_{n≤x}`);
+**(iii) archimedean gap = C-inf** — δ at ∞ is unconstructed ("curvature of Spec ℤ" = non-commuting *p-adic*
+Frobenii), **independently re-confirming C-inf unfilled**. No μ/λ/Chowla bridge exists. **VERDICT: DEAD
+END** (genuine map-gain = 2nd Trap-A dodge; but Trap B + object-mismatch + C-inf). **NO candidate lemma**
+(clean structural negative). **Meta-pattern across A18/A19/A20: Trap A is dodgeable; Trap B / parity is the
+universal wall.** **RECOMMENDATION: PAUSE.**
+
+**Prior step:** `work/1782174769-EXPLORE.md` — **LABELLING of the `L-CYC-SEC` (A19) DISTILL pass
 (independently re-verified) + Review (PAUSE).** First act = labelling, with an INDEPENDENT re-verification
 of the decisive audit (NOT a rubber-stamp): re-derived `λ` from scratch, re-ran the three STAGE-1 steelman
 candidates (partition EXACT: `Σ buckets = −644 = S_partial`), and ADDED an exhaustive shift-`{0,+2}`
@@ -34,7 +50,7 @@ bound). Two stated escalation handles remain (recorded, not pursued): (1) NEGATE
 (2) a PRIMARY `HP^*(Q_ℕ)`/`HC^*(Q_ℕ)` computation (settles `[CYC-PERIODIC]`; blocked only by PDF-403
 access — preferred). C5 stays OPEN/named, not built upon. **Legal foundations UNCHANGED.**
 
-**Prior step:** `work/1782111292-DISTILL.md` — **DISTILL attack on `L-CYC-SEC` (A19): the wall HOLDS,
+**Earlier step:** `work/1782111292-DISTILL.md` — **DISTILL attack on `L-CYC-SEC` (A19): the wall HOLDS,
 STAGE-1 steelman exhibited NO handle, with a concrete DEGREE-INDEPENDENT collapse object** (now LABELLED,
 above). **STAGE 1 (steelman)** genuinely tried to build the higher cocycle the lemma's residual crack
 needs — three concrete candidates pairing `A=M_λ u² M_λ u^{-2}` against OTHER generators:
@@ -222,6 +238,34 @@ APPROACHES ATTEMPTED:
   DEEPER (A18 degree-0 -> all-degree) and is CLOSED as a source of progress. RECOMMENDATION: PAUSE
   (checkpoint, not terminal; not progress, not a bound). Two stated escalation handles remain (not
   pursued): (1) NEGATE "no third case"; (2) PRIMARY HP*(Q_N) computation (settles CYC-PERIODIC).
+- [A20] ARITHMETIC δ-GEOMETRY IMPORT (Buium p-derivations / Fermat quotient) onto the +/x collision in C5
+  -- the cleanest NATIVE additive×multiplicative structure over Spec Z | DEAD END (out-of-framework bet;
+  dodges Trap A but parity-blind + object-mismatch + archimedean=C-inf; NO candidate lemma) | Apply
+  (work/1782745771). 3-thread literature survey (verified cites; arXiv PDFs 403 = OPEN-capped). SUBSTRATE:
+  a p-derivation delta_p(x)=(x-x^p)/p (Fermat quotient), from a Frobenius lift phi(x)=x^p+p*delta(x);
+  twisted Leibniz delta(xy)=x^p dy+y^p dx+p dx dy and delta(x+y)=dx+dy+C_p(x,y), C_p=(x^p+y^p-(x+y)^p)/p.
+  NATIVELY couples +/x, and delta_p is NONTRIVIAL on Z exactly where the Frobenius lift psi_p=id is trivial
+  (the Witt/Lambda-ring "trivial on Z" point). Builds arithmetic jet/p-jet spaces J^n(X), delta-characters
+  (Manin char), delta-modular forms, "curvature of Spec Z". FINDINGS: (Q-A) DODGES TRAP A -- Diophantine,
+  NOT RH-calibrated (no delta-zeta; effective Manin-Mumford / torsion bounds / Buium-Poonen). A SECOND
+  not->=RH route after A18 (real map-gain). (Q-B) HITS TRAP B / parity DECISIVELY: the Fermat quotient is
+  a p-adic LOGARITHM, q_p(ab)=q_p(a)+q_p(b) mod p (AUDITED, work/1782745771 Part 3) -- turns x into +, the
+  DUAL OPPOSITE of lambda's multiplicative {+-1} sign; delta-geometry is SIGN-BLIND (no Omega mod 2; cannot
+  distinguish lambda from |lambda|=1). (Q-C) OBJECT MISMATCH: per-variety/fixed-prime p-adic Diophantine
+  invariants + bounds, NOT a global COUNTING correlation -- no "x", no Sum_{n<=x}. "Global"/several-primes
+  (Borger-Buium 0908.2512; Buium-Simanca arithmetic Laplacian 0805.0256) = a product/limit over per-prime
+  p-adic data (one-prime persists). (Q-inf) ARCHIMEDEAN GAP = C-inf: delta at infinity UNCONSTRUCTED;
+  "curvature of Spec Z" (SURV 222) is non-commuting p-adic Frobenii (finite primes), NOT an archimedean
+  term -- INDEPENDENTLY RE-CONFIRMS C-inf unfilled. No mu/lambda/Chowla bridge in the literature
+  (Fermat-quotient cancellation = mod-p equidistribution, Heath-Brown Heilbronn sum / Shparlinski, not a
+  multiplicative-function story). CITES (verified metadata; PDFs 403): Buium arXiv:1308.5194; Invent.Math.
+  122(1995); Duke 82(1996); AMS SURV 118(2005)/222(2017); Buium-Dupuy 1308.0748/0744/0747; Buium-Miller
+  2103.16627/2202.02400/2212.02697; Borger 0801.1691/1006.0092/0906.3146; Borger-Buium 0908.2512;
+  Buium-Simanca 0805.0256/1503.02489; Shparlinski 1104.3909; Ostafe-Shparlinski 1001.1504; Sondow 1110.3113.
+  VERDICT: DEAD END as a route to C5 -- genuine map-gain (2nd Trap-A dodge) but Trap B (parity-blind,
+  log-not-sign) + object-mismatch (Diophantine-not-counting) + archimedean=C-inf. Confirms the meta-pattern:
+  Trap A dodgeable, Trap B (parity) the UNIVERSAL wall (A18/A19/A20). NOT progress, NOT a bound, NOT a
+  foundation. NO candidate lemma. PAUSE.
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
 - [L-CYC-SEC] (RESOLVED OUT into the CLAIM GRAPH + GRAVEYARD this step, work/1782174769; INTRODUCED
@@ -351,7 +395,16 @@ OPEN THREADS:
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. This step = (Part 0) LABELLING of the L-CYC-SEC (A19) DISTILL pass
+- NOT at a terminal state. LATEST STEP = A20 (Apply, work/1782745771): imported Buium's arithmetic
+  delta-geometry (p-derivations / Fermat quotient) -- the cleanest NATIVE +/x structure over Spec Z --
+  onto the +/x collision in C5. VERDICT: DEAD END. DODGES Trap A (Diophantine, not RH; a 2nd not->=RH
+  route after A18) but HITS Trap B DECISIVELY (the Fermat quotient is a p-adic LOG q_p(ab)=q_p(a)+q_p(b),
+  the dual opposite of lambda's multiplicative sign; delta-geometry is parity/sign-blind, no Omega mod 2)
+  + OBJECT MISMATCH (per-variety p-adic Diophantine invariants/bounds; no global counting Sum_{n<=x}) +
+  ARCHIMEDEAN GAP = C-inf (delta at infinity unconstructed; independently re-confirms C-inf unfilled).
+  NO candidate lemma (clean structural negative). META-PATTERN across A18/A19/A20: Trap A is dodgeable;
+  Trap B (parity) is the UNIVERSAL wall. NOT progress, NOT a bound. RECOMMENDATION: PAUSE.
+- [A19 step, now prior] NOT at a terminal state. This step = (Part 0) LABELLING of the L-CYC-SEC (A19) DISTILL pass
   work/1782111292, with an INDEPENDENT re-verification of the decisive audit (not a rubber-stamp), then
   (Part 1) a Review. The candidate is resolved out into the graph; A19 closes as a source of progress.
 - RE-VERIFICATION (EXPLORE, work/1782174769): re-derived lambda from scratch (spf-sieve + Omega-parity),
