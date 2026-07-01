@@ -11,7 +11,41 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1782888423-EXPLORE.md` — **A21 (Introduce): a FROM-SCRATCH (L3) parity-breaking
+**Latest step:** `work/1782889324-DISTILL.md` — **DISTILL attack on `L-DDS` + `L-TRACE-REFORM` (A21):
+the DDS rigorous CORE SURVIVED (corroborated a 2nd way); the `L-TRACE-REFORM` ⟹ is DOWNGRADED/UNPROVEN.
+Both lemmas now have an adversarial pass PENDING EXPLORE's verdict.** Reduced each two-name lemma to its
+smallest load-bearing split (four nodes): **`L-DDS` → [DDS-CORE] + [DDS-ENV]; `L-TRACE-REFORM` →
+[TRACE-SUFF] + [TRACE-EQUIV]**. **(1) [DDS-CORE]** (rigorous: λ is not a finite-order idele-class
+Dirichlet/Hecke character — Dirichlet series `ζ(2s)/ζ(s)`, `λ(p)=−1` ∀p, no period `q≤128`, re-verified
+— ⇒ NO finite geometric ℤ/2 local system on any open of `Spec ℤ` has monodromy λ) **SURVIVED the attack
+and was corroborated from a SECOND independent direction**: I sought a non-finite / pro-étale / ℓ-adic /
+stacky / arithmetic-site (F₁) realization that DODGES Trap A and found **none**; decisively, the
+**Connes–Consani arithmetic site's Hasse–Weil zeta function IS the complete Riemann ζ** (arXiv:1405.4527),
+so the one F₁ geometry that could carry a parity sheaf **re-imports `ζ(2s)/ζ(s)` = Trap A** — matching the
+crack already recorded on node **C7**. Residual crack stated (an explicit ℓ-adic/motivic λ-realization
+provably free of ζ-continuation — none known). **DID NOT puncture; DID NOT terminate** — a sharpened
+Trap-A/parity wall-reason tied to OPEN C7. **(2) [DDS-ENV]** ("no structured theory carries BOTH ε and +2
+with a compatible trace"): I tried to CONSTRUCT a counterexample (a bialgebra/Hopf-algebroid/Tannakian/
+species/operad/motivic realization with both ε and +2 traced) — **none constructed, and no impossibility
+proof** ⇒ per anti-deception this is an **absence-of-construction / Sarnak-philosophy claim = OPEN**, NOT
+NEEDS-REVIEW. **(3) [TRACE-SUFF]** (⟸): confirmed **EXACTLY Lidskii** (`|trace| ≤ ‖·‖₁`; Simon, *Trace
+Ideals* 2e, Ch. 3), verified numerically — rigorous SUFFICIENT condition, **not a bound**. **(4)
+[TRACE-EQUIV]** (⟹ / "equivalence"): scrutinized HARD — the rank-one `A_x=C5(x)(e⊗e)` makes bare
+existence trivial **but is built by RESUMMING `Σc(n)` ⇒ VIOLATES the "evaluated structurally" clause**;
+tested every natural structural build with EXACT singular values — the **only** build with `trace=C5` is
+the diagonal (`‖·‖₁=x` exactly, no savings), and Hankel/Toeplitz builds both RAISE `‖·‖₁` (~6979/6540 at
+m=400) AND lose `trace=C5`. **Precise verdict: ⟹ is UNPROVEN under the structural clause (not false, not a
+clean equivalence).** `L-TRACE-REFORM` survives **only as a one-directional sufficient condition /
+equal-hardness reformulation** (the `L-QUB-reform` / `L-ERG-RIG` family): **⟸ rigorous, ⟹ downgraded**,
+NOT a bound, NOT a foundation. Reproducible audits run this step (code+output in the DISTILL file): (1) λ's
+series `= ζ(2s)/ζ(s)` (|diff| 5.4e−10 at s=2), `λ(p)=−1` ∀p<80, no period q≤128; (2) Lidskii holds on
+2000 random matrices (`min(‖A‖₁−|trace|)=0.032`); (3) exact `‖·‖₁` of diagonal(=m)/Hankel/Toeplitz builds;
+(4) `c` non-multiplicative (0.500 of coprime relations violated). **PENDING EXPLORE's LABEL of the four
+nodes.** DISTILL pre-fills (EXPLORE decides): [DDS-CORE] survived → expect NEEDS-REVIEW as a wall-fact tied
+to C7; [DDS-ENV] → OPEN; [TRACE-SUFF] → ESTABLISHED-IN-LITERATURE; [TRACE-EQUIV] → OPEN. **A21 still did
+NOT break parity; C5 stays OPEN/named; legal foundations UNCHANGED.**
+
+**Prior step:** `work/1782888423-EXPLORE.md` — **A21 (Introduce): a FROM-SCRATCH (L3) parity-breaking
 attempt — did NOT break parity; two candidate lemmas PENDING DISTILL (`L-DDS`, `L-TRACE-REFORM`).** The
 human-directed L3 bet: stop *importing* structure and try to **CONSTRUCT** a genuinely new invariant with
 a real ℤ/2 parity handle. An Opus research pass built **SIX** candidate structures, each with an actual
@@ -46,7 +80,7 @@ coexist" envelope; SCRUTINIZE `L-TRACE-REFORM`'s ⟹.** Meta-pattern (A16/A18/A1
 dodgeable; **Trap B / parity is the UNIVERSAL wall** — A21 adds a NATIVE confirmation with a NEW reason.
 C5 stays OPEN/named. **Legal foundations UNCHANGED. RECOMMENDATION: DISTILL both lemmas.**
 
-**Prior step:** `work/1782745771-EXPLORE.md` — **A20 (Apply): import of Buium's arithmetic δ-geometry
+**Earlier step:** `work/1782745771-EXPLORE.md` — **A20 (Apply): import of Buium's arithmetic δ-geometry
 (p-derivations / the Fermat quotient) onto the +/× collision — DEAD END.** δ-geometry is the cleanest
 *native* additive×multiplicative structure over Spec ℤ (the p-derivation `δ_p(x)=(x−x^p)/p` is **nontrivial
 on ℤ**, exactly where the Frobenius lift `ψ_p=id` is trivial), and it **dodges Trap A** (Diophantine, not
@@ -152,9 +186,16 @@ sign), with an object-mismatch (no `Σ_{n≤x}`) and archimedean gap = C-inf (no
 **from-scratch L3 attempt (A21)** stopped importing and tried to **CONSTRUCT** a parity-breaking invariant:
 **six** explicit constructions all collapsed, unified by `L-DDS` (the parity character λ is the prototype
 **non-descending / non-automorphic** character — Dirichlet series `ζ(2s)/ζ(s)`, no finite geometric ℤ/2
-local system — while +2 is definable only on the ring; the two never coexist in a traced structure), plus
-one equal-hardness spectral reformulation `L-TRACE-REFORM`; it **did NOT break parity** — both lemmas are
-**PENDING DISTILL**, C5 stays OPEN/named, and legal foundations are unchanged.
+local system [rigorous core]; the "never coexist in a traced structure" envelope is **heuristic**) plus
+one equal-hardness spectral reformulation `L-TRACE-REFORM`; it **did NOT break parity**. Both lemmas were
+**DISTILL-ATTACKED (`work/1782889324`), now PENDING EXPLORE's verdict**: DISTILL split each into its
+smallest load-bearing pieces — `L-DDS → [DDS-CORE]` (rigorous no-go for finite ℤ/2 systems; **SURVIVED**
+its attack and was corroborated a 2nd way — the Connes–Consani arithmetic site's zeta **is** the complete
+Riemann ζ, so a λ-sheaf there re-imports `ζ(2s)/ζ(s)` = Trap A; ties to OPEN C7) `+ [DDS-ENV]` (the
+"never coexist" envelope — no construction and no impossibility proof ⇒ **OPEN**); and `L-TRACE-REFORM →
+[TRACE-SUFF]` (⟸ = exactly Lidskii ⇒ **ESTABLISHED**, but a sufficient condition, not a bound) `+
+[TRACE-EQUIV]` (⟹ **UNPROVEN** under the structural clause — the rank-one witness resums `Σc(n)`; no
+structural build gives trace=C5 with savings). C5 stays OPEN/named, and legal foundations are unchanged.
 
 
 ```
@@ -309,7 +350,8 @@ APPROACHES ATTEMPTED:
   NO candidate lemma. PAUSE.
 - [A21] FROM-SCRATCH (L3) PARITY-BREAKING ATTEMPT -- try to CONSTRUCT a genuinely new invariant (NOT
   imported) breaking the parity barrier on C5 | ACTIVE (human-directed L3 bet; DID NOT break parity;
-  candidate lemmas L-DDS and L-TRACE-REFORM PENDING DISTILL) | Introduce (work/1782888423). An Opus
+  candidate lemmas L-DDS and L-TRACE-REFORM DISTILL-ATTACKED work/1782889324 -- PENDING EXPLORE's verdict)
+  | Introduce (work/1782888423). An Opus
   research pass built SIX candidate structures, each with an actual object/differential; ALL collapsed,
   unified by ONE reason (L-DDS), plus a precise reformulation (L-TRACE-REFORM). SIX CONSTRUCTIONS:
   (C1) Z/2-graded incidence complex graded by Omega(n(n+2)): the only natural (Koszul/prime-removing)
@@ -339,11 +381,24 @@ APPROACHES ATTEMPTED:
   relations violated, 0.500) => no Euler-product object has c as summatory function. VERDICT: A21 did NOT
   break parity -- a clean NEGATIVE + a new structural wall-reason (L-DDS: the parity character is the
   prototype non-descending/non-automorphic character) + a precise spectral reformulation (L-TRACE-REFORM).
-  NOT progress, NOT a bound, NOT a foundation. Two candidate lemmas PENDING DISTILL. Reinforces the
-  meta-pattern (A16/A18/A19/A20/A21): Trap A dodgeable, Trap B (parity) the UNIVERSAL wall.
+  NOT progress, NOT a bound, NOT a foundation. Reinforces the meta-pattern (A16/A18/A19/A20/A21): Trap A
+  dodgeable, Trap B (parity) the UNIVERSAL wall. DISTILL-ATTACKED work/1782889324 (PENDING EXPLORE's
+  verdict): each two-name lemma reduced to its smallest split -- L-DDS -> [DDS-CORE]+[DDS-ENV],
+  L-TRACE-REFORM -> [TRACE-SUFF]+[TRACE-EQUIV]. [DDS-CORE] (lambda not a finite-order idele-class char =>
+  no finite geometric Z/2 local system) SURVIVED the attack and was corroborated a 2nd way (the
+  Connes-Consani arithmetic site's zeta IS the complete Riemann zeta, arXiv:1405.4527 => any lambda-sheaf
+  there re-imports zeta(2s)/zeta(s) = Trap A; matches the C7 crack); NO non-finite/pro-etale/arithmetic-
+  site realization dodging Trap A was found; residual crack stated. [DDS-ENV] ("never coexist"): no
+  construction + no impossibility proof => OPEN (absence-of-construction). [TRACE-SUFF] (<==): EXACTLY
+  Lidskii, verified => ESTABLISHED (sufficient cond., NOT a bound). [TRACE-EQUIV] (==>): the rank-one
+  witness RESUMS Sum c (violates the structural clause) and no structural build gives trace=C5 with savings
+  (diagonal ||.||_1=x exactly; Hankel/Toeplitz raise ||.||_1 AND lose trace=C5) => ==> UNPROVEN under the
+  structural clause; L-TRACE-REFORM survives ONLY as a one-directional sufficient/equal-hardness
+  reformulation (L-QUB-reform/L-ERG-RIG family). PENDING EXPLORE's LABEL of the four nodes.
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- [L-DDS] (INTRODUCED work/1782888423; PENDING DISTILL) "lambda-as-structure lives ONLY on the free
+- [L-DDS] (INTRODUCED work/1782888423; DISTILL-ATTACKED work/1782889324 -- PENDING EXPLORE's verdict;
+  reduced to [DDS-CORE]+[DDS-ENV]) "lambda-as-structure lives ONLY on the free
   divisor group (+)_p Z (as the non-descending character eps = Sum e_p, NOT a Dirichlet/automorphic
   character -- Dirichlet series zeta(2s)/zeta(s), lambda(p)=-1 all p, no period q); the +2 shift is
   definable ONLY on the ring Z / its arithmetic quotient (not an operation on the multiplicative-
@@ -361,7 +416,21 @@ CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
   layer -> exhibit ANY structured theory (bialgebra/Hopf-algebroid/Tannakian/species/operad; 2-adic or
   motivic; Nori-Tannaka) carrying BOTH eps and +2 with a compatible trace; absent that OR an impossibility
   proof, this layer is OPEN. NOT a foundation, NOT a bound, NOT progress.
-- [L-TRACE-REFORM] (INTRODUCED work/1782888423; PENDING DISTILL) "C5(x)=O(x^{1/2+eps}) IF there exists a
+  DISTILL RESULT (work/1782889324): SPLIT into two nodes, each with an adversarial pass PENDING EXPLORE's
+  verdict. [DDS-CORE] (rigorous: lambda not a finite-order idele-class Dirichlet/Hecke char => no finite
+  geometric Z/2 local system on any open of Spec Z has monodromy lambda): DISTILL sought a non-finite/
+  pro-etale/l-adic/stacky/arithmetic-site realization dodging Trap A and found NONE; corroborated a 2nd way
+  (Connes-Consani arithmetic site's zeta = the complete Riemann zeta, arXiv:1405.4527 => any lambda-sheaf
+  there re-imports zeta(2s)/zeta(s) = Trap A; = the C7 crack). SURVIVED; residual crack = an explicit
+  l-adic/motivic/arithmetic-site lambda-realization provably free of zeta-continuation (none known). Ties to
+  OPEN C7. DISTILL pre-fill: expect NEEDS-REVIEW as a wall-fact (EXPLORE decides). [DDS-ENV] ("no structured
+  theory carries BOTH eps and +2 with a trace"): DISTILL tried to CONSTRUCT a counterexample, found none,
+  and has no impossibility proof => absence-of-construction / Sarnak-philosophy claim = OPEN (NOT
+  NEEDS-REVIEW). Audits (work/1782889324): lambda series = zeta(2s)/zeta(s) (|diff| 5.4e-10 at s=2), no
+  period q<=128; c non-multiplicative (0.500 of coprime relations violated). NOT a foundation, NOT a bound,
+  NOT progress.
+- [L-TRACE-REFORM] (INTRODUCED work/1782888423; DISTILL-ATTACKED work/1782889324 -- PENDING EXPLORE's
+  verdict; reduced to [TRACE-SUFF]+[TRACE-EQUIV]) "C5(x)=O(x^{1/2+eps}) IF there exists a
   family of trace-class operators A_x with trace(A_x)=C5(x) and ||A_x||_1=O(x^{1/2+eps}), evaluated
   STRUCTURALLY (known spectrum / forced degeneration), NOT by resumming Sum c(n). The <== direction is
   RIGOROUS (Lidskii: |trace|<=||.||_1). The naive DIAGONAL realization (operator with diagonal c(n)) has
@@ -378,6 +447,20 @@ CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
   reformulation, ==> DOWNGRADED -- the L-QUB-reform / L-ERG-RIG family. NOT a foundation, NOT a bound,
   NOT progress unless a STRUCTURAL A_x (known spectrum / forced degeneration) is exhibited (this step does
   NOT do this).
+  DISTILL RESULT (work/1782889324): SPLIT into two nodes, each with an adversarial pass PENDING EXPLORE's
+  verdict. [TRACE-SUFF] (<==): confirmed EXACTLY Lidskii (|trace|<=||.||_1; trace=Sum eigenvalues + Weyl
+  majorant; Simon, Trace Ideals 2e, Ch.3), verified numerically (min(||A||_1-|trace|)=0.032 over 2000
+  random matrices) => ESTABLISHED-IN-LITERATURE as an IMPLICATION; a conditional SUFFICIENT condition, NOT
+  a bound on C5. [TRACE-EQUIV] (==> / "equivalence"): scrutinized HARD -- the rank-one A_x=C5(x)(e (x) e)
+  makes bare existence trivially TRUE but is built by RESUMMING Sum c(n) => VIOLATES the "evaluated
+  structurally, not by resumming" clause; DISTILL then computed EXACT singular values of the natural
+  structural builds: the ONLY build with trace=C5 is the diagonal (||.||_1 = x exactly, no savings), and
+  Hankel/Toeplitz builds BOTH raise ||.||_1 (~6979/6540 at m=400) AND lose trace=C5 (they compute a
+  different correlation) => ==> is UNPROVEN under the structural clause (NOT false, NOT a clean
+  equivalence). NET: L-TRACE-REFORM survives ONLY as a one-directional SUFFICIENT condition /
+  equal-hardness reformulation (<== rigorous [TRACE-SUFF]; ==> downgraded [TRACE-EQUIV]) -- the
+  L-QUB-reform / L-ERG-RIG family. DISTILL pre-fill: [TRACE-SUFF] -> ESTABLISHED-IN-LITERATURE;
+  [TRACE-EQUIV] -> OPEN (EXPLORE decides). NOT a bound, NOT a foundation, NOT progress.
 - [L-CYC-SEC] (RESOLVED OUT into the CLAIM GRAPH + GRAVEYARD work/1782174769; INTRODUCED work/1782110302,
   DISTILL-ATTACKED work/1782111292): the secondary/twisted/equivariant disjunction with the INDEPENDENT-
   HANDLE rider. LABELLED: the independent-handle clause [CYC-HANDLE] -> FALSIFIED (GRAVEYARD; concrete
@@ -493,9 +576,13 @@ OPEN THREADS:
       (dodges Trap A but parity-blind/log-not-sign + object-mismatch + archimedean=C-inf). No candidate.
   (h) FROM-SCRATCH L3 construction attempt (A21/T17) — CONSTRUCT (not import) a parity-breaking invariant.
       OUTCOME: did NOT break parity; six constructions collapse (unified L-DDS) + reformulation
-      L-TRACE-REFORM; both PENDING DISTILL. A NEW structural wall-reason (the parity character is the
-      prototype non-descending/non-automorphic character) + a spectral reformulation. NOT progress.
-  RECOMMENDATION (this step, EXPLORE Introduce): send L-DDS and L-TRACE-REFORM to DISTILL. Remaining
+      L-TRACE-REFORM; both DISTILL-ATTACKED work/1782889324 (PENDING EXPLORE's verdict) -- [DDS-CORE]
+      SURVIVED (corroborated a 2nd way via the arithmetic-site-carries-zeta fact), [DDS-ENV] OPEN,
+      [TRACE-SUFF] Lidskii/ESTABLISHED, [TRACE-EQUIV] ==> DOWNGRADED/UNPROVEN. A NEW structural wall-reason
+      (the parity character is the prototype non-descending/non-automorphic character) + a spectral
+      reformulation. NOT progress.
+  RECOMMENDATION (as of the A21 EXPLORE Introduce): send L-DDS and L-TRACE-REFORM to DISTILL [DONE
+  work/1782889324 -- now PENDING EXPLORE's label]. Remaining
       escalations toward C5 otherwise unchanged: a genuinely new cohomological/higher-rank structure over
       Spec Z (C7/C-inf), a major open conjecture; the two A19 stated handles ((1) negate "no third case";
       (2) primary HP*(Q_N) computation); or the two A21 DISTILL cracks ((I) a non-finite/stacky/arithmetic-
@@ -542,20 +629,26 @@ CURRENT POSITION:
   +2 shift is definable only on the ring; no structured theory carries both with a trace, so every attempt
   re-inserts C5 or re-imports RH-strength. The one non-collapse is an equal-hardness spectral
   reformulation whose only rigorous half is the trivial Lidskii bound." CHECKPOINT, NOT exit.
-- ANTI-DECEPTION: NO bound on C5 certified. Both L-DDS and L-TRACE-REFORM are PENDING DISTILL and are NOT
-  legal foundations. L-DDS's rigorous core (C3: lambda not a Dirichlet char => no finite geometric Z/2
-  local system) is textbook CFT; its "never coexist" envelope is HEURISTIC (flagged). L-TRACE-REFORM's
-  <== is Lidskii (textbook); its ==>/"equivalence" is UNPROVEN (flagged, likely no-free-lunch). No
-  citations invented (CFT facts standard; Simon Trace Ideals for Lidskii). C5 irreducibility remains
-  strong evidence, NOT proof.
+- ANTI-DECEPTION: NO bound on C5 certified. Both L-DDS and L-TRACE-REFORM have had their adversarial pass
+  (DISTILL work/1782889324) and are PENDING EXPLORE's verdict; NEITHER is a legal foundation. DISTILL split
+  each into two nodes: [DDS-CORE] (lambda not a finite-order idele-class char => no finite geometric Z/2
+  local system) SURVIVED its attack and was corroborated a 2nd way (Connes-Consani arithmetic-site zeta =
+  Riemann zeta => re-imports Trap A) -- textbook CFT, DISTILL pre-fill NEEDS-REVIEW as a wall-fact tied to
+  OPEN C7; [DDS-ENV] ("never coexist") -- no construction + no impossibility proof => OPEN (NOT
+  NEEDS-REVIEW). [TRACE-SUFF] (<==) = EXACTLY Lidskii, verified => ESTABLISHED (sufficient cond., NOT a
+  bound); [TRACE-EQUIV] (==>) UNPROVEN under the structural clause (rank-one witness RESUMS Sum c; no
+  structural build gives trace=C5 with savings) => OPEN. No citations invented (CFT facts standard; Simon
+  Trace Ideals for Lidskii; arithmetic-site zeta = Connes-Consani arXiv:1405.4527). C5 irreducibility
+  remains strong evidence, NOT proof.
 - Legal foundations UNCHANGED: C1-membership (NEEDS-REVIEW); C2/C3/C4/C6 (ESTABLISHED). C5 NAMED, NOT
   built upon. C7/C-COH-MON/C-inf/L-COH'/L-QUB-reform/L-C3-UNIF/[CYC-PERIODIC] OPEN. SO-L², SO-deavg =
   OPEN obstructions => NOT foundations. ERG-B/ERG-3 = NEEDS-REVIEW supporting facts but NOT foundations
   toward TPC; ERG-1/ERG-2/ERG-NET (L-ERG-RIG) = OPEN; ERG-2R = DISTILLED + LABELLED; L-AFF-GAUGE =
   candidate lemma DISTILL-ATTACKED + LABELLED NEEDS-REVIEW (the A18 wall; NOT a foundation); [CYC-WALL] =
   NEEDS-REVIEW wall-statement (A19; NOT a foundation). [CYC-HANDLE] FALSIFIED -> GRAVEYARD. L-DDS,
-  L-TRACE-REFORM = candidate lemmas PENDING DISTILL (A21; NOT foundations). GRAVEYARD nodes may NOT be
-  built upon.
+  L-TRACE-REFORM = candidate lemmas DISTILL-ATTACKED work/1782889324, PENDING EXPLORE's verdict (A21; each
+  split into [DDS-CORE]/[DDS-ENV] and [TRACE-SUFF]/[TRACE-EQUIV]; NOT foundations). GRAVEYARD nodes may NOT
+  be built upon.
 
 CLAIM GRAPH
 (LEGAL foundations = C1-membership/C2/C3/C4/C6. C5 = named OPEN crux, checkpoint under active
@@ -567,7 +660,8 @@ ax+b candidate lemma DISTILL-ATTACKED work/1781549159, LABELLED NEEDS-REVIEW wor
 wall; NOT a foundation; reduced graph [AFF-1]..[AFF-DISP]; was the launchpad for A19]. [CYC-WALL] =
 the A19 sharpened degree-independent gauge dichotomy, LABELLED NEEDS-REVIEW work/1782174769 [a no-handle
 WALL-STATEMENT; NOT a foundation, NOT a bound, NOT progress]. [CYC-HANDLE] FALSIFIED -> GRAVEYARD.
-L-DDS, L-TRACE-REFORM = A21 candidate lemmas PENDING DISTILL [NOT foundations].):
+L-DDS, L-TRACE-REFORM = A21 candidate lemmas DISTILL-ATTACKED work/1782889324, PENDING EXPLORE's verdict
+[each split into [DDS-CORE]/[DDS-ENV] and [TRACE-SUFF]/[TRACE-EQUIV]; NOT foundations].):
 - [C1] CLASS DEFINITION + MEMBERSHIP. A "Type-I sieve scheme" for F(n)=n(n+2) is a lower bound
   pi_2(x) >= L(a), L a (possibly SIGNED) linear functional of Type-I data {T_d = sum_{n<=x,
   d|F(n)} a_n : d<=D=x^{1-eps}}, Type-I inputs only (BV/EH/GEH/Zhang). MEMBERSHIP: Brun, Selberg,
@@ -733,9 +827,12 @@ L-DDS, L-TRACE-REFORM = A21 candidate lemmas PENDING DISTILL [NOT foundations].)
   Q_N? DISTILL STAGE-1 steelman NO handle; degree-independent collapse; "name, not a handle"; A19 CLOSED.
   DELTA-GEOMETRY AIM (A20; DEAD END): parity-blind (Fermat quotient = p-adic log) + object-mismatch +
   archimedean=C-inf.
-  FROM-SCRATCH L3 AIM (A21; L-DDS + L-TRACE-REFORM PENDING DISTILL): six from-scratch constructions
-  collapse (unified L-DDS: parity character non-descending/non-automorphic, disjoint from where +2 is
-  definable) + one equal-hardness spectral reformulation (L-TRACE-REFORM). Did NOT break parity.
+  FROM-SCRATCH L3 AIM (A21; L-DDS + L-TRACE-REFORM DISTILL-ATTACKED work/1782889324, PENDING EXPLORE's
+  verdict): six from-scratch constructions collapse (unified L-DDS: parity character non-descending/
+  non-automorphic, disjoint from where +2 is definable) + one equal-hardness spectral reformulation
+  (L-TRACE-REFORM). DISTILL: [DDS-CORE] SURVIVED + corroborated a 2nd way (arithmetic-site zeta = Riemann
+  zeta => Trap A); [DDS-ENV] OPEN; [TRACE-SUFF] Lidskii/ESTABLISHED; [TRACE-EQUIV] ==> DOWNGRADED/UNPROVEN.
+  Did NOT break parity.
   CAMPAIGN VERDICT: THREE categorical reframings (relocate/rename/unify) each RE-EXPRESS C5;
   "reframe again" CLOSED. (b2) de-averaging (A15) RE-LOCALIZES the de-averaging face to SO-deavg.
   Ergodic-rigidity (A16) DEFEATED by Sawin's model (PRIMARY-SOURCE-anchored, A17). Affine/ax+b (A18)
@@ -745,7 +842,9 @@ L-DDS, L-TRACE-REFORM = A21 candidate lemmas PENDING DISTILL [NOT foundations].)
   DEAD END (parity-blind/log-not-sign + object-mismatch + archimedean=C-inf). From-scratch L3 (A21) did
   NOT break parity -- six constructions collapse (unified L-DDS: the parity character is the prototype
   non-descending/non-automorphic character) + one equal-hardness spectral reformulation (L-TRACE-REFORM);
-  both PENDING DISTILL. Strong evidence (not proof) that C5 is irreducible, with reasons WHY:
+  both DISTILL-ATTACKED work/1782889324 (PENDING EXPLORE's verdict; [DDS-CORE] SURVIVED + corroborated a
+  2nd way, [DDS-ENV] OPEN, [TRACE-SUFF] Lidskii/ESTABLISHED, [TRACE-EQUIV] ==> UNPROVEN). Strong evidence
+  (not proof) that C5 is irreducible, with reasons WHY:
   >=-RH-geometry (cohomological cluster); non-multiplicativity; U²-control != smallness; the n^{it}-twist
   / every-scale-Fourier-uniformity hardness; Sawin-class-invariance of all available Furstenberg-
   structure/rigidity techniques; the operator-algebraic GAUGE DICHOTOMY, now DEGREE-INDEPENDENT (A18/A19);
@@ -758,8 +857,9 @@ L-DDS, L-TRACE-REFORM = A21 candidate lemmas PENDING DISTILL [NOT foundations].)
   stress-tests 3/4/5 + RV-1/RV-2/RV-3 + Affine/ax+b L-AFF-GAUGE DISTILL (work/1781549159 -- wall HELD)
   + Cyclic-secondary L-CYC-SEC DISTILL (work/1782111292 -- wall HELD, STAGE-1 steelman NO handle,
   degree-independent collapse object) + EXPLORE re-verification (work/1782174769 -- exhaustive
-  enumeration, no third case). [A20 (DEAD END) + A21 (L-DDS/L-TRACE-REFORM PENDING DISTILL) do not change
-  C5's status.] STAYS OPEN.
+  enumeration, no third case) + A21 L-DDS/L-TRACE-REFORM DISTILL (work/1782889324 -- [DDS-CORE] SURVIVED,
+  corroborated a 2nd way; [DDS-ENV] OPEN; [TRACE-SUFF] Lidskii; [TRACE-EQUIV] ==> UNPROVEN). [A20 (DEAD
+  END) + A21 (DISTILL-attacked, PENDING EXPLORE's verdict) do not change C5's status.] STAYS OPEN.
   source: work/1781354707-DISTILL.md + work/1781353616-DISTILL.md + work/1781354180-EXPLORE.md
   + work/1781355529-EXPLORE.md + work/1781356292-DISTILL.md + work/1781356804-EXPLORE.md
   + work/1781388988-EXPLORE.md + work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md
@@ -822,10 +922,16 @@ L-DDS, L-TRACE-REFORM = A21 candidate lemmas PENDING DISTILL [NOT foundations].)
   arXiv:1509.05576; Connes-Consani arXiv:1405.4527 (cited at open-problem level; arXiv 403). NOTE
   (A18 cross-check): the Connes trace formula on the adele CLASS space is = RH (TRAP A); A18's Cuntz
   Q_N deliberately stays OFF this object (finite adeles + discrete u), which is why A18 dodges Trap A.
-  NOTE (A21 cross-check): L-DDS's rigorous C3 core says lambda is not realized by a FINITE GEOMETRIC
-  Z/2 local system; whether the arithmetic site / F_1 geometry (this node) realizes lambda WITHOUT
-  Trap A is exactly one of the two stated L-DDS DISTILL cracks (would puncture L-DDS's rigorous core).
-  ADVERSARIAL PASS: Attacks P1, P4. LABELLED OPEN.
+  NOTE (A21 cross-check): L-DDS's rigorous C3 core (now [DDS-CORE]) says lambda is not realized by a
+  FINITE GEOMETRIC Z/2 local system; whether the arithmetic site / F_1 geometry (this node) realizes lambda
+  WITHOUT Trap A was one of the two stated [DDS-CORE] DISTILL cracks (would puncture the core). DISTILL
+  (work/1782889324) checked this crack: the arithmetic site's Hasse-Weil zeta function IS the complete
+  Riemann zeta (Connes-Consani arXiv:1405.4527), so realizing lambda (Dirichlet series zeta(2s)/zeta(s))
+  on it re-imports zeta(2s)/zeta(s) = Trap A -- i.e. this geometry does NOT dodge Trap A; the crack did NOT
+  puncture [DDS-CORE], it CORROBORATED it. This node stays OPEN (broader than TPC); [DDS-CORE] now leans on
+  the arithmetic-site-carries-zeta fact as a 2nd corroboration.
+  ADVERSARIAL PASS: Attacks P1, P4; + DISTILL work/1782889324 (arithmetic-site crack of [DDS-CORE]).
+  LABELLED OPEN.
   source: work/1781389622-DISTILL.md + work/1781390160-EXPLORE.md.
 - [C-COH-MON] "The geometric monodromy of the Liouville sheaf over Spec Z is big enough to kill
   the top-weight invariants." DEPENDS ON: C7. STATUS: OPEN — and it is C5 RE-EXPRESSED
