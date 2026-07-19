@@ -143,8 +143,10 @@ multiplicative functions do not correlate with their own short-interval averages
 which for $\lambda$ gives cancellation in almost all short intervals
 [Matomäki–Radziwiłł 2016]. Building on this, Tao proved the **logarithmically averaged**
 two-point Chowla estimate, $\sum_{n\le x}\lambda(n)\lambda(n+2)/n=o(\log x)$, by an
-entropy-decrement argument [Tao 2016]; Pilatte later gave a quantitative form
-[Pilatte 2023]. Tao and Teräväinen then analysed correlations at **almost all scales**:
+entropy-decrement argument [Tao 2016] — his theorem is stated for general fixed shifts,
+so it covers shift $2$. Pilatte later gave a quantitative bound of the same shape,
+stated for shift $1$ and expected to extend [Pilatte 2023]. Tao and Teräväinen then
+analysed correlations at **almost all scales**:
 outside a set of scales of logarithmic density zero, a bounded multiplicative
 correlation either vanishes or is asymptotic to a single "pretentious" term, according
 to whether the product of the functions pretends to be a twisted Dirichlet character
@@ -175,7 +177,9 @@ $N=4\times10^6$: the global correlation $|\sum_{n\le x}\lambda(n)\lambda(n+2)|/x
 like $x^{-1/2}$, so cancellation holds *on average*; but the worst residue bucket
 $\max_a |S_{a,d}|/(x/d)$ climbs steadily with $d$, reaching $\approx 0.36$ at
 $d=30030$. Averaged cancellation is a theorem; the uniform-in-$d$ statement is exactly
-what erodes toward the edge, and exactly what $C5$ asserts.
+what erodes toward the edge, and exactly what $C5$ asserts. Uniform-in-progressions and
+local variants of Chowla-type cancellation are themselves an active topic; $C5$ is the
+strongest such form the sieve level $x^{1-\varepsilon}$ demands, not a sui generis object.
 
 ![The crux C5: on-average vs. uniform-in-progressions cancellation](media/fig3-crux-witness.png)
 
@@ -187,15 +191,20 @@ of $C5$ — is what no current method controls.*
 
 ### 2.4 The two obstructions
 
-The paper's diagnosis is stated once here and used throughout. Every reframing that
-fails does so in one of two ways.
+The paper's diagnosis is stated once here and used throughout; the two-trap naming is
+our own organizing device, and the parity obstruction is a heuristic barrier (Selberg's
+principle), not a formal impossibility theorem in the sense of the barriers of
+computational complexity. Every reframing that fails does so in one of two ways.
 
 - **Trap A (geometric, "$\ge$ RH").** The reframing's central object turns out to be
   equivalent to or stronger than the Riemann Hypothesis. This is the situation for
   cohomological transports: a Weil-type cohomology over $\mathrm{Spec}\,\mathbb{Z}$
   would yield RH, and Connes' trace-formula realization of the zeta zeros is equivalent
-  to RH [Connes 1999]. Such an object cannot be a stepping stone to a presumably easier
-  statement.
+  to RH [Connes 1999]. Such a route does not *reduce* the difficulty — its central
+  object is itself a famous open problem. We do not assume $C5$ is easier than RH; the
+  direction of implication between Chowla-type cancellation and RH is open both ways
+  [cf. Moreira 2022]. The point is only that replacing $C5$ by an RH-equivalent object
+  is not progress.
 
 - **Trap B (parity).** The reframing's natural invariant either averages the Liouville
   sign to zero — becoming blind to $\lambda$ — or recovers $\sum\lambda(n)\lambda(n+2)$
@@ -319,15 +328,20 @@ exposition advances at a steady pace and never presupposes what it has not defin
   Tao–Teräväinen give a structural reduction to $c\,d^{-it}\chi(a)$ (not vanishing,
   because $\lambda^2$ is pretentious); the genuine residual (R2) is killing the
   archimedean $n^{it}$ twist at *every* scale = every-scale degree-1 Fourier uniformity;
-  over $dn/n$ the twist is a scaling-flow Kronecker eigenvalue $p^{it}$; the ingredient
-  that would force it to zero is **strong stationarity**, which holds for the logarithmic
-  Furstenberg system but provably fails for the Cesàro one [Frantzikinakis–Lemańczyk–de la
-  Rue 2024]; the ergodic-rigidity import is defeated by Sawin's dynamical models
-  [Sawin 2018], and genuine rigidity cannot bite because the $\times p$ dilations form an
-  affine semigroup, not a higher-rank action; verdict **RE-LOCALIZE**.
+  via the Furstenberg-systems dictionary [Frantzikinakis–Host] the twist over $dn/n$ is a
+  scaling-flow Kronecker eigenvalue $p^{it}$; the ingredient that would force it to zero
+  is **strong stationarity**, which (with trivial rational spectrum) holds for the
+  logarithmic Furstenberg system but provably fails for the Cesàro one — this and the
+  scaling-eigenvalue mechanics are the content of [Frantzikinakis–Lemańczyk–de la Rue
+  2025]; the ergodic-rigidity import is defeated by Sawin's dynamical models [Sawin 2018],
+  and genuine rigidity cannot bite because the $\times p$ dilations form an affine
+  semigroup, not a higher-rank action; verdict **RE-LOCALIZE**.
 - **Reason crystallized:** the correlation-killing step is intrinsically logarithmic.
-- **Force/honesty:** RE-LOCALIZE + correct; the over-claimed equivalence downgraded to a
-  forward implication.
+- **Force/honesty:** RE-LOCALIZE + correct. The log-vs-Cesàro strong-stationarity divide
+  is Frantzikinakis's framing, not new here; the synthesis is its localization as the
+  precise obstruction to *twin-prime* de-averaging. The over-claimed equivalence is
+  downgraded to a forward implication (every-scale degree-1 uniformity $\Rightarrow$
+  Cesàro two-point Chowla), stated as such in the prose, not only here.
 - **Source:** `writeups/2026-06-15-de-averaging…`; `TRACKING.md` [A15], [A16], [A17];
   `work/1781472028`–`1781528204`.
 
@@ -345,7 +359,9 @@ exposition advances at a steady pace and never presupposes what it has not defin
   hit by a new mechanism** — the Liouville flip $s_p\mapsto-s_p$ is an *automorphism*
   (gauge symmetry), so every gauge-invariant functional (canonical trace, KMS state)
   returns the gauge-averaged correlation $=0$ term-by-term ($\lambda$-blind), and the only
-  functional seeing $\sum\lambda(n)\lambda(n+2)$ equals $S(x)/x=C5$ by definition; the
+  functional seeing $\sum\lambda(n)\lambda(n+2)$ equals $S(x)/x=C5$ tautologically —
+  which is exactly why it is no handle; the load-bearing structural step, still to verify,
+  is that the canonical trace and the unique KMS state are themselves gauge-invariant. The
   low-temperature extremal states live on the Toeplitz algebra and inject only
   multiplicative weights, never an additive $+2$ coupling. Companion: Buium's arithmetic
   $\delta$-geometry also dodges Trap A (Diophantine, not RH-calibrated) but is
@@ -353,9 +369,17 @@ exposition advances at a steady pace and never presupposes what it has not defin
   $q_p(ab)=q_p(a)+q_p(b)$ — the dual opposite of $\lambda$'s multiplicative sign.
 - **Reason crystallized:** the Liouville sign is a gauge symmetry; the natural invariants
   are $\lambda$-blind or equal $C5$.
+- **Prior art (must cite):** realizing $\lambda$ as a twisting automorphism of a
+  Bost–Connes-type system is not new — Greenfield–Marcolli–Teh [2014, arXiv:1305.5492]
+  already take the twisting automorphism (and the sign of the Dirac operator) of the
+  Bost–Connes system to be governed by the Liouville/Möbius function. The new part is
+  narrower: carrying this to Cuntz's $Q_{\mathbb{N}}$, where the additive $+2$ generator
+  exists, and using it to test the *two-point correlation*. State the novelty at that
+  narrowed scope only.
 - **Figure:** 2 (these are the right-hand column — Trap A escaped).
 - **Force/honesty:** NEEDS-REVIEW / structural (operator-algebra facts surfaced at the
-  structural level, not fully verified); no bound certified; a map gain, not progress.
+  structural level, not fully verified — e.g. the gauge-invariance of the canonical trace
+  is asserted, not proved); no bound certified; a map gain, not progress.
 - **Source:** `writeups/2026-06-15-affine-dynamics-brief`; `TRACKING.md` [A18], [A19],
   [A20]; `work/1781548132`–`1782174769`, `1782745771`.
 
@@ -366,24 +390,30 @@ exposition advances at a steady pace and never presupposes what it has not defin
   **Introduces:** non-automorphy of $\lambda$ (DDS).
 - **Content (notes only):** the parity character $\lambda$ is **not** a Dirichlet
   character ($\lambda(p)=-1$ for all $p$; Dirichlet series $\zeta(2s)/\zeta(s)$; no
-  period) — it is the prototype non-descending / non-automorphic character on the free
-  divisor group $\bigoplus_p\mathbb{Z}$; hence no finite geometric $\mathbb{Z}/2$ local
-  system realizes it (indeed $\pi_1^{\text{ét}}(\mathrm{Spec}\,\mathbb{Z})=1$ by
-  Minkowski, so none exist), and forcing a geometric realization re-imports
-  $\zeta(2s)/\zeta(s)$ = Trap A; the one $\mathbb{F}_1$-geometry that could carry a parity
-  sheaf, the Connes–Consani arithmetic site, has the complete Riemann $\zeta$ as its own
-  zeta [Connes–Consani 2014], so a $\lambda$-sheaf there again re-imports $\zeta$;
-  meanwhile $+2$ is definable only on the ring, so no traced structure carries both
-  $\lambda$ and the shift. This is the **descent–definability split** (DDS).
+  period) — informally (our term, not standard) the prototype *non-descending /
+  non-automorphic* character on the free divisor group $\bigoplus_p\mathbb{Z}$; hence no
+  finite geometric $\mathbb{Z}/2$ local system realizes it (indeed
+  $\pi_1^{\text{ét}}(\mathrm{Spec}\,\mathbb{Z})=1$ by Minkowski, so none exist), and
+  forcing a finite geometric realization re-imports $\zeta(2s)/\zeta(s)$ = Trap A; the one
+  $\mathbb{F}_1$-geometry that could carry a parity sheaf, the Connes–Consani arithmetic
+  site, has the complete Riemann $\zeta$ as its own zeta [Connes–Consani 2014], so a
+  hypothetical $\lambda$-sheaf there would presumably reintroduce $\zeta$ — heuristic:
+  no such sheaf has been constructed, and the site lives over the Boolean semifield
+  $\mathbb{B}$, a different category from $\ell$-adic sheaves; meanwhile $+2$ is definable
+  only on the ring, so no traced structure carries both $\lambda$ and the shift. This is
+  the **descent–definability split** (DDS).
 - **Reason crystallized:** $\lambda$ is non-automorphic; the only geometry that could hold
   it re-imports RH — so the parity wall and the open $C7$ are the same obstruction from
   two sides.
 - **Force/honesty:** NEEDS-REVIEW as a wall-*fact* about *finite* $\mathbb{Z}/2$ local
   systems; explicitly not a theorem about all realizations (an $\ell$-adic/motivic
   $\lambda$-realization free of $\zeta$-continuation is left open, inside $C7$); not a
-  foundation, not a bound. Note the relation to Sarnak's Möbius-randomness philosophy
-  [Sarnak 2011], which frames the same non-structure *dynamically* rather than via
-  descent — a complementary lens, not a restatement.
+  foundation, not a bound. The arithmetic-site leg is a *separate, weaker* argument —
+  topos-theoretic and heuristic (no $\lambda$-sheaf is exhibited), and is not covered by
+  the finite-local-system wall-fact; carry it under its own hedge. Note the relation to
+  Sarnak's Möbius-randomness philosophy [Sarnak 2011], which frames the same
+  non-structure *dynamically* rather than via descent — a complementary lens, not a
+  restatement.
 - **Source:** `TRACKING.md` [A21], nodes [DDS-CORE], [DDS-ENV], [TRACE-SUFF],
   [TRACE-EQUIV]; `work/1782888423`, `1782889324`, `1782889854`.
 
@@ -451,9 +481,8 @@ wall-facts of §8 and §9 are **needs-review** and are not foundations toward TP
 
 ## References
 
-*(As collated and cross-checked in the source writeups; arXiv identifiers should be
-re-verified against the primary sources at finalization. Two load-bearing entries —
-Tao–Teräväinen 2019 and Sawin–Shusterman 2022 — were confirmed directly.)*
+*(Checked against primary sources in a verification pass; corrections from that pass are
+folded in. Any remaining arXiv identifier should still be confirmed at final submission.)*
 
 - J. R. Chen, *On the representation of a larger even integer as the sum of a prime and
   the product of at most two primes*, Sci. Sinica 16 (1973).
@@ -462,7 +491,9 @@ Tao–Teräväinen 2019 and Sawin–Shusterman 2022 — were confirmed directly.
 - J. Maynard, *Small gaps between primes*, Ann. of Math. 181 (2015).
 - D. H. J. Polymath, *Variants of the Selberg sieve, and bounded intervals containing many
   primes*, Res. Math. Sci. 1 (2014), arXiv:1407.4897.
-- A. Selberg, *On an elementary method in the theory of primes* (1949); Collected Papers.
+- A. Selberg, *On elementary problems in prime number theory and their limitations*, Proc.
+  11th Scand. Math. Congr., Trondheim (1949); Collected Papers, Vol. I (Springer, 1989).
+  (Source of the parity principle; see Tao 2007 for a modern account.)
 - T. Tao, *Open question: the parity problem in sieve theory*, blog, 2007.
 - J. Friedlander, H. Iwaniec, *The polynomial $X^2+Y^4$ captures its primes*, Ann. of
   Math. 148 (1998); *Opera de Cribro*, AMS Colloq. Publ. 57 (2010).
@@ -486,8 +517,9 @@ Tao–Teräväinen 2019 and Sawin–Shusterman 2022 — were confirmed directly.
 - N. Frantzikinakis, B. Host, *The logarithmic Sarnak conjecture for ergodic weights*,
   arXiv:1708.00677; *Furstenberg systems of bounded multiplicative functions…*,
   arXiv:1804.08556.
-- N. Frantzikinakis, M. Lemańczyk, T. de la Rue, *(strong stationarity: logarithmic vs.
-  Cesàro)*, ETDS (2024), arXiv:2304.03121.
+- N. Frantzikinakis, M. Lemańczyk, T. de la Rue, *Furstenberg systems of pretentious and
+  MRT multiplicative functions*, Ergodic Theory Dynam. Systems 45(9) (2025), 2765–2844,
+  arXiv:2304.03121. (Strong stationarity for the logarithmic system; failure at Cesàro.)
 - W. Sawin, *Dynamical models for Liouville and obstructions to further progress on sign
   patterns*, arXiv:1809.03280.
 - W. Sawin, M. Shusterman, *On the Chowla and twin primes conjectures over
@@ -495,13 +527,19 @@ Tao–Teräväinen 2019 and Sawin–Shusterman 2022 — were confirmed directly.
 - P. Deligne, *La conjecture de Weil II*, Publ. IHÉS 52 (1980); N. Katz, *L-functions and
   Monodromy*.
 - A. Connes, *Trace formula in noncommutative geometry and the zeros of the Riemann zeta
-  function*, Selecta Math. 5 (1999); A. Connes, C. Consani, *The Arithmetic Site*,
-  arXiv:1405.4527; *The Scaling Site*, arXiv:1603.03191.
+  function*, Selecta Math. 5 (1999), arXiv:math/9811068; A. Connes, C. Consani, *The
+  Arithmetic Site*, arXiv:1405.4527; *The Scaling Site*, arXiv:1603.03191.
 - J. Cuntz, *C\*-algebras associated with the $ax+b$-semigroup over $\mathbb{N}$*,
   arXiv:math/0611541; J. Cuntz, X. Li, arXiv:0906.4903; M. Laca, I. Raeburn, *Phase
   transition on the Toeplitz algebra of the affine semigroup over $\mathbb{N}$*,
-  arXiv:0907.3760.
+  arXiv:0907.3760. (Laca–Raeburn's transition sits at $\beta=2$; the pole of $\zeta$
+  that carries no zero-data is the $\beta=1$ transition of the Bost–Connes system.)
+- D. Greenfield, M. Marcolli, K. Teh, arXiv:1305.5492 — the Liouville/Möbius function as
+  the twisting automorphism (and sign of the Dirac operator) of the Bost–Connes system.
 - A. Buium, *Arithmetic differential equations*, AMS Math. Surveys Monogr. 118 (2005).
 - P. Sarnak, *Möbius randomness and dynamics*, Not. S. Afr. Math. Soc. (2011).
+- J. Moreira, *Chowla's conjecture and the Riemann hypothesis via the Liouville function*,
+  expository note (2022). (On the open, bidirectional relationship between Chowla-type
+  cancellation and RH.)
 - J. D. Hamkins, *Is the twin prime conjecture independent of Peano Arithmetic?* (2021),
   arXiv:2110.08640.
