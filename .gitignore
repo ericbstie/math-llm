@@ -1,0 +1,3 @@
+# Transient git worktrees created by background agents (Agent isolation: "worktree").
+# These are throwaway checkouts (auto-cleaned when the agent finishes) and must never be tracked.
+.claude/worktrees/

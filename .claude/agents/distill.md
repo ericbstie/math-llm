@@ -93,9 +93,12 @@ ADVERSARIAL PASS line and hand back.
 - If your attack finds a concrete counterexample, surface it plainly — that is the
   most valuable thing you can produce, even (especially) for a result the project is
   attached to.
-- Expect that the difficulty bottoms out at **one sharp OPEN claim** — for twin primes
-  almost certainly the parity obstruction. Stating that crux precisely is success, not
-  failure; do not manufacture a NEEDS-REVIEW to avoid it.
+- The difficulty may bottom out at **one sharp OPEN claim** — for twin primes the
+  parity obstruction. State that crux precisely, but it is a **checkpoint, not a
+  terminal state**: also identify what would **break or escalate** it (e.g. the missing
+  cohomological input a cross-domain reframing would need). Do not manufacture a
+  NEEDS-REVIEW to dress up an unbroken obstruction, and do not treat stating it as an
+  exit.
 
 ## File + git protocol (do this to end your step)
 

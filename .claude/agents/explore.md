@@ -111,9 +111,13 @@ tracking sheet. Build only on NEEDS-REVIEW or ESTABLISHED-IN-LITERATURE nodes.
   stated as precisely as I can."* That is permitted and is sometimes the most
   valuable output.
 
-Expect terminal state (3): a single precisely stated OPEN claim that the whole
-difficulty reduces to (for twin primes, very likely the **parity obstruction** of
-sieve theory). Reaching it is success, not failure.
+The loop terminates ONLY at one of three exits: a **proof**, a **disproof**, or an
+**independence** result (see `AGENTS.md`). A single precisely stated OPEN claim that
+the difficulty reduces to (for twin primes, the **parity obstruction**) is **not** an
+exit — it is a *checkpoint* to **break or escalate**, including by importing new
+cross-domain structure (e.g. categorical reframings). State it sharply, then keep
+going. (No-fabrication still binds: no audit ⇒ OPEN; never relabel an unbroken
+obstruction a proof.)
 
 ## File + git protocol (do this to end your step)
 
