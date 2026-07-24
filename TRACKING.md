@@ -11,7 +11,35 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1782889854-EXPLORE.md` — **LABEL of the A21 DISTILL (four nodes) + Review (PAUSE).**
+**Latest step:** `work/1784931971-DISTILL.md` — **DISTILL adversarial pass on A22 (`L-PIGEON`, `L-SPEC`).**
+A22 ("SPECIFICITY / LARGENESS-HIERARCHY NO-GO") was handed to DISTILL directly by the orchestrator (no
+`work/*-EXPLORE.md` for A22 exists; the lemmas were attacked as stated). A22 does NOT attack C5; it claimed a
+SECOND obstruction axis "orthogonal to parity". **THE ATTACK FOUND TWO CONCRETE COUNTEREXAMPLES AND ONE
+NON-REPRODUCIBLE AUDIT NUMBER.** (1) **`L-SPEC(d)` counterexampled:** the additive **IP_N^\*** hierarchy — the
+one Goswami's Thm 1.10 is literally climbing ("there exists N such that POL is IP_N^⋆") — is **NOT finitely
+stable**, and its bottom rung **implies TPC**: `FS(1,2)={1,2,3}` and `FS(2,3)={2,3,5}` have `2` as their UNIQUE
+even element, and `D ⊆ 2N`, so **`D ∈ IP_2^*` ⟹ `2 ∈ D` ⟹ TPC** (verified: `2N` is IP_2^\*, `2N\{2}` has 30
+violations). Second, independent counterexample: **bounded gaps** `D ∩ [1,246] ≠ ∅` (the "Bounded Gap
+Conjecture" half of the very Pintz paper cited) is not finitely stable and sharpens to TPC at `C=3`. So *"the
+largeness program … provably cannot reach TPC however far it is extended"* is **FALSE as worded**. (2)
+**`L-SPEC(e)` ("Trap C") counterexampled:** "A is infinite" IS finitely stable and "`T₂={p : p,p+2 prime}` is
+infinite" **is TPC** — the no-go constrains only WHICH SET one proves largeness of, not proof inputs; plus zero
+selection power (every shift-2-mentioning statement passes), and C5's sufficiency is OPEN per this sheet, so
+"Trap C explains why C5 is the right crux" is an **unearned narrative**. (3) **`L-PIGEON`'s audit number
+`min α/k = 0.8857` is not reproducible** (re-run of the stated sweep gives min **0.55**; the 105-tuple gives
+84/105 = **0.80**), and explicit admissible tuples `H={iM, iM+2}`, `M = ∏_{p≤k}p`, achieve **α/k = 1/2
+EXACTLY** — so the true infimum over admissible tuples is 1/2, attained. (4) **`L-PIGEON`'s "can NEVER force
+gap 2" is FALSE as an absolute:** `k=2`, `H={0,2}` admissible gives `α=1 < 2=m`, i.e. `DHL[2,2]` = TPC; the
+route is barred only by the sieve's cap on `m`, the parity-limited quantity ⇒ **orthogonality to parity is
+unearned**. **WHAT SURVIVES:** the graph core (i)(ii)(iii), the duality lemma (two repairs: upward closure is
+a missing hypothesis of the "iff"; partition regularity is over-powered — shift-robustness suffices), all
+seven finite-stability verifications (incl. a genuine **repair for multiplicatively syndetic**: the witness set
+`F` really does break, and `F''=2^{k₀}F` with `2^{k₀}>max E` fixes it), and a re-scoped no-go that is TRUE but
+a **one-line definitional triviality**. Nine-node reduced graph handed back: `[PIG-GRAPH]`, `[PIG-TIGHT]`,
+`[PIG-SHAPE]`, `[PIG-CAP]`, `[PIG-NEVER]`, `[SPEC-DUAL]`, `[SPEC-STABLE]`, `[SPEC-NOGO]`, `[SPEC-HIER]`,
+`[SPEC-TRAPC]` — **awaiting EXPLORE's labels.** C5 UNTOUCHED; legal foundations UNCHANGED.
+
+**Prior step:** `work/1782889854-EXPLORE.md` — **LABEL of the A21 DISTILL (four nodes) + Review (PAUSE).**
 First act = **labelling** the four nodes from `work/1782889324-DISTILL.md` (the split of `L-DDS` and
 `L-TRACE-REFORM`), **independently re-verified** (NOT rubber-stamped): re-ran the DDS-CORE computations
 (λ's Dirichlet series `= ζ(2s)/ζ(s)` to `5.4e−10` at s=2, exact at s=3; `λ(p)=−1` for all 22 primes p<80;
@@ -291,8 +319,54 @@ APPROACHES ATTEMPTED:
   falsify DDS-ENV by constructing a traced theory carrying both eps and +2; (3) settle TRACE-EQUIV via a
   structural A_x with known spectrum (would give a bound). C5 stays OPEN/named; legal foundations UNCHANGED.
 
+- [A22] SPECIFICITY / LARGENESS-HIERARCHY NO-GO -- a claimed SECOND obstruction axis "orthogonal to parity"
+  (does NOT attack C5) | DISTILL-ATTACKED work/1784931971; AWAITING EXPLORE LABELS | orchestrator-supplied
+  (no work/*-EXPLORE.md for A22 exists; the two candidate lemmas were attacked as stated). TWO LEMMAS:
+  [L-PIGEON] (shift-graph independence bound on the Maynard-Tao pigeonhole route) and [L-SPEC] (finite
+  stability of largeness families => "no largeness theorem about the de Polignac set D can imply 2 in D";
+  proposed node "Trap C"). DISTILL RESULT: TWO CONCRETE COUNTEREXAMPLES + one non-reproducible audit number.
+  (1) L-SPEC(d) COUNTEREXAMPLED by the literature's OWN hierarchy: additive IP_N^* is NOT finitely stable
+  (2N is IP_2^*, 2N\{2} is not -- FS(1,2)={1,2,3}, FS(2,3)={2,3,5} have 2 as UNIQUE even element), Goswami
+  Thm 1.10 is literally "there exists N such that POL is IP_N^*", and since D subset 2N, "D is IP_2^*" =>
+  2 in D => TPC. Second counterexample: bounded gaps D cap [1,246] != empty (the Bounded-Gap half of the
+  cited Pintz paper) is not finitely stable and sharpens to TPC at C=3. (2) L-SPEC(e)/"Trap C"
+  COUNTEREXAMPLED: "A is infinite" IS finitely stable and "T_2={p: p,p+2 prime} is infinite" IS TPC =>
+  the no-go constrains only WHICH SET one proves largeness of, not proof inputs; zero selection power
+  (every shift-2-mentioning statement passes); C5 sufficiency OPEN => "explains why C5 is the right crux"
+  UNEARNED. (3) L-PIGEON's "min alpha/k = 0.8857" NOT reproducible (stated sweep re-run gives min 0.55;
+  105-tuple = 84/105 = 0.80) and admissible H={iM,iM+2}, M=prod_{p<=k}p, attains alpha/k = 1/2 EXACTLY.
+  (4) L-PIGEON's "can NEVER force gap 2" FALSE as an absolute: k=2, H={0,2} gives alpha=1<2=m, i.e.
+  DHL[2,2] = TPC; the binding constraint is the sieve's cap on m (M_k <= (k/(k-1))log k, Polymath8b,
+  SECONDARY SOURCE / OPEN-CAPPED) = the parity-limited quantity => ORTHOGONALITY TO PARITY UNEARNED; also
+  "Maynard requires k >> m^2 e^{4m}" is a CONFLATION (that is the construction's sufficient choice, verified
+  verbatim in Ann. of Math. 181 (2015)/arXiv:1311.4600 Thm 1.1, NOT a cap on the method). SURVIVORS: the
+  graph core (disjoint union of paths; alpha >= ceil(k/2); admissible 2-chains of length 3 impossible mod 3
+  -- all verified), the duality lemma (2 repairs: upward closure is a missing hypothesis of the "iff";
+  partition regularity is over-powered, shift-robustness suffices), ALL SEVEN finite-stability checks
+  (IP*, Delta*, central*, syndetic, piecewise syndetic, multiplicatively syndetic [genuine REPAIR:
+  F''=2^{k0}F], positive upper Banach density) plus four extra STEELMEN that failed to break it (sets of
+  recurrence; "meets mZ for every m"; IP/Delta/central; "A-A ∋ 2 i.o."), and a re-scoped no-go that is TRUE
+  but a ONE-LINE DEFINITIONAL TRIVIALITY. NOVELTY NOT ESTABLISHED (no citation found; both cited papers
+  state their theorems in "infinitely many" form, which makes finite stability visible on the face of the
+  statement). NOT progress, NOT a bound, NOT a foundation; C5 UNTOUCHED.
+
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- (none pending) — L-DDS and L-TRACE-REFORM (A21) have been DISTILL-ATTACKED (work/1782889324) and
+- [L-PIGEON] + [L-SPEC] (A22) — **DISTILL-ATTACKED work/1784931971; AWAITING EXPLORE'S LABELS.** Reduced to
+  TEN atomic nodes with pre-filled recommendations (EXPLORE decides): [PIG-GRAPH] (recommend ESTABLISHED/
+  NEEDS-REVIEW — elementary, fully verified), [PIG-TIGHT] (recommend FALSIFIED — the 0.8857 empirical claim;
+  concrete admissible tuples attain alpha/k = 1/2), [PIG-SHAPE] (recommend NEEDS-REVIEW AS SCOPED — a
+  statement about ONE black-box deduction shape; a quantification of the already-recorded [A6]), [PIG-CAP]
+  (recommend NEEDS-REVIEW for the CORRECTED version; the as-stated version is a conflation; the M_k bound is
+  OPEN-CAPPED/secondary-source), [PIG-NEVER] (recommend FALSIFIED — k=2 counterexample; orthogonality-to-
+  parity unearned), [SPEC-DUAL] (recommend NEEDS-REVIEW + 2 repairs), [SPEC-STABLE] (recommend NEEDS-REVIEW —
+  nothing failed; mult-syndetic repair verified), [SPEC-NOGO] (recommend NEEDS-REVIEW as a TRIVIAL scoping
+  remark, NOT a theorem/foundation/bound), [SPEC-HIER] (recommend FALSIFIED — two literature-native
+  counterexamples), [SPEC-TRAPC] (recommend FALSIFIED — do NOT open a "Trap C" node; must NOT be used as
+  support for C5). OPEN-CAPPED items: Pintz arXiv:1305.6289 theorem statements (PDF unreadable here);
+  Polymath8b M_k <= (k/(k-1))log k + the DHL/EH[theta] criterion (secondary source only); the additive-vs-
+  multiplicative reading of Goswami Thm 1.10 (resolved BY COMPUTATION — no subset of 2N can be multiplicative
+  IP_N^*, since all-odd FP sets exist — not by reading the proof).
+- (none other pending) — L-DDS and L-TRACE-REFORM (A21) have been DISTILL-ATTACKED (work/1782889324) and
   LABELLED (work/1782889854): RESOLVED OUT into the CLAIM GRAPH + OPEN-CHECKPOINTS as four nodes
   ([DDS-CORE] NEEDS-REVIEW; [TRACE-SUFF] ESTABLISHED; [DDS-ENV] + [TRACE-EQUIV] OPEN). No candidate lemma
   is currently pending DISTILL.
@@ -408,6 +482,18 @@ OPEN THREADS:
   (= progress on C7); (2) falsify DDS-ENV by constructing a traced theory carrying both eps and +2;
   (3) settle TRACE-EQUIV via a structural A_x with known spectrum (would give a bound). A21 CLOSED as a
   source of progress. NOT progress, NOT a bound, NOT a foundation. C5 stays OPEN/named.
+- T18 [SPECIFICITY / LARGENESS-HIERARCHY thread, A22 — candidate lemmas L-PIGEON + L-SPEC DISTILL-ATTACKED
+  work/1784931971; AWAITING EXPLORE LABELS]: the claim that there is a SECOND obstruction axis, orthogonal
+  to parity, blocking (a) the Maynard-Tao pigeonhole route to gap 2 and (b) the whole Ramsey/largeness
+  program on the de Polignac set D. DISTILL RESULT: the axis is NOT established. Both headline claims were
+  COUNTEREXAMPLED (IP_2^* / bounded gaps for L-SPEC(d); "A is infinite" applied to T_2 for L-SPEC(e)/Trap C;
+  k=2, H={0,2} for L-PIGEON's "NEVER"), the reported audit number 0.8857 is not reproducible (true infimum
+  of alpha/k over admissible tuples = 1/2, ATTAINED by an explicit primorial-spaced construction), and the
+  binding constraint of L-PIGEON is the sieve's cap on m (parity-limited), so the claimed ORTHOGONALITY TO
+  PARITY has no audit. What survives is a methodological note about the largeness literature (finite
+  stability of seven properties, verified, with a genuine repair for multiplicative syndeticity) plus a
+  TRUE-BUT-TRIVIAL re-scoped no-go. NOT progress on C5; C5 UNTOUCHED. Trap C must NOT be used as support
+  for C5.
 - T13 [the post-campaign redirection]: three reframings CLOSED the "reframe again" strategy. Live:
   (a) [RULED OUT] a fourth categorical/cohomological IMPORT (foreign cohomology mapped onto C5).
       NOTE: A19 was NOT this -- it built on the project's OWN A18 result. A21 was NOT an import either --
@@ -444,7 +530,29 @@ OPEN THREADS:
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. LATEST STEP = A21 LABEL + Review (work/1782889854): the A21 DISTILL pass
+- NOT at a terminal state. LATEST STEP = **A22 DISTILL (work/1784931971)** — an adversarial pass on the two
+  A22 candidate lemmas (L-PIGEON, L-SPEC). **NEXT REQUIRED ACTION: EXPLORE must LABEL the ten nodes**
+  ([PIG-GRAPH], [PIG-TIGHT], [PIG-SHAPE], [PIG-CAP], [PIG-NEVER], [SPEC-DUAL], [SPEC-STABLE], [SPEC-NOGO],
+  [SPEC-HIER], [SPEC-TRAPC]) before taking any other action. DISTILL pre-fills are RECOMMENDATIONS only.
+- A22 HEADLINE (this pass): the claimed "second obstruction axis orthogonal to parity" is NOT established.
+  TWO CONCRETE COUNTEREXAMPLES: (i) additive IP_2^* — a rung of the very hierarchy Goswami's Thm 1.10 climbs
+  — is NOT finitely stable, and since D subset 2N with FS(1,2)={1,2,3}/FS(2,3)={2,3,5} having 2 as unique
+  even element, "D is IP_2^*" IMPLIES TPC (so "largeness provably cannot reach TPC however far extended" is
+  FALSE; bounded gaps D cap [1,246] != empty is a second, independent counterexample); (ii) "A is infinite"
+  is finitely stable and "T_2={p : p,p+2 prime} is infinite" IS TPC, refuting the "Trap C" slogan. PLUS: the
+  0.8857 audit number is not reproducible (min 0.55 on the stated sweep; alpha/k = 1/2 attained on explicit
+  admissible tuples), and "can NEVER force gap 2" is false at k=2 (H={0,2} => DHL[2,2] = TPC), which shows
+  the binding constraint is the parity-limited cap on m, NOT a new axis.
+- A22 SURVIVORS (for EXPLORE to label): the elementary graph core; the duality lemma with two repairs; and
+  all seven finite-stability verifications (four extra steelmen also failed to break them). NET: a
+  methodological note about the Ramsey/largeness literature + a true-but-trivial re-scoped no-go. **NOT
+  progress, NOT a bound, NOT a foundation. C5 is UNTOUCHED and [SPEC-TRAPC] must NOT be used to support C5.**
+- NOVELTY of A22 NOT ESTABLISHED (no citation located; absence of a found citation is not novelty).
+- OPEN-CAPPED this pass (do NOT upgrade without a human check): Pintz arXiv:1305.6289 theorem statements
+  (PDF would not render); Polymath8b M_k <= (k/(k-1))log k and the DHL[k,m+1]/EH[theta] criterion (Polymath
+  wiki = SECONDARY SOURCE ONLY; arXiv:1407.4897 PDF would not render); the additive-vs-multiplicative reading
+  of Goswami Thm 1.10 (disambiguated BY COMPUTATION, not by reading the proof).
+- PRIOR STEP = A21 LABEL + Review (work/1782889854): the A21 DISTILL pass
   (work/1782889324) that split L-DDS and L-TRACE-REFORM into four nodes has now been LABELLED (first act,
   independently re-verified -- not rubber-stamped) and Reviewed. VERDICT: the from-scratch (L3) attempt did
   NOT break parity and is CLOSED as a source of progress.
