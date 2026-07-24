@@ -12,8 +12,9 @@ Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoin
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
 **Latest step:** `work/1784931971-DISTILL.md` — **DISTILL adversarial pass on A22 (`L-PIGEON`, `L-SPEC`).**
-A22 ("SPECIFICITY / LARGENESS-HIERARCHY NO-GO") was handed to DISTILL directly by the orchestrator (no
-`work/*-EXPLORE.md` for A22 exists; the lemmas were attacked as stated). A22 does NOT attack C5; it claimed a
+A22 ("SPECIFICITY / LARGENESS-HIERARCHY NO-GO") was handed to DISTILL directly by the orchestrator; at the
+human's direction the pass ran CONCURRENTLY with the authoring of the EXPLORE step, so DISTILL commits FIRST
+and the proposal record is `work/1784931200-EXPLORE.md` (committed after, carrying a status banner). A22 does NOT attack C5; it claimed a
 SECOND obstruction axis "orthogonal to parity". **THE ATTACK FOUND TWO CONCRETE COUNTEREXAMPLES AND ONE
 NON-REPRODUCIBLE AUDIT NUMBER.** (1) **`L-SPEC(d)` counterexampled:** the additive **IP_N^\*** hierarchy — the
 one Goswami's Thm 1.10 is literally climbing ("there exists N such that POL is IP_N^⋆") — is **NOT finitely
@@ -321,7 +322,8 @@ APPROACHES ATTEMPTED:
 
 - [A22] SPECIFICITY / LARGENESS-HIERARCHY NO-GO -- a claimed SECOND obstruction axis "orthogonal to parity"
   (does NOT attack C5) | DISTILL-ATTACKED work/1784931971; AWAITING EXPLORE LABELS | orchestrator-supplied
-  (no work/*-EXPLORE.md for A22 exists; the two candidate lemmas were attacked as stated). TWO LEMMAS:
+  (orchestrator-authored EXPLORE proposal = work/1784931200-EXPLORE.md, committed AFTER the DISTILL pass
+  because the human directed the two to run concurrently; the two candidate lemmas were attacked as stated). TWO LEMMAS:
   [L-PIGEON] (shift-graph independence bound on the Maynard-Tao pigeonhole route) and [L-SPEC] (finite
   stability of largeness families => "no largeness theorem about the de Polignac set D can imply 2 in D";
   proposed node "Trap C"). DISTILL RESULT: TWO CONCRETE COUNTEREXAMPLES + one non-reproducible audit number.
