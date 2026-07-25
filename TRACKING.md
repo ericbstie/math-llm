@@ -11,6 +11,58 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
+---
+
+## EXTERNAL-VALUE AUDIT (orchestrator annotation, human-directed — NOT a research step)
+
+Question put by the human: *is anything found here genuinely useful to the research field?*
+Answer recorded honestly, against the same anti-deception rule that governs node labelling.
+
+**As new mathematics: NO.** Nothing produced in this campaign is a result the field needs.
+Every candidate has been checked and falls into one of three classes:
+
+1. **Folklore.** [G6] (the odd-class bound) and [E4] (the liminf cap δ\* ≤ σ/2) are each two-to-four
+   lines from a published corollary. Both were literature-searched, both were **explicitly flagged
+   NO NOVELTY CLAIMED** by the steps that produced them, and neither was located in print — which is
+   what "obvious to specialists, so nobody wrote it down" looks like. Not a contribution.
+2. **Limitation results about a method.** [E5], [L-REACH-BDRY], [D-SINGLE], [EXP-CONF] map how far
+   MR-Corollary-3-style counting reaches. These re-derive boundaries specialists already work within.
+   They are the *opposite* of progress on C5 and are labelled as such throughout.
+3. **Corrections to this project's own errors.** SO-L²'s false "no advantage"; the room table plotting
+   the Chowla heuristic instead of MR's δ; the 3×-loose δ threshold; the defective V13 table; the
+   Pilatte misattribution. Internal hygiene, zero external value.
+
+**Marginally citable, at footnote weight (2 items, both bookkeeping not mathematics):**
+- **MR's δ is effective-in-principle; MRT's is not.** MRT Remark 1.7 concedes ineffectivity (Banach
+  limits); MR's Cor-3 route invokes only Thm 1/Thm 2 + the sieve fundamental lemma (keyword scan:
+  `Banach 0, Siegel 0, ineffective 0, GRH 0, EH 0`). The concession does **not** transfer between the
+  two papers. With Thm 1's printed C′=20000 the chain gives δ ∈ [10^(−10^7.34), 10^(−10^6.75)] — still
+  uncertified (a second absolute constant C in Thm 1 is untracked). Useful only to someone extracting
+  explicit constants from MR.
+- **The [DELTA-UPPER] trichotomy.** That an upper bound on sign-change density is a one-sided *lower*
+  bound on a two-point correlation — so the whole MR/MRT family produces the opposite object, and only
+  log-averaged Chowla produces this one — is a clean statement of why the two literatures do not meet.
+  With the two refuting objects (χ₋₄·1_odds, χ₃·1_{3∤n}, attaining δ = σ = twice the ceiling).
+
+**The genuinely transferable findings are about RESEARCH PROCESS, not number theory:**
+- **The survey gap.** 21 approaches of exotic imports (categorical, ergodic, operator-algebraic,
+  δ-geometric) ran before anyone grepped for the analytic literature holding the record on the crux.
+  `grep -ric helfgott` over the whole repo returned **0 across 20 files**. The cheapest check was the
+  one never run.
+- **[ACCESS-RULE].** Nodes across A18/A19/A20/C7/C-inf/[CYC-PERIODIC] were capped as "PDF 403" and
+  *reasoned around* for many steps. `curl -sSL https://arxiv.org/e-print/<id> | tar xz` returns 200 for
+  every one of them. An accepted access limit silently became a mathematical conclusion.
+- **The adversarial split did its job, and is auditable.** Each pass broke its predecessor's
+  load-bearing claim ("iff d|h" → h/D-invariance → move-set non-exhaustiveness → boundary fact); three
+  labelling steps overrode the attacker with concrete objects; one falsifying counterexample was found
+  **already printed in the prior step's own table**, unexamined. No unbroken obstruction was ever
+  relabelled progress.
+
+**Bottom line for a reader deciding whether to spend time here: read `AGENTS.md` and the
+EXPLORE/DISTILL loop as a methodology; do not expect a theorem. C5 is untouched.**
+
+---
+
 **Latest step:** `work/1785000329-EXPLORE.md` (A28) — **LABELLING of [E1]–[E11] and
 [L-REACH-BDRY](a)–(e), then the named action APPLY.**
 
