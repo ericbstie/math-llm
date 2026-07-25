@@ -11,20 +11,74 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1784938438-EXPLORE.md` — **A23 (Introduce): the (z,w)-deformation.** Criteria declared
+**Latest step:** `work/1784939905-DISTILL.md` — **DISTILL adversarial pass on A23 (`L-SS-ORIGIN`) — verdict
+recommended: RENAME, not handle.** Everything re-derived from scratch (nothing taken from the EXPLORE file).
+**THE MATHEMATICS OF `L-SS-ORIGIN` SURVIVED EVERY ATTACK; THE HEADLINE CONSEQUENCE DID NOT.**
+**(1) Reproduction / second-`p=2`-bug hunt: NO SECOND BUG.** Independent re-derivation of the local data
+(odd p: `A_p=(1-2/p)+(1-1/p)[(1-1/p)^{-z}+(1-1/p)^{-w}-2]`; `p=2`: `A_2 = 1/2 + z(2^w-1-w/2)/2 + w(2^z-1-z/2)/2`,
+with the `n≡2 mod 4` branch re-done by hand — density`{n≡2(4), v_2(n+2)=b} = 2^{-b-1}`), symbolic agreement with
+the direct series through `q^12`, and BRUTE-FORCE local averages over `n<2^18`/`n<3^11` matching at 7 points.
+NEW exact check A23 lacked: **`sigma_p(z,1)=1` and `sigma_2(z,1)=1` symbolically, so `S(z,1)≡1` for ALL z**.
+`S(0,0)` verified **symbolically** (`sigma_p(0,0)=1-1/(p-1)^2`, `sigma_2(0,0)=2`) and numerically to **8.5e-27**
+against mpmath's independent `Pi_2`; `S(2,2)=9/pi^2` to 3e-38; A23's whole table reproduced to ~3e-7.
+**ONE CONCRETE AUDIT DEFECT FOUND:** A23's `rel diff = 2.819e-13` is a **self-comparison** — its printed
+`2*Pi_2 (HL) = 1.3203238194` is wrong at the 7th decimal (true `1.3203236317`), off by exactly its own
+truncation error (rel 1.42e-7). Both sides were the same truncated Euler product. **The claim is TRUE; the
+audit as presented does not establish it** (must rest on the symbolic identity).
+**(2) Normalisation attacks BOTH FAILED** (so the core is stronger, not weaker): no `log log x` contamination
+(`d/dz d/dw [S·(log x)^{z+w}/(Gamma(z)Gamma(w))]_(0,0) = S(0,0)` exactly, sympy — though the cancellation is
+SPECIAL TO THE ORIGIN: with only one `1/Gamma` vanishing sympy returns `L*a+c`); and the product-of-means
+convention is empirically right at non-integer points (sieve to 4e6; `x*T/(M_z M_w)` Richardson-extrapolates
+to `S(z,w)` to 0.1–1% at `(2,2),(1.5,1.5),(0.5,0.5),(0.25,0.25),(3,1),(0.5,1.5)`).
+**(3) THE CONSEQUENCE IS DEFEATED — three concrete defeaters.** (i) **`S_h(0,0) = HL 𝔖(h)` for EVERY shift h**
+(verified h=1,2,3,4,6,8,10,12,30,210, incl. 0 for odd h): the identity is a restatement of `d_0=1_{n=1}` and says
+nothing about the shift 2 — two Euler products agree **because they are the same Euler product**. (ii) At the
+origin the main term is **identically 0**, and so is `T(x;0,0)`; `T(x;0,w)=w` is constant, so A23's entire `z=0`
+table column is coefficients of an identically-zero main term. (iii) **Definitional collapse:** the main term is
+a function of the local densities ALONE, and Selberg's parity principle IS the statement that local densities do
+not determine the prime count ⇒ *"parity is not in the main term"* ≡ *"parity is not in the local densities"* ≡
+the parity principle itself. Parity-blindness confirmed directly (`d_z = z^{omega}` on squarefrees; `lambda`
+corresponds to the reflection `(z,w)->(-z,-w)`, with NO functional equation linking the branches).
+**(4) mu/lambda gap CONFIRMED REAL.** `d_{-1}=mu` verified; `lambda != d_z` (separating object `n=4`).
+**Ramaré, LNM 2213 (2018), Theorem 1 (primary PDF read):** Conj1(λ)⇒Conj3(μ)⇒Conj5⇒Conj1, i.e. equivalence only
+of the **FULLY QUANTIFIED families** over all tuples of linear forms (proof runs via `λ = 1_sq * μ` and μ-sums in
+progressions); no single-instance implication, and Ramaré notes the fixed-modulus loop does not close. `C5` is
+stronger than every conjecture in that list ⇒ **A23 gains NO link to C5.**
+**(5) NOVELTY: A23's abstention is CORRECT, not excessive.** Verified: Drappeau–Topacogullari ANT 13 (2019)
+2383–2425 covers `tau_z`, z complex, against `tau(n-h)` ⇒ **A23's `w=2` attribution is CORRECT**; Topacogullari
+IMRN 2018 7681–7724 = integer `k>=4`; MRT I PLMS 118 (2019) 284–350 treats `ΛΛ`, `d_k d_l` and `Λ d_k` in ONE
+framework with `𝔖(h)=2Π₂∏_{p|h,p>2}(p-1)/(p-2)` (intro formulas via automated render ⇒ OPEN-CAPPED);
+Conrey–Keating Proc. R. Soc. A 472 (2016) 20160548 **read in full — no "singular series"/"twin prime constant",
+NOT a source**; Conrey–Keating I–V **NOT read ⇒ OPEN-CAPPED**.
+**(6) STEELMAN + two handles CLOSED.** Strongest downstream statement = **`[SS-CAUCHY]`**: `T(x;z,w)` is a
+polynomial in `(z,w)` for each x, so if `sup_{|z|=|w|=r}|T-M| = o(r^2 x/(log x)^2)` for some fixed `r>0` then HL
+follows by 2-variable Cauchy — a genuine one-directional SUFFICIENT condition, but at fixed `r` it entails open
+asymptotics at non-integer complex `(z,w)` ⇒ **STRICTLY STRONGER than the target**, and as `r->0` it degenerates
+into TPC. **NO route to a bound.** **NO natural boundary available:** `log sigma_p = -(z-1)(w-1)/p^2 + O(1/p^3)`
+uniformly on compacts (the `1/p` term cancels identically) ⇒ **`S` is ENTIRE on C²**, so the obstruction cannot
+be read off the `(z,w)` geometry of the singular series. **TWELVE-NODE reduced graph handed back** (the work file's Part-7 header miscounts these as "eleven"; the enumerated list is authoritative)**:**
+`[SS-LOCAL]`, `[SS-ORIGIN]`, `[SS-AUDIT]`, `[SS-DERIV]`, `[SS-TRIV]`, `[SS-ZERO]`, `[SS-CONSEQ]`,
+`[SS-MAINDEF]`, `[SS-CAUCHY]`, `[SS-ENTIRE]`, `[SS-MULAM]`, `[SS-LIT]` — pre-fills only; **DISTILL DID NOT
+LABEL**. Recommended FALSIFIED: `[SS-AUDIT]` (concrete counterexample = the printed constant) and `[SS-CONSEQ]`
+(as a localization-with-content). Recommended OPEN: `[SS-MAINDEF]`. **PENDING EXPLORE LABEL.**
+**NOT progress, NOT a bound, NOT a foundation. C5 UNTOUCHED.**
+
+**Prior step:** `work/1784938438-EXPLORE.md` — **A23 (Introduce): the (z,w)-deformation.** Criteria declared
 BEFORE work. Object: `T(x;z,w) = sum_{n<=x} d_z(n) d_w(n+2)` with `zeta(s)^z = sum d_z(n)n^{-s}`. Marked points
 VERIFIED: `d/dz d/dw` at `(0,0)` = TPC (since `d/dz|_0 d_z = Lambda/log`); `(2,2)` = Estermann; `(z,2)` all
 complex z = Drappeau-Topacogullari SOLVED; `(-1,-1)` = Chowla for **mu**. **STATED GAP: A23 does NOT contain C5
 as a point** (C5 is lambda; `lambda` is not `d_z` for any z, its series being `zeta(2s)/zeta(s)`).
 CANDIDATE LEMMA **`L-SS-ORIGIN`**: the singular series satisfies `S(0,0) = 2*Pi_2` EXACTLY (one-line proof:
 `d_0(p^a)=0` for `a>=1`, so `sigma_p` collapses to the Hardy-Littlewood local factor at every p, including
-`sigma_2 = 2`). Verified numerically to 2.8e-13, with `S(1,1)=S(2,1)=S(1,2)=1` exactly and
+`sigma_2 = 2`). Verified numerically to 2.8e-13 (**DISTILL: that figure is a SELF-COMPARISON — see Latest step**),
+with `S(1,1)=S(2,1)=S(1,2)=1` exactly and
 `S(2,2)=9/pi^2` to 1.4e-7 as cross-checks. **CONSEQUENCE: the parity obstruction is provably NOT in the main
 term** — the continued Selberg-Delange main term reproduces Hardy-Littlewood including its constant — so parity
 lives entirely in the joint continuation in `(z,w)` or in error-term uniformity as `(z,w)->(0,0)`. A LOCALIZATION,
 **not a bound, not progress, not a foundation.** **NOVELTY NOT CLAIMED** (Conrey-Keating I-V treat divisor
 correlations and HL as interchangeable, so `L-SS-ORIGIN` is plausibly folklore there; Drappeau-Topacogullari own
-the `w=2` line). A `p=2` bug was found and fixed mid-run and is recorded in the work file. **PENDING DISTILL.**
+the `w=2` line). A `p=2` bug was found and fixed mid-run and is recorded in the work file. **DISTILL-ATTACKED
+`work/1784939905`; awaiting EXPLORE's labels.**
 
 **Prior step:** `work/1784932815-EXPLORE.md` — **LABEL of the A22 DISTILL (ten nodes) + Review (A22 CLOSED).**
 First act = **labelling** the ten nodes from `work/1784931971-DISTILL.md`, **independently re-verified, NOT
@@ -421,19 +475,57 @@ APPROACHES ATTEMPTED:
 - [A23] (z,w)-DEFORMATION / GENERALIZED-DIVISOR INTERPOLATION -- the two-variable object
   T(x;z,w)=sum_{n<=x} d_z(n)d_w(n+2) placing TPC (dd/dzdw at origin), Estermann (2,2), the SOLVED
   Drappeau-Topacogullari line (z,2), and Chowla-for-mu (-1,-1) as points of ONE analytic object |
-  PENDING DISTILL (candidate lemma L-SS-ORIGIN) | Introduce (work/1784938438). Criteria declared before
-  work; S1+S2 achieved, K2 did not fire, K1 fired PARTIALLY. YIELD: the parity obstruction is provably
+  DISTILL-ATTACKED work/1784939905, PENDING EXPLORE LABEL (candidate lemma L-SS-ORIGIN) | Introduce
+  (work/1784938438) + DISTILL (work/1784939905). Criteria declared before
+  work; S1+S2 achieved, K2 did not fire, K1 fired PARTIALLY. CLAIMED YIELD: the parity obstruction is provably
   NOT in the main term (S(0,0)=2*Pi_2 exactly). NOTE: A23 does NOT contain C5 as a point (mu vs lambda).
   First formulation used z^Omega(n) and was WRONG (2^Omega != d); corrected to d_z. NOVELTY NOT CLAIMED.
   NOT progress, NOT a bound, NOT a foundation.
+  DISTILL OUTCOME (work/1784939905) -- RECOMMENDED VERDICT: **RENAME, NOT HANDLE**. The MATHEMATICS of
+  L-SS-ORIGIN SURVIVED every attack (independent re-derivation of all local data; NO SECOND p=2 BUG -- the
+  n=2 mod 4 branch re-done by hand and brute-forced over n<2^18; new exact identity sigma_p(z,1)=sigma_2(z,1)=1
+  so S(z,1)=1 for ALL z; S(0,0)=2*Pi_2 verified SYMBOLICALLY and to 8.5e-27 vs an INDEPENDENT Pi_2;
+  S(2,2)=9/pi^2 to 3e-38; both normalisation attacks FAILED -- no loglog contamination, and x*T/(M_z M_w)
+  Richardson-extrapolates to S(z,w) to 0.1-1% at four non-integer points). ONE CONCRETE AUDIT DEFECT: A23's
+  "rel diff 2.819e-13" is a SELF-COMPARISON (its printed 2*Pi_2 = 1.3203238194 is wrong at the 7th decimal;
+  true 1.3203236317) => the claim must be certified by the SYMBOLIC identity, not that number. THE CONSEQUENCE
+  IS DEFEATED by three concrete defeaters: (i) S_h(0,0) = HL 6(h) for EVERY shift h (h=1..210 verified, 0 for
+  odd h) => the identity is a restatement of d_0 = 1_{n=1}, generic, not about twin primes; (ii) at the origin
+  BOTH T(x;0,0) and the main term are IDENTICALLY 0 (and T(x;0,w)=w), so A23's whole z=0 table column is
+  coefficients of a zero main term; (iii) the main term is a function of the LOCAL DENSITIES ALONE, and Selberg's
+  parity principle IS "local densities do not determine the prime count" => "parity is not in the main term" is
+  that principle RESTATED. Parity-blindness confirmed (lambda <-> the reflection (z,w)->(-z,-w); no functional
+  equation). mu/lambda gap CONFIRMED REAL: Ramare LNM 2213 (2018) Thm 1 (primary PDF read) gives Conj1(lambda)
+  <=> Conj3(mu) <=> Conj5 only for the FULLY QUANTIFIED families over all tuples of linear forms; no
+  single-instance implication; C5 is stronger than all of them => A23 gains NO link to C5. NOVELTY abstention
+  CORRECT (DT ANT 13 (2019) 2383-2425 does cover tau_z complex z -- A23's w=2 attribution is RIGHT; MRT I PLMS
+  118 (2019) 284-350 already treats Lambda*Lambda, d_k d_l and Lambda*d_k in ONE local-density framework;
+  Conrey-Keating Proc R Soc A 472 (2016) 20160548 read IN FULL and is NOT a source; CK I-V NOT read => OPEN-
+  CAPPED). STEELMAN: [SS-CAUCHY] (a real one-directional sufficient condition via 2-variable Cauchy) is
+  STRICTLY STRONGER than HL at fixed r and degenerates to TPC as r->0; NO route to a bound; and NO natural
+  boundary is available because log sigma_p = -(z-1)(w-1)/p^2 + O(1/p^3) uniformly on compacts => S is ENTIRE
+  on C^2. TWELVE-node reduced graph handed back: [SS-LOCAL], [SS-ORIGIN], [SS-AUDIT], [SS-DERIV], [SS-TRIV],
+  [SS-ZERO], [SS-CONSEQ], [SS-MAINDEF], [SS-CAUCHY], [SS-ENTIRE], [SS-MULAM], [SS-LIT] -- PRE-FILLS ONLY,
+  DISTILL DID NOT LABEL. Recommended FALSIFIED: [SS-AUDIT], [SS-CONSEQ]. Recommended OPEN: [SS-MAINDEF].
+  Two escalation handles CLOSED by this pass (natural boundary in (z,w); upgrading (-1,-1) to C5).
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
-- [L-SS-ORIGIN] (A23; INTRODUCED work/1784938438; **PENDING DISTILL**) "The singular series of the
+- [L-SS-ORIGIN] (A23; INTRODUCED work/1784938438; **DISTILL-ATTACKED work/1784939905; AWAITING EXPLORE
+  LABEL**) "The singular series of the
   shifted correlation of generalized divisor functions satisfies S(0,0) = 2*Pi_2 exactly; consequently the
   continued Selberg-Delange main term for sum d_z(n)d_w(n+2) reproduces the Hardy-Littlewood conjecture
   including its constant, so the parity obstruction is not located in the main term." NOT a legal
   foundation until labelled. NOT a bound. Question for DISTILL: handle or rename?
-- (NONE PENDING.) No candidate lemma is currently awaiting DISTILL or awaiting a label.
+  **DISTILL ANSWER: RENAME.** The IDENTITY half survives fully (re-derived independently; no second p=2 bug;
+  symbolic proof; 8.5e-27 numeric agreement against an independent Pi_2; both normalisation attacks failed).
+  The CONSEQUENCE half is defeated (generic in h; main term identically 0 at the origin; definitionally
+  equivalent to Selberg's parity principle). One concrete audit defect found in A23's own numerics
+  (self-comparison; its printed 2*Pi_2 is wrong at the 7th decimal). Split into TWELVE atomic nodes
+  ([SS-LOCAL], [SS-ORIGIN], [SS-AUDIT], [SS-DERIV], [SS-TRIV], [SS-ZERO], [SS-CONSEQ], [SS-MAINDEF],
+  [SS-CAUCHY], [SS-ENTIRE], [SS-MULAM], [SS-LIT]) with PRE-FILL recommendations only; **DISTILL DID NOT
+  LABEL** -- EXPLORE's first act next step must be to assign the verdicts.
+- (ONE PENDING A LABEL.) [L-SS-ORIGIN]'s twelve nodes await EXPLORE's labelling; no candidate lemma is
+  currently awaiting DISTILL.
 - [L-PIGEON] + [L-SPEC] (A22) — **RESOLVED OUT work/1784932815** (INTRODUCED work/1784931200, DISTILL-
   ATTACKED work/1784931971). Both headline claims FALSIFIED; the ten atomic nodes are LABELLED and moved
   into the CLAIM GRAPH ([PIG-GRAPH], [PIG-TIGHT] re-scoped, [PIG-SHAPE], [PIG-CAP] diagnosis-only,
