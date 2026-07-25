@@ -11,7 +11,44 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1784972277-EXPLORE.md` — **A25 (Review): propagating A24 across the map.** A24's
+**Latest step:** `work/1784973506-EXPLORE.md` — **A26 (Apply): T20/G12 — the enlarged family
+`ζ(s)^z ζ(2s)^y` at λ's coordinates. T20 ANSWERED: YES. `G12` CLOSED as a source of progress.**
+Entered the thread opened in `work/1784941298` and never entered. The family `Σ g_{z,y}(n)n^{-s} = ζ(s)^zζ(2s)^y`
+**contains C5's object as a literal point**: `g_{−1,1} = λ` (0 mismatches, `n ≤ 3000`), so `Σλ(n)λ(n+2)` is the
+point `(−1,1;−1,1)` of the four-parameter shifted correlation — closing A23's stated gap `[SS-MULAM]` (A23
+reached μ, not λ). **`L-G12-2 [LOCAL-CLOSED]` TRUE:** for odd `p`, `A_p = M_p + M'_p − 1` with
+`M_p(z,y)=(1−1/p)^{1−z}(1−1/p²)^{−y}`, i.e. `σ_p = 1 − (1−1/M_p)(1−1/M'_p)`; specializes to `1−1/(p−1)²`
+(HL, `𝔖=2Π₂`), `1−1/p²` (Estermann, `𝔖=9/π²`), `1−4/(p−1)²` (λλ). **`L-G12-3 [SS-ENTIRE-4]` TRUE — THIS IS
+T20's ANSWER:** `σ_p − 1 = −(z−1)(z'−1)/p² + O_R(1/p³)`, so **`𝔖` is ENTIRE on `ℂ⁴`** and λ's coordinates are an
+ordinary interior point (audit: `p²·max|σ_p−1| → (R+1)²`, 16.0010 at `R=3, p=100003`). **`[SS-ENTIRE]` therefore
+UPGRADES exactly as pre-registered — from `d_z` cousins to C5's OWN coordinates:** no natural boundary, no
+"parity divisor", no singularity of any kind is available from the singular series of the family containing λ.
+**RIDER (the honest reason it was cheap):** the bound is governed by `(z−1)(z'−1)` and is **independent of `y`**
+— `y` enters only at `O(1/p³)`, so **the deformation direction built specifically to reach λ is exactly the
+direction `𝔖` is least sensitive to.** **`L-G12-4 [LAMBDA-ZERO]` TRUE but DEFLATED BY ITS OWN TEST:**
+`𝔖(λ,λ) = 0`, carried entirely by `σ_3 = 0` (`A_3 = 0` exactly) — but independent brute force over `n mod p^K`
+shows `A_3 = 0` for **every** even `h` with `3∤h` (h=2,4,8,10,14) and `= 2/3` for `3|h` (h=6,12), so the zero
+tracks `3∤h`, **NOT the twin structure**, and carries no information about `h=2`. (Also over-determined:
+`1/Γ(−1)²=0` already.) **`L-G12-5 [SOLVED-LOCUS]` TRUE (sourced) — K2 FIRES:** every known solved point has its
+**second** argument fixed at `d=(2,0)` — Topacogullari arXiv:1605.02364/IMRN 2018 (`d_k(n)d(n+h)`, `k≥4`,
+abstract fetched: `d_k` general, `d` FIXED), Drappeau–Topacogullari arXiv:1807.09569 (`f(n)τ(n−h)`, `τ_z`
+special case), Hooley Acta Math. **110** (1963) 97–114 for the corner `(0,1;2,0)` (reference confirmed, paper
+NOT read). `C5` needs BOTH arguments at `(−1,1)`; nothing in the family connects them.
+**`L-G12-6 [RESOURCE-NOT-ANALYTIC]` NEEDS-REVIEW (an interpretation, not a lemma):** `𝔖` is entire on all of
+`ℂ⁴` — analytically featureless — yet the solved locus is a slice pinned at the second argument, because
+`w=(2,0)` is where the binary additive divisor problem supplies Kloosterman/spectral input (**resource R3**).
+Moving off it crosses no analytic feature; it loses an **arithmetic resource**. Hence **analytic continuation in
+`(z,y)` cannot transport an arithmetic resource** — the deformation picture is smooth exactly where the
+mathematics is hard, which is why it cannot help. CAVEAT: "solved" = by currently known methods, so this is a
+statement about the state of knowledge, not a theorem. **AUDIT designed against A23's circularity defect
+(`[SS-AUDIT]`): no global constant compared to a re-run of the same product** — 3 independent computations of
+each local quantity (`max|A_closed−A_series| = 1.3e−15`), per-prime closed forms over all `p ≤ 5000`
+(`8.9e−16`), and literature values hard-coded (`2Π₂`, `9/π²`, both rel `3.2e−08` = the `P=2·10⁶` truncation).
+**NOVELTY NOT CLAIMED** (Conrey–Keating I–V still unread; these families are standard in the Selberg class).
+Trap A dodged; **Trap B engaged, NOT broken — this is a NEGATIVE result that removes an escalation.**
+**NOT progress, NOT a bound, NOT a foundation; `C5` untouched.**
+
+**Prior step:** `work/1784972277-EXPLORE.md` — **A25 (Review): propagating A24 across the map.** A24's
 lemmas `L5/L6/L7` are about the twin problem in general, not just about `G3`, so the map moves.
 **NEW NODE `[SHIFT-DIM1]` (pending DISTILL if ever to be built upon):** the twin problem admits a
 **sieve-dimension-1 formulation** via `a_n = Λ(n−2)` — Bombieri's asymptotic sieve applies VERBATIM under EH
@@ -750,7 +787,19 @@ OPEN THREADS:
   boundary and NO "parity divisor" can come from the singular series; this CLOSES the most attractive
   escalation the deformation picture offered. Secondary: [SS-CAUCHY], a real one-directional sufficient
   condition but STRICTLY STRONGER than the target. CLOSED as a source of progress. NOT progress, NOT a bound.
-- T20 [NEW — OPENED, NOT ENTERED, work/1784941298; the RECOMMENDED next step]: the minimal two-parameter
+- T20 / G12 [**CLOSED as a source of progress** — ENTERED and RESOLVED in A26, work/1784973506.
+  **ANSWER: YES, the enlarged singular series IS entire at and around the C5 point** — in fact entire on all
+  of C^4. The pre-registered YES-branch consequence is therefore delivered: [SS-ENTIRE] upgrades from a
+  statement about d_z to a statement about C5's OWN coordinates, a strictly stronger NEGATIVE result. The
+  NO-branch ("the first analytic object in this project whose geometry SEES parity") did NOT occur.
+  Five lemmas TRUE (FAMILY, LOCAL-CLOSED, SS-ENTIRE-4, LAMBDA-ZERO[deflated], SOLVED-LOCUS), one
+  NEEDS-REVIEW (RESOURCE-NOT-ANALYTIC). Kill criterion K2 (no solved line reachable from lambda's
+  coordinates) FIRED: the solved locus is pinned at the SECOND argument = d, and C5 needs both at (-1,1).
+  KEY STRUCTURAL YIELD: solvability in this family is NOT an analytic property -- it is the presence of
+  resource R3 (Kloosterman/spectral, via the binary additive divisor problem), and analytic continuation
+  in (z,y) cannot transport an arithmetic resource. The deformation picture (A23 + A26) is now closed from
+  both ends. C5 untouched. NOVELTY NOT CLAIMED. Original entry retained below for the record:]
+  the minimal two-parameter
   enlargement that actually CONTAINS the crux. Define g_{z,y} by sum_n g_{z,y}(n) n^{-s} = zeta(s)^z
   zeta(2s)^y, i.e. multiplicatively via sum_a g(p^a) X^a = (1-X)^{-z}(1-X^2)^{-y}, with
   g(p^a) = sum_j binom(y+j-1,j) binom(z+a-2j-1, a-2j). AUDITED SETUP (work/1784941298 Part 2, own code):
@@ -887,12 +936,17 @@ OPEN THREADS:
 - [T3/T4/T5/T6 CLOSED] C1-membership; F_q[t]-absence into A12; necessity = C5; C6 folded in.
 
 CURRENT POSITION:
-- NOT at a terminal state. LATEST STEP = **A23 LABEL + Review (work/1784941298)** — the twelve nodes from the
-  A23 DISTILL pass (work/1784939905) are now LABELLED (first act, independently re-verified with my own code
-  AND my own primary-source fetch — NOT rubber-stamped; DISTILL corrected in FIVE places), and A23 is
-  REVIEWED and CLOSED as a source of progress. No candidate lemma is pending and no node awaits a label.
-  **NEXT ACTION IS FREE.** RECOMMENDED: thread **T20** (the zeta(s)^z zeta(2s)^y enlargement that verifiably
-  CONTAINS lambda at (z,y)=(-1,1)) — ask whether ITS singular series is still entire at the C5 point.
+- NOT at a terminal state. LATEST STEP = **A26 Apply: T20/G12 (work/1784973506)** — T20 entered and
+  ANSWERED **YES** (the enlarged singular series is entire on C^4, hence at C5's own coordinates), so
+  [SS-ENTIRE] is upgraded to the family CONTAINING lambda and G12/T20 is CLOSED as a source of progress.
+  Kill criterion K2 fired (solved locus pinned at second argument = d). Six lemmas resolved; five TRUE,
+  one (RESOURCE-NOT-ANALYTIC) NEEDS-REVIEW. **PENDING: the five A26 lemmas have NOT been to DISTILL** and
+  must go before anything is built on them; likewise [SHIFT-DIM1] from A25.
+  **RECOMMENDED NEXT: the G9 REVISIT** (flagged in A25, reinforced by A26) — does the dimension-1
+  formulation change the status of the C5 => TPC bridge, or does the parity gap merely relocate from a
+  lambda-lambda statement to a mu-Lambda one? Honest prior: it relocates. G9 is now the last node touching
+  the MAIN ROUTE whose standing caveat has never been examined, and with A23 + A26 the deformation
+  direction is closed from both ends.
 - A23 VERDICT: **RENAME, NOT HANDLE.** The lemma S(0,0) = 2*Pi_2 is TRUE (symbolic: sigma_p(0,0) =
   (1-2/p)/(1-1/p)^2 = 1-1/(p-1)^2, sigma_2(0,0) = 2) but **TAUTOLOGICAL** -- d_0 = 1_{n=1} (verified d_0(n)=0
   for all 2<=n<=12), so at the origin the local densities ARE the Hardy-Littlewood ones BY DEFINITION and
