@@ -11,7 +11,30 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1784941298-EXPLORE.md` — **LABEL of the A23 DISTILL (twelve nodes) + Review (A23 CLOSED).**
+**Latest step:** `work/1784971711-EXPLORE.md` — **A24 (Apply): G3 (thin-family FI Type-II) — CLOSED.**
+Executed the declared four-phase plan optimistically. **TWO of the orchestrator's own predicted kill-criteria
+were REFUTED**, so G3 survived deeper than planned and then closed on an unanticipated reason.
+**PROVEN TRUE:** `L1 [SPARSE]` (TPC follows from twins in any infinite subset — G3's only distinctive content);
+`L2 [DENSITY]`; **`L5 [DIM-1]`** (the shifted-prime sequence `a_n=Λ(n−2)` has sieve dimension EXACTLY 1 —
+refutes the predicted dimension-2 kill); **`L6 [LEVEL-OK]`** (Type I does NOT collapse; it is exactly
+Elliott–Halberstam — refutes the predicted level-collapse kill; the earlier reasoning conflated
+*prime-supported* with *shifted*-prime-supported); `L7 [CONST]` (FI's constant `H = 2Π₂` EXACTLY, by algebra
+`p(p−2)/(p−1)²=1−1/(p−1)²` plus `p=2` factor 2; numerics 2.19e-15 — so FI's conclusion would be literally the
+twin-prime asymptotic with the right constant); `L9 [PARAM≡ITER]`; and **`L10 [COMMENSURATE-INVARIANT]` — THE
+DECISIVE LEMMA**: every PROVEN `k=2,m=2` instance (Fouvry–Iwaniec `x²+p²`, Heath-Brown–Li `a²+p⁴`, He `p²+Ny²`)
+has `f₂−f₁` NON-CONSTANT with one polynomial imposable, whereas `(F, F+2)` has `f₂−f₁ = 2`, CONSTANT and
+**invariant under every restriction of the family** ⇒ `[SPARSE]`, G3's sole distinctive move, is provably
+ORTHOGONAL to the obstruction. **PROVEN FALSE:** `L3 [JOINT-QUAD]` (no nondegenerate binary quadratic `F` with
+`F+2` also a norm form — exhaustive search 0 hits + a critical-point proof: `G`'s unique critical value is 0≠2);
+`L4 [JOINT-ESCAPE]`. **OPEN-CAPPED:** `L8 [TYPEII-CIRC]` (FI's bilinear condition for `Λ(n−2)` is the μ–Λ shifted
+correlation uniform in APs = equal-hardness; rests on a plain-language gloss, FI Ann. Math. 148 (1998) 1041–1065
+being paywalled/pre-arXiv and Ford's 2023 notes not stating it — `L10` does NOT depend on `L8`).
+**DELIVERABLE — `C3` UPGRADE:** `C3` read "none known for n(n+2)", flagged as an absence-of-citation fact. It is
+now structural: the FI framework DOES apply (right dimension, right constant, non-degenerate Type I); what fails
+is reach — thinning the family cannot help, FOR ANY FAMILY. **G3 CLOSED; Phase 4 not entered, honouring the
+declared global kill criterion. NOT progress, NOT a bound; C5 untouched.**
+
+**Prior step:** `work/1784941298-EXPLORE.md` — **LABEL of the A23 DISTILL (twelve nodes) + Review (A23 CLOSED).**
 First act = **labelling** the twelve nodes from `work/1784939905-DISTILL.md`, **independently re-verified, NOT
 rubber-stamped** (own code + own primary-source fetch, Part 0): the local data re-derived to `q^14`; brute-force
 local averages over `n<2^17`/`n<3^10`; `sigma_p(z,1)=1` **closed by hand** (`A_p(z,1)=(1-q)^{1-z}`; sympy will not
@@ -581,6 +604,14 @@ APPROACHES ATTEMPTED:
   at the origin (exact; special to the origin), and S(z,1)=1 IDENTICALLY for all z. VERDICT: A23 CLOSED as a
   source of progress -- one true-but-tautological identity, one falsified consequence, one defective audit,
   and ONE durable negative structural fact ([SS-ENTIRE]).
+
+- [A24] G3 / THIN-FAMILY FRIEDLANDER-IWANIEC TYPE-II -- restrict TPC to a sparse 2-parameter family to buy
+  the extra parameter FI-type bilinear estimates feed on | CLOSED (no candidate lemma pending) | Apply
+  (work/1784971711). Ten atomic lemmas: L1,L2,L5,L6,L7,L9,L10 TRUE; L3,L4 FALSE; L8 OPEN-capped.
+  TWO orchestrator predictions REFUTED (L5 dimension, L6 level of distribution) -- the architecture is
+  COHERENT (dimension 1, constant exactly 2*Pi_2). Closed by L10: f2-f1 = 2 is CONSTANT and
+  restriction-invariant, so sparsity is orthogonal to the obstruction. UPGRADES C3 from an
+  absence-of-citation fact to a structural statement. NOT progress, NOT a bound, C5 untouched.
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
 - [L-SS-ORIGIN] (A23; INTRODUCED work/1784938438; DISTILL-ATTACKED work/1784939905; **RESOLVED OUT
