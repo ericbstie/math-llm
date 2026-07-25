@@ -11,7 +11,28 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1784971711-EXPLORE.md` — **A24 (Apply): G3 (thin-family FI Type-II) — CLOSED.**
+**Latest step:** `work/1784972277-EXPLORE.md` — **A25 (Review): propagating A24 across the map.** A24's
+lemmas `L5/L6/L7` are about the twin problem in general, not just about `G3`, so the map moves.
+**NEW NODE `[SHIFT-DIM1]` (pending DISTILL if ever to be built upon):** the twin problem admits a
+**sieve-dimension-1 formulation** via `a_n = Λ(n−2)` — Bombieri's asymptotic sieve applies VERBATIM under EH
+(its Type-I hypothesis IS Elliott–Halberstam, dimension is 1, constant is `2Π₂`), giving
+`Σ_{n≤x} Λ(n−2)Λ_k(n) ~ k·2Π₂·x(log x)^{k−1}` for every `k ≥ 2` and failing at `k = 1` = TPC for exactly one
+reason: parity. **This makes "everything except parity is available" a theorem-modulo-EH rather than a
+heuristic** — the project's central claim has until now been explicitly hedged as heuristic at the relevant
+sieve dimension. Numerical consistency at `k=2`: ratio 2.4059 at `x=6·10⁶` vs target `2H = 2.6406`, shortfall
+8.9% ≈ `1/log x`; the twin and almost-prime parts split evenly (1.2411 / 1.1648), which IS the parity
+phenomenon. CONSISTENCY, NOT VERIFICATION (asymptotic + EH-conditional). **NOVELTY NOT CLAIMED.**
+**SWEEP:** **`G9` (the bridge `C5⇒TPC`) → REVISIT, highest value** — its standing caveat is "heuristic at
+sieve dimension 2", and `[SHIFT-DIM1]` shows the dimension-2 objection is FORMULATION-DEPENDENT, not intrinsic
+(this does NOT repair the bridge: `C5` is `λλ`, the dimension-1 gap is `μΛ`). **`G7` → ORPHANED** (existed only
+to feed `G3`; no consumer now; demote to a standalone open problem). **`G4` → WEAKENED, NOT CLOSED** (`L10`
+closes family-thinning as a route to BILINEAR structure; `G4`'s mechanism is excluding a factorization type,
+which is different — **explicitly NOT claiming `L10` closes `G4`**). **`C2` REINFORCED** and cross-linked to
+`[SHIFT-DIM1]` as a live instance. **`C1`** scope note: the shifted-prime sequence is a DIFFERENT sequence, so
+`C1` membership does not automatically transfer. Unaffected: `G5`, `G8`, `G10`, `G11`, `G12`, `C4`, `C6`,
+`A22 [PIG-*]`. **NOT progress, NOT a bound; `C5` untouched, legal foundations unchanged.**
+
+**Prior step:** `work/1784971711-EXPLORE.md` — **A24 (Apply): G3 (thin-family FI Type-II) — CLOSED.**
 Executed the declared four-phase plan optimistically. **TWO of the orchestrator's own predicted kill-criteria
 were REFUTED**, so G3 survived deeper than planned and then closed on an unanticipated reason.
 **PROVEN TRUE:** `L1 [SPARSE]` (TPC follows from twins in any infinite subset — G3's only distinctive content);
@@ -612,6 +633,13 @@ APPROACHES ATTEMPTED:
   COHERENT (dimension 1, constant exactly 2*Pi_2). Closed by L10: f2-f1 = 2 is CONSTANT and
   restriction-invariant, so sparsity is orthogonal to the obstruction. UPGRADES C3 from an
   absence-of-citation fact to a structural statement. NOT progress, NOT a bound, C5 untouched.
+
+- [A25] REVIEW / PROPAGATION OF A24 ACROSS THE MAP | DONE (no candidate lemma sent to DISTILL) | Review
+  (work/1784972277). Yield: NEW node [SHIFT-DIM1] (sieve-dimension-1 formulation of the twin problem;
+  Bombieri under EH gives k>=2 and fails exactly at k=1; NOVELTY NOT CLAIMED; must go to DISTILL before
+  being built upon) + one actionable revisit (G9, the C5=>TPC bridge, whose "heuristic at dimension 2"
+  caveat is now known to be formulation-dependent). G7 orphaned; G4 weakened but NOT closed; C2 reinforced.
+  NOT progress, NOT a bound, C5 untouched.
 
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
 - [L-SS-ORIGIN] (A23; INTRODUCED work/1784938438; DISTILL-ATTACKED work/1784939905; **RESOLVED OUT
