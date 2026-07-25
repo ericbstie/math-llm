@@ -11,7 +11,22 @@ is open. **Terminal states are exactly (1) proof, (2) disproof, (3) independence
 Locating the parity obstruction (C5) is NO LONGER terminal — it is a checkpoint to
 break or escalate. A rename/relocation is an escalation to record honestly, not progress.**
 
-**Latest step:** `work/1784932815-EXPLORE.md` — **LABEL of the A22 DISTILL (ten nodes) + Review (A22 CLOSED).**
+**Latest step:** `work/1784938438-EXPLORE.md` — **A23 (Introduce): the (z,w)-deformation.** Criteria declared
+BEFORE work. Object: `T(x;z,w) = sum_{n<=x} d_z(n) d_w(n+2)` with `zeta(s)^z = sum d_z(n)n^{-s}`. Marked points
+VERIFIED: `d/dz d/dw` at `(0,0)` = TPC (since `d/dz|_0 d_z = Lambda/log`); `(2,2)` = Estermann; `(z,2)` all
+complex z = Drappeau-Topacogullari SOLVED; `(-1,-1)` = Chowla for **mu**. **STATED GAP: A23 does NOT contain C5
+as a point** (C5 is lambda; `lambda` is not `d_z` for any z, its series being `zeta(2s)/zeta(s)`).
+CANDIDATE LEMMA **`L-SS-ORIGIN`**: the singular series satisfies `S(0,0) = 2*Pi_2` EXACTLY (one-line proof:
+`d_0(p^a)=0` for `a>=1`, so `sigma_p` collapses to the Hardy-Littlewood local factor at every p, including
+`sigma_2 = 2`). Verified numerically to 2.8e-13, with `S(1,1)=S(2,1)=S(1,2)=1` exactly and
+`S(2,2)=9/pi^2` to 1.4e-7 as cross-checks. **CONSEQUENCE: the parity obstruction is provably NOT in the main
+term** — the continued Selberg-Delange main term reproduces Hardy-Littlewood including its constant — so parity
+lives entirely in the joint continuation in `(z,w)` or in error-term uniformity as `(z,w)->(0,0)`. A LOCALIZATION,
+**not a bound, not progress, not a foundation.** **NOVELTY NOT CLAIMED** (Conrey-Keating I-V treat divisor
+correlations and HL as interchangeable, so `L-SS-ORIGIN` is plausibly folklore there; Drappeau-Topacogullari own
+the `w=2` line). A `p=2` bug was found and fixed mid-run and is recorded in the work file. **PENDING DISTILL.**
+
+**Prior step:** `work/1784932815-EXPLORE.md` — **LABEL of the A22 DISTILL (ten nodes) + Review (A22 CLOSED).**
 First act = **labelling** the ten nodes from `work/1784931971-DISTILL.md`, **independently re-verified, NOT
 rubber-stamped** (own code, Part 0): `2N` is `IP_2^*` (**0** violations, ordered pairs `x,y<200`) while
 `2N\{2}` is not (**201** violations; `FS(1,1)={1,2}`, `FS(1,2)={1,2,3}`, `FS(2,3)={2,3,5}` each have `2` as
@@ -403,7 +418,21 @@ APPROACHES ATTEMPTED:
   state their theorems in "infinitely many" form, which makes finite stability visible on the face of the
   statement). NOT progress, NOT a bound, NOT a foundation; C5 UNTOUCHED.
 
+- [A23] (z,w)-DEFORMATION / GENERALIZED-DIVISOR INTERPOLATION -- the two-variable object
+  T(x;z,w)=sum_{n<=x} d_z(n)d_w(n+2) placing TPC (dd/dzdw at origin), Estermann (2,2), the SOLVED
+  Drappeau-Topacogullari line (z,2), and Chowla-for-mu (-1,-1) as points of ONE analytic object |
+  PENDING DISTILL (candidate lemma L-SS-ORIGIN) | Introduce (work/1784938438). Criteria declared before
+  work; S1+S2 achieved, K2 did not fire, K1 fired PARTIALLY. YIELD: the parity obstruction is provably
+  NOT in the main term (S(0,0)=2*Pi_2 exactly). NOTE: A23 does NOT contain C5 as a point (mu vs lambda).
+  First formulation used z^Omega(n) and was WRONG (2^Omega != d); corrected to d_z. NOVELTY NOT CLAIMED.
+  NOT progress, NOT a bound, NOT a foundation.
+
 CANDIDATE LEMMAS (pre-distill / attacked — not yet certified):
+- [L-SS-ORIGIN] (A23; INTRODUCED work/1784938438; **PENDING DISTILL**) "The singular series of the
+  shifted correlation of generalized divisor functions satisfies S(0,0) = 2*Pi_2 exactly; consequently the
+  continued Selberg-Delange main term for sum d_z(n)d_w(n+2) reproduces the Hardy-Littlewood conjecture
+  including its constant, so the parity obstruction is not located in the main term." NOT a legal
+  foundation until labelled. NOT a bound. Question for DISTILL: handle or rename?
 - (NONE PENDING.) No candidate lemma is currently awaiting DISTILL or awaiting a label.
 - [L-PIGEON] + [L-SPEC] (A22) — **RESOLVED OUT work/1784932815** (INTRODUCED work/1784931200, DISTILL-
   ATTACKED work/1784931971). Both headline claims FALSIFIED; the ten atomic nodes are LABELLED and moved
